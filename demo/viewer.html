@@ -343,7 +343,7 @@ const SERIES_COLORS = ["var(--accent)","var(--s2)","#e0883e","#c264c9","#3ea6b0"
 const seriesColor = (i) => SERIES_COLORS[i % SERIES_COLORS.length];
 
 /* ---- application state ------------------------------------------------ */
-const state = { datasets: EMBEDDED_DATA.slice(), current: Math.max(0, EMBEDDED_DATA.findIndex(d => d.name.startsWith("02 "))) };
+const state = { datasets: EMBEDDED_DATA.slice(), current: Math.max(0, EMBEDDED_DATA.findIndex(d => d.name.startsWith("07 "))) };
 
 /* magnitude helpers: honor the encoded y/value field, fall back to count_trials */
 function magField(viz){
@@ -509,7 +509,7 @@ function renderMeta(resp){
      </div>
      <div class="meta-grid">${rows.join("")}</div>
      ${notesHtml}
-     <details class="raw-toggle"><summary>View raw VisualizeResponse JSON</summary><pre class="raw">${esc(JSON.stringify(stripBulk(resp), null, 2))}</pre></details>`;
+     <details class="raw-toggle" open><summary>View raw VisualizeResponse JSON</summary><pre class="raw">${esc(JSON.stringify(stripBulk(resp), null, 2))}</pre></details>`;
 }
 function metaRow(k, v){ return `<div class="mrow"><div class="k">${esc(k)}</div><div class="v">${v}</div></div>`; }
 function fmtDate(iso){
