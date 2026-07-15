@@ -5,6 +5,11 @@ fields) into a **structured visualization specification** sourced from the
 [ClinicalTrials.gov Data API v2](https://clinicaltrials.gov/data-api/api), with **deep citations**
 tying every datum back to its `nct_id` and an exact field excerpt.
 
+**▶ Live demo (no install):** **<https://nguiasoren.github.io/ctgov-viz-agent/>** — the
+citation viewer with all 15 example runs; each shows its natural-language query, its chart or network
+graph, and every datum's citations clickable to the source trials on clinicaltrials.gov. To query the
+engine yourself, clone and run `uvicorn` (see [Quickstart](#quickstart)).
+
 > **The governing invariant:** *the LLM decides **what** to compute; deterministic tools compute
 > it — the model never emits a number.*
 
@@ -41,7 +46,7 @@ Planner(LLM, ReAct) → Plan Checker(CODE) → Intent Reviewer(LLM) → Execute(
 ```mermaid
 flowchart LR
   IN([POST /visualize]):::io --> MI[merge_inputs]:::code
-  MI --> PL["<b>plan</b><br/>LLM · classify → fill"]:::llm
+  MI --> PL["<b>plan</b> · LLM<br/>ReAct: reason → act → observe<br/>(classify → fill)"]:::llm
   PL --> CK{"<b>check</b><br/>code · legal?"}:::code
   CK -->|legal| RI["<b>review_intent</b><br/>LLM · captures intent?"]:::llm
   RI --> EX["<b>execute</b><br/>code · page · count · dedupe · cite"]:::code
