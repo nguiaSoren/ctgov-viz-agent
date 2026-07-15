@@ -130,18 +130,35 @@ def is_substring_at(record: dict, field_path: str, excerpt: str) -> bool:
     return False
 
 
+_BRIEF_TITLE_PATH = "protocolSection.identificationModule.briefTitle"
+
+
+def brief_title(record: dict) -> str | None:
+    """The trial's human-readable **brief title** — the descriptive text excerpt that
+    supports the datum (assignment §5), string-extracted from the record at the fixed
+    identification path (never LLM-authored). Returns ``None`` when the record did not
+    project ``BriefTitle`` (a fetch that didn't request it), so an un-enriched citation
+    stays honest rather than inventing context. TOTAL: never raises."""
+    value = _resolve_path(record, _BRIEF_TITLE_PATH)
+    return value if isinstance(value, str) and value else None
+
+
 def build_citation(record: dict, field_path: str) -> Citation:
     """Build a ``Citation`` for ``record`` at ``field_path`` (CC-9).
 
     ``nct_id`` is read from the fixed identification path (real on every
     fetched record); ``value`` is the literal resolved value at ``field_path``
     (may be an array); ``excerpt`` is string-extracted via
-    :func:`extract_excerpt`, never authored.
+    :func:`extract_excerpt`, never authored; ``title`` is the record's brief
+    title (a readable supporting excerpt, §5), present when ``BriefTitle`` was projected.
     """
     nct_id = _resolve_path(record, "protocolSection.identificationModule.nctId")
     value = _resolve_path(record, field_path)
     excerpt = extract_excerpt(record, field_path)
-    return Citation(nct_id=nct_id or "", field_path=field_path, value=value, excerpt=excerpt)
+    return Citation(
+        nct_id=nct_id or "", field_path=field_path, value=value,
+        excerpt=excerpt, title=brief_title(record),
+    )
 
 
 def build_bucket_citations(

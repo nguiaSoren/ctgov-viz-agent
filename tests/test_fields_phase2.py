@@ -305,7 +305,7 @@ class TestFieldSpecRegistrations:
         phase = FIELD_SPEC["phase"]
         assert phase.mode == "combine"
         assert phase.top_n is None
-        assert phase.fields_projection == "NCTId|Phase"
+        assert phase.fields_projection == "NCTId|Phase|BriefTitle"
         # sort_key reproduces tools.py's hardcoded phase_sort_key(bucket["value"]).
         for value in ("MISSING", "NA", "PHASE1", "PHASE1|PHASE2", "PHASE4"):
             assert phase.sort_key({"value": value}) == phase_sort_key(value)
@@ -315,7 +315,7 @@ class TestFieldSpecRegistrations:
         assert country.mode == "explode"
         assert country.top_n == config.TOP_N_CATEGORIES  # 50 (P5-TOPN reconciled 15 → spec's 50)
         assert country.field_path == "protocolSection.contactsLocationsModule.locations[].country"
-        assert country.fields_projection == "NCTId|LocationCountry"
+        assert country.fields_projection == "NCTId|LocationCountry|BriefTitle"
         assert country.sort_key is count_desc_sort_key
         assert country.key_fn is country_key_fn
 
@@ -324,6 +324,6 @@ class TestFieldSpecRegistrations:
         assert itype.mode == "explode"
         assert itype.top_n is None
         assert itype.field_path == "protocolSection.armsInterventionsModule.interventions[].type"
-        assert itype.fields_projection == "NCTId|InterventionType"
+        assert itype.fields_projection == "NCTId|InterventionType|BriefTitle"
         assert itype.sort_key is count_desc_sort_key
         assert itype.key_fn is intervention_type_key_fn

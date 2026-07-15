@@ -58,140 +58,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-11",
             "excerpt": "2007-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Randomized Phase 2 Study of ARQ 197 Versus Gemcitabine in Treatment-Naïve Patients With Unresectable Locally Advanced or Metastatic Pancreatic Adenocarcinoma"
           },
           {
             "nct_id": "NCT00637728",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-06",
             "excerpt": "2006-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Treatment of Cancer-anorexia Using Megestrol Acetate Concentrated Suspension in Lung or Pancreatic Cancer Patients"
           },
           {
             "nct_id": "NCT01056601",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2010-09",
             "excerpt": "2010-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Panobinostat & Bortezomib in Pancreatic Cancer Progressing on Gemcitabine Therapy"
           },
           {
             "nct_id": "NCT01092689",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2012-01",
             "excerpt": "2012-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "The Role of Meat-borne Carcinogens in Pancreatic Cancer"
           },
           {
             "nct_id": "NCT01094600",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2012-06",
             "excerpt": "2012-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Comparison of Secretin-enhanced Magnetic Resonance Cholangiopancreatography (S-MRCP) to Endoscopic Pancreatic Function Test (ePFT) in Diagnosing Pancreatic Exocrine Insufficiency"
           },
           {
             "nct_id": "NCT01386502",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2011-06-15",
             "excerpt": "2011-06-15",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors"
           },
           {
             "nct_id": "NCT01394159",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2011-07",
             "excerpt": "2011-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "22G FNA Needle vs. 22G ProCore Needle"
           },
           {
             "nct_id": "NCT01501903",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2011-09",
             "excerpt": "2011-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Standard Versus Fanning Techniques for Endoscopic Ultrasound-Fine Needle Aspiration (EUS-FNA)"
           },
           {
             "nct_id": "NCT01677312",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2012-08",
             "excerpt": "2012-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Trial Comparing 19 and 25-gauge EUS-FNA Needles"
           },
           {
             "nct_id": "NCT02027311",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-04",
             "excerpt": "2013-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Etomidate vs. Midazolam for Sedation During ERCP"
           },
           {
             "nct_id": "NCT02109445",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2014-09-03",
             "excerpt": "2014-09-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study Of PF-03084014 In Combination With Gemcitabine And Nab-Paclitaxel In Patients With Metastatic Pancreatic Adenocarcinoma Not Previously Treated With Anticancer Therapies"
           },
           {
             "nct_id": "NCT02310971",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2015-02",
             "excerpt": "2015-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Cvac as Maintenance Treatment Patients With Resected Stage I or Stage II Adenocarcinoma (Cancer) of the Pancreas"
           },
           {
             "nct_id": "NCT02324868",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2016-01",
             "excerpt": "2016-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Impact of Availability of Showerpatch for Patients With Intravenous Catheters"
           },
           {
             "nct_id": "NCT02496832",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2014-11",
             "excerpt": "2014-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Study of Hypoxia Imaging in Advanced Pancreatic Cancer Patients Being Treated With Gemcitabine and TH-302 or TH-302 Placebo"
           },
           {
             "nct_id": "NCT02779257",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2016-04",
             "excerpt": "2016-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Pasireotide Treatment for Neuroendocrine Tumor"
           },
           {
             "nct_id": "NCT03009058",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2017-05-31",
             "excerpt": "2017-05-31",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
           },
           {
             "nct_id": "NCT03210948",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2019-01-23",
             "excerpt": "2019-01-23",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Conventional Versus Elastography Targeted Endoscopic Ultrasound Fine Needle Aspiration of Solid Pancreatic Lesions"
           },
           {
             "nct_id": "NCT03778879",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2019-08-01",
             "excerpt": "2019-08-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Pre-operative Stereotactic Body Radiation Therapy for Pancreatic Adenocarcinoma With or Without CCX872-B"
           },
           {
             "nct_id": "NCT03925428",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2020-09-18",
             "excerpt": "2020-09-18",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Testing a New Anti-cancer Drug Combination, Entinostat and GSK525762C, for Advanced and Refractory Solid Tumors and Lymphomas"
           },
           {
             "nct_id": "NCT04037241",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2021-11-01",
             "excerpt": "2021-11-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study of Anti-CEA CAR-T + Chemotherapy VS Chemotherapy Alone in Patients With CEA+Pancreatic Cancer & Liver Metastases"
           }
         ],
         "citations_truncated": true,
@@ -236,140 +256,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-06",
             "excerpt": "2000-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine, Herceptin and Radiation to Treat Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00325104",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-05-09",
             "excerpt": "2006-05-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Cinacalcet to Treat Familial Primary Hyperparathyroidism"
           },
           {
             "nct_id": "NCT00609765",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-08",
             "excerpt": "2007-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Avastin, Fluorouracil, Doxorubicin and Streptozocin in Locally Advanced and Metastatic Pancreatic Endocrine Tumors"
           },
           {
             "nct_id": "NCT00621556",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2008-02",
             "excerpt": "2008-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Secretin Enhanced MRCP for Evaluation of the Known or Suspected Intraductal Papillary Mucinous Neoplasms of the Pancreas"
           },
           {
             "nct_id": "NCT00625586",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2008-04-15",
             "excerpt": "2008-04-15",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Monoclonal Antibody RAV12 and Gemcitabine in Treating Patients With Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00657995",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-04",
             "excerpt": "2007-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Tight Glycemic Control by Artificial Pancreas"
           },
           {
             "nct_id": "NCT00683358",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2008-05",
             "excerpt": "2008-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Human Leukocyte Antigen-A*2402-Restricted Tumor Vessel Specific Peptide Vaccination for Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT01108458",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2010-07",
             "excerpt": "2010-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Phase 2 Study of Pertuzumab and Erlotinib for Refractory Pancreatic Adenocarcinoma"
           },
           {
             "nct_id": "NCT01198821",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2010-08",
             "excerpt": "2010-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gem-TABS in Unresectable Pancreatic Carcinoma"
           },
           {
             "nct_id": "NCT01318642",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2012-05-31",
             "excerpt": "2012-05-31",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Ganitumab in Locally Advanced Unresectable Adenocarcinoma of the Pancreas"
           },
           {
             "nct_id": "NCT01354795",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2010-09",
             "excerpt": "2010-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Prospective Study Comparing Methods of Obtainment of Specimen After EUS-FNA in Patients With Peri-pancreatic Mass"
           },
           {
             "nct_id": "NCT01437007",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2011-08-26",
             "excerpt": "2011-08-26",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "TKM 080301 for Primary or Secondary Liver Cancer"
           },
           {
             "nct_id": "NCT01774162",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2011-09",
             "excerpt": "2011-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "EUS-guided Fine Needle Biopsy With a New Core Histology Needle Versus Conventional Fine Needle Aspiration"
           },
           {
             "nct_id": "NCT01789073",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-02",
             "excerpt": "2013-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Preoperative Oral Immunonutrition for Patients With Pancreatic Cancer Undergoing Elective Surgery - Effect on Complications and Length of Hospital Stay"
           },
           {
             "nct_id": "NCT01809028",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-02",
             "excerpt": "2013-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Evaluating the Number of Passes Required for Diagnostic Cell Block During EUS-FNA of Solid Pancreatic Mass Lesions"
           },
           {
             "nct_id": "NCT01815606",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-02",
             "excerpt": "2013-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Trial Comparing 19 and 25G Needles for Fine Needle Aspiration (FNA) of Solid Pancreatic Mass Lesions Greater Than 35mm"
           },
           {
             "nct_id": "NCT01819961",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-04",
             "excerpt": "2013-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Parenteral Fish Oil in Major Laparoscopic Abdominal Surgery"
           },
           {
             "nct_id": "NCT01911416",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2014-01",
             "excerpt": "2014-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Biomarker Study to Identify Predictive Signatures of Response to LDE225 (Hedgehog Inhibitor) In Patients With Resectable Pancreatic Cancer"
           },
           {
             "nct_id": "NCT01929460",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2014-01",
             "excerpt": "2014-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Pilot Study on the Use of Prophylactic Antibiotics for EUS-guided Pancreatic Cyst Aspiration"
           },
           {
             "nct_id": "NCT01929941",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2013-09",
             "excerpt": "2013-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "An Open-Label Study of a Novel JAK-inhibitor, INCB047986, Given in Patients With Advanced Malignancies"
           }
         ],
         "citations_truncated": true,
@@ -414,140 +454,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-03",
             "excerpt": "1999-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Phase II Clinical Trial of Suppression of Human Antimouse Antibody and Human Antitoxin Response to Immunotoxin LMB-1 by Rituximab"
           },
           {
             "nct_id": "NCT00003760",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-11",
             "excerpt": "1998-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Irofulvene in Treating Patients With Stage III or Stage IV Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00004861",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-10",
             "excerpt": "1999-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine With or Without CI-994 in Treating Patients With Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00006387",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-10",
             "excerpt": "2000-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vaccine Therapy Plus QS21 in Treating Patients With Advanced Pancreatic or Colorectal Cancer"
           },
           {
             "nct_id": "NCT00014651",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-03",
             "excerpt": "2001-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vapreotide in Treating Patients Undergoing Elective Pancreatic Resection"
           },
           {
             "nct_id": "NCT00020345",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-09",
             "excerpt": "2000-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy and Radiation Therapy Plus Surgery in Treating Patients With Advanced Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00025168",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-11-01",
             "excerpt": "2001-11-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy Plus Radiation Therapy in Treating Patients With Locally Advanced Unresectable Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00033384",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2002-02",
             "excerpt": "2002-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "CI-1040 in Treating Patients With Advanced Breast, Colon, Pancreatic, or Non-Small Cell Lung Cancer"
           },
           {
             "nct_id": "NCT00034281",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2002-06",
             "excerpt": "2002-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Safety and Tolerability Study of TAK-165 in Subjects With Tumors Expressing HER2"
           },
           {
             "nct_id": "NCT00034827",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2002-01",
             "excerpt": "2002-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Multicenter Phase 2 Study of CI-1040 in Patients With Advanced Nonsmall-Cell Lung, Breast, Colon and Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00040833",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2002-02",
             "excerpt": "2002-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Acupuncture and Acupressure in Treating Patients With Moderate or Severe Pain Related to Stage III or Stage IV Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00041808",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-07",
             "excerpt": "2001-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Magnetic-Targeted Doxorubicin in Treating Patients With Cancer Metastatic to the Liver"
           },
           {
             "nct_id": "NCT00068432",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2003-12",
             "excerpt": "2003-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine and Celecoxib in Treating Patients With Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00159471",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-02",
             "excerpt": "2005-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Genes as Predictors of Response to Gemcitabine, Docetaxel, and Capecitabine (GTX) in Metastatic or Unresectable Pancreatic Cancer."
           },
           {
             "nct_id": "NCT00179751",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-04",
             "excerpt": "2005-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Phase I/II Study of Lenalidomide in Combination With Gemcitabine in Patients With Untreated Advanced Carcinoma of the Pancreas"
           },
           {
             "nct_id": "NCT00222469",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-08",
             "excerpt": "2005-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy for 1st Line Treatment of Advanced or Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00255827",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-11",
             "excerpt": "2005-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vaccine Treatment for Surgically Resected Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00338026",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-02",
             "excerpt": "2006-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Phase I Study of ECO-4601 in Patients With Advanced Cancer"
           },
           {
             "nct_id": "NCT00344851",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-06",
             "excerpt": "2006-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Exenatide and Metformin Therapy in Overweight Women With PCOS"
           },
           {
             "nct_id": "NCT00364364",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-05",
             "excerpt": "2007-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Safety Study to Determine the Appropriate Dose of Antibody Against Tumor Cells to Best Target Patients With Pancreatic Cancer."
           }
         ],
         "citations_truncated": true,
@@ -592,140 +652,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1996-09",
             "excerpt": "1996-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003411",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-11",
             "excerpt": "1998-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiation Therapy in Treating Patients With Bile Duct, Gallbladder, or Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003426",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-04",
             "excerpt": "1998-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine Plus Radiation Therapy in Treating Patients With Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003677",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-02-01",
             "excerpt": "1999-02-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Dolastatin 10 in Treating Patients With Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003769",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-02",
             "excerpt": "1999-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Perillyl Alcohol Followed by Surgery in Treating Patients With Stage II or Stage III Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003923",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-03",
             "excerpt": "1999-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Photodynamic Therapy in Treating Patients With Cancer of the Bile Duct, Gallbladder, or Pancreas"
           },
           {
             "nct_id": "NCT00004178",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-04",
             "excerpt": "1998-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gene Therapy in Treating Patients With Cancer"
           },
           {
             "nct_id": "NCT00004190",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-10",
             "excerpt": "1999-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine Plus Oxaliplatin in Treating Patients With Refractory Locally Advanced or Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00004895",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-10",
             "excerpt": "1999-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Octreotide as Palliative Therapy for Cancer-Related Bowel Obstruction That Cannot Be Removed by Surgery"
           },
           {
             "nct_id": "NCT00004910",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-01",
             "excerpt": "2000-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Endoscopic Placement of Metal Stents in Treating Patients With Cancer- Related Duodenal Obstruction"
           },
           {
             "nct_id": "NCT00005591",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-10",
             "excerpt": "1999-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Cetuximab Plus Gemcitabine in Treating Patients With Locally Advanced, Metastatic, or Recurrent Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00005858",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-04",
             "excerpt": "2000-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "LMB-9 Immunotoxin in Treating Patients With Advanced Colon, Breast, Non-small Cell Lung, Bladder, Pancreatic, or Ovarian Cancer"
           },
           {
             "nct_id": "NCT00006467",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-02",
             "excerpt": "2001-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine and ISIS 2503 in Treating Patients With Advanced or Metastatic Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00010166",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-12-01",
             "excerpt": "2000-12-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine and Radiation Therapy in Treating Patients With Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00019474",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-03",
             "excerpt": "1998-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy Plus Interferon Alfa Followed by Filgrastim in Treating Patients With Gastrointestinal Tract Cancer"
           },
           {
             "nct_id": "NCT00023972",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-07",
             "excerpt": "2001-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine With or Without Exatecan Mesylate in Treating Patients With Locally Advanced or Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00027638",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-03",
             "excerpt": "2001-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Thalidomide in Treating Patients With Metastatic Neuroendocrine Tumors"
           },
           {
             "nct_id": "NCT00033241",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-07-23",
             "excerpt": "2001-07-23",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Erlotinib Combined With Gemcitabine in Treating Patients With Newly Diagnosed Locally Advanced or Metastatic Pancreatic Cancer or Other Solid Tumors"
           },
           {
             "nct_id": "NCT00040183",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-11-29",
             "excerpt": "2001-11-29",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "OSI-774 (Tarceva) Plus Gemcitabine in Patients With Locally Advanced, Unresectable or Metastatic Pancreatic Cancer."
           },
           {
             "nct_id": "NCT00041639",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-01",
             "excerpt": "2000-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Safety Study of 90Y-hMN14 to Treat Pancreatic Cancer"
           }
         ],
         "citations_truncated": true,
@@ -770,140 +850,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1995-02",
             "excerpt": "1995-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Phase I Trial of Gemcitabine and Radiation in Locally Advanced Unresectable Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00002773",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1996-05",
             "excerpt": "1996-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vaccine Therapy, Chemotherapy, and GM-CSF in Treating Patients With Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00002947",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1996-10",
             "excerpt": "1996-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Indium In 111 Pentetreotide in Treating Patients With Refractory Cancer"
           },
           {
             "nct_id": "NCT00003018",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-09",
             "excerpt": "1997-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "S9700 Combination Chemotherapy in Treating Patients With Stage II or Stage III Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003025",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-03",
             "excerpt": "1997-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vaccine Therapy in Treating Patients With Stage I or Stage II Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003046",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-08",
             "excerpt": "1997-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Interleukin-12 in Treating Patients With Cancer in the Abdomen"
           },
           {
             "nct_id": "NCT00003125",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-01",
             "excerpt": "1998-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Vaccine Therapy, Interleukin-2, and Sargramostim in Treating Patients With Advanced Tumors"
           },
           {
             "nct_id": "NCT00003157",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-02",
             "excerpt": "1998-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiation Therapy and Chemotherapy in Treating Patients With Cancer of the Pancreas or Stomach"
           },
           {
             "nct_id": "NCT00003427",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-04",
             "excerpt": "1998-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Oxaliplatin Plus Irinotecan in Treating Patients With Metastatic Gastrointestinal Cancer"
           },
           {
             "nct_id": "NCT00003434",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-06",
             "excerpt": "1998-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Biological Therapy in Stage I, Stage II, or Stage III Surgically Resected Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003531",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1996-04-10",
             "excerpt": "1996-04-10",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Antineoplaston Therapy in Treating Patients With Stage IV Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003546",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-09",
             "excerpt": "1998-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine Plus Radiation Therapy in Treating Patients With Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003591",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-11",
             "excerpt": "1998-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiation Therapy Plus Paclitaxel in Treating Patients With Nonmetastatic, Unresectable Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003851",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-03",
             "excerpt": "1999-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine Compared With Pancreatic Enzyme Therapy Plus Specialized Diet (Gonzalez Regimen) in Treating Patients Who Have Stage II, Stage III, or Stage IV Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003867",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-03",
             "excerpt": "1999-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Irinotecan and Capecitabine in Treating Patients With Solid Tumors"
           },
           {
             "nct_id": "NCT00003951",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-06",
             "excerpt": "1999-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "DX-8951f in Treating Patients With Metastatic Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00004003",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-04",
             "excerpt": "1999-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy in Treating Patients With Stage III or Stage IV Pancreatic Cancer That Cannot Be Removed by Surgery"
           },
           {
             "nct_id": "NCT00004095",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-08",
             "excerpt": "1999-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Irinotecan Plus Gemcitabine in Treating Patients With Unresectable or Metastatic Solid Tumors"
           },
           {
             "nct_id": "NCT00004604",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-02",
             "excerpt": "1997-02",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Biological Therapy in Treating Patients With Metastatic Cancer"
           },
           {
             "nct_id": "NCT00005648",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-11",
             "excerpt": "1999-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine With or Without Tipifarnib (R115777) in Treating Patients With Advanced Pancreatic Cancer"
           }
         ],
         "citations_truncated": true,
@@ -948,140 +1048,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1978-09",
             "excerpt": "1978-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy in Patients With Zollinger-Ellison Syndrome and Tumors of the Pancreas"
           },
           {
             "nct_id": "NCT00001191",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1983-02-03",
             "excerpt": "1983-02-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "The Use of Oral Omeprazole and Intravenous Pantoprazole in Patients With Hypersecretion of Gastric Acid"
           },
           {
             "nct_id": "NCT00001228",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1988-10-25",
             "excerpt": "1988-10-25",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Interferon and Octreotide to Treat Zollinger-Ellison Syndrome and Advanced Non-B Islet Cell Cancer"
           },
           {
             "nct_id": "NCT00002475",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1991-04",
             "excerpt": "1991-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Cyclophosphamide Plus Vaccine Therapy in Treating Patients With Advanced Cancer"
           },
           {
             "nct_id": "NCT00002689",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1995-09",
             "excerpt": "1995-09",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiation Therapy Plus Chemotherapy in Treating Patients With Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00002854",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1994-12",
             "excerpt": "1994-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
           },
           {
             "nct_id": "NCT00002955",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1995-08",
             "excerpt": "1995-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy in Treating Patients With Advanced Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00003049",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-05",
             "excerpt": "1997-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Surgery Followed by Radiation Therapy and Chemotherapy in Treating Patients With Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00077519",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2004-01",
             "excerpt": "2004-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Tipifarnib and Radiation Therapy in Treating Patients With Unresectable Locally Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00089024",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2004-02-25",
             "excerpt": "2004-02-25",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy, and Radiation Therapy in Treating Patients With Locally Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00161187",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2001-05",
             "excerpt": "2001-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Irradiated Donor Lymphocyte Infusion in Treating Patients With Relapsed or Refractory Hematologic Cancer or Solid Tumor"
           },
           {
             "nct_id": "NCT00227617",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-06-08",
             "excerpt": "2005-06-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy and Bevacizumab in Treating Patients With Advanced Neuroendocrine Tumors"
           },
           {
             "nct_id": "NCT00251355",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-01",
             "excerpt": "1998-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine, 5-Fluorouracil, and Radiation Therapy in the Treatment of Non-Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00253383",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2003-01",
             "excerpt": "2003-01",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Early Intervention vs. Standard Palliative Care in Improving End-of-Life Care in Advanced Cancer Patients"
           },
           {
             "nct_id": "NCT00313560",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-03-16",
             "excerpt": "2006-03-16",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "ChemoRT With Adjuvant Chemo in Pancreatic Cancer (TARCEVA)"
           },
           {
             "nct_id": "NCT00376987",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2003-12",
             "excerpt": "2003-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Zinc Supplements in Lowering Cadmium Levels in Smokers"
           },
           {
             "nct_id": "NCT00389610",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2006-09-11",
             "excerpt": "2006-09-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Adjuvant GVAX Vaccine Therapy in Patients With Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00414570",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-11",
             "excerpt": "2007-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "An Imaging Study of [18]F-fluoro-3'-Deoxy-3'-L-fluorothymidine ([18]F-FLT) in Patients With Locally Advanced or Metastatic Pancreatic Cancer Who Will be Treated With Gemcitabine or Other Nucleoside Analogs"
           },
           {
             "nct_id": "NCT00438256",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2007-12",
             "excerpt": "2007-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Neoadjuvant Accelerated Short Course Radiation Therapy With Proton Beam and Capecitabine for Resectable Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00442533",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2005-08",
             "excerpt": "2005-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Safety and Efficacy Study of In-111 Pentetreotide to Treat Neuroendocrine Tumors"
           }
         ],
         "citations_truncated": true,
@@ -1126,140 +1246,160 @@
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-05",
             "excerpt": "1997-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Fluorouracil With or Without Cisplatin in Treating Patients With Advanced or Metastatic Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00003216",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-07",
             "excerpt": "1998-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Fluorouracil, Gemcitabine, and Radiation Therapy in Treating Patients With Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00003332",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-07",
             "excerpt": "1997-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy Followed by Chemotherapy and Radiation Therapy and/or Surgery in Treating Patients Who Have Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00003439",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-08",
             "excerpt": "1998-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Interleukin-12 in Treating Patients With Refractory Advanced-Stage Ovarian Cancer or Abdominal Cancer"
           },
           {
             "nct_id": "NCT00003514",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": null,
             "excerpt": "",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Antineoplaston Therapy in Treating Patients With Neuroendocrine Tumor That Is Metastatic or Unlikely to Respond to Surgery or Radiation Therapy"
           },
           {
             "nct_id": "NCT00003548",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-08",
             "excerpt": "1998-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Aminocamptothecin in Treating Patients With Advanced Cancer of the Peritoneal Cavity"
           },
           {
             "nct_id": "NCT00003780",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-12",
             "excerpt": "1998-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Chemotherapy Compared to Biological Therapy in Treating Patients With Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00003797",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-03",
             "excerpt": "1999-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Gemcitabine and Monoclonal Antibody Therapy in Treating Patients With Metastatic Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00003798",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-04",
             "excerpt": "2000-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiation Therapy Plus Gadolinium Texaphyrin in Treating Patients With Cancer of the Pancreas That Cannot Be Removed by Surgery"
           },
           {
             "nct_id": "NCT00003810",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-08-11",
             "excerpt": "1999-08-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Combination Chemotherapy in Treating Patients With Locally Advanced or Metastatic Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00004074",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-08",
             "excerpt": "1999-08",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Interleukin-12 and Trastuzumab in Treating Patients With Cancer That Has High Levels of HER2/Neu"
           },
           {
             "nct_id": "NCT00004087",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1997-03",
             "excerpt": "1997-03",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Radiolabeled Monoclonal Antibody Therapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Metastatic or Recurrent Colorectal Cancer or Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00004879",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-04",
             "excerpt": "2000-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Monoclonal Antibody ABX-EGF in Treating Patients With Renal (Kidney), Prostate, Pancreatic, Non-Small Cell Lung, Colon or Rectal, Esophageal, or Gastroesophageal Junction Cancer"
           },
           {
             "nct_id": "NCT00004884",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-07",
             "excerpt": "1999-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Docetaxel and Gemcitabine Compared With Docetaxel and Cisplatin in Treating Patients With Metastatic or Locally Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00005053",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1999-12",
             "excerpt": "1999-12",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Glufosfamide With or Without Hydration in Treating Patients With Advanced Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00005594",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-07",
             "excerpt": "2000-07",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "ISIS 2503 in Treating Patients With Advanced Cancer of the Pancreas"
           },
           {
             "nct_id": "NCT00005842",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-06",
             "excerpt": "2000-06",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Trastuzumab Plus R115777 in Treating Patients With Advanced or Metastatic Cancer"
           },
           {
             "nct_id": "NCT00005843",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-05",
             "excerpt": "2000-05",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "R115777 in Treating Patients Who Have Metastatic Pancreatic Cancer"
           },
           {
             "nct_id": "NCT00005860",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2000-04",
             "excerpt": "2000-04",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Oxaliplatin With Or Without Floxuridine and Leucovorin in Treating Patients With Metastatic Cancer of the Peritoneum"
           },
           {
             "nct_id": "NCT00005869",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "1998-11",
             "excerpt": "1998-11",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Nitrocamptothecin Compared With Gemcitabine in Treating Patients With Unresectable Locally Advanced or Metastatic Pancreatic Cancer"
           }
         ],
         "citations_truncated": true,
@@ -1327,980 +1467,1120 @@
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-11",
       "excerpt": "2007-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Randomized Phase 2 Study of ARQ 197 Versus Gemcitabine in Treatment-Naïve Patients With Unresectable Locally Advanced or Metastatic Pancreatic Adenocarcinoma"
     },
     "NCT00637728": {
       "nct_id": "NCT00637728",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-06",
       "excerpt": "2006-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Treatment of Cancer-anorexia Using Megestrol Acetate Concentrated Suspension in Lung or Pancreatic Cancer Patients"
     },
     "NCT01056601": {
       "nct_id": "NCT01056601",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2010-09",
       "excerpt": "2010-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Panobinostat & Bortezomib in Pancreatic Cancer Progressing on Gemcitabine Therapy"
     },
     "NCT01092689": {
       "nct_id": "NCT01092689",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2012-01",
       "excerpt": "2012-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "The Role of Meat-borne Carcinogens in Pancreatic Cancer"
     },
     "NCT01094600": {
       "nct_id": "NCT01094600",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2012-06",
       "excerpt": "2012-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Comparison of Secretin-enhanced Magnetic Resonance Cholangiopancreatography (S-MRCP) to Endoscopic Pancreatic Function Test (ePFT) in Diagnosing Pancreatic Exocrine Insufficiency"
     },
     "NCT01386502": {
       "nct_id": "NCT01386502",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2011-06-15",
       "excerpt": "2011-06-15",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors"
     },
     "NCT01394159": {
       "nct_id": "NCT01394159",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2011-07",
       "excerpt": "2011-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "22G FNA Needle vs. 22G ProCore Needle"
     },
     "NCT01501903": {
       "nct_id": "NCT01501903",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2011-09",
       "excerpt": "2011-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Standard Versus Fanning Techniques for Endoscopic Ultrasound-Fine Needle Aspiration (EUS-FNA)"
     },
     "NCT01677312": {
       "nct_id": "NCT01677312",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2012-08",
       "excerpt": "2012-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Trial Comparing 19 and 25-gauge EUS-FNA Needles"
     },
     "NCT02027311": {
       "nct_id": "NCT02027311",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-04",
       "excerpt": "2013-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Etomidate vs. Midazolam for Sedation During ERCP"
     },
     "NCT02109445": {
       "nct_id": "NCT02109445",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2014-09-03",
       "excerpt": "2014-09-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study Of PF-03084014 In Combination With Gemcitabine And Nab-Paclitaxel In Patients With Metastatic Pancreatic Adenocarcinoma Not Previously Treated With Anticancer Therapies"
     },
     "NCT02310971": {
       "nct_id": "NCT02310971",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2015-02",
       "excerpt": "2015-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Cvac as Maintenance Treatment Patients With Resected Stage I or Stage II Adenocarcinoma (Cancer) of the Pancreas"
     },
     "NCT02324868": {
       "nct_id": "NCT02324868",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2016-01",
       "excerpt": "2016-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Impact of Availability of Showerpatch for Patients With Intravenous Catheters"
     },
     "NCT02496832": {
       "nct_id": "NCT02496832",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2014-11",
       "excerpt": "2014-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Hypoxia Imaging in Advanced Pancreatic Cancer Patients Being Treated With Gemcitabine and TH-302 or TH-302 Placebo"
     },
     "NCT02779257": {
       "nct_id": "NCT02779257",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2016-04",
       "excerpt": "2016-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Pasireotide Treatment for Neuroendocrine Tumor"
     },
     "NCT03009058": {
       "nct_id": "NCT03009058",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2017-05-31",
       "excerpt": "2017-05-31",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
     },
     "NCT03210948": {
       "nct_id": "NCT03210948",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2019-01-23",
       "excerpt": "2019-01-23",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Conventional Versus Elastography Targeted Endoscopic Ultrasound Fine Needle Aspiration of Solid Pancreatic Lesions"
     },
     "NCT03778879": {
       "nct_id": "NCT03778879",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2019-08-01",
       "excerpt": "2019-08-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Pre-operative Stereotactic Body Radiation Therapy for Pancreatic Adenocarcinoma With or Without CCX872-B"
     },
     "NCT03925428": {
       "nct_id": "NCT03925428",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2020-09-18",
       "excerpt": "2020-09-18",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Testing a New Anti-cancer Drug Combination, Entinostat and GSK525762C, for Advanced and Refractory Solid Tumors and Lymphomas"
     },
     "NCT04037241": {
       "nct_id": "NCT04037241",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2021-11-01",
       "excerpt": "2021-11-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of Anti-CEA CAR-T + Chemotherapy VS Chemotherapy Alone in Patients With CEA+Pancreatic Cancer & Liver Metastases"
     },
     "NCT00005926": {
       "nct_id": "NCT00005926",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-06",
       "excerpt": "2000-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine, Herceptin and Radiation to Treat Cancer of the Pancreas"
     },
     "NCT00325104": {
       "nct_id": "NCT00325104",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-05-09",
       "excerpt": "2006-05-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Cinacalcet to Treat Familial Primary Hyperparathyroidism"
     },
     "NCT00609765": {
       "nct_id": "NCT00609765",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-08",
       "excerpt": "2007-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Avastin, Fluorouracil, Doxorubicin and Streptozocin in Locally Advanced and Metastatic Pancreatic Endocrine Tumors"
     },
     "NCT00621556": {
       "nct_id": "NCT00621556",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2008-02",
       "excerpt": "2008-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Secretin Enhanced MRCP for Evaluation of the Known or Suspected Intraductal Papillary Mucinous Neoplasms of the Pancreas"
     },
     "NCT00625586": {
       "nct_id": "NCT00625586",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2008-04-15",
       "excerpt": "2008-04-15",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Monoclonal Antibody RAV12 and Gemcitabine in Treating Patients With Metastatic Pancreatic Cancer"
     },
     "NCT00657995": {
       "nct_id": "NCT00657995",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-04",
       "excerpt": "2007-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Tight Glycemic Control by Artificial Pancreas"
     },
     "NCT00683358": {
       "nct_id": "NCT00683358",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2008-05",
       "excerpt": "2008-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Human Leukocyte Antigen-A*2402-Restricted Tumor Vessel Specific Peptide Vaccination for Advanced Pancreatic Cancer"
     },
     "NCT01108458": {
       "nct_id": "NCT01108458",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2010-07",
       "excerpt": "2010-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase 2 Study of Pertuzumab and Erlotinib for Refractory Pancreatic Adenocarcinoma"
     },
     "NCT01198821": {
       "nct_id": "NCT01198821",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2010-08",
       "excerpt": "2010-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gem-TABS in Unresectable Pancreatic Carcinoma"
     },
     "NCT01318642": {
       "nct_id": "NCT01318642",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2012-05-31",
       "excerpt": "2012-05-31",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Ganitumab in Locally Advanced Unresectable Adenocarcinoma of the Pancreas"
     },
     "NCT01354795": {
       "nct_id": "NCT01354795",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2010-09",
       "excerpt": "2010-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Prospective Study Comparing Methods of Obtainment of Specimen After EUS-FNA in Patients With Peri-pancreatic Mass"
     },
     "NCT01437007": {
       "nct_id": "NCT01437007",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2011-08-26",
       "excerpt": "2011-08-26",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "TKM 080301 for Primary or Secondary Liver Cancer"
     },
     "NCT01774162": {
       "nct_id": "NCT01774162",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2011-09",
       "excerpt": "2011-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "EUS-guided Fine Needle Biopsy With a New Core Histology Needle Versus Conventional Fine Needle Aspiration"
     },
     "NCT01789073": {
       "nct_id": "NCT01789073",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-02",
       "excerpt": "2013-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Preoperative Oral Immunonutrition for Patients With Pancreatic Cancer Undergoing Elective Surgery - Effect on Complications and Length of Hospital Stay"
     },
     "NCT01809028": {
       "nct_id": "NCT01809028",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-02",
       "excerpt": "2013-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Evaluating the Number of Passes Required for Diagnostic Cell Block During EUS-FNA of Solid Pancreatic Mass Lesions"
     },
     "NCT01815606": {
       "nct_id": "NCT01815606",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-02",
       "excerpt": "2013-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Trial Comparing 19 and 25G Needles for Fine Needle Aspiration (FNA) of Solid Pancreatic Mass Lesions Greater Than 35mm"
     },
     "NCT01819961": {
       "nct_id": "NCT01819961",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-04",
       "excerpt": "2013-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Parenteral Fish Oil in Major Laparoscopic Abdominal Surgery"
     },
     "NCT01911416": {
       "nct_id": "NCT01911416",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2014-01",
       "excerpt": "2014-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Biomarker Study to Identify Predictive Signatures of Response to LDE225 (Hedgehog Inhibitor) In Patients With Resectable Pancreatic Cancer"
     },
     "NCT01929460": {
       "nct_id": "NCT01929460",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2014-01",
       "excerpt": "2014-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Pilot Study on the Use of Prophylactic Antibiotics for EUS-guided Pancreatic Cyst Aspiration"
     },
     "NCT01929941": {
       "nct_id": "NCT01929941",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2013-09",
       "excerpt": "2013-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "An Open-Label Study of a Novel JAK-inhibitor, INCB047986, Given in Patients With Advanced Malignancies"
     },
     "NCT00001805": {
       "nct_id": "NCT00001805",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-03",
       "excerpt": "1999-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase II Clinical Trial of Suppression of Human Antimouse Antibody and Human Antitoxin Response to Immunotoxin LMB-1 by Rituximab"
     },
     "NCT00003760": {
       "nct_id": "NCT00003760",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-11",
       "excerpt": "1998-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Irofulvene in Treating Patients With Stage III or Stage IV Pancreatic Cancer"
     },
     "NCT00004861": {
       "nct_id": "NCT00004861",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-10",
       "excerpt": "1999-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine With or Without CI-994 in Treating Patients With Advanced Pancreatic Cancer"
     },
     "NCT00006387": {
       "nct_id": "NCT00006387",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-10",
       "excerpt": "2000-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Therapy Plus QS21 in Treating Patients With Advanced Pancreatic or Colorectal Cancer"
     },
     "NCT00014651": {
       "nct_id": "NCT00014651",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-03",
       "excerpt": "2001-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vapreotide in Treating Patients Undergoing Elective Pancreatic Resection"
     },
     "NCT00020345": {
       "nct_id": "NCT00020345",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-09",
       "excerpt": "2000-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy and Radiation Therapy Plus Surgery in Treating Patients With Advanced Cancer of the Pancreas"
     },
     "NCT00025168": {
       "nct_id": "NCT00025168",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-11-01",
       "excerpt": "2001-11-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy Plus Radiation Therapy in Treating Patients With Locally Advanced Unresectable Pancreatic Cancer"
     },
     "NCT00033384": {
       "nct_id": "NCT00033384",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2002-02",
       "excerpt": "2002-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "CI-1040 in Treating Patients With Advanced Breast, Colon, Pancreatic, or Non-Small Cell Lung Cancer"
     },
     "NCT00034281": {
       "nct_id": "NCT00034281",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2002-06",
       "excerpt": "2002-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety and Tolerability Study of TAK-165 in Subjects With Tumors Expressing HER2"
     },
     "NCT00034827": {
       "nct_id": "NCT00034827",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2002-01",
       "excerpt": "2002-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Multicenter Phase 2 Study of CI-1040 in Patients With Advanced Nonsmall-Cell Lung, Breast, Colon and Pancreatic Cancer"
     },
     "NCT00040833": {
       "nct_id": "NCT00040833",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2002-02",
       "excerpt": "2002-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Acupuncture and Acupressure in Treating Patients With Moderate or Severe Pain Related to Stage III or Stage IV Pancreatic Cancer"
     },
     "NCT00041808": {
       "nct_id": "NCT00041808",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-07",
       "excerpt": "2001-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Magnetic-Targeted Doxorubicin in Treating Patients With Cancer Metastatic to the Liver"
     },
     "NCT00068432": {
       "nct_id": "NCT00068432",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2003-12",
       "excerpt": "2003-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine and Celecoxib in Treating Patients With Metastatic Pancreatic Cancer"
     },
     "NCT00159471": {
       "nct_id": "NCT00159471",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-02",
       "excerpt": "2005-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Genes as Predictors of Response to Gemcitabine, Docetaxel, and Capecitabine (GTX) in Metastatic or Unresectable Pancreatic Cancer."
     },
     "NCT00179751": {
       "nct_id": "NCT00179751",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-04",
       "excerpt": "2005-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase I/II Study of Lenalidomide in Combination With Gemcitabine in Patients With Untreated Advanced Carcinoma of the Pancreas"
     },
     "NCT00222469": {
       "nct_id": "NCT00222469",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-08",
       "excerpt": "2005-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy for 1st Line Treatment of Advanced or Metastatic Pancreatic Cancer"
     },
     "NCT00255827": {
       "nct_id": "NCT00255827",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-11",
       "excerpt": "2005-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Treatment for Surgically Resected Pancreatic Cancer"
     },
     "NCT00338026": {
       "nct_id": "NCT00338026",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-02",
       "excerpt": "2006-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase I Study of ECO-4601 in Patients With Advanced Cancer"
     },
     "NCT00344851": {
       "nct_id": "NCT00344851",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-06",
       "excerpt": "2006-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Exenatide and Metformin Therapy in Overweight Women With PCOS"
     },
     "NCT00364364": {
       "nct_id": "NCT00364364",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-05",
       "excerpt": "2007-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety Study to Determine the Appropriate Dose of Antibody Against Tumor Cells to Best Target Patients With Pancreatic Cancer."
     },
     "NCT00003085": {
       "nct_id": "NCT00003085",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1996-09",
       "excerpt": "1996-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer"
     },
     "NCT00003411": {
       "nct_id": "NCT00003411",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-11",
       "excerpt": "1998-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiation Therapy in Treating Patients With Bile Duct, Gallbladder, or Pancreatic Cancer"
     },
     "NCT00003426": {
       "nct_id": "NCT00003426",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-04",
       "excerpt": "1998-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine Plus Radiation Therapy in Treating Patients With Pancreatic Cancer"
     },
     "NCT00003677": {
       "nct_id": "NCT00003677",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-02-01",
       "excerpt": "1999-02-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Dolastatin 10 in Treating Patients With Metastatic Pancreatic Cancer"
     },
     "NCT00003769": {
       "nct_id": "NCT00003769",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-02",
       "excerpt": "1999-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Perillyl Alcohol Followed by Surgery in Treating Patients With Stage II or Stage III Pancreatic Cancer"
     },
     "NCT00003923": {
       "nct_id": "NCT00003923",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-03",
       "excerpt": "1999-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Photodynamic Therapy in Treating Patients With Cancer of the Bile Duct, Gallbladder, or Pancreas"
     },
     "NCT00004178": {
       "nct_id": "NCT00004178",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-04",
       "excerpt": "1998-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gene Therapy in Treating Patients With Cancer"
     },
     "NCT00004190": {
       "nct_id": "NCT00004190",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-10",
       "excerpt": "1999-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine Plus Oxaliplatin in Treating Patients With Refractory Locally Advanced or Metastatic Pancreatic Cancer"
     },
     "NCT00004895": {
       "nct_id": "NCT00004895",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-10",
       "excerpt": "1999-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Octreotide as Palliative Therapy for Cancer-Related Bowel Obstruction That Cannot Be Removed by Surgery"
     },
     "NCT00004910": {
       "nct_id": "NCT00004910",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-01",
       "excerpt": "2000-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Endoscopic Placement of Metal Stents in Treating Patients With Cancer- Related Duodenal Obstruction"
     },
     "NCT00005591": {
       "nct_id": "NCT00005591",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-10",
       "excerpt": "1999-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Cetuximab Plus Gemcitabine in Treating Patients With Locally Advanced, Metastatic, or Recurrent Cancer of the Pancreas"
     },
     "NCT00005858": {
       "nct_id": "NCT00005858",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-04",
       "excerpt": "2000-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "LMB-9 Immunotoxin in Treating Patients With Advanced Colon, Breast, Non-small Cell Lung, Bladder, Pancreatic, or Ovarian Cancer"
     },
     "NCT00006467": {
       "nct_id": "NCT00006467",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-02",
       "excerpt": "2001-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine and ISIS 2503 in Treating Patients With Advanced or Metastatic Cancer of the Pancreas"
     },
     "NCT00010166": {
       "nct_id": "NCT00010166",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-12-01",
       "excerpt": "2000-12-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine and Radiation Therapy in Treating Patients With Cancer of the Pancreas"
     },
     "NCT00019474": {
       "nct_id": "NCT00019474",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-03",
       "excerpt": "1998-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy Plus Interferon Alfa Followed by Filgrastim in Treating Patients With Gastrointestinal Tract Cancer"
     },
     "NCT00023972": {
       "nct_id": "NCT00023972",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-07",
       "excerpt": "2001-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine With or Without Exatecan Mesylate in Treating Patients With Locally Advanced or Metastatic Pancreatic Cancer"
     },
     "NCT00027638": {
       "nct_id": "NCT00027638",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-03",
       "excerpt": "2001-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Thalidomide in Treating Patients With Metastatic Neuroendocrine Tumors"
     },
     "NCT00033241": {
       "nct_id": "NCT00033241",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-07-23",
       "excerpt": "2001-07-23",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Erlotinib Combined With Gemcitabine in Treating Patients With Newly Diagnosed Locally Advanced or Metastatic Pancreatic Cancer or Other Solid Tumors"
     },
     "NCT00040183": {
       "nct_id": "NCT00040183",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-11-29",
       "excerpt": "2001-11-29",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "OSI-774 (Tarceva) Plus Gemcitabine in Patients With Locally Advanced, Unresectable or Metastatic Pancreatic Cancer."
     },
     "NCT00041639": {
       "nct_id": "NCT00041639",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-01",
       "excerpt": "2000-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety Study of 90Y-hMN14 to Treat Pancreatic Cancer"
     },
     "NCT00001431": {
       "nct_id": "NCT00001431",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1995-02",
       "excerpt": "1995-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase I Trial of Gemcitabine and Radiation in Locally Advanced Unresectable Cancer of the Pancreas"
     },
     "NCT00002773": {
       "nct_id": "NCT00002773",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1996-05",
       "excerpt": "1996-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Therapy, Chemotherapy, and GM-CSF in Treating Patients With Advanced Pancreatic Cancer"
     },
     "NCT00002947": {
       "nct_id": "NCT00002947",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1996-10",
       "excerpt": "1996-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Indium In 111 Pentetreotide in Treating Patients With Refractory Cancer"
     },
     "NCT00003018": {
       "nct_id": "NCT00003018",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-09",
       "excerpt": "1997-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "S9700 Combination Chemotherapy in Treating Patients With Stage II or Stage III Pancreatic Cancer"
     },
     "NCT00003025": {
       "nct_id": "NCT00003025",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-03",
       "excerpt": "1997-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Therapy in Treating Patients With Stage I or Stage II Pancreatic Cancer"
     },
     "NCT00003046": {
       "nct_id": "NCT00003046",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-08",
       "excerpt": "1997-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Interleukin-12 in Treating Patients With Cancer in the Abdomen"
     },
     "NCT00003125": {
       "nct_id": "NCT00003125",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-01",
       "excerpt": "1998-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Therapy, Interleukin-2, and Sargramostim in Treating Patients With Advanced Tumors"
     },
     "NCT00003157": {
       "nct_id": "NCT00003157",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-02",
       "excerpt": "1998-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiation Therapy and Chemotherapy in Treating Patients With Cancer of the Pancreas or Stomach"
     },
     "NCT00003427": {
       "nct_id": "NCT00003427",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-04",
       "excerpt": "1998-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Oxaliplatin Plus Irinotecan in Treating Patients With Metastatic Gastrointestinal Cancer"
     },
     "NCT00003434": {
       "nct_id": "NCT00003434",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-06",
       "excerpt": "1998-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Biological Therapy in Stage I, Stage II, or Stage III Surgically Resected Pancreatic Cancer"
     },
     "NCT00003531": {
       "nct_id": "NCT00003531",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1996-04-10",
       "excerpt": "1996-04-10",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Antineoplaston Therapy in Treating Patients With Stage IV Pancreatic Cancer"
     },
     "NCT00003546": {
       "nct_id": "NCT00003546",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-09",
       "excerpt": "1998-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine Plus Radiation Therapy in Treating Patients With Pancreatic Cancer"
     },
     "NCT00003591": {
       "nct_id": "NCT00003591",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-11",
       "excerpt": "1998-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiation Therapy Plus Paclitaxel in Treating Patients With Nonmetastatic, Unresectable Pancreatic Cancer"
     },
     "NCT00003851": {
       "nct_id": "NCT00003851",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-03",
       "excerpt": "1999-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine Compared With Pancreatic Enzyme Therapy Plus Specialized Diet (Gonzalez Regimen) in Treating Patients Who Have Stage II, Stage III, or Stage IV Pancreatic Cancer"
     },
     "NCT00003867": {
       "nct_id": "NCT00003867",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-03",
       "excerpt": "1999-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Irinotecan and Capecitabine in Treating Patients With Solid Tumors"
     },
     "NCT00003951": {
       "nct_id": "NCT00003951",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-06",
       "excerpt": "1999-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "DX-8951f in Treating Patients With Metastatic Cancer of the Pancreas"
     },
     "NCT00004003": {
       "nct_id": "NCT00004003",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-04",
       "excerpt": "1999-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy in Treating Patients With Stage III or Stage IV Pancreatic Cancer That Cannot Be Removed by Surgery"
     },
     "NCT00004095": {
       "nct_id": "NCT00004095",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-08",
       "excerpt": "1999-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Irinotecan Plus Gemcitabine in Treating Patients With Unresectable or Metastatic Solid Tumors"
     },
     "NCT00004604": {
       "nct_id": "NCT00004604",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-02",
       "excerpt": "1997-02",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Biological Therapy in Treating Patients With Metastatic Cancer"
     },
     "NCT00005648": {
       "nct_id": "NCT00005648",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-11",
       "excerpt": "1999-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine With or Without Tipifarnib (R115777) in Treating Patients With Advanced Pancreatic Cancer"
     },
     "NCT00001165": {
       "nct_id": "NCT00001165",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1978-09",
       "excerpt": "1978-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy in Patients With Zollinger-Ellison Syndrome and Tumors of the Pancreas"
     },
     "NCT00001191": {
       "nct_id": "NCT00001191",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1983-02-03",
       "excerpt": "1983-02-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "The Use of Oral Omeprazole and Intravenous Pantoprazole in Patients With Hypersecretion of Gastric Acid"
     },
     "NCT00001228": {
       "nct_id": "NCT00001228",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1988-10-25",
       "excerpt": "1988-10-25",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Interferon and Octreotide to Treat Zollinger-Ellison Syndrome and Advanced Non-B Islet Cell Cancer"
     },
     "NCT00002475": {
       "nct_id": "NCT00002475",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1991-04",
       "excerpt": "1991-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Cyclophosphamide Plus Vaccine Therapy in Treating Patients With Advanced Cancer"
     },
     "NCT00002689": {
       "nct_id": "NCT00002689",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1995-09",
       "excerpt": "1995-09",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiation Therapy Plus Chemotherapy in Treating Patients With Pancreatic Cancer"
     },
     "NCT00002854": {
       "nct_id": "NCT00002854",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1994-12",
       "excerpt": "1994-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
     },
     "NCT00002955": {
       "nct_id": "NCT00002955",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1995-08",
       "excerpt": "1995-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy in Treating Patients With Advanced Cancer of the Pancreas"
     },
     "NCT00003049": {
       "nct_id": "NCT00003049",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-05",
       "excerpt": "1997-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Surgery Followed by Radiation Therapy and Chemotherapy in Treating Patients With Cancer of the Pancreas"
     },
     "NCT00077519": {
       "nct_id": "NCT00077519",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2004-01",
       "excerpt": "2004-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Tipifarnib and Radiation Therapy in Treating Patients With Unresectable Locally Advanced Pancreatic Cancer"
     },
     "NCT00089024": {
       "nct_id": "NCT00089024",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2004-02-25",
       "excerpt": "2004-02-25",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy, and Radiation Therapy in Treating Patients With Locally Advanced Pancreatic Cancer"
     },
     "NCT00161187": {
       "nct_id": "NCT00161187",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2001-05",
       "excerpt": "2001-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Irradiated Donor Lymphocyte Infusion in Treating Patients With Relapsed or Refractory Hematologic Cancer or Solid Tumor"
     },
     "NCT00227617": {
       "nct_id": "NCT00227617",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-06-08",
       "excerpt": "2005-06-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy and Bevacizumab in Treating Patients With Advanced Neuroendocrine Tumors"
     },
     "NCT00251355": {
       "nct_id": "NCT00251355",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-01",
       "excerpt": "1998-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine, 5-Fluorouracil, and Radiation Therapy in the Treatment of Non-Metastatic Pancreatic Cancer"
     },
     "NCT00253383": {
       "nct_id": "NCT00253383",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2003-01",
       "excerpt": "2003-01",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Early Intervention vs. Standard Palliative Care in Improving End-of-Life Care in Advanced Cancer Patients"
     },
     "NCT00313560": {
       "nct_id": "NCT00313560",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-03-16",
       "excerpt": "2006-03-16",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "ChemoRT With Adjuvant Chemo in Pancreatic Cancer (TARCEVA)"
     },
     "NCT00376987": {
       "nct_id": "NCT00376987",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2003-12",
       "excerpt": "2003-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Zinc Supplements in Lowering Cadmium Levels in Smokers"
     },
     "NCT00389610": {
       "nct_id": "NCT00389610",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2006-09-11",
       "excerpt": "2006-09-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Adjuvant GVAX Vaccine Therapy in Patients With Pancreatic Cancer"
     },
     "NCT00414570": {
       "nct_id": "NCT00414570",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-11",
       "excerpt": "2007-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "An Imaging Study of [18]F-fluoro-3'-Deoxy-3'-L-fluorothymidine ([18]F-FLT) in Patients With Locally Advanced or Metastatic Pancreatic Cancer Who Will be Treated With Gemcitabine or Other Nucleoside Analogs"
     },
     "NCT00438256": {
       "nct_id": "NCT00438256",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2007-12",
       "excerpt": "2007-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Neoadjuvant Accelerated Short Course Radiation Therapy With Proton Beam and Capecitabine for Resectable Pancreatic Cancer"
     },
     "NCT00442533": {
       "nct_id": "NCT00442533",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2005-08",
       "excerpt": "2005-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety and Efficacy Study of In-111 Pentetreotide to Treat Neuroendocrine Tumors"
     },
     "NCT00003029": {
       "nct_id": "NCT00003029",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-05",
       "excerpt": "1997-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Fluorouracil With or Without Cisplatin in Treating Patients With Advanced or Metastatic Cancer of the Pancreas"
     },
     "NCT00003216": {
       "nct_id": "NCT00003216",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-07",
       "excerpt": "1998-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Fluorouracil, Gemcitabine, and Radiation Therapy in Treating Patients With Cancer of the Pancreas"
     },
     "NCT00003332": {
       "nct_id": "NCT00003332",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-07",
       "excerpt": "1997-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy Followed by Chemotherapy and Radiation Therapy and/or Surgery in Treating Patients Who Have Pancreatic Cancer"
     },
     "NCT00003439": {
       "nct_id": "NCT00003439",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-08",
       "excerpt": "1998-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Interleukin-12 in Treating Patients With Refractory Advanced-Stage Ovarian Cancer or Abdominal Cancer"
     },
     "NCT00003514": {
       "nct_id": "NCT00003514",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": null,
       "excerpt": "",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Antineoplaston Therapy in Treating Patients With Neuroendocrine Tumor That Is Metastatic or Unlikely to Respond to Surgery or Radiation Therapy"
     },
     "NCT00003548": {
       "nct_id": "NCT00003548",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-08",
       "excerpt": "1998-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Aminocamptothecin in Treating Patients With Advanced Cancer of the Peritoneal Cavity"
     },
     "NCT00003780": {
       "nct_id": "NCT00003780",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-12",
       "excerpt": "1998-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Chemotherapy Compared to Biological Therapy in Treating Patients With Cancer of the Pancreas"
     },
     "NCT00003797": {
       "nct_id": "NCT00003797",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-03",
       "excerpt": "1999-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Gemcitabine and Monoclonal Antibody Therapy in Treating Patients With Metastatic Cancer of the Pancreas"
     },
     "NCT00003798": {
       "nct_id": "NCT00003798",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-04",
       "excerpt": "2000-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiation Therapy Plus Gadolinium Texaphyrin in Treating Patients With Cancer of the Pancreas That Cannot Be Removed by Surgery"
     },
     "NCT00003810": {
       "nct_id": "NCT00003810",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-08-11",
       "excerpt": "1999-08-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy in Treating Patients With Locally Advanced or Metastatic Cancer of the Pancreas"
     },
     "NCT00004074": {
       "nct_id": "NCT00004074",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-08",
       "excerpt": "1999-08",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Interleukin-12 and Trastuzumab in Treating Patients With Cancer That Has High Levels of HER2/Neu"
     },
     "NCT00004087": {
       "nct_id": "NCT00004087",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1997-03",
       "excerpt": "1997-03",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Radiolabeled Monoclonal Antibody Therapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Metastatic or Recurrent Colorectal Cancer or Pancreatic Cancer"
     },
     "NCT00004879": {
       "nct_id": "NCT00004879",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-04",
       "excerpt": "2000-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Monoclonal Antibody ABX-EGF in Treating Patients With Renal (Kidney), Prostate, Pancreatic, Non-Small Cell Lung, Colon or Rectal, Esophageal, or Gastroesophageal Junction Cancer"
     },
     "NCT00004884": {
       "nct_id": "NCT00004884",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-07",
       "excerpt": "1999-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Docetaxel and Gemcitabine Compared With Docetaxel and Cisplatin in Treating Patients With Metastatic or Locally Advanced Pancreatic Cancer"
     },
     "NCT00005053": {
       "nct_id": "NCT00005053",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1999-12",
       "excerpt": "1999-12",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Glufosfamide With or Without Hydration in Treating Patients With Advanced Pancreatic Cancer"
     },
     "NCT00005594": {
       "nct_id": "NCT00005594",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-07",
       "excerpt": "2000-07",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "ISIS 2503 in Treating Patients With Advanced Cancer of the Pancreas"
     },
     "NCT00005842": {
       "nct_id": "NCT00005842",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-06",
       "excerpt": "2000-06",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Trastuzumab Plus R115777 in Treating Patients With Advanced or Metastatic Cancer"
     },
     "NCT00005843": {
       "nct_id": "NCT00005843",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-05",
       "excerpt": "2000-05",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "R115777 in Treating Patients Who Have Metastatic Pancreatic Cancer"
     },
     "NCT00005860": {
       "nct_id": "NCT00005860",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2000-04",
       "excerpt": "2000-04",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Oxaliplatin With Or Without Floxuridine and Leucovorin in Treating Patients With Metastatic Cancer of the Peritoneum"
     },
     "NCT00005869": {
       "nct_id": "NCT00005869",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "1998-11",
       "excerpt": "1998-11",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Nitrocamptothecin Compared With Gemcitabine in Treating Patients With Unresectable Locally Advanced or Metastatic Pancreatic Cancer"
     }
   },
   "meta": {
@@ -2324,14 +2604,13 @@
         "fields": "NCTId|StartDate|CompletionDate"
       }
     },
-    "retrieved_at": "2026-07-15T22:32:14.369933+00:00",
+    "retrieved_at": "2026-07-15T23:36:15.371224+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [
       "Duration measured start→completion at month precision (day ignored; a year-only date is treated as January). Derived from the two dated status fields, not the unverified enrollment field (R-16).",
       "141 trial(s) are undated or have an implausible negative duration (completion before start) and are grouped in an 'Unknown (undated)' bucket, kept for reconciliation and excluded from the duration bins.",
-      "User asks for a distribution of study durations scoped to pancreatic cancer interventional trials.",
-      "The chart type is appropriate, but the response does not faithfully answer the question as phrased: it shows a duration distribution only for bins with a large 'Unknown (undated)' bucket and the title/encoding are generic rather than explicitly reflecting that this is a duration histogram for the requested interventional pancreatic cancer trials."
+      "Interpret study durations as a distribution field for interventional trials scoped to pancreatic cancer."
     ]
   }
 }

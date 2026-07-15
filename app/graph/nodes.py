@@ -40,6 +40,7 @@ from app import config
 from app.api.schemas import Citation
 from app.cache import RESPONSE_CACHE, plan_cache_key
 from app.ctgov.aggregate import _nct_id
+from app.ctgov.citations import brief_title
 from app.ctgov.client import CTGovClient
 from app.ctgov.params import build_search_params
 from app.ctgov.tools import (
@@ -800,14 +801,14 @@ def _execute_single_value(plan: Plan, query: dict, filters: dict, retrieved_at: 
     citations: list[Citation] = []
     record_index: dict[str, dict] = {}
     if total > 0:
-        records, _ = CTGovClient().iter_studies(search_params, fields="NCTId", max_pages=1)
+        records, _ = CTGovClient().iter_studies(search_params, fields="NCTId|BriefTitle", max_pages=1)
         for record in sorted(records, key=lambda r: _nct_id(r) or "")[:20]:
             nct = _nct_id(record)
             if not isinstance(nct, str) or not nct:
                 continue
             record_index[nct] = record
             citations.append(
-                Citation(nct_id=nct, field_path=_NCTID_PATH, value=nct, excerpt=nct)
+                Citation(nct_id=nct, field_path=_NCTID_PATH, value=nct, excerpt=nct, title=brief_title(record))
             )
 
     kind = "answer" if plan.answer_kind == "answer" else "visualization"

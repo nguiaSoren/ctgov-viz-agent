@@ -100,6 +100,12 @@ class Citation(BaseModel):
     # For a composite bucket: every verified member literal (each a verbatim element at
     # field_path), in token order. None for single-value buckets (back-compat).
     excerpt_tokens: list[str] | None = None
+    # A human-readable descriptive excerpt from the SAME record — the trial's brief title
+    # (protocolSection.identificationModule.briefTitle), string-extracted, never LLM-authored.
+    # It complements `excerpt` (the exact field VALUE that decided membership — the rigorous,
+    # verifiable proof) with the readable "text excerpt that supports the datum" (assignment §5),
+    # so each citation is deep in both senses. None only when the fetch didn't project the title.
+    title: str | None = None
 
 
 class Datum(BaseModel):

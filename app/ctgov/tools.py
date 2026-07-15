@@ -24,7 +24,7 @@ from collections.abc import Callable
 from app import config
 from app.api.schemas import Citation
 from app.ctgov.aggregate import AggregationCore, _nct_id
-from app.ctgov.citations import build_bucket_citations
+from app.ctgov.citations import brief_title, build_bucket_citations
 from app.ctgov.client import CTGovClient
 from app.ctgov.compare import union_series
 from app.ctgov.enums import (
@@ -231,7 +231,7 @@ def _explode_citations(
         record_values = [value for value, _ in spec.key_fn(record) if value != UNKNOWN_VALUE]
         if bucket_value == UNKNOWN_VALUE:
             # Genuine absence: no value at the path -> empty excerpt against [].
-            citations.append(Citation(nct_id=nct, field_path=spec.field_path, value=[], excerpt=""))
+            citations.append(Citation(nct_id=nct, field_path=spec.field_path, value=[], excerpt="", title=brief_title(record)))
             continue
         if member_set is not None:
             # Other fold: quote THIS record's own folded value.
@@ -244,6 +244,7 @@ def _explode_citations(
                 field_path=spec.field_path,
                 value=record_values,
                 excerpt=excerpt if excerpt is not None else "",
+                title=brief_title(record),
             )
         )
     return citations, contributing, contributing > 20
@@ -408,7 +409,7 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
             # it would empty the value and fail the citation against its own real record.
             real_values = [value for value, _ in spec.key_fn(record)]
             citations.append(
-                Citation(nct_id=nct, field_path=spec.field_path, value=real_values, excerpt=token)
+                Citation(nct_id=nct, field_path=spec.field_path, value=real_values, excerpt=token, title=brief_title(record))
             )
         buckets.append({
             "value": token,
@@ -470,7 +471,7 @@ def timeseries(query: dict, filters: dict, date_field: str, grain: str = "year")
     citations (a time bucket is a first-class citable datum).
     """
     date_path = FIELD_ALIASES[date_field]
-    projection = f"NCTId|{DATE_PROJECTION[date_field]}"
+    projection = f"NCTId|{DATE_PROJECTION[date_field]}|BriefTitle"
     core = AggregationCore(CTGovClient())
     search_params = build_search_params(query, filters)
     group = core.page_and_group(
@@ -566,13 +567,13 @@ def compare(series: list[dict], field: str) -> dict:
 
 # The projection the network pager requests: sponsor name + each intervention's
 # type/name/otherNames (for the DRUG filter, synonym merge, and placebo drop).
-NETWORK_FIELDS = "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName"
+NETWORK_FIELDS = "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName|BriefTitle"
 
 # The two verified date fields the study-duration histogram needs (R-16) — no
 # dependency on the unverified enrollment field (G-28).
 _DURATION_START_PATH = FIELD_ALIASES["startDate"]
 _DURATION_END_PATH = FIELD_ALIASES["completionDate"]
-_DURATION_FIELDS = "NCTId|StartDate|CompletionDate"
+_DURATION_FIELDS = "NCTId|StartDate|CompletionDate|BriefTitle"
 
 
 def study_duration_histogram(query: dict, filters: dict) -> dict:

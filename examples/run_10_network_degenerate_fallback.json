@@ -44,7 +44,8 @@
               "Lonafarnib"
             ],
             "excerpt": "Lonafarnib",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Phase II Trial of Lonafarnib (a Farnesyltransferase Inhibitor) for Progeria"
           },
           {
             "nct_id": "NCT00879034",
@@ -55,7 +56,8 @@
               "Pravastatin"
             ],
             "excerpt": "Lonafarnib",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
           },
           {
             "nct_id": "NCT03895528",
@@ -64,7 +66,8 @@
               "Lonafarnib"
             ],
             "excerpt": "Lonafarnib",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Lonafarnib for Patients With Hutchinson-Gilford Progeria Syndrome or Progeroid Laminopathy"
           },
           {
             "nct_id": "NCT06775041",
@@ -74,7 +77,8 @@
               "Lonafarnib"
             ],
             "excerpt": "Lonafarnib",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study to Determine Optimal Dose and Evaluate Safety, Tolerability, and Pharmacokinetics of Progerinin in Patients With Hutchinson-Gilford Progeria Syndrome (HGPS)"
           }
         ],
         "citations_truncated": false,
@@ -103,7 +107,8 @@
               "Progerinin"
             ],
             "excerpt": "Progerinin",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Phase I Study of Progerinin in Healthy Volunteers"
           },
           {
             "nct_id": "NCT06775041",
@@ -113,7 +118,8 @@
               "Lonafarnib"
             ],
             "excerpt": "Progerinin",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study to Determine Optimal Dose and Evaluate Safety, Tolerability, and Pharmacokinetics of Progerinin in Patients With Hutchinson-Gilford Progeria Syndrome (HGPS)"
           }
         ],
         "citations_truncated": false,
@@ -141,7 +147,8 @@
               "Everolimus and lonafarnib"
             ],
             "excerpt": "Everolimus and lonafarnib",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Phase I/II Trial of Everolimus in Combination With Lonafarnib in Progeria"
           }
         ],
         "citations_truncated": false,
@@ -169,7 +176,8 @@
               "Lonafarnib, Zoledronic Acid, and Pravastatin"
             ],
             "excerpt": "Lonafarnib, Zoledronic Acid, and Pravastatin",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
           }
         ],
         "citations_truncated": false,
@@ -199,7 +207,8 @@
               "Pravastatin"
             ],
             "excerpt": "Pravastatin",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
           }
         ],
         "citations_truncated": false,
@@ -227,7 +236,8 @@
               "Umbilical Cord Blood Unit"
             ],
             "excerpt": "Umbilical Cord Blood Unit",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Umbilical Cord Blood Transfusion in Progeria Syndrome"
           }
         ],
         "citations_truncated": false,
@@ -257,7 +267,8 @@
               "Pravastatin"
             ],
             "excerpt": "Zoledronic Acid",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "A Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
           }
         ],
         "citations_truncated": false,
@@ -285,7 +296,8 @@
               "Zoledronic acid, pravastatin"
             ],
             "excerpt": "Zoledronic acid, pravastatin",
-            "excerpt_tokens": null
+            "excerpt_tokens": null,
+            "title": "Treatment of the Hutchinson-Gilford Progeria Syndrome With a Combination of Pravastatin and Zoledronic Acid"
           }
         ],
         "citations_truncated": false,
@@ -359,7 +371,8 @@
         "Lonafarnib"
       ],
       "excerpt": "Lonafarnib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase II Trial of Lonafarnib (a Farnesyltransferase Inhibitor) for Progeria"
     },
     "NCT00879034": {
       "nct_id": "NCT00879034",
@@ -370,7 +383,8 @@
         "Pravastatin"
       ],
       "excerpt": "Lonafarnib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
     },
     "NCT03895528": {
       "nct_id": "NCT03895528",
@@ -379,7 +393,8 @@
         "Lonafarnib"
       ],
       "excerpt": "Lonafarnib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Lonafarnib for Patients With Hutchinson-Gilford Progeria Syndrome or Progeroid Laminopathy"
     },
     "NCT06775041": {
       "nct_id": "NCT06775041",
@@ -389,7 +404,8 @@
         "Lonafarnib"
       ],
       "excerpt": "Lonafarnib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study to Determine Optimal Dose and Evaluate Safety, Tolerability, and Pharmacokinetics of Progerinin in Patients With Hutchinson-Gilford Progeria Syndrome (HGPS)"
     },
     "NCT04512963": {
       "nct_id": "NCT04512963",
@@ -398,7 +414,8 @@
         "Progerinin"
       ],
       "excerpt": "Progerinin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase I Study of Progerinin in Healthy Volunteers"
     },
     "NCT02579044": {
       "nct_id": "NCT02579044",
@@ -407,7 +424,8 @@
         "Everolimus and lonafarnib"
       ],
       "excerpt": "Everolimus and lonafarnib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase I/II Trial of Everolimus in Combination With Lonafarnib in Progeria"
     },
     "NCT00916747": {
       "nct_id": "NCT00916747",
@@ -416,7 +434,8 @@
         "Lonafarnib, Zoledronic Acid, and Pravastatin"
       ],
       "excerpt": "Lonafarnib, Zoledronic Acid, and Pravastatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of Zoledronic Acid, Pravastatin, and Lonafarnib for Patients With Progeria"
     },
     "NCT03871972": {
       "nct_id": "NCT03871972",
@@ -425,7 +444,8 @@
         "Umbilical Cord Blood Unit"
       ],
       "excerpt": "Umbilical Cord Blood Unit",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Umbilical Cord Blood Transfusion in Progeria Syndrome"
     },
     "NCT00731016": {
       "nct_id": "NCT00731016",
@@ -434,7 +454,8 @@
         "Zoledronic acid, pravastatin"
       ],
       "excerpt": "Zoledronic acid, pravastatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Treatment of the Hutchinson-Gilford Progeria Syndrome With a Combination of Pravastatin and Zoledronic Acid"
     }
   },
   "meta": {
@@ -451,10 +472,10 @@
         "query.cond": "progeria",
         "countTotal": "true",
         "pageSize": 1000,
-        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName"
+        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName|BriefTitle"
       }
     },
-    "retrieved_at": "2026-07-15T22:32:59.792927+00:00",
+    "retrieved_at": "2026-07-15T23:37:01.479463+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [
@@ -463,8 +484,7 @@
       "Placebo / standard-of-care interventions are excluded by name to avoid a false mega-hub (G-36).",
       "9 of 10 matched trials study ≥1 drug intervention; the remaining 1 have none and are not shown here.",
       "Degenerate-network fallback: individual drug frequencies (distinct trials studying each canonical drug), each cited to the drug's own name in a contributing record.",
-      "Build a drug co-occurrence network for trials on the named condition.",
-      "The question asks for a network of drugs studied together, but the response falls back to a bar chart of individual drug frequencies instead. That changes the requested encoding and does not show co-occurrence relationships."
+      "User asked for a network of drugs studied together, but the output falls back to a bar chart of individual drug frequencies rather than a network/co-occurrence graph."
     ]
   }
 }

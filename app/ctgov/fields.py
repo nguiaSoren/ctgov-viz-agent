@@ -399,7 +399,7 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         field_path=_PHASE_FIELD_PATH,
         mode="combine",
         key_fn=phase_key_fn,
-        fields_projection="NCTId|Phase",
+        fields_projection="NCTId|Phase|BriefTitle",
         # Byte-identical Phase-1 behavior: phase-rank order, no top_n fold. The
         # X-2 live gate (Σ count_trials == countTotal == 3950) depends on this
         # exact ordering; the lambda reproduces tools.py's hardcoded sort.
@@ -411,7 +411,7 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         field_path=_COUNTRY_FIELD_PATH,
         mode="explode",
         key_fn=country_key_fn,
-        fields_projection="NCTId|LocationCountry",
+        fields_projection="NCTId|LocationCountry|BriefTitle",
         sort_key=count_desc_sort_key,
         top_n=config.TOP_N_CATEGORIES,  # 50 (§B.4 response-size cap; P5-TOPN — was 15 pre-Phase-5)
         # --- "Other"-fold contract (aggregate_by / W2 implements the fold; this
@@ -433,7 +433,7 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         field_path=_INTERVENTION_TYPE_FIELD_PATH,
         mode="explode",
         key_fn=intervention_type_key_fn,
-        fields_projection="NCTId|InterventionType",
+        fields_projection="NCTId|InterventionType|BriefTitle",
         sort_key=count_desc_sort_key,
         top_n=None,  # small, bounded token set -- show every type, no fold
     ),
@@ -442,7 +442,7 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         field_path=_OVERALL_STATUS_FIELD_PATH,
         mode="combine",  # single-valued: exactly one status per trial (Σ == distinct == countTotal)
         key_fn=overall_status_key_fn,
-        fields_projection="NCTId|OverallStatus",
+        fields_projection="NCTId|OverallStatus|BriefTitle",
         sort_key=count_desc_sort_key,
         top_n=None,  # 14 real values, bounded -- no fold
     ),
@@ -451,7 +451,7 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         field_path=_SPONSOR_CLASS_FIELD_PATH,
         mode="combine",  # single-valued lead-sponsor class (Σ == distinct == countTotal)
         key_fn=sponsor_class_key_fn,
-        fields_projection="NCTId|LeadSponsorClass",
+        fields_projection="NCTId|LeadSponsorClass|BriefTitle",
         sort_key=count_desc_sort_key,
         top_n=None,  # 9 real values, bounded -- no fold
     ),

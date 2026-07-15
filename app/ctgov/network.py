@@ -39,7 +39,7 @@ from typing import Any
 
 from app import config
 from app.api.schemas import Citation
-from app.ctgov.citations import _resolve_path, build_citation
+from app.ctgov.citations import _resolve_path, brief_title, build_citation
 
 # --- Fixed JSON paths (the endpoint field_paths cited per edge, G-25) --------
 
@@ -425,6 +425,7 @@ def _endpoint_citation(record: dict, node_kind: str, node_key: str, uf: _UnionFi
         field_path=_DRUG_PATH,
         value=_drug_names_in_record(record),  # REAL list → excerpt must equal an element (teeth)
         excerpt=name,  # the targeted drug's own literal .name → round-trips (is_substring_at)
+        title=brief_title(record),
     )
 
 
@@ -659,6 +660,7 @@ def _build_fallback(
                     field_path=_DRUG_PATH,
                     value=_drug_names_in_record(trials[nct]),
                     excerpt=name,
+                    title=brief_title(trials[nct]),
                 )
             )
         buckets.append(

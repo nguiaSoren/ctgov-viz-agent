@@ -417,7 +417,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00001832",
@@ -431,7 +432,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Fludarabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             }
           ]
         },
@@ -471,7 +473,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma"
             },
             {
               "nct_id": "NCT01176474",
@@ -482,7 +485,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma"
             }
           ]
         },
@@ -521,7 +525,8 @@
                 "GSK1120212"
               ],
               "excerpt": "GSK2118436",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Investigate Safety, Pharmacokinetics and Pharmacodynamics of GSK2118436 & GSK1120212"
             },
             {
               "nct_id": "NCT01072175",
@@ -531,7 +536,8 @@
                 "GSK1120212"
               ],
               "excerpt": "GSK1120212",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Investigate Safety, Pharmacokinetics and Pharmacodynamics of GSK2118436 & GSK1120212"
             }
           ]
         },
@@ -574,7 +580,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "IL-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00001832",
@@ -588,7 +595,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             }
           ]
         },
@@ -631,7 +639,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "IL-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00001832",
@@ -645,7 +654,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Fludarabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             }
           ]
         },
@@ -689,7 +699,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -704,7 +715,8 @@
                 "paclitaxel"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -743,7 +755,8 @@
                 "vemurafenib"
               ],
               "excerpt": "Cobimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Vemurafenib and GDC-0973 (Cobimetinib) in Participants With BRAFV600E Mutation-Positive Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01271803",
@@ -753,7 +766,8 @@
                 "vemurafenib"
               ],
               "excerpt": "vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Vemurafenib and GDC-0973 (Cobimetinib) in Participants With BRAFV600E Mutation-Positive Metastatic Melanoma"
             }
           ]
         },
@@ -800,7 +814,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT02009449",
@@ -818,7 +833,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             }
           ]
         },
@@ -858,7 +874,8 @@
                 "vemurafenib"
               ],
               "excerpt": "MEK162",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             },
             {
               "nct_id": "NCT01909453",
@@ -869,7 +886,8 @@
                 "vemurafenib"
               ],
               "excerpt": "LGX818",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             }
           ]
         },
@@ -902,7 +920,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01993719",
@@ -917,7 +936,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -947,7 +967,8 @@
                 "Nivolumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Study for Patients With Stage IV Melanoma"
             },
             {
               "nct_id": "NCT02054520",
@@ -959,7 +980,8 @@
                 "Nivolumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Study for Patients With Stage IV Melanoma"
             }
           ]
         },
@@ -987,7 +1009,8 @@
                 "Vemurafenib"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1b Study of Atezolizumab in Combination With Vemurafenib or Vemurafenib Plus Cobimetinib in Participants With BRAFV600-Mutation Positive Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01656642",
@@ -998,7 +1021,8 @@
                 "Vemurafenib"
               ],
               "excerpt": "Cobimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1b Study of Atezolizumab in Combination With Vemurafenib or Vemurafenib Plus Cobimetinib in Participants With BRAFV600-Mutation Positive Metastatic Melanoma"
             }
           ]
         },
@@ -1025,7 +1049,8 @@
                 "pembrolizumab"
               ],
               "excerpt": "pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase 1b Trial of Lenvatinib Plus Pembrolizumab in Participants With Selected Solid Tumors"
             },
             {
               "nct_id": "NCT03006887",
@@ -1035,7 +1060,8 @@
                 "pembrolizumab"
               ],
               "excerpt": "lenvatinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase 1b Trial of Lenvatinib Plus Pembrolizumab in Participants With Selected Solid Tumors"
             }
           ]
         },
@@ -1062,7 +1088,8 @@
                 "dacarbazine"
               ],
               "excerpt": "cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combination Chemotherapy, Interferon Alfa, and Interleukin-2 in Treating Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00002669",
@@ -1072,7 +1099,8 @@
                 "dacarbazine"
               ],
               "excerpt": "dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combination Chemotherapy, Interferon Alfa, and Interleukin-2 in Treating Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1103,7 +1131,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Aldesleukin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01993719",
@@ -1118,7 +1147,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1145,7 +1175,8 @@
                 "Paclitaxel"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Pembrolizumab With Carboplatin/Paclitaxel in Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02617849",
@@ -1156,7 +1187,8 @@
                 "Paclitaxel"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Pembrolizumab With Carboplatin/Paclitaxel in Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1190,7 +1222,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT02009449",
@@ -1208,7 +1241,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             }
           ]
         },
@@ -1246,7 +1280,8 @@
                 "Topotecan"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -1268,7 +1303,8 @@
                 "Topotecan"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -1294,7 +1330,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide Versus Dacarbazine in Stage IV Metastatic Melanoma (Study P03267)"
             },
             {
               "nct_id": "NCT00091572",
@@ -1304,7 +1341,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide Versus Dacarbazine in Stage IV Metastatic Melanoma (Study P03267)"
             }
           ]
         },
@@ -1332,7 +1370,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Nab-paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             },
             {
               "nct_id": "NCT02376699",
@@ -1345,7 +1384,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             }
           ]
         },
@@ -1373,7 +1413,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02652455",
@@ -1386,7 +1427,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             }
           ]
         },
@@ -1414,7 +1456,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "IPI Biochemotherapy for Chemonaive Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01409174",
@@ -1427,7 +1470,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "IPI Biochemotherapy for Chemonaive Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1453,7 +1497,8 @@
                 "Vemurafenib"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1b Study of Atezolizumab in Combination With Vemurafenib or Vemurafenib Plus Cobimetinib in Participants With BRAFV600-Mutation Positive Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01656642",
@@ -1464,7 +1509,8 @@
                 "Vemurafenib"
               ],
               "excerpt": "Vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1b Study of Atezolizumab in Combination With Vemurafenib or Vemurafenib Plus Cobimetinib in Participants With BRAFV600-Mutation Positive Metastatic Melanoma"
             }
           ]
         },
@@ -1490,7 +1536,8 @@
                 "paclitaxel"
               ],
               "excerpt": "bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab With Carboplatin and Paclitaxel Chemotherapy for the First-Line Treatment of Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00434252",
@@ -1501,7 +1548,8 @@
                 "paclitaxel"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab With Carboplatin and Paclitaxel Chemotherapy for the First-Line Treatment of Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1531,7 +1579,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -1546,7 +1595,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -1572,7 +1622,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Cemiplimab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             },
             {
               "nct_id": "NCT05352672",
@@ -1583,7 +1634,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Fianlimab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             }
           ]
         },
@@ -1609,7 +1661,8 @@
                 "Vinblastine"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Interferon Alfa With or Without Combination Chemotherapy Plus Interleukin-2 in Treating Patients With Melanoma"
             },
             {
               "nct_id": "NCT00002882",
@@ -1620,7 +1673,8 @@
                 "Vinblastine"
               ],
               "excerpt": "Vinblastine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Interferon Alfa With or Without Combination Chemotherapy Plus Interleukin-2 in Treating Patients With Melanoma"
             }
           ]
         },
@@ -1646,7 +1700,8 @@
                 "Pembrolizumab alone"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Encorafenib + Binimetinib + Pembrolizumab in Patients With Unresectable or Metastatic BRAF V600 Mutant Melanoma"
             },
             {
               "nct_id": "NCT02902042",
@@ -1658,7 +1713,8 @@
                 "Pembrolizumab alone"
               ],
               "excerpt": "Binimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Encorafenib + Binimetinib + Pembrolizumab in Patients With Unresectable or Metastatic BRAF V600 Mutant Melanoma"
             }
           ]
         },
@@ -1684,7 +1740,8 @@
                 "Pembrolizumab alone"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Encorafenib + Binimetinib + Pembrolizumab in Patients With Unresectable or Metastatic BRAF V600 Mutant Melanoma"
             },
             {
               "nct_id": "NCT02902042",
@@ -1696,7 +1753,8 @@
                 "Pembrolizumab alone"
               ],
               "excerpt": "Encorafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Encorafenib + Binimetinib + Pembrolizumab in Patients With Unresectable or Metastatic BRAF V600 Mutant Melanoma"
             }
           ]
         },
@@ -1725,7 +1783,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01993719",
@@ -1740,7 +1799,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Fludarabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -1789,7 +1849,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Binimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             },
             {
               "nct_id": "NCT02465060",
@@ -1824,7 +1885,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Dabrafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             }
           ]
         },
@@ -1873,7 +1935,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Binimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             },
             {
               "nct_id": "NCT02465060",
@@ -1908,7 +1971,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             }
           ]
         },
@@ -1932,7 +1996,8 @@
                 "temozolomide"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Temozolomide in Treating Patients With Unresectable or Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00003747",
@@ -1942,7 +2007,8 @@
                 "temozolomide"
               ],
               "excerpt": "temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Temozolomide in Treating Patients With Unresectable or Metastatic Melanoma"
             }
           ]
         },
@@ -1970,7 +2036,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -1984,7 +2051,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -2008,7 +2076,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dacarbazine and Ipilimumab vs. Dacarbazine With Placebo in Untreated Unresectable Stage III or IV Melanoma"
             },
             {
               "nct_id": "NCT00324155",
@@ -2018,7 +2087,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dacarbazine and Ipilimumab vs. Dacarbazine With Placebo in Untreated Unresectable Stage III or IV Melanoma"
             }
           ]
         },
@@ -2043,7 +2113,8 @@
                 "Vinblastine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Interferon Alfa With or Without Combination Chemotherapy Plus Interleukin-2 in Treating Patients With Melanoma"
             },
             {
               "nct_id": "NCT00002882",
@@ -2054,7 +2125,8 @@
                 "Vinblastine"
               ],
               "excerpt": "Vinblastine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Interferon Alfa With or Without Combination Chemotherapy Plus Interleukin-2 in Treating Patients With Melanoma"
             }
           ]
         },
@@ -2090,7 +2162,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -2112,7 +2185,8 @@
                 "Topotecan"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -2136,7 +2210,8 @@
                 "Cisplatin"
               ],
               "excerpt": "Abraxane",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Cisplatin, Temozolomide, Abraxane, With Interleukin-2 and Interferon for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00970996",
@@ -2147,7 +2222,8 @@
                 "Cisplatin"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Cisplatin, Temozolomide, Abraxane, With Interleukin-2 and Interferon for Metastatic Melanoma"
             }
           ]
         },
@@ -2174,7 +2250,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "IL-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00001832",
@@ -2188,7 +2265,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Montanide ISA-51",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             }
           ]
         },
@@ -2213,7 +2291,8 @@
                 "Aldesleukin"
               ],
               "excerpt": "Aldesleukin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vemurafenib and White Blood Cell Therapy for Advanced Melanoma"
             },
             {
               "nct_id": "NCT01585415",
@@ -2225,7 +2304,8 @@
                 "Aldesleukin"
               ],
               "excerpt": "Vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vemurafenib and White Blood Cell Therapy for Advanced Melanoma"
             }
           ]
         },
@@ -2249,7 +2329,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Cobimetinib Plus Atezolizumab Versus Pembrolizumab in Participants With Previously Untreated Advanced BRAFv600 Wild-Type Melanoma"
             },
             {
               "nct_id": "NCT03273153",
@@ -2260,7 +2341,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Cobimetinib Plus Atezolizumab Versus Pembrolizumab in Participants With Previously Untreated Advanced BRAFv600 Wild-Type Melanoma"
             }
           ]
         },
@@ -2294,7 +2376,8 @@
                 "PLD"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -2315,7 +2398,8 @@
                 "PLD"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -2349,7 +2433,8 @@
                 "PLD"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -2370,7 +2455,8 @@
                 "PLD"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -2394,7 +2480,8 @@
                 "paclitaxel"
               ],
               "excerpt": "bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab With Carboplatin and Paclitaxel Chemotherapy for the First-Line Treatment of Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00434252",
@@ -2405,7 +2492,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab With Carboplatin and Paclitaxel Chemotherapy for the First-Line Treatment of Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -2431,7 +2519,8 @@
                 "Temsirolimus"
               ],
               "excerpt": "AZD6244",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase I, Open-Label, Multi-center Study to Assess the Safety, Tolerability and Pharmacokinetics of AZD6244 (ARRY-142886)"
             },
             {
               "nct_id": "NCT00600496",
@@ -2444,7 +2533,8 @@
                 "Temsirolimus"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase I, Open-Label, Multi-center Study to Assess the Safety, Tolerability and Pharmacokinetics of AZD6244 (ARRY-142886)"
             }
           ]
         },
@@ -2474,7 +2564,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             },
             {
               "nct_id": "NCT03645928",
@@ -2491,7 +2582,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             }
           ]
         },
@@ -2516,7 +2608,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             },
             {
               "nct_id": "NCT02631447",
@@ -2528,7 +2621,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "MEK162",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             }
           ]
         },
@@ -2557,7 +2651,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             },
             {
               "nct_id": "NCT02817633",
@@ -2573,7 +2668,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             }
           ]
         },
@@ -2599,7 +2695,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02652455",
@@ -2612,7 +2709,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             }
           ]
         },
@@ -2637,7 +2735,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             },
             {
               "nct_id": "NCT02631447",
@@ -2649,7 +2748,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "LGX818",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             }
           ]
         },
@@ -2675,7 +2775,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02652455",
@@ -2688,7 +2789,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Fludarabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
             }
           ]
         },
@@ -2719,7 +2821,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT02009449",
@@ -2737,7 +2840,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             }
           ]
         },
@@ -2765,7 +2869,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -2780,7 +2885,8 @@
                 "paclitaxel"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -2809,7 +2915,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             },
             {
               "nct_id": "NCT02817633",
@@ -2825,7 +2932,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             }
           ]
         },
@@ -2850,7 +2958,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab With Trametinib and Dabrafenib, or Encorafenib and Binimetinib in Treating Patients With BRAF Mutated Metastatic or Unresectable Stage III-IV Melanoma"
             },
             {
               "nct_id": "NCT02910700",
@@ -2862,7 +2971,8 @@
                 "Trametinib"
               ],
               "excerpt": "Encorafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab With Trametinib and Dabrafenib, or Encorafenib and Binimetinib in Treating Patients With BRAF Mutated Metastatic or Unresectable Stage III-IV Melanoma"
             }
           ]
         },
@@ -2887,7 +2997,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             },
             {
               "nct_id": "NCT00796991",
@@ -2899,7 +3010,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             }
           ]
         },
@@ -2924,7 +3036,8 @@
                 "Trametinib"
               ],
               "excerpt": "Encorafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab With Trametinib and Dabrafenib, or Encorafenib and Binimetinib in Treating Patients With BRAF Mutated Metastatic or Unresectable Stage III-IV Melanoma"
             },
             {
               "nct_id": "NCT02910700",
@@ -2936,7 +3049,8 @@
                 "Trametinib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab With Trametinib and Dabrafenib, or Encorafenib and Binimetinib in Treating Patients With BRAF Mutated Metastatic or Unresectable Stage III-IV Melanoma"
             }
           ]
         },
@@ -2965,7 +3079,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Leucovorin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             },
             {
               "nct_id": "NCT01183663",
@@ -2981,7 +3096,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             }
           ]
         },
@@ -3006,7 +3122,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -3018,7 +3135,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LXH254",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -3042,7 +3160,8 @@
                 "temozolomide"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Paclitaxel and Carboplatin or Temozolomide in Treating Patients With Stage IV Melanoma"
             },
             {
               "nct_id": "NCT00568451",
@@ -3053,7 +3172,8 @@
                 "temozolomide"
               ],
               "excerpt": "temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Paclitaxel and Carboplatin or Temozolomide in Treating Patients With Stage IV Melanoma"
             }
           ]
         },
@@ -3078,7 +3198,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Nab-paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             },
             {
               "nct_id": "NCT02376699",
@@ -3091,7 +3212,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             }
           ]
         },
@@ -3120,7 +3242,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Nab paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             },
             {
               "nct_id": "NCT03645928",
@@ -3137,7 +3260,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             }
           ]
         },
@@ -3166,7 +3290,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Nab paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             },
             {
               "nct_id": "NCT03645928",
@@ -3183,7 +3308,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             }
           ]
         },
@@ -3212,7 +3338,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Nab paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             },
             {
               "nct_id": "NCT03645928",
@@ -3229,7 +3356,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             }
           ]
         },
@@ -3252,7 +3380,8 @@
                 "Cisplatin"
               ],
               "excerpt": "Abraxane",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Cisplatin, Temozolomide, Abraxane, With Interleukin-2 and Interferon for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00970996",
@@ -3263,7 +3392,8 @@
                 "Cisplatin"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Cisplatin, Temozolomide, Abraxane, With Interleukin-2 and Interferon for Metastatic Melanoma"
             }
           ]
         },
@@ -3289,7 +3419,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -3303,7 +3434,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Intron-A",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -3326,7 +3458,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             },
             {
               "nct_id": "NCT04812470",
@@ -3337,7 +3470,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Melphalan",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             }
           ]
         },
@@ -3363,7 +3497,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -3377,7 +3512,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -3399,7 +3535,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Atezolizumab in Combination With Bevacizumab in Patients With Unresectable Locally Advanced or Metastatic Mucosal Melanoma"
             },
             {
               "nct_id": "NCT04091217",
@@ -3409,7 +3546,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Atezolizumab in Combination With Bevacizumab in Patients With Unresectable Locally Advanced or Metastatic Mucosal Melanoma"
             }
           ]
         },
@@ -3436,7 +3574,8 @@
                 "IL-2"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "FT500 as Monotherapy and in Combination With Immune Checkpoint Inhibitors in Subjects With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03841110",
@@ -3451,7 +3590,8 @@
                 "IL-2"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "FT500 as Monotherapy and in Combination With Immune Checkpoint Inhibitors in Subjects With Advanced Solid Tumors"
             }
           ]
         },
@@ -3478,7 +3618,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Microbiome Immunotherapy Toxicity and Response Evaluation"
             },
             {
               "nct_id": "NCT04107168",
@@ -3493,7 +3634,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Microbiome Immunotherapy Toxicity and Response Evaluation"
             }
           ]
         },
@@ -3522,7 +3664,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             },
             {
               "nct_id": "NCT03645928",
@@ -3539,7 +3682,8 @@
                 "Pemetrexed"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
             }
           ]
         },
@@ -3562,7 +3706,8 @@
                 "Trametinib"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Pembrolizumab With Dual MAPK Pathway Inhibition Plus Pembrolizumab in Melanoma Patients"
             },
             {
               "nct_id": "NCT02625337",
@@ -3573,7 +3718,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Pembrolizumab With Dual MAPK Pathway Inhibition Plus Pembrolizumab in Melanoma Patients"
             }
           ]
         },
@@ -3595,7 +3741,8 @@
                 "INCB024360"
               ],
               "excerpt": "MK-3475",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study to Explore the Safety, Tolerability and Efficacy of MK-3475 in Combination With INCB024360 in Participants With Selected Cancers"
             },
             {
               "nct_id": "NCT02178722",
@@ -3605,7 +3752,8 @@
                 "INCB024360"
               ],
               "excerpt": "INCB024360",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study to Explore the Safety, Tolerability and Efficacy of MK-3475 in Combination With INCB024360 in Participants With Selected Cancers"
             }
           ]
         },
@@ -3630,7 +3778,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             },
             {
               "nct_id": "NCT02376699",
@@ -3643,7 +3792,8 @@
                 "Nab-paclitaxel"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety Study of SEA-CD40 in Cancer Patients"
             }
           ]
         },
@@ -3666,7 +3816,8 @@
                 "Trametinib"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Pembrolizumab With Dual MAPK Pathway Inhibition Plus Pembrolizumab in Melanoma Patients"
             },
             {
               "nct_id": "NCT02625337",
@@ -3677,7 +3828,8 @@
                 "Trametinib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Pembrolizumab With Dual MAPK Pathway Inhibition Plus Pembrolizumab in Melanoma Patients"
             }
           ]
         },
@@ -3705,7 +3857,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             },
             {
               "nct_id": "NCT02817633",
@@ -3721,7 +3874,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             }
           ]
         },
@@ -3745,7 +3899,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "MEK162",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             },
             {
               "nct_id": "NCT02631447",
@@ -3757,7 +3912,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             }
           ]
         },
@@ -3791,7 +3947,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -3813,7 +3970,8 @@
                 "Topotecan"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -3847,7 +4005,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -3869,7 +4028,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -3903,7 +4063,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -3925,7 +4086,8 @@
                 "Topotecan"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -3955,7 +4117,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT02009449",
@@ -3973,7 +4136,8 @@
                 "Gemcitabine/carboplatin"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
             }
           ]
         },
@@ -3997,7 +4161,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             },
             {
               "nct_id": "NCT00796991",
@@ -4009,7 +4174,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             }
           ]
         },
@@ -4042,7 +4208,8 @@
                 "PLD"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4063,7 +4230,8 @@
                 "PLD"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4087,7 +4255,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             },
             {
               "nct_id": "NCT00796991",
@@ -4099,7 +4268,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             }
           ]
         },
@@ -4123,7 +4293,8 @@
                 "Erlotinib"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase I of Biologics and Chemoradiation Therapy for Advanced Head and Neck Cancer"
             },
             {
               "nct_id": "NCT00405405",
@@ -4135,7 +4306,8 @@
                 "Erlotinib"
               ],
               "excerpt": "Docetaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase I of Biologics and Chemoradiation Therapy for Advanced Head and Neck Cancer"
             }
           ]
         },
@@ -4168,7 +4340,8 @@
                 "PLD"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4189,7 +4362,8 @@
                 "PLD"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4216,7 +4390,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -4231,7 +4406,8 @@
                 "paclitaxel"
               ],
               "excerpt": "etoposide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -4265,7 +4441,8 @@
                 "Topotecan"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -4287,7 +4464,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -4309,7 +4487,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Adoptive Therapy Using Antigen-Specific CD4 T-Cells"
             },
             {
               "nct_id": "NCT02210104",
@@ -4319,7 +4498,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Adoptive Therapy Using Antigen-Specific CD4 T-Cells"
             }
           ]
         },
@@ -4342,7 +4522,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dabrafenib Plus Trametinib vs Vemurafenib Alone in Unresectable or Metastatic BRAF V600E/K Cutaneous Melanoma"
             },
             {
               "nct_id": "NCT01597908",
@@ -4353,7 +4534,8 @@
                 "Trametinib"
               ],
               "excerpt": "Vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dabrafenib Plus Trametinib vs Vemurafenib Alone in Unresectable or Metastatic BRAF V600E/K Cutaneous Melanoma"
             }
           ]
         },
@@ -4377,7 +4559,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "LGX818",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             },
             {
               "nct_id": "NCT02631447",
@@ -4389,7 +4572,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
             }
           ]
         },
@@ -4423,7 +4607,8 @@
                 "Topotecan"
               ],
               "excerpt": "Fluorouracil",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -4445,7 +4630,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -4479,7 +4665,8 @@
                 "Topotecan"
               ],
               "excerpt": "Fluorouracil",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -4501,7 +4688,8 @@
                 "Topotecan"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -4535,7 +4723,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -4557,7 +4746,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -4590,7 +4780,8 @@
                 "PLD"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4611,7 +4802,8 @@
                 "PLD"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4635,7 +4827,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             },
             {
               "nct_id": "NCT00796991",
@@ -4647,7 +4840,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
             }
           ]
         },
@@ -4669,7 +4863,8 @@
                 "Temozolomide"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Ipilimumab + Temozolomide in Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01119508",
@@ -4679,7 +4874,8 @@
                 "Temozolomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Ipilimumab + Temozolomide in Metastatic Melanoma"
             }
           ]
         },
@@ -4701,7 +4897,8 @@
                 "oxaliplatin"
               ],
               "excerpt": "irinotecan hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Oxaliplatin and Irinotecan in Treating Young Patients With Refractory Solid Tumors or Lymphomas"
             },
             {
               "nct_id": "NCT00101270",
@@ -4711,7 +4908,8 @@
                 "oxaliplatin"
               ],
               "excerpt": "oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Oxaliplatin and Irinotecan in Treating Young Patients With Refractory Solid Tumors or Lymphomas"
             }
           ]
         },
@@ -4743,7 +4941,8 @@
                 "PLD"
               ],
               "excerpt": "5-FU",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4764,7 +4963,8 @@
                 "PLD"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4796,7 +4996,8 @@
                 "PLD"
               ],
               "excerpt": "5-FU",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4817,7 +5018,8 @@
                 "PLD"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4849,7 +5051,8 @@
                 "PLD"
               ],
               "excerpt": "5-FU",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4870,7 +5073,8 @@
                 "PLD"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4902,7 +5106,8 @@
                 "PLD"
               ],
               "excerpt": "5-FU",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4923,7 +5128,8 @@
                 "PLD"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4955,7 +5161,8 @@
                 "PLD"
               ],
               "excerpt": "5-FU",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -4976,7 +5183,8 @@
                 "PLD"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -4997,7 +5205,8 @@
                 "Abraxane"
               ],
               "excerpt": "Abraxane",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Abraxane and Avastin as Therapy for Patients With Malignant Melanoma, a Phase II Study"
             },
             {
               "nct_id": "NCT00462423",
@@ -5007,7 +5216,8 @@
                 "Abraxane"
               ],
               "excerpt": "Avastin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Abraxane and Avastin as Therapy for Patients With Malignant Melanoma, a Phase II Study"
             }
           ]
         },
@@ -5034,7 +5244,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Nab-paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             },
             {
               "nct_id": "NCT03009058",
@@ -5050,7 +5261,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             }
           ]
         },
@@ -5077,7 +5289,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Nab-paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             },
             {
               "nct_id": "NCT03009058",
@@ -5093,7 +5306,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             }
           ]
         },
@@ -5120,7 +5334,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Nab-paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             },
             {
               "nct_id": "NCT03009058",
@@ -5136,7 +5351,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Folinic Acid",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             }
           ]
         },
@@ -5158,7 +5374,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             },
             {
               "nct_id": "NCT04812470",
@@ -5169,7 +5386,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Autologous Tumor Infiltrating Lymphocytes",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             }
           ]
         },
@@ -5194,7 +5412,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -5208,7 +5427,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -5229,7 +5449,8 @@
                 "interleukin-2"
               ],
               "excerpt": "interleukin-2",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vaccine Therapy With or Without Interleukin-2 in Treating Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00019448",
@@ -5239,7 +5460,8 @@
                 "interleukin-2"
               ],
               "excerpt": "gp100 antigen",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Vaccine Therapy With or Without Interleukin-2 in Treating Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -5260,7 +5482,8 @@
                 "Temozolomide"
               ],
               "excerpt": "Apatinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Apatinib Combined With Temozolomide in Patients Witn Advanced Melanoma"
             },
             {
               "nct_id": "NCT03422445",
@@ -5270,7 +5493,8 @@
                 "Temozolomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Apatinib Combined With Temozolomide in Patients Witn Advanced Melanoma"
             }
           ]
         },
@@ -5296,7 +5520,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Atezolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Microbiome Immunotherapy Toxicity and Response Evaluation"
             },
             {
               "nct_id": "NCT04107168",
@@ -5311,7 +5536,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Microbiome Immunotherapy Toxicity and Response Evaluation"
             }
           ]
         },
@@ -5333,7 +5559,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Autologous Tumor Infiltrating Lymphocytes",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             },
             {
               "nct_id": "NCT04812470",
@@ -5344,7 +5571,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Melphalan",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
             }
           ]
         },
@@ -5367,7 +5595,8 @@
                 "Erlotinib"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase I of Biologics and Chemoradiation Therapy for Advanced Head and Neck Cancer"
             },
             {
               "nct_id": "NCT00405405",
@@ -5379,7 +5608,8 @@
                 "Erlotinib"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase I of Biologics and Chemoradiation Therapy for Advanced Head and Neck Cancer"
             }
           ]
         },
@@ -5400,7 +5630,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab (Avastin) in Combination With Dacarbazine in Participants With Unresectable/Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01164007",
@@ -5410,7 +5641,8 @@
                 "Dacarbazine"
               ],
               "excerpt": "Dacarbazine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of Bevacizumab (Avastin) in Combination With Dacarbazine in Participants With Unresectable/Metastatic Melanoma"
             }
           ]
         },
@@ -5437,7 +5669,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             },
             {
               "nct_id": "NCT01183663",
@@ -5453,7 +5686,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Leucovorin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             }
           ]
         },
@@ -5480,7 +5714,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             },
             {
               "nct_id": "NCT01183663",
@@ -5496,7 +5731,8 @@
                 "5-fluorouracil"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
             }
           ]
         },
@@ -5517,7 +5753,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Bevacizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide Plus Bevacizumab in Patients With Metastatic Melanoma Involving the Central Nervous System"
             },
             {
               "nct_id": "NCT01048554",
@@ -5527,7 +5764,8 @@
                 "Bevacizumab"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide Plus Bevacizumab in Patients With Metastatic Melanoma Involving the Central Nervous System"
             }
           ]
         },
@@ -5548,7 +5786,8 @@
                 "Temozolomide"
               ],
               "excerpt": "AZD6244",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Randomised Study to Compare the Efficacy of AZD6244 vs TMZ"
             },
             {
               "nct_id": "NCT00338130",
@@ -5558,7 +5797,8 @@
                 "Temozolomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Randomised Study to Compare the Efficacy of AZD6244 vs TMZ"
             }
           ]
         },
@@ -5580,7 +5820,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             },
             {
               "nct_id": "NCT05352672",
@@ -5591,7 +5832,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Cemiplimab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             }
           ]
         },
@@ -5612,7 +5854,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of CMP-001 in Combination With Pembrolizumab or as a Monotherapy"
             },
             {
               "nct_id": "NCT02680184",
@@ -5622,7 +5865,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "CMP-001",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of CMP-001 in Combination With Pembrolizumab or as a Monotherapy"
             }
           ]
         },
@@ -5644,7 +5888,8 @@
                 "Cobimetinib"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dose-seeking Study of Pembrolizumab Plus Vemurafenib and Cobimetinib Advanced Melanoma"
             },
             {
               "nct_id": "NCT02818023",
@@ -5655,7 +5900,8 @@
                 "Cobimetinib"
               ],
               "excerpt": "Cobimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dose-seeking Study of Pembrolizumab Plus Vemurafenib and Cobimetinib Advanced Melanoma"
             }
           ]
         },
@@ -5678,7 +5924,8 @@
                 "Dabrafenib + trametinib"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Retrospective Assessment of Adverse Events-related Healthcare Resource Utilization and Costs of Immune Checkpoint Inhibitor and Targeted Therapy for Adjuvant Treatment of Melanoma"
             },
             {
               "nct_id": "NCT05714371",
@@ -5690,7 +5937,8 @@
                 "Dabrafenib + trametinib"
               ],
               "excerpt": "Dabrafenib + trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Retrospective Assessment of Adverse Events-related Healthcare Resource Utilization and Costs of Immune Checkpoint Inhibitor and Targeted Therapy for Adjuvant Treatment of Melanoma"
             }
           ]
         },
@@ -5712,7 +5960,8 @@
                 "Docetaxel"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety, PK and Efficacy of ONC-392 in Monotherapy and in Combination of Anti-PD-1 in Advanced Solid Tumors and NSCLC"
             },
             {
               "nct_id": "NCT04140526",
@@ -5723,7 +5972,8 @@
                 "Docetaxel"
               ],
               "excerpt": "Docetaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety, PK and Efficacy of ONC-392 in Monotherapy and in Combination of Anti-PD-1 in Advanced Solid Tumors and NSCLC"
             }
           ]
         },
@@ -5745,7 +5995,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             },
             {
               "nct_id": "NCT05352672",
@@ -5756,7 +6007,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Fianlimab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
             }
           ]
         },
@@ -5788,7 +6040,8 @@
                 "PLD"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             },
             {
               "nct_id": "NCT03872947",
@@ -5809,7 +6062,8 @@
                 "PLD"
               ],
               "excerpt": "Leucovorin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
             }
           ]
         },
@@ -5832,7 +6086,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Pembrolizumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IDO Inhibitor in Combination With Checkpoint Inhibitors for Adult Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02073123",
@@ -5844,7 +6099,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Indoximod",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IDO Inhibitor in Combination With Checkpoint Inhibitors for Adult Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -5866,7 +6122,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "An Investigational Immuno-therapy Study of BMS-986205 Given in Combination With Nivolumab and in Combination With Both Nivolumab and Ipilimumab in Cancers That Are Advanced or Have Spread"
             },
             {
               "nct_id": "NCT02658890",
@@ -5877,7 +6134,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "BMS-986205",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "An Investigational Immuno-therapy Study of BMS-986205 Given in Combination With Nivolumab and in Combination With Both Nivolumab and Ipilimumab in Cancers That Are Advanced or Have Spread"
             }
           ]
         },
@@ -5899,7 +6157,8 @@
                 "Cabozantinib"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab/Ipilimumab Plus Cabozantinib in Patients With Unresectable Advanced Melanoma"
             },
             {
               "nct_id": "NCT04091750",
@@ -5910,7 +6169,8 @@
                 "Cabozantinib"
               ],
               "excerpt": "Cabozantinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab/Ipilimumab Plus Cabozantinib in Patients With Unresectable Advanced Melanoma"
             }
           ]
         },
@@ -5931,7 +6191,8 @@
                 "Nivolumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "CMP-001 in Combination With Nivolumab Compared to Nivolumab Monotherapy in Subjects With Advanced Melanoma"
             },
             {
               "nct_id": "NCT04695977",
@@ -5941,7 +6202,8 @@
                 "Nivolumab"
               ],
               "excerpt": "CMP-001",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "CMP-001 in Combination With Nivolumab Compared to Nivolumab Monotherapy in Subjects With Advanced Melanoma"
             }
           ]
         },
@@ -5964,7 +6226,8 @@
                 "Dabrafenib + trametinib"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Retrospective Assessment of Adverse Events-related Healthcare Resource Utilization and Costs of Immune Checkpoint Inhibitor and Targeted Therapy for Adjuvant Treatment of Melanoma"
             },
             {
               "nct_id": "NCT05714371",
@@ -5976,7 +6239,8 @@
                 "Dabrafenib + trametinib"
               ],
               "excerpt": "Dabrafenib + trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Retrospective Assessment of Adverse Events-related Healthcare Resource Utilization and Costs of Immune Checkpoint Inhibitor and Targeted Therapy for Adjuvant Treatment of Melanoma"
             }
           ]
         },
@@ -5998,7 +6262,8 @@
                 "Chemotherapy"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of the Safety, Tolerability, and Efficacy of Epacadostat Administered in Combination With Nivolumab in Select Advanced Cancers (ECHO-204)"
             },
             {
               "nct_id": "NCT02327078",
@@ -6009,7 +6274,8 @@
                 "Chemotherapy"
               ],
               "excerpt": "Epacadostat",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of the Safety, Tolerability, and Efficacy of Epacadostat Administered in Combination With Nivolumab in Select Advanced Cancers (ECHO-204)"
             }
           ]
         },
@@ -6032,7 +6298,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IDO Inhibitor in Combination With Checkpoint Inhibitors for Adult Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02073123",
@@ -6044,7 +6311,8 @@
                 "Pembrolizumab"
               ],
               "excerpt": "Indoximod",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IDO Inhibitor in Combination With Checkpoint Inhibitors for Adult Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -6071,7 +6339,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Nivolumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             },
             {
               "nct_id": "NCT02817633",
@@ -6087,7 +6356,8 @@
                 "Carboplatin"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
             }
           ]
         },
@@ -6133,7 +6403,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Binimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             },
             {
               "nct_id": "NCT02465060",
@@ -6168,7 +6439,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Crizotinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             }
           ]
         },
@@ -6189,7 +6461,8 @@
                 "MEK162"
               ],
               "excerpt": "MEK162",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib/II Study of LEE011 in Combination With MEK162 in Patients With NRAS Mutant Melanoma"
             },
             {
               "nct_id": "NCT01781572",
@@ -6199,7 +6472,8 @@
                 "MEK162"
               ],
               "excerpt": "LEE011",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib/II Study of LEE011 in Combination With MEK162 in Patients With NRAS Mutant Melanoma"
             }
           ]
         },
@@ -6245,7 +6519,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Binimetinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             },
             {
               "nct_id": "NCT02465060",
@@ -6280,7 +6555,8 @@
                 "Vismodegib"
               ],
               "excerpt": "Palbociclib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
             }
           ]
         },
@@ -6302,7 +6578,8 @@
                 "vemurafenib"
               ],
               "excerpt": "MEK162",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             },
             {
               "nct_id": "NCT01909453",
@@ -6313,7 +6590,8 @@
                 "vemurafenib"
               ],
               "excerpt": "vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             }
           ]
         },
@@ -6335,7 +6613,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "BMS-986205",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "An Investigational Immuno-therapy Study of BMS-986205 Given in Combination With Nivolumab and in Combination With Both Nivolumab and Ipilimumab in Cancers That Are Advanced or Have Spread"
             },
             {
               "nct_id": "NCT02658890",
@@ -6346,7 +6625,8 @@
                 "Ipilimumab"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "An Investigational Immuno-therapy Study of BMS-986205 Given in Combination With Nivolumab and in Combination With Both Nivolumab and Ipilimumab in Cancers That Are Advanced or Have Spread"
             }
           ]
         },
@@ -6369,7 +6649,8 @@
                 "methotrexate"
               ],
               "excerpt": "busulfan",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Chemotherapy Plus Bone Marrow Transplantation in Treating Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00003060",
@@ -6381,7 +6662,8 @@
                 "methotrexate"
               ],
               "excerpt": "cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Chemotherapy Plus Bone Marrow Transplantation in Treating Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -6404,7 +6686,8 @@
                 "fludarabine phosphate"
               ],
               "excerpt": "busulfan",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Peripheral Stem Cell Transplantation in Treating Patients With Melanoma or Small Cell Lung, Breast, Testicular, or Kidney Cancer That is Metastatic or That Cannot Be Treated With Surgery"
             },
             {
               "nct_id": "NCT00006126",
@@ -6416,7 +6699,8 @@
                 "fludarabine phosphate"
               ],
               "excerpt": "fludarabine phosphate",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Peripheral Stem Cell Transplantation in Treating Patients With Melanoma or Small Cell Lung, Breast, Testicular, or Kidney Cancer That is Metastatic or That Cannot Be Treated With Surgery"
             }
           ]
         },
@@ -6438,7 +6722,8 @@
                 "Cabozantinib"
               ],
               "excerpt": "Cabozantinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab/Ipilimumab Plus Cabozantinib in Patients With Unresectable Advanced Melanoma"
             },
             {
               "nct_id": "NCT04091750",
@@ -6449,7 +6734,8 @@
                 "Cabozantinib"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Nivolumab/Ipilimumab Plus Cabozantinib in Patients With Unresectable Advanced Melanoma"
             }
           ]
         },
@@ -6482,7 +6768,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -6504,7 +6791,8 @@
                 "Topotecan"
               ],
               "excerpt": "Fluorouracil",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -6537,7 +6825,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -6559,7 +6848,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -6592,7 +6882,8 @@
                 "Topotecan"
               ],
               "excerpt": "Capecitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -6614,7 +6905,8 @@
                 "Topotecan"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -6640,7 +6932,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -6655,7 +6948,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -6681,7 +6975,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -6696,7 +6991,8 @@
                 "paclitaxel"
               ],
               "excerpt": "etoposide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -6718,7 +7014,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin, Paclitaxel, and Bevacizumab With or Without Everolimus in Treating Patients With Metastatic Malignant Melanoma"
             },
             {
               "nct_id": "NCT00976573",
@@ -6729,7 +7026,8 @@
                 "paclitaxel"
               ],
               "excerpt": "everolimus",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin, Paclitaxel, and Bevacizumab With or Without Everolimus in Treating Patients With Metastatic Malignant Melanoma"
             }
           ]
         },
@@ -6762,7 +7060,8 @@
                 "Topotecan"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -6784,7 +7083,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -6810,7 +7110,8 @@
                 "paclitaxel"
               ],
               "excerpt": "carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -6825,7 +7126,8 @@
                 "paclitaxel"
               ],
               "excerpt": "ifosfamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -6858,7 +7160,8 @@
                 "Topotecan"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -6880,7 +7183,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -6902,7 +7206,8 @@
                 "Sorafenib Tosylate"
               ],
               "excerpt": "Carboplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Paclitaxel With or Without Sorafenib Tosylate in Treating Patients With Stage III or Stage IV Melanoma That Cannot Be Removed by Surgery"
             },
             {
               "nct_id": "NCT00110019",
@@ -6913,7 +7218,8 @@
                 "Sorafenib Tosylate"
               ],
               "excerpt": "Sorafenib Tosylate",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Paclitaxel With or Without Sorafenib Tosylate in Treating Patients With Stage III or Stage IV Melanoma That Cannot Be Removed by Surgery"
             }
           ]
         },
@@ -6939,7 +7245,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -6954,7 +7261,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -6980,7 +7288,8 @@
                 "omega-3-acid ethyl esters"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "QUILT-3.046: NANT Melanoma Vaccine: Combination Immunotherapy in Subjects With Melanoma Who Have Progressed On or After Chemotherapy and PD-1/PD-L1 Therapy"
             },
             {
               "nct_id": "NCT03167177",
@@ -6995,7 +7304,8 @@
                 "omega-3-acid ethyl esters"
               ],
               "excerpt": "Leucovorin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "QUILT-3.046: NANT Melanoma Vaccine: Combination Immunotherapy in Subjects With Melanoma Who Have Progressed On or After Chemotherapy and PD-1/PD-L1 Therapy"
             }
           ]
         },
@@ -7020,7 +7330,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -7034,7 +7345,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Intron-A",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -7058,7 +7370,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Cisplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "IPI Biochemotherapy for Chemonaive Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01409174",
@@ -7071,7 +7384,8 @@
                 "Interleukin-2"
               ],
               "excerpt": "Ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "IPI Biochemotherapy for Chemonaive Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -7104,7 +7418,8 @@
                 "Topotecan"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7126,7 +7441,8 @@
                 "Topotecan"
               ],
               "excerpt": "Fluorouracil",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7159,7 +7475,8 @@
                 "Topotecan"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7181,7 +7498,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7206,7 +7524,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00001832",
@@ -7220,7 +7539,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Montanide ISA-51",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
             }
           ]
         },
@@ -7253,7 +7573,8 @@
                 "Topotecan"
               ],
               "excerpt": "Cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7275,7 +7596,8 @@
                 "Topotecan"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7301,7 +7623,8 @@
                 "paclitaxel"
               ],
               "excerpt": "cyclophosphamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -7316,7 +7639,8 @@
                 "paclitaxel"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -7338,7 +7662,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Compassionate Use Program to Access Trametinib and Dabrafenib for Patients With BRAF Mutation-positive Metastatic Melanoma"
             },
             {
               "nct_id": "NCT04489433",
@@ -7349,7 +7674,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib and Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Compassionate Use Program to Access Trametinib and Dabrafenib for Patients With BRAF Mutation-positive Metastatic Melanoma"
             }
           ]
         },
@@ -7371,7 +7697,8 @@
                 "Trametinib"
               ],
               "excerpt": "Dabrafenib and Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Compassionate Use Program to Access Trametinib and Dabrafenib for Patients With BRAF Mutation-positive Metastatic Melanoma"
             },
             {
               "nct_id": "NCT04489433",
@@ -7382,7 +7709,8 @@
                 "Trametinib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Compassionate Use Program to Access Trametinib and Dabrafenib for Patients With BRAF Mutation-positive Metastatic Melanoma"
             }
           ]
         },
@@ -7415,7 +7743,8 @@
                 "Topotecan"
               ],
               "excerpt": "Doxorubicin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7437,7 +7766,8 @@
                 "Topotecan"
               ],
               "excerpt": "Eribulin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7470,7 +7800,8 @@
                 "Topotecan"
               ],
               "excerpt": "Doxorubicin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7492,7 +7823,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7513,7 +7845,8 @@
                 "LGX818"
               ],
               "excerpt": "LGX818",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety and Efficacy of LEE011 and LGX818 in Patients With BRAF Mutant Melanoma."
             },
             {
               "nct_id": "NCT01777776",
@@ -7523,7 +7856,8 @@
                 "LGX818"
               ],
               "excerpt": "LEE011",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Safety and Efficacy of LEE011 and LGX818 in Patients With BRAF Mutant Melanoma."
             }
           ]
         },
@@ -7545,7 +7879,8 @@
                 "vemurafenib"
               ],
               "excerpt": "LGX818",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             },
             {
               "nct_id": "NCT01909453",
@@ -7556,7 +7891,8 @@
                 "vemurafenib"
               ],
               "excerpt": "vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
             }
           ]
         },
@@ -7577,7 +7913,8 @@
                 "ipilimumab"
               ],
               "excerpt": "Epacadostat",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1/2 Randomized, Blinded, Placebo Controlled Study of Ipilimumab in Combination With Epacadostat or Placebo in Subjects With Unresectable or Metastatic Melanoma"
             },
             {
               "nct_id": "NCT01604889",
@@ -7587,7 +7924,8 @@
                 "ipilimumab"
               ],
               "excerpt": "ipilimumab",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase 1/2 Randomized, Blinded, Placebo Controlled Study of Ipilimumab in Combination With Epacadostat or Placebo in Subjects With Unresectable or Metastatic Melanoma"
             }
           ]
         },
@@ -7620,7 +7958,8 @@
                 "Topotecan"
               ],
               "excerpt": "Eribulin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7642,7 +7981,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7668,7 +8008,8 @@
                 "paclitaxel"
               ],
               "excerpt": "etoposide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             },
             {
               "nct_id": "NCT00002854",
@@ -7683,7 +8024,8 @@
                 "paclitaxel"
               ],
               "excerpt": "ifosfamide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
             }
           ]
         },
@@ -7705,7 +8047,8 @@
                 "paclitaxel"
               ],
               "excerpt": "everolimus",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin, Paclitaxel, and Bevacizumab With or Without Everolimus in Treating Patients With Metastatic Malignant Melanoma"
             },
             {
               "nct_id": "NCT00976573",
@@ -7716,7 +8059,8 @@
                 "paclitaxel"
               ],
               "excerpt": "paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin, Paclitaxel, and Bevacizumab With or Without Everolimus in Treating Patients With Metastatic Malignant Melanoma"
             }
           ]
         },
@@ -7739,7 +8083,8 @@
                 "Ipilimumab infusion"
               ],
               "excerpt": "Fludarabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing TIL to Standard Ipilimumab in Patients With Metastatic Melanoma"
             },
             {
               "nct_id": "NCT02278887",
@@ -7751,7 +8096,8 @@
                 "Ipilimumab infusion"
               ],
               "excerpt": "Ipilimumab infusion",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study Comparing TIL to Standard Ipilimumab in Patients With Metastatic Melanoma"
             }
           ]
         },
@@ -7784,7 +8130,8 @@
                 "Topotecan"
               ],
               "excerpt": "Fluorouracil",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7806,7 +8153,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7833,7 +8181,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Folinic Acid",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             },
             {
               "nct_id": "NCT03009058",
@@ -7849,7 +8198,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             }
           ]
         },
@@ -7882,7 +8232,8 @@
                 "Topotecan"
               ],
               "excerpt": "Leucovorin Calcium",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -7904,7 +8255,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -7931,7 +8283,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             },
             {
               "nct_id": "NCT03009058",
@@ -7947,7 +8300,8 @@
                 "Cyclophosphamide"
               ],
               "excerpt": "Irinotecan",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
             }
           ]
         },
@@ -7974,7 +8328,8 @@
                 "Paclitaxel"
               ],
               "excerpt": "Gemcitabine",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "GEN1042 Safety Trial and Anti-tumor Activity in Participants With Malignant Solid Tumors"
             },
             {
               "nct_id": "NCT04083599",
@@ -7990,7 +8345,8 @@
                 "Paclitaxel"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "GEN1042 Safety Trial and Anti-tumor Activity in Participants With Malignant Solid Tumors"
             }
           ]
         },
@@ -8014,7 +8370,8 @@
                 "tyrosinase peptide"
               ],
               "excerpt": "gp100 antigen",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "flt3L With or Without Vaccine Therapy in Treating Patients With Metastatic Melanoma or Renal Cell Cancer"
             },
             {
               "nct_id": "NCT00019396",
@@ -8027,7 +8384,8 @@
                 "tyrosinase peptide"
               ],
               "excerpt": "Montanide ISA-51",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "flt3L With or Without Vaccine Therapy in Treating Patients With Metastatic Melanoma or Renal Cell Cancer"
             }
           ]
         },
@@ -8050,7 +8408,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -8062,7 +8421,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Ribociclib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -8085,7 +8445,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -8097,7 +8458,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LTT462",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -8118,7 +8480,8 @@
                 "Palbociclib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study to Investigate the Safety, Pharmacokinetics, Pharmacodynamics, and Anti-Cancer Activity of Trametinib in Combination With Palbociclib in Subjects With Solid Tumors"
             },
             {
               "nct_id": "NCT02065063",
@@ -8128,7 +8491,8 @@
                 "Palbociclib"
               ],
               "excerpt": "Palbociclib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Study to Investigate the Safety, Pharmacokinetics, Pharmacodynamics, and Anti-Cancer Activity of Trametinib in Combination With Palbociclib in Subjects With Solid Tumors"
             }
           ]
         },
@@ -8150,7 +8514,8 @@
                 "Trametinib"
               ],
               "excerpt": "Trametinib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dabrafenib Plus Trametinib vs Vemurafenib Alone in Unresectable or Metastatic BRAF V600E/K Cutaneous Melanoma"
             },
             {
               "nct_id": "NCT01597908",
@@ -8161,7 +8526,8 @@
                 "Trametinib"
               ],
               "excerpt": "Vemurafenib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Dabrafenib Plus Trametinib vs Vemurafenib Alone in Unresectable or Metastatic BRAF V600E/K Cutaneous Melanoma"
             }
           ]
         },
@@ -8186,7 +8552,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Intron-A",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -8200,7 +8567,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         },
@@ -8233,7 +8601,8 @@
                 "Topotecan"
               ],
               "excerpt": "Irinotecan Hydrochloride",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -8255,7 +8624,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -8278,7 +8648,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Ribociclib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -8290,7 +8661,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LTT462",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -8313,7 +8685,8 @@
                 "Ribociclib"
               ],
               "excerpt": "Ribociclib",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -8325,7 +8698,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LXH254",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -8348,7 +8722,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LTT462",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             },
             {
               "nct_id": "NCT02974725",
@@ -8360,7 +8735,8 @@
                 "Ribociclib"
               ],
               "excerpt": "LXH254",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
             }
           ]
         },
@@ -8393,7 +8769,8 @@
                 "Topotecan"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -8415,7 +8792,8 @@
                 "Topotecan"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -8448,7 +8826,8 @@
                 "Topotecan"
               ],
               "excerpt": "Oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             },
             {
               "nct_id": "NCT02419495",
@@ -8470,7 +8849,8 @@
                 "Topotecan"
               ],
               "excerpt": "Pemetrexed",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
             }
           ]
         },
@@ -8491,7 +8871,8 @@
                 "sorafenib tosylate"
               ],
               "excerpt": "oxaliplatin",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sorafenib, Bevacizumab, and Oxaliplatin in Treating Patients With Metastatic Malignant Melanoma"
             },
             {
               "nct_id": "NCT00538005",
@@ -8501,7 +8882,8 @@
                 "sorafenib tosylate"
               ],
               "excerpt": "sorafenib tosylate",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Sorafenib, Bevacizumab, and Oxaliplatin in Treating Patients With Metastatic Malignant Melanoma"
             }
           ]
         },
@@ -8523,7 +8905,8 @@
                 "Sorafenib Tosylate"
               ],
               "excerpt": "Paclitaxel",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Paclitaxel With or Without Sorafenib Tosylate in Treating Patients With Stage III or Stage IV Melanoma That Cannot Be Removed by Surgery"
             },
             {
               "nct_id": "NCT00110019",
@@ -8534,7 +8917,8 @@
                 "Sorafenib Tosylate"
               ],
               "excerpt": "Sorafenib Tosylate",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Carboplatin and Paclitaxel With or Without Sorafenib Tosylate in Treating Patients With Stage III or Stage IV Melanoma That Cannot Be Removed by Surgery"
             }
           ]
         },
@@ -8555,7 +8939,8 @@
                 "temozolomide"
               ],
               "excerpt": "sorafenib tosylate",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide and Sorafenib in Treating Patients With Metastatic or Unresectable Melanoma"
             },
             {
               "nct_id": "NCT00602576",
@@ -8565,7 +8950,8 @@
                 "temozolomide"
               ],
               "excerpt": "temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Temozolomide and Sorafenib in Treating Patients With Metastatic or Unresectable Melanoma"
             }
           ]
         },
@@ -8590,7 +8976,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Temozolomide",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             },
             {
               "nct_id": "NCT00505635",
@@ -8604,7 +8991,8 @@
                 "Thalidomide"
               ],
               "excerpt": "Velban",
-              "excerpt_tokens": null
+              "excerpt_tokens": null,
+              "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
             }
           ]
         }
@@ -8628,7 +9016,8 @@
         "Cyclophosphamide"
       ],
       "excerpt": "Cyclophosphamide",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma"
     },
     "NCT01176474": {
       "nct_id": "NCT01176474",
@@ -8639,7 +9028,8 @@
         "Ipilimumab"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma"
     },
     "NCT01072175": {
       "nct_id": "NCT01072175",
@@ -8649,7 +9039,8 @@
         "GSK1120212"
       ],
       "excerpt": "GSK2118436",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Investigate Safety, Pharmacokinetics and Pharmacodynamics of GSK2118436 & GSK1120212"
     },
     "NCT00002854": {
       "nct_id": "NCT00002854",
@@ -8664,7 +9055,8 @@
         "paclitaxel"
       ],
       "excerpt": "carboplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "High-Dose Combination Chemotherapy Plus Peripheral Stem Cell Transplantation in Treating Patients With Advanced Cancer"
     },
     "NCT01271803": {
       "nct_id": "NCT01271803",
@@ -8674,7 +9066,8 @@
         "vemurafenib"
       ],
       "excerpt": "Cobimetinib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Vemurafenib and GDC-0973 (Cobimetinib) in Participants With BRAFV600E Mutation-Positive Metastatic Melanoma"
     },
     "NCT02009449": {
       "nct_id": "NCT02009449",
@@ -8692,7 +9085,8 @@
         "Gemcitabine/carboplatin"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
     },
     "NCT01909453": {
       "nct_id": "NCT01909453",
@@ -8703,7 +9097,8 @@
         "vemurafenib"
       ],
       "excerpt": "MEK162",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study Comparing Combination of LGX818 Plus MEK162 Versus Vemurafenib and LGX818 Monotherapy in BRAF Mutant Melanoma"
     },
     "NCT01993719": {
       "nct_id": "NCT01993719",
@@ -8718,7 +9113,8 @@
         "Pembrolizumab"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
     },
     "NCT02054520": {
       "nct_id": "NCT02054520",
@@ -8730,7 +9126,8 @@
         "Nivolumab"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Immunotherapy Study for Patients With Stage IV Melanoma"
     },
     "NCT01656642": {
       "nct_id": "NCT01656642",
@@ -8741,7 +9138,8 @@
         "Vemurafenib"
       ],
       "excerpt": "Atezolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase 1b Study of Atezolizumab in Combination With Vemurafenib or Vemurafenib Plus Cobimetinib in Participants With BRAFV600-Mutation Positive Metastatic Melanoma"
     },
     "NCT03006887": {
       "nct_id": "NCT03006887",
@@ -8751,7 +9149,8 @@
         "pembrolizumab"
       ],
       "excerpt": "pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase 1b Trial of Lenvatinib Plus Pembrolizumab in Participants With Selected Solid Tumors"
     },
     "NCT00002669": {
       "nct_id": "NCT00002669",
@@ -8761,7 +9160,8 @@
         "dacarbazine"
       ],
       "excerpt": "cisplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combination Chemotherapy, Interferon Alfa, and Interleukin-2 in Treating Patients With Metastatic Melanoma"
     },
     "NCT02617849": {
       "nct_id": "NCT02617849",
@@ -8772,7 +9172,8 @@
         "Paclitaxel"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Pembrolizumab With Carboplatin/Paclitaxel in Patients With Metastatic Melanoma"
     },
     "NCT02419495": {
       "nct_id": "NCT02419495",
@@ -8794,7 +9195,8 @@
         "Topotecan"
       ],
       "excerpt": "Carboplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase IB Study to Evaluate the Safety of Selinexor (KPT-330) in Combination With Multiple Standard Chemotherapy or Immunotherapy Agents in Patients With Advanced Malignancies"
     },
     "NCT00091572": {
       "nct_id": "NCT00091572",
@@ -8804,7 +9206,8 @@
         "Dacarbazine"
       ],
       "excerpt": "Dacarbazine",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Temozolomide Versus Dacarbazine in Stage IV Metastatic Melanoma (Study P03267)"
     },
     "NCT02376699": {
       "nct_id": "NCT02376699",
@@ -8817,7 +9220,8 @@
         "Nab-paclitaxel"
       ],
       "excerpt": "Nab-paclitaxel",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety Study of SEA-CD40 in Cancer Patients"
     },
     "NCT02652455": {
       "nct_id": "NCT02652455",
@@ -8830,7 +9234,8 @@
         "Interleukin-2"
       ],
       "excerpt": "Interleukin-2",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Combining PD-1 Blockade, CD137 Agonism and Adoptive Cell Therapy for Metastatic Melanoma"
     },
     "NCT01409174": {
       "nct_id": "NCT01409174",
@@ -8843,7 +9248,8 @@
         "Interleukin-2"
       ],
       "excerpt": "Interleukin-2",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "IPI Biochemotherapy for Chemonaive Patients With Metastatic Melanoma"
     },
     "NCT00434252": {
       "nct_id": "NCT00434252",
@@ -8854,7 +9260,8 @@
         "paclitaxel"
       ],
       "excerpt": "bevacizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Bevacizumab With Carboplatin and Paclitaxel Chemotherapy for the First-Line Treatment of Patients With Metastatic Melanoma"
     },
     "NCT05352672": {
       "nct_id": "NCT05352672",
@@ -8865,7 +9272,8 @@
         "Pembrolizumab"
       ],
       "excerpt": "Cemiplimab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Clinical Study of Fianlimab in Combination With Cemiplimab Versus Pembrolizumab in Adolescent and Adult Patients With Previously Untreated Unresectable Locally Advanced or Metastatic Melanoma"
     },
     "NCT00002882": {
       "nct_id": "NCT00002882",
@@ -8876,7 +9284,8 @@
         "Vinblastine"
       ],
       "excerpt": "Cisplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Interferon Alfa With or Without Combination Chemotherapy Plus Interleukin-2 in Treating Patients With Melanoma"
     },
     "NCT02902042": {
       "nct_id": "NCT02902042",
@@ -8888,7 +9297,8 @@
         "Pembrolizumab alone"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Encorafenib + Binimetinib + Pembrolizumab in Patients With Unresectable or Metastatic BRAF V600 Mutant Melanoma"
     },
     "NCT02465060": {
       "nct_id": "NCT02465060",
@@ -8923,7 +9333,8 @@
         "Vismodegib"
       ],
       "excerpt": "Binimetinib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial)"
     },
     "NCT00003747": {
       "nct_id": "NCT00003747",
@@ -8933,7 +9344,8 @@
         "temozolomide"
       ],
       "excerpt": "carboplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Carboplatin and Temozolomide in Treating Patients With Unresectable or Metastatic Melanoma"
     },
     "NCT00505635": {
       "nct_id": "NCT00505635",
@@ -8947,7 +9359,8 @@
         "Thalidomide"
       ],
       "excerpt": "Cisplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Biochemotherapy With Temozolomide for Metastatic Melanoma"
     },
     "NCT00324155": {
       "nct_id": "NCT00324155",
@@ -8957,7 +9370,8 @@
         "Dacarbazine"
       ],
       "excerpt": "Dacarbazine",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Dacarbazine and Ipilimumab vs. Dacarbazine With Placebo in Untreated Unresectable Stage III or IV Melanoma"
     },
     "NCT00970996": {
       "nct_id": "NCT00970996",
@@ -8968,7 +9382,8 @@
         "Cisplatin"
       ],
       "excerpt": "Abraxane",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Cisplatin, Temozolomide, Abraxane, With Interleukin-2 and Interferon for Metastatic Melanoma"
     },
     "NCT01585415": {
       "nct_id": "NCT01585415",
@@ -8980,7 +9395,8 @@
         "Aldesleukin"
       ],
       "excerpt": "Aldesleukin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vemurafenib and White Blood Cell Therapy for Advanced Melanoma"
     },
     "NCT03273153": {
       "nct_id": "NCT03273153",
@@ -8991,7 +9407,8 @@
         "Pembrolizumab"
       ],
       "excerpt": "Atezolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Cobimetinib Plus Atezolizumab Versus Pembrolizumab in Participants With Previously Untreated Advanced BRAFv600 Wild-Type Melanoma"
     },
     "NCT03872947": {
       "nct_id": "NCT03872947",
@@ -9012,7 +9429,8 @@
         "PLD"
       ],
       "excerpt": "Bevacizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of TRK-950 in Combinations With Anti-Cancer Treatment Regimens in Patients With Advanced Solid Tumors"
     },
     "NCT00600496": {
       "nct_id": "NCT00600496",
@@ -9025,7 +9443,8 @@
         "Temsirolimus"
       ],
       "excerpt": "AZD6244",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase I, Open-Label, Multi-center Study to Assess the Safety, Tolerability and Pharmacokinetics of AZD6244 (ARRY-142886)"
     },
     "NCT03645928": {
       "nct_id": "NCT03645928",
@@ -9042,7 +9461,8 @@
         "Pemetrexed"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of Autologous Tumor Infiltrating Lymphocytes in Patients With Solid Tumors"
     },
     "NCT02631447": {
       "nct_id": "NCT02631447",
@@ -9054,7 +9474,8 @@
         "Ipilimumab"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Sequential Combo Immuno and Target Therapy (SECOMBIT) Study"
     },
     "NCT02817633": {
       "nct_id": "NCT02817633",
@@ -9070,7 +9491,8 @@
         "Carboplatin"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of TSR-022 in Participants With Advanced Solid Tumors (AMBER)"
     },
     "NCT02910700": {
       "nct_id": "NCT02910700",
@@ -9082,7 +9504,8 @@
         "Trametinib"
       ],
       "excerpt": "Dabrafenib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Nivolumab With Trametinib and Dabrafenib, or Encorafenib and Binimetinib in Treating Patients With BRAF Mutated Metastatic or Unresectable Stage III-IV Melanoma"
     },
     "NCT00796991": {
       "nct_id": "NCT00796991",
@@ -9094,7 +9517,8 @@
         "Dacarbazine"
       ],
       "excerpt": "Dacarbazine",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Drug-Drug Interaction - 3 Arm - Carboplatin/Paclitaxel, Dacarbazine"
     },
     "NCT01183663": {
       "nct_id": "NCT01183663",
@@ -9110,7 +9534,8 @@
         "5-fluorouracil"
       ],
       "excerpt": "Leucovorin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Lenalidomide in Combination With Bevacizumab, Sorafenib, Temsirolimus, or 5-Fluorouracil, Leucovorin, Oxaliplatin (FOLFOX)"
     },
     "NCT02974725": {
       "nct_id": "NCT02974725",
@@ -9122,7 +9547,8 @@
         "Ribociclib"
       ],
       "excerpt": "Trametinib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase Ib Study of LXH254-centric Combinations in NSCLC or Melanoma"
     },
     "NCT00568451": {
       "nct_id": "NCT00568451",
@@ -9133,7 +9559,8 @@
         "temozolomide"
       ],
       "excerpt": "paclitaxel",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Paclitaxel and Carboplatin or Temozolomide in Treating Patients With Stage IV Melanoma"
     },
     "NCT04812470": {
       "nct_id": "NCT04812470",
@@ -9144,7 +9571,8 @@
         "Interleukin-2"
       ],
       "excerpt": "Interleukin-2",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Hepatic Arterial Infusion of Autologous Tumor Infiltrating Lymphocytes in Patients With Melanoma and Liver Metastases"
     },
     "NCT04091217": {
       "nct_id": "NCT04091217",
@@ -9154,7 +9582,8 @@
         "Bevacizumab"
       ],
       "excerpt": "Atezolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Atezolizumab in Combination With Bevacizumab in Patients With Unresectable Locally Advanced or Metastatic Mucosal Melanoma"
     },
     "NCT03841110": {
       "nct_id": "NCT03841110",
@@ -9169,7 +9598,8 @@
         "IL-2"
       ],
       "excerpt": "Atezolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "FT500 as Monotherapy and in Combination With Immune Checkpoint Inhibitors in Subjects With Advanced Solid Tumors"
     },
     "NCT04107168": {
       "nct_id": "NCT04107168",
@@ -9184,7 +9614,8 @@
         "Bevacizumab"
       ],
       "excerpt": "Bevacizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Microbiome Immunotherapy Toxicity and Response Evaluation"
     },
     "NCT02625337": {
       "nct_id": "NCT02625337",
@@ -9195,7 +9626,8 @@
         "Trametinib"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study Comparing Pembrolizumab With Dual MAPK Pathway Inhibition Plus Pembrolizumab in Melanoma Patients"
     },
     "NCT02178722": {
       "nct_id": "NCT02178722",
@@ -9205,7 +9637,8 @@
         "INCB024360"
       ],
       "excerpt": "MK-3475",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study to Explore the Safety, Tolerability and Efficacy of MK-3475 in Combination With INCB024360 in Participants With Selected Cancers"
     },
     "NCT00405405": {
       "nct_id": "NCT00405405",
@@ -9217,7 +9650,8 @@
         "Erlotinib"
       ],
       "excerpt": "Cisplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Phase I of Biologics and Chemoradiation Therapy for Advanced Head and Neck Cancer"
     },
     "NCT02210104": {
       "nct_id": "NCT02210104",
@@ -9227,7 +9661,8 @@
         "Cyclophosphamide"
       ],
       "excerpt": "Cyclophosphamide",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Adoptive Therapy Using Antigen-Specific CD4 T-Cells"
     },
     "NCT01597908": {
       "nct_id": "NCT01597908",
@@ -9238,7 +9673,8 @@
         "Trametinib"
       ],
       "excerpt": "Dabrafenib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Dabrafenib Plus Trametinib vs Vemurafenib Alone in Unresectable or Metastatic BRAF V600E/K Cutaneous Melanoma"
     },
     "NCT01119508": {
       "nct_id": "NCT01119508",
@@ -9248,7 +9684,8 @@
         "Temozolomide"
       ],
       "excerpt": "Ipilimumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Ipilimumab + Temozolomide in Metastatic Melanoma"
     },
     "NCT00101270": {
       "nct_id": "NCT00101270",
@@ -9258,7 +9695,8 @@
         "oxaliplatin"
       ],
       "excerpt": "irinotecan hydrochloride",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Oxaliplatin and Irinotecan in Treating Young Patients With Refractory Solid Tumors or Lymphomas"
     },
     "NCT00462423": {
       "nct_id": "NCT00462423",
@@ -9268,7 +9706,8 @@
         "Abraxane"
       ],
       "excerpt": "Abraxane",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Abraxane and Avastin as Therapy for Patients With Malignant Melanoma, a Phase II Study"
     },
     "NCT03009058": {
       "nct_id": "NCT03009058",
@@ -9284,7 +9723,8 @@
         "Cyclophosphamide"
       ],
       "excerpt": "Nab-paclitaxel",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of IMM 101 in Combination With Standard of Care in Patients With Metastatic or Unresectable Cancer"
     },
     "NCT00019448": {
       "nct_id": "NCT00019448",
@@ -9294,7 +9734,8 @@
         "interleukin-2"
       ],
       "excerpt": "interleukin-2",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Vaccine Therapy With or Without Interleukin-2 in Treating Patients With Metastatic Melanoma"
     },
     "NCT03422445": {
       "nct_id": "NCT03422445",
@@ -9304,7 +9745,8 @@
         "Temozolomide"
       ],
       "excerpt": "Apatinib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Apatinib Combined With Temozolomide in Patients Witn Advanced Melanoma"
     },
     "NCT01164007": {
       "nct_id": "NCT01164007",
@@ -9314,7 +9756,8 @@
         "Dacarbazine"
       ],
       "excerpt": "Bevacizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of Bevacizumab (Avastin) in Combination With Dacarbazine in Participants With Unresectable/Metastatic Melanoma"
     },
     "NCT01048554": {
       "nct_id": "NCT01048554",
@@ -9324,7 +9767,8 @@
         "Bevacizumab"
       ],
       "excerpt": "Bevacizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Temozolomide Plus Bevacizumab in Patients With Metastatic Melanoma Involving the Central Nervous System"
     },
     "NCT00338130": {
       "nct_id": "NCT00338130",
@@ -9334,7 +9778,8 @@
         "Temozolomide"
       ],
       "excerpt": "AZD6244",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Randomised Study to Compare the Efficacy of AZD6244 vs TMZ"
     },
     "NCT02680184": {
       "nct_id": "NCT02680184",
@@ -9344,7 +9789,8 @@
         "Pembrolizumab"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Clinical Study of CMP-001 in Combination With Pembrolizumab or as a Monotherapy"
     },
     "NCT02818023": {
       "nct_id": "NCT02818023",
@@ -9355,7 +9801,8 @@
         "Cobimetinib"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Dose-seeking Study of Pembrolizumab Plus Vemurafenib and Cobimetinib Advanced Melanoma"
     },
     "NCT05714371": {
       "nct_id": "NCT05714371",
@@ -9367,7 +9814,8 @@
         "Dabrafenib + trametinib"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Retrospective Assessment of Adverse Events-related Healthcare Resource Utilization and Costs of Immune Checkpoint Inhibitor and Targeted Therapy for Adjuvant Treatment of Melanoma"
     },
     "NCT04140526": {
       "nct_id": "NCT04140526",
@@ -9378,7 +9826,8 @@
         "Docetaxel"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety, PK and Efficacy of ONC-392 in Monotherapy and in Combination of Anti-PD-1 in Advanced Solid Tumors and NSCLC"
     },
     "NCT02073123": {
       "nct_id": "NCT02073123",
@@ -9390,7 +9839,8 @@
         "Pembrolizumab"
       ],
       "excerpt": "Pembrolizumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study of IDO Inhibitor in Combination With Checkpoint Inhibitors for Adult Patients With Metastatic Melanoma"
     },
     "NCT02658890": {
       "nct_id": "NCT02658890",
@@ -9401,7 +9851,8 @@
         "Ipilimumab"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "An Investigational Immuno-therapy Study of BMS-986205 Given in Combination With Nivolumab and in Combination With Both Nivolumab and Ipilimumab in Cancers That Are Advanced or Have Spread"
     },
     "NCT04091750": {
       "nct_id": "NCT04091750",
@@ -9412,7 +9863,8 @@
         "Cabozantinib"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Nivolumab/Ipilimumab Plus Cabozantinib in Patients With Unresectable Advanced Melanoma"
     },
     "NCT04695977": {
       "nct_id": "NCT04695977",
@@ -9422,7 +9874,8 @@
         "Nivolumab"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "CMP-001 in Combination With Nivolumab Compared to Nivolumab Monotherapy in Subjects With Advanced Melanoma"
     },
     "NCT02327078": {
       "nct_id": "NCT02327078",
@@ -9433,7 +9886,8 @@
         "Chemotherapy"
       ],
       "excerpt": "Nivolumab",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study of the Safety, Tolerability, and Efficacy of Epacadostat Administered in Combination With Nivolumab in Select Advanced Cancers (ECHO-204)"
     },
     "NCT01781572": {
       "nct_id": "NCT01781572",
@@ -9443,7 +9897,8 @@
         "MEK162"
       ],
       "excerpt": "MEK162",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase Ib/II Study of LEE011 in Combination With MEK162 in Patients With NRAS Mutant Melanoma"
     },
     "NCT00003060": {
       "nct_id": "NCT00003060",
@@ -9455,7 +9910,8 @@
         "methotrexate"
       ],
       "excerpt": "busulfan",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Chemotherapy Plus Bone Marrow Transplantation in Treating Patients With Metastatic Melanoma"
     },
     "NCT00006126": {
       "nct_id": "NCT00006126",
@@ -9467,7 +9923,8 @@
         "fludarabine phosphate"
       ],
       "excerpt": "busulfan",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Peripheral Stem Cell Transplantation in Treating Patients With Melanoma or Small Cell Lung, Breast, Testicular, or Kidney Cancer That is Metastatic or That Cannot Be Treated With Surgery"
     },
     "NCT00976573": {
       "nct_id": "NCT00976573",
@@ -9478,7 +9935,8 @@
         "paclitaxel"
       ],
       "excerpt": "carboplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Carboplatin, Paclitaxel, and Bevacizumab With or Without Everolimus in Treating Patients With Metastatic Malignant Melanoma"
     },
     "NCT00110019": {
       "nct_id": "NCT00110019",
@@ -9489,7 +9947,8 @@
         "Sorafenib Tosylate"
       ],
       "excerpt": "Carboplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Carboplatin and Paclitaxel With or Without Sorafenib Tosylate in Treating Patients With Stage III or Stage IV Melanoma That Cannot Be Removed by Surgery"
     },
     "NCT03167177": {
       "nct_id": "NCT03167177",
@@ -9504,7 +9963,8 @@
         "omega-3-acid ethyl esters"
       ],
       "excerpt": "Cisplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "QUILT-3.046: NANT Melanoma Vaccine: Combination Immunotherapy in Subjects With Melanoma Who Have Progressed On or After Chemotherapy and PD-1/PD-L1 Therapy"
     },
     "NCT04489433": {
       "nct_id": "NCT04489433",
@@ -9515,7 +9975,8 @@
         "Trametinib"
       ],
       "excerpt": "Dabrafenib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Compassionate Use Program to Access Trametinib and Dabrafenib for Patients With BRAF Mutation-positive Metastatic Melanoma"
     },
     "NCT01777776": {
       "nct_id": "NCT01777776",
@@ -9525,7 +9986,8 @@
         "LGX818"
       ],
       "excerpt": "LGX818",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Safety and Efficacy of LEE011 and LGX818 in Patients With BRAF Mutant Melanoma."
     },
     "NCT01604889": {
       "nct_id": "NCT01604889",
@@ -9535,7 +9997,8 @@
         "ipilimumab"
       ],
       "excerpt": "Epacadostat",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Phase 1/2 Randomized, Blinded, Placebo Controlled Study of Ipilimumab in Combination With Epacadostat or Placebo in Subjects With Unresectable or Metastatic Melanoma"
     },
     "NCT02278887": {
       "nct_id": "NCT02278887",
@@ -9547,7 +10010,8 @@
         "Ipilimumab infusion"
       ],
       "excerpt": "Fludarabine",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Study Comparing TIL to Standard Ipilimumab in Patients With Metastatic Melanoma"
     },
     "NCT04083599": {
       "nct_id": "NCT04083599",
@@ -9563,7 +10027,8 @@
         "Paclitaxel"
       ],
       "excerpt": "Gemcitabine",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "GEN1042 Safety Trial and Anti-tumor Activity in Participants With Malignant Solid Tumors"
     },
     "NCT00019396": {
       "nct_id": "NCT00019396",
@@ -9576,7 +10041,8 @@
         "tyrosinase peptide"
       ],
       "excerpt": "gp100 antigen",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "flt3L With or Without Vaccine Therapy in Treating Patients With Metastatic Melanoma or Renal Cell Cancer"
     },
     "NCT02065063": {
       "nct_id": "NCT02065063",
@@ -9586,7 +10052,8 @@
         "Palbociclib"
       ],
       "excerpt": "Trametinib",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "A Study to Investigate the Safety, Pharmacokinetics, Pharmacodynamics, and Anti-Cancer Activity of Trametinib in Combination With Palbociclib in Subjects With Solid Tumors"
     },
     "NCT00538005": {
       "nct_id": "NCT00538005",
@@ -9596,7 +10063,8 @@
         "sorafenib tosylate"
       ],
       "excerpt": "oxaliplatin",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Sorafenib, Bevacizumab, and Oxaliplatin in Treating Patients With Metastatic Malignant Melanoma"
     },
     "NCT00602576": {
       "nct_id": "NCT00602576",
@@ -9606,7 +10074,8 @@
         "temozolomide"
       ],
       "excerpt": "sorafenib tosylate",
-      "excerpt_tokens": null
+      "excerpt_tokens": null,
+      "title": "Temozolomide and Sorafenib in Treating Patients With Metastatic or Unresectable Melanoma"
     }
   },
   "meta": {
@@ -9623,10 +10092,10 @@
         "query.cond": "melanoma",
         "countTotal": "true",
         "pageSize": 1000,
-        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName"
+        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName|BriefTitle"
       }
     },
-    "retrieved_at": "2026-07-15T22:32:38.979360+00:00",
+    "retrieved_at": "2026-07-15T23:36:41.272559+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [

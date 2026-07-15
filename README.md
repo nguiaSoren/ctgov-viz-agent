@@ -10,7 +10,7 @@ citation viewer with all 15 example runs; each shows its natural-language query,
 graph, and every datum's citations clickable to the source trials on clinicaltrials.gov. To query the
 engine yourself, clone and run `uvicorn` (see [Quickstart](#quickstart)).
 
-**Highlights — what makes this more than a 24-hour take-home:**
+**Highlights:**
 
 - **The model structurally cannot emit a wrong number.** The LLM only *plans*; deterministic code
   computes every value and reconciles it against the API's own `countTotal`. That is what makes the
@@ -254,9 +254,19 @@ Every chart datum carries its own provenance, but a "Recruiting: 120,000" bucket
 citation objects. So each datum carries the exact `contributing_count` (always the true bucket size)
 plus a **bounded, deterministic sample of up to `K = 20` citations** (the first 20 contributing
 nctIds, sorted — stable across runs) and a `citations_truncated` flag when the true set exceeds `K`.
-Each citation's `excerpt` is **string-extracted from the record** at its `field_path`, never authored
-by the model, and re-verified element-precise by a deterministic Output-Reviewer check. `K` is a
-deploy-time constant, not agent-tunable.
+Each citation is **two-part**, so it is deep in both senses §5 asks for:
+
+- **`excerpt`** — the *exact field value that decided membership* (e.g. `"PHASE1"`, `"2015-01-28"`,
+  `"France"`), string-extracted from the record at its `field_path`, never authored by the model, and
+  re-verified element-precise by a deterministic Output-Reviewer check. This is the *rigorous* proof:
+  it says precisely **why** this trial is in this bucket.
+- **`title`** — the trial's human-readable **brief title** (`protocolSection.identificationModule.briefTitle`),
+  also string-extracted from the record, never authored. This is the descriptive *"text excerpt that
+  supports the datum"* — e.g. *"Gemcitabine Compared With Pancreatic Enzyme Therapy … in Treating Patients
+  With Stage II–IV Pancreatic Cancer."*
+
+So a reviewer clicking any bar, time bucket, or edge sees both the exact field that put a trial there
+**and** a sentence they can read. `K` is a deploy-time constant, not agent-tunable.
 
 For a network, each edge's `weight` is a *derived* count, so it cites its **members** (the contributing
 trials) via two citations, one per endpoint field path. A trial in the `NA` phase bucket has no phase
@@ -438,7 +448,7 @@ produces the identical result — because the number was never the model's to ge
 | **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 580 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
 | **15%** | Query & Viz Coverage | 6 query classes + 7 chart types (bar/grouped/time-series/histogram/network/single-value/table) + a meaningful network graph, all off one core; 15 example rungs simple→complex incl. the two refuses + a clarification. `EXAMPLE_RUNS.md`. |
 | **10%** | Input/Output Design | Documented, per-field-validated request schema; a `status`/`kind`-discriminated envelope with a `vega_lite` projection so a frontend renders without guessing. `app/api/schemas.py`. |
-| **bonus** | Deep citations | Per-datum `nct_id` + exact field excerpt, string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
+| **bonus** | Deep citations | Per-datum `nct_id` + a **two-part** excerpt (the exact field value that proves membership *and* the trial's readable brief `title`, §5), both string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
 
 ---
 
