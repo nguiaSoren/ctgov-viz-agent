@@ -10,6 +10,23 @@ citation viewer with all 15 example runs; each shows its natural-language query,
 graph, and every datum's citations clickable to the source trials on clinicaltrials.gov. To query the
 engine yourself, clone and run `uvicorn` (see [Quickstart](#quickstart)).
 
+**Highlights — what makes this more than a 24-hour take-home:**
+
+- **The model structurally cannot emit a wrong number.** The LLM only *plans*; deterministic code
+  computes every value and reconciles it against the API's own `countTotal`. That is what makes the
+  numbers trustworthy and the deep citations claimable — and it is enforced at the schema layer, not by
+  hope (the planner's typed output has no numeric field a count could live in).
+- **15 example runs, simple → highly complex, off one core** — every renderable chart type, a real
+  drug↔drug network, two *"knows when not to chart"* refuses, a clarification, and three composed "boss"
+  queries (four stacked filters → 3950 collapses to 229; a live-neutralized injection; a
+  compare-of-filtered-arms where each arm carries its own four-filter stack).
+- **A security vulnerability found and fixed against the *live* API** — a real Essie query-injection
+  surface, probed, measured, and neutralized at near-zero recall cost.
+- **Provider-agnosticism proven, not claimed** — the same query planned by GPT *and* by Claude yields
+  identical numbers (the number is the tool's, not the model's).
+- **Re-verify it yourself, offline, `$0`** — one command (`scripts/verify_examples.py`) re-checks every
+  shipped number and every citation with the runtime's own verifier code.
+
 > **The governing invariant:** *the LLM decides **what** to compute; deterministic tools compute
 > it — the model never emits a number.*
 
