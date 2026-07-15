@@ -1,0 +1,32 @@
+{
+  "status": "too_large",
+  "kind": "answer",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": "121,770 trials match this query -- too large to chart faithfully within the paging budget. Narrow the query (e.g. add a phase, status, or year range) to render a distribution.",
+  "question": null,
+  "error": null,
+  "citations": {},
+  "meta": {
+    "count_basis": {
+      "trials": 121770,
+      "mentions": null
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {},
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "cancer",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|Phase"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:32:46.128896+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": []
+  }
+}

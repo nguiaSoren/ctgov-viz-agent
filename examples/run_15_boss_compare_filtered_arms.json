@@ -1,0 +1,1664 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "grouped_bar",
+    "title": "pembrolizumab vs nivolumab trials by sponsor class",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Sponsor class",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      },
+      "y": {
+        "field": "percent",
+        "label": "% within series",
+        "unit": "%",
+        "sort": null,
+        "scale": "linear"
+      },
+      "color": {
+        "field": "series",
+        "label": "Series",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      }
+    },
+    "data": [
+      {
+        "value": "INDUSTRY",
+        "label": "Industry",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 79,
+        "count_mentions": 79,
+        "source_ids": [
+          "NCT03486873",
+          "NCT04534205",
+          "NCT04613596",
+          "NCT05317858",
+          "NCT05549297",
+          "NCT05633654",
+          "NCT05668650",
+          "NCT05727904",
+          "NCT05899608",
+          "NCT05920356",
+          "NCT06077760",
+          "NCT06103864",
+          "NCT06119581",
+          "NCT06170788",
+          "NCT06216301",
+          "NCT06236438",
+          "NCT06264180",
+          "NCT06282575",
+          "NCT06312137",
+          "NCT06312176"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03486873",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04534205",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04613596",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05317858",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05549297",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05633654",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05668650",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05727904",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05899608",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05920356",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06077760",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06103864",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06119581",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06170788",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06216301",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06236438",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06264180",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06282575",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06312137",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06312176",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 79,
+        "derived": false,
+        "members": null,
+        "percent": 64.2
+      },
+      {
+        "value": "INDUSTRY",
+        "label": "Industry",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 17,
+        "count_mentions": 17,
+        "source_ids": [
+          "NCT05317858",
+          "NCT06022861",
+          "NCT06112314",
+          "NCT06246916",
+          "NCT06264180",
+          "NCT06561386",
+          "NCT06581406",
+          "NCT06624644",
+          "NCT06646276",
+          "NCT06743126",
+          "NCT06841679",
+          "NCT07195695",
+          "NCT07221149",
+          "NCT07221734",
+          "NCT07392892",
+          "NCT07405164",
+          "NCT07431281"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT05317858",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06022861",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06112314",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06246916",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06264180",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06561386",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06581406",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06624644",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06646276",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06743126",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06841679",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07195695",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07221149",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07221734",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07392892",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07405164",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07431281",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "INDUSTRY",
+            "excerpt": "INDUSTRY",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 17,
+        "derived": false,
+        "members": null,
+        "percent": 42.5
+      },
+      {
+        "value": "OTHER",
+        "label": "Other",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 32,
+        "count_mentions": 32,
+        "source_ids": [
+          "NCT03755739",
+          "NCT04322617",
+          "NCT04339218",
+          "NCT04747054",
+          "NCT04807673",
+          "NCT04997837",
+          "NCT05055908",
+          "NCT05085028",
+          "NCT05255302",
+          "NCT05595447",
+          "NCT05692999",
+          "NCT05812807",
+          "NCT06081244",
+          "NCT06102395",
+          "NCT06135714",
+          "NCT06364631",
+          "NCT06383780",
+          "NCT06488482",
+          "NCT06555003",
+          "NCT06606730"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03755739",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04322617",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04339218",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04747054",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04807673",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04997837",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05055908",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05085028",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05255302",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05595447",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05692999",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05812807",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06081244",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06102395",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06135714",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06364631",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06383780",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06488482",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06555003",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06606730",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 32,
+        "derived": false,
+        "members": null,
+        "percent": 26.0
+      },
+      {
+        "value": "OTHER",
+        "label": "Other",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 15,
+        "count_mentions": 15,
+        "source_ids": [
+          "NCT03803553",
+          "NCT04997837",
+          "NCT05595447",
+          "NCT05677490",
+          "NCT06346197",
+          "NCT06364631",
+          "NCT06488482",
+          "NCT06490536",
+          "NCT06632327",
+          "NCT06794775",
+          "NCT06840782",
+          "NCT06908993",
+          "NCT07000253",
+          "NCT07166406",
+          "NCT07174453"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03803553",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04997837",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05595447",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05677490",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06346197",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06364631",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06488482",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06490536",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06632327",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06794775",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06840782",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06908993",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07000253",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07166406",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07174453",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER",
+            "excerpt": "OTHER",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 15,
+        "derived": false,
+        "members": null,
+        "percent": 37.5
+      },
+      {
+        "value": "NIH",
+        "label": "Nih",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 7,
+        "count_mentions": 7,
+        "source_ids": [
+          "NCT04267848",
+          "NCT06096844",
+          "NCT06422806",
+          "NCT06524544",
+          "NCT06589804",
+          "NCT07061977",
+          "NCT07198074"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT04267848",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06096844",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06422806",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06524544",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06589804",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07061977",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07198074",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 7,
+        "derived": false,
+        "members": null,
+        "percent": 5.7
+      },
+      {
+        "value": "NIH",
+        "label": "Nih",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 3,
+        "count_mentions": 3,
+        "source_ids": [
+          "NCT05675410",
+          "NCT05987241",
+          "NCT06203600"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT05675410",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05987241",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06203600",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NIH",
+            "excerpt": "NIH",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 3,
+        "derived": false,
+        "members": null,
+        "percent": 7.5
+      },
+      {
+        "value": "NETWORK",
+        "label": "Network",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 5,
+        "count_mentions": 5,
+        "source_ids": [
+          "NCT04093167",
+          "NCT04510597",
+          "NCT05815927",
+          "NCT05929768",
+          "NCT07383441"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT04093167",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04510597",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05815927",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05929768",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07383441",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 5,
+        "derived": false,
+        "members": null,
+        "percent": 4.1
+      },
+      {
+        "value": "NETWORK",
+        "label": "Network",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 3,
+        "count_mentions": 3,
+        "source_ids": [
+          "NCT04510597",
+          "NCT06188676",
+          "NCT07383441"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT04510597",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06188676",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07383441",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "NETWORK",
+            "excerpt": "NETWORK",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 3,
+        "derived": false,
+        "members": null,
+        "percent": 7.5
+      },
+      {
+        "value": "OTHER_GOV",
+        "label": "Other Gov",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 0,
+        "count_mentions": 0,
+        "source_ids": [],
+        "citations": [],
+        "citations_truncated": false,
+        "contributing_count": 0,
+        "derived": false,
+        "members": null,
+        "percent": 0.0
+      },
+      {
+        "value": "OTHER_GOV",
+        "label": "Other Gov",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 2,
+        "count_mentions": 2,
+        "source_ids": [
+          "NCT06519266",
+          "NCT07050043"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT06519266",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER_GOV",
+            "excerpt": "OTHER_GOV",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07050043",
+            "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+            "value": "OTHER_GOV",
+            "excerpt": "OTHER_GOV",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 2,
+        "derived": false,
+        "members": null,
+        "percent": 5.0
+      }
+    ]
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "pembrolizumab vs nivolumab trials by sponsor class",
+    "data": {
+      "values": [
+        {
+          "value": "INDUSTRY",
+          "percent": 64.2,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "INDUSTRY",
+          "percent": 42.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "OTHER",
+          "percent": 26.0,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "OTHER",
+          "percent": 37.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "NIH",
+          "percent": 5.7,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "NIH",
+          "percent": 7.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "NETWORK",
+          "percent": 4.1,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "NETWORK",
+          "percent": 7.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "OTHER_GOV",
+          "percent": 0.0,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "OTHER_GOV",
+          "percent": 5.0,
+          "series": "nivolumab"
+        }
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "type": "nominal",
+        "title": "Sponsor class"
+      },
+      "y": {
+        "field": "percent",
+        "type": "quantitative",
+        "title": "% within series"
+      },
+      "color": {
+        "field": "series",
+        "type": "nominal",
+        "title": "Series"
+      },
+      "xOffset": {
+        "field": "series",
+        "type": "nominal"
+      }
+    }
+  },
+  "answer": null,
+  "question": null,
+  "error": null,
+  "citations": {
+    "NCT03486873": {
+      "nct_id": "NCT03486873",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT04534205": {
+      "nct_id": "NCT04534205",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT04613596": {
+      "nct_id": "NCT04613596",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05317858": {
+      "nct_id": "NCT05317858",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05549297": {
+      "nct_id": "NCT05549297",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05633654": {
+      "nct_id": "NCT05633654",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05668650": {
+      "nct_id": "NCT05668650",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05727904": {
+      "nct_id": "NCT05727904",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05899608": {
+      "nct_id": "NCT05899608",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT05920356": {
+      "nct_id": "NCT05920356",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06077760": {
+      "nct_id": "NCT06077760",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06103864": {
+      "nct_id": "NCT06103864",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06119581": {
+      "nct_id": "NCT06119581",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06170788": {
+      "nct_id": "NCT06170788",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06216301": {
+      "nct_id": "NCT06216301",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06236438": {
+      "nct_id": "NCT06236438",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06264180": {
+      "nct_id": "NCT06264180",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06282575": {
+      "nct_id": "NCT06282575",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06312137": {
+      "nct_id": "NCT06312137",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06312176": {
+      "nct_id": "NCT06312176",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06022861": {
+      "nct_id": "NCT06022861",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06112314": {
+      "nct_id": "NCT06112314",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06246916": {
+      "nct_id": "NCT06246916",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06561386": {
+      "nct_id": "NCT06561386",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06581406": {
+      "nct_id": "NCT06581406",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06624644": {
+      "nct_id": "NCT06624644",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06646276": {
+      "nct_id": "NCT06646276",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06743126": {
+      "nct_id": "NCT06743126",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT06841679": {
+      "nct_id": "NCT06841679",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07195695": {
+      "nct_id": "NCT07195695",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07221149": {
+      "nct_id": "NCT07221149",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07221734": {
+      "nct_id": "NCT07221734",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07392892": {
+      "nct_id": "NCT07392892",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07405164": {
+      "nct_id": "NCT07405164",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT07431281": {
+      "nct_id": "NCT07431281",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "INDUSTRY",
+      "excerpt": "INDUSTRY",
+      "excerpt_tokens": null
+    },
+    "NCT03755739": {
+      "nct_id": "NCT03755739",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04322617": {
+      "nct_id": "NCT04322617",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04339218": {
+      "nct_id": "NCT04339218",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04747054": {
+      "nct_id": "NCT04747054",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04807673": {
+      "nct_id": "NCT04807673",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04997837": {
+      "nct_id": "NCT04997837",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05055908": {
+      "nct_id": "NCT05055908",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05085028": {
+      "nct_id": "NCT05085028",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05255302": {
+      "nct_id": "NCT05255302",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05595447": {
+      "nct_id": "NCT05595447",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05692999": {
+      "nct_id": "NCT05692999",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05812807": {
+      "nct_id": "NCT05812807",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06081244": {
+      "nct_id": "NCT06081244",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06102395": {
+      "nct_id": "NCT06102395",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06135714": {
+      "nct_id": "NCT06135714",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06364631": {
+      "nct_id": "NCT06364631",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06383780": {
+      "nct_id": "NCT06383780",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06488482": {
+      "nct_id": "NCT06488482",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06555003": {
+      "nct_id": "NCT06555003",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06606730": {
+      "nct_id": "NCT06606730",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT03803553": {
+      "nct_id": "NCT03803553",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT05677490": {
+      "nct_id": "NCT05677490",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06346197": {
+      "nct_id": "NCT06346197",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06490536": {
+      "nct_id": "NCT06490536",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06632327": {
+      "nct_id": "NCT06632327",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06794775": {
+      "nct_id": "NCT06794775",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06840782": {
+      "nct_id": "NCT06840782",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT06908993": {
+      "nct_id": "NCT06908993",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT07000253": {
+      "nct_id": "NCT07000253",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT07166406": {
+      "nct_id": "NCT07166406",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT07174453": {
+      "nct_id": "NCT07174453",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER",
+      "excerpt": "OTHER",
+      "excerpt_tokens": null
+    },
+    "NCT04267848": {
+      "nct_id": "NCT04267848",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT06096844": {
+      "nct_id": "NCT06096844",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT06422806": {
+      "nct_id": "NCT06422806",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT06524544": {
+      "nct_id": "NCT06524544",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT06589804": {
+      "nct_id": "NCT06589804",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT07061977": {
+      "nct_id": "NCT07061977",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT07198074": {
+      "nct_id": "NCT07198074",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT05675410": {
+      "nct_id": "NCT05675410",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT05987241": {
+      "nct_id": "NCT05987241",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT06203600": {
+      "nct_id": "NCT06203600",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NIH",
+      "excerpt": "NIH",
+      "excerpt_tokens": null
+    },
+    "NCT04093167": {
+      "nct_id": "NCT04093167",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT04510597": {
+      "nct_id": "NCT04510597",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT05815927": {
+      "nct_id": "NCT05815927",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT05929768": {
+      "nct_id": "NCT05929768",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT07383441": {
+      "nct_id": "NCT07383441",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT06188676": {
+      "nct_id": "NCT06188676",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "NETWORK",
+      "excerpt": "NETWORK",
+      "excerpt_tokens": null
+    },
+    "NCT06519266": {
+      "nct_id": "NCT06519266",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER_GOV",
+      "excerpt": "OTHER_GOV",
+      "excerpt_tokens": null
+    },
+    "NCT07050043": {
+      "nct_id": "NCT07050043",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
+      "value": "OTHER_GOV",
+      "excerpt": "OTHER_GOV",
+      "excerpt_tokens": null
+    }
+  },
+  "meta": {
+    "count_basis": {
+      "trials": 163,
+      "mentions": 163
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "phase": [
+        "PHASE3"
+      ],
+      "overallStatus": "RECRUITING",
+      "studyType": "INTERVENTIONAL",
+      "start_year": 2018
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.intr": "pembrolizumab",
+        "filter.overallStatus": "RECRUITING",
+        "filter.advanced": "AREA[StudyType]COVERAGE[FullMatch]INTERVENTIONAL AND AREA[Phase](PHASE3) AND AREA[StartDate]RANGE[2018-01-01,MAX]",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|sponsorClass"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:33:28.157858+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "pembrolizumab N=123; nivolumab N=40",
+      "Percent is within-series (denominator = each series' own N), so a large-N series does not visually swamp a small-N one; raw trial counts are retained per bar."
+    ]
+  }
+}

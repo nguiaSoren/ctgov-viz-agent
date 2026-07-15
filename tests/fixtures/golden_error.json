@@ -1,0 +1,34 @@
+{
+  "status": "error",
+  "kind": "answer",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": null,
+  "error": {
+    "code": "upstream_timeout",
+    "message": "The ClinicalTrials.gov API did not respond within the request deadline after 3 retries. No visualization was produced."
+  },
+  "citations": {},
+  "meta": {
+    "count_basis": null,
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "condition": "diabetes"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "diabetes",
+        "countTotal": true,
+        "fields": "NCTId|LocationCountry"
+      }
+    },
+    "retrieved_at": "2026-07-15T09:36:12Z",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "A hard upstream error short-circuits to status:\"error\" with a top-level error object; a half-populated visualization is never emitted (API-22)."
+    ]
+  }
+}

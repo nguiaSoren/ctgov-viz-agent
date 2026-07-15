@@ -1,0 +1,5583 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "grouped_bar",
+    "title": "pembrolizumab vs nivolumab trials by status",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Status",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      },
+      "y": {
+        "field": "percent",
+        "label": "% within series",
+        "unit": "%",
+        "sort": null,
+        "scale": "linear"
+      },
+      "color": {
+        "field": "series",
+        "label": "Series",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      }
+    },
+    "data": [
+      {
+        "value": "COMPLETED",
+        "label": "Completed",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 818,
+        "count_mentions": 818,
+        "source_ids": [
+          "NCT01295827",
+          "NCT01676753",
+          "NCT01704287",
+          "NCT01789827",
+          "NCT01840579",
+          "NCT01848834",
+          "NCT01866319",
+          "NCT01876511",
+          "NCT01905657",
+          "NCT01953692",
+          "NCT01986426",
+          "NCT01993719",
+          "NCT02007070",
+          "NCT02009449",
+          "NCT02013154",
+          "NCT02014636",
+          "NCT02039674",
+          "NCT02043665",
+          "NCT02054806",
+          "NCT02073123"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01295827",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01676753",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01704287",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01789827",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01840579",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01848834",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01866319",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01876511",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01905657",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01953692",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01986426",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01993719",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02007070",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02009449",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02013154",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02014636",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02039674",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02043665",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02054806",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02073123",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 818,
+        "derived": false,
+        "members": null,
+        "percent": 28.2
+      },
+      {
+        "value": "COMPLETED",
+        "label": "Completed",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 740,
+        "count_mentions": 740,
+        "source_ids": [
+          "NCT00441337",
+          "NCT00703469",
+          "NCT00730639",
+          "NCT00836888",
+          "NCT01024231",
+          "NCT01176461",
+          "NCT01176474",
+          "NCT01354431",
+          "NCT01358721",
+          "NCT01454102",
+          "NCT01472081",
+          "NCT01585194",
+          "NCT01592370",
+          "NCT01621490",
+          "NCT01629758",
+          "NCT01642004",
+          "NCT01658878",
+          "NCT01668784",
+          "NCT01673867",
+          "NCT01714739"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00441337",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00703469",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00730639",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00836888",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01024231",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01176461",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01176474",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01354431",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01358721",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01454102",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01472081",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01585194",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01592370",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01621490",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01629758",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01642004",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01658878",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01668784",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01673867",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01714739",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "COMPLETED",
+            "excerpt": "COMPLETED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 740,
+        "derived": false,
+        "members": null,
+        "percent": 36.8
+      },
+      {
+        "value": "RECRUITING",
+        "label": "Recruiting",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 708,
+        "count_mentions": 708,
+        "source_ids": [
+          "NCT01042379",
+          "NCT01174121",
+          "NCT02332668",
+          "NCT02621021",
+          "NCT02896335",
+          "NCT02925234",
+          "NCT03219450",
+          "NCT03295227",
+          "NCT03412877",
+          "NCT03449238",
+          "NCT03486873",
+          "NCT03526835",
+          "NCT03547973",
+          "NCT03556228",
+          "NCT03563729",
+          "NCT03591276",
+          "NCT03603223",
+          "NCT03618550",
+          "NCT03719105",
+          "NCT03753243"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01042379",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01174121",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02332668",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02621021",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02896335",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02925234",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03219450",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03295227",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03412877",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03449238",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03486873",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03526835",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03547973",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03556228",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03563729",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03591276",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03603223",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03618550",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03719105",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03753243",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 708,
+        "derived": false,
+        "members": null,
+        "percent": 24.4
+      },
+      {
+        "value": "RECRUITING",
+        "label": "Recruiting",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 340,
+        "count_mentions": 340,
+        "source_ids": [
+          "NCT02693535",
+          "NCT02813135",
+          "NCT02925234",
+          "NCT03017820",
+          "NCT03026140",
+          "NCT03080974",
+          "NCT03138161",
+          "NCT03258567",
+          "NCT03259867",
+          "NCT03297606",
+          "NCT03340129",
+          "NCT03406247",
+          "NCT03465592",
+          "NCT03521830",
+          "NCT03563729",
+          "NCT03646617",
+          "NCT03681561",
+          "NCT03685890",
+          "NCT03686124",
+          "NCT03690986"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02693535",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02813135",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02925234",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03017820",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03026140",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03080974",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03138161",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03258567",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03259867",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03297606",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03340129",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03406247",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03465592",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03521830",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03563729",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03646617",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03681561",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03685890",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03686124",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03690986",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "RECRUITING",
+            "excerpt": "RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 340,
+        "derived": false,
+        "members": null,
+        "percent": 16.9
+      },
+      {
+        "value": "ACTIVE_NOT_RECRUITING",
+        "label": "Active, not recruiting",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 488,
+        "count_mentions": 488,
+        "source_ids": [
+          "NCT01822652",
+          "NCT02194738",
+          "NCT02287428",
+          "NCT02298959",
+          "NCT02312557",
+          "NCT02337686",
+          "NCT02359565",
+          "NCT02362594",
+          "NCT02411656",
+          "NCT02414269",
+          "NCT02422381",
+          "NCT02432963",
+          "NCT02446457",
+          "NCT02506153",
+          "NCT02521844",
+          "NCT02560636",
+          "NCT02603887",
+          "NCT02608385",
+          "NCT02621151",
+          "NCT02628067"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01822652",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02194738",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02287428",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02298959",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02312557",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02337686",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02359565",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02362594",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02411656",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02414269",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02422381",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02432963",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02446457",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02506153",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02521844",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02560636",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02603887",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02608385",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02621151",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02628067",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 488,
+        "derived": false,
+        "members": null,
+        "percent": 16.8
+      },
+      {
+        "value": "ACTIVE_NOT_RECRUITING",
+        "label": "Active, not recruiting",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 345,
+        "count_mentions": 345,
+        "source_ids": [
+          "NCT01703949",
+          "NCT01896999",
+          "NCT02099058",
+          "NCT02194738",
+          "NCT02210117",
+          "NCT02224781",
+          "NCT02257528",
+          "NCT02259621",
+          "NCT02275533",
+          "NCT02293980",
+          "NCT02314169",
+          "NCT02339571",
+          "NCT02374242",
+          "NCT02393625",
+          "NCT02393794",
+          "NCT02451982",
+          "NCT02453620",
+          "NCT02465060",
+          "NCT02496208",
+          "NCT02530463"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01703949",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01896999",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02099058",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02194738",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02210117",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02224781",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02257528",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02259621",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02275533",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02293980",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02314169",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02339571",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02374242",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02393625",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02393794",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02451982",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02453620",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02465060",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02496208",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02530463",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "ACTIVE_NOT_RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 345,
+        "derived": false,
+        "members": null,
+        "percent": 17.2
+      },
+      {
+        "value": "TERMINATED",
+        "label": "Terminated",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 364,
+        "count_mentions": 364,
+        "source_ids": [
+          "NCT02036502",
+          "NCT02054520",
+          "NCT02212730",
+          "NCT02263508",
+          "NCT02268825",
+          "NCT02289222",
+          "NCT02302339",
+          "NCT02318901",
+          "NCT02331251",
+          "NCT02346955",
+          "NCT02359851",
+          "NCT02376699",
+          "NCT02382406",
+          "NCT02393248",
+          "NCT02395627",
+          "NCT02419495",
+          "NCT02452424",
+          "NCT02499952",
+          "NCT02501473",
+          "NCT02511184"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02036502",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02054520",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02212730",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02263508",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02268825",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02289222",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02302339",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02318901",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02331251",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02346955",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02359851",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02376699",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02382406",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02393248",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02395627",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02419495",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02452424",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02499952",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02501473",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02511184",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 364,
+        "derived": false,
+        "members": null,
+        "percent": 12.5
+      },
+      {
+        "value": "TERMINATED",
+        "label": "Terminated",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 253,
+        "count_mentions": 253,
+        "source_ids": [
+          "NCT01940809",
+          "NCT02054520",
+          "NCT02124850",
+          "NCT02253992",
+          "NCT02302339",
+          "NCT02323126",
+          "NCT02341625",
+          "NCT02408861",
+          "NCT02419495",
+          "NCT02421354",
+          "NCT02423954",
+          "NCT02446860",
+          "NCT02469701",
+          "NCT02472977",
+          "NCT02595918",
+          "NCT02599649",
+          "NCT02621515",
+          "NCT02635061",
+          "NCT02648633",
+          "NCT02663518"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01940809",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02054520",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02124850",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02253992",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02302339",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02323126",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02341625",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02408861",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02419495",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02421354",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02423954",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02446860",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02469701",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02472977",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02595918",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02599649",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02621515",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02635061",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02648633",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02663518",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TERMINATED",
+            "excerpt": "TERMINATED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 253,
+        "derived": false,
+        "members": null,
+        "percent": 12.6
+      },
+      {
+        "value": "NOT_YET_RECRUITING",
+        "label": "Not yet recruiting",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 144,
+        "count_mentions": 144,
+        "source_ids": [
+          "NCT03345134",
+          "NCT04153734",
+          "NCT04901741",
+          "NCT05077215",
+          "NCT05106127",
+          "NCT05286320",
+          "NCT05366062",
+          "NCT05425576",
+          "NCT05806385",
+          "NCT05909423",
+          "NCT06028633",
+          "NCT06045195",
+          "NCT06045767",
+          "NCT06086288",
+          "NCT06093425",
+          "NCT06142617",
+          "NCT06146777",
+          "NCT06212388",
+          "NCT06276504",
+          "NCT06371807"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03345134",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04153734",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04901741",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05077215",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05106127",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05286320",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05366062",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05425576",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05806385",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05909423",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06028633",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06045195",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06045767",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06086288",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06093425",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06142617",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06146777",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06212388",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06276504",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06371807",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 144,
+        "derived": false,
+        "members": null,
+        "percent": 5.0
+      },
+      {
+        "value": "NOT_YET_RECRUITING",
+        "label": "Not yet recruiting",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 44,
+        "count_mentions": 44,
+        "source_ids": [
+          "NCT05597800",
+          "NCT05835804",
+          "NCT06047015",
+          "NCT06561763",
+          "NCT06683755",
+          "NCT06692491",
+          "NCT06841185",
+          "NCT06888037",
+          "NCT07035860",
+          "NCT07050524",
+          "NCT07187869",
+          "NCT07190027",
+          "NCT07233668",
+          "NCT07277777",
+          "NCT07315035",
+          "NCT07338981",
+          "NCT07403877",
+          "NCT07420439",
+          "NCT07430202",
+          "NCT07444619"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT05597800",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05835804",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06047015",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06561763",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06683755",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06692491",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06841185",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06888037",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07035860",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07050524",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07187869",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07190027",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07233668",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07277777",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07315035",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07338981",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07403877",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07420439",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07430202",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07444619",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NOT_YET_RECRUITING",
+            "excerpt": "NOT_YET_RECRUITING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 44,
+        "derived": false,
+        "members": null,
+        "percent": 2.2
+      },
+      {
+        "value": "WITHDRAWN",
+        "label": "Withdrawn",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 132,
+        "count_mentions": 132,
+        "source_ids": [
+          "NCT02408042",
+          "NCT02586610",
+          "NCT02661100",
+          "NCT02663258",
+          "NCT02719015",
+          "NCT02812693",
+          "NCT02880345",
+          "NCT02943603",
+          "NCT03111901",
+          "NCT03114280",
+          "NCT03166254",
+          "NCT03182894",
+          "NCT03189186",
+          "NCT03191981",
+          "NCT03221634",
+          "NCT03238638",
+          "NCT03245177",
+          "NCT03291353",
+          "NCT03310567",
+          "NCT03311672"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02408042",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02586610",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02661100",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02663258",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02719015",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02812693",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02880345",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02943603",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03111901",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03114280",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03166254",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03182894",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03189186",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03191981",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03221634",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03238638",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03245177",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03291353",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03310567",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03311672",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 132,
+        "derived": false,
+        "members": null,
+        "percent": 4.5
+      },
+      {
+        "value": "WITHDRAWN",
+        "label": "Withdrawn",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 90,
+        "count_mentions": 90,
+        "source_ids": [
+          "NCT02357732",
+          "NCT02400385",
+          "NCT02466568",
+          "NCT02639234",
+          "NCT02736123",
+          "NCT02763761",
+          "NCT02924233",
+          "NCT02950038",
+          "NCT02962804",
+          "NCT03014804",
+          "NCT03023904",
+          "NCT03048136",
+          "NCT03121417",
+          "NCT03126461",
+          "NCT03149120",
+          "NCT03149159",
+          "NCT03161613",
+          "NCT03167177",
+          "NCT03169738",
+          "NCT03169764"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02357732",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02400385",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02466568",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02639234",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02736123",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02763761",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02924233",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02950038",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02962804",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03014804",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03023904",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03048136",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03121417",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03126461",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03149120",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03149159",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03161613",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03167177",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03169738",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03169764",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "WITHDRAWN",
+            "excerpt": "WITHDRAWN",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 90,
+        "derived": false,
+        "members": null,
+        "percent": 4.5
+      },
+      {
+        "value": "SUSPENDED",
+        "label": "Suspended",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 12,
+        "count_mentions": 12,
+        "source_ids": [
+          "NCT03316573",
+          "NCT03384836",
+          "NCT03969446",
+          "NCT04266730",
+          "NCT04754321",
+          "NCT04866810",
+          "NCT05101356",
+          "NCT05669352",
+          "NCT05673200",
+          "NCT06219174",
+          "NCT06728657",
+          "NCT06860386"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03316573",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03384836",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03969446",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04266730",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04754321",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04866810",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05101356",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05669352",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05673200",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06219174",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06728657",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06860386",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 12,
+        "derived": false,
+        "members": null,
+        "percent": 0.4
+      },
+      {
+        "value": "SUSPENDED",
+        "label": "Suspended",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 16,
+        "count_mentions": 16,
+        "source_ids": [
+          "NCT03604991",
+          "NCT03704714",
+          "NCT03970382",
+          "NCT04042116",
+          "NCT04268888",
+          "NCT04840589",
+          "NCT04866810",
+          "NCT04929041",
+          "NCT05445609",
+          "NCT05904080",
+          "NCT05928806",
+          "NCT06325683",
+          "NCT06728657",
+          "NCT07011550",
+          "NCT07176975",
+          "NCT07655583"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03604991",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03704714",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03970382",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04042116",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04268888",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04840589",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04866810",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04929041",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05445609",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05904080",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05928806",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06325683",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06728657",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07011550",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07176975",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07655583",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "SUSPENDED",
+            "excerpt": "SUSPENDED",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 16,
+        "derived": false,
+        "members": null,
+        "percent": 0.8
+      },
+      {
+        "value": "ENROLLING_BY_INVITATION",
+        "label": "Enrolling by invitation",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 8,
+        "count_mentions": 8,
+        "source_ids": [
+          "NCT02600949",
+          "NCT04361370",
+          "NCT04399876",
+          "NCT05745233",
+          "NCT06204614",
+          "NCT07218003",
+          "NCT07285434",
+          "NCT07633353"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02600949",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04361370",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04399876",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05745233",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06204614",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07218003",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07285434",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07633353",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 8,
+        "derived": false,
+        "members": null,
+        "percent": 0.3
+      },
+      {
+        "value": "ENROLLING_BY_INVITATION",
+        "label": "Enrolling by invitation",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 6,
+        "count_mentions": 6,
+        "source_ids": [
+          "NCT05745233",
+          "NCT06204614",
+          "NCT06871007",
+          "NCT06896110",
+          "NCT06931613",
+          "NCT07542262"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT05745233",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06204614",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06871007",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06896110",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06931613",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT07542262",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "ENROLLING_BY_INVITATION",
+            "excerpt": "ENROLLING_BY_INVITATION",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 6,
+        "derived": false,
+        "members": null,
+        "percent": 0.3
+      },
+      {
+        "value": "NO_LONGER_AVAILABLE",
+        "label": "No Longer Available",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 4,
+        "count_mentions": 4,
+        "source_ids": [
+          "NCT02083484",
+          "NCT03311542",
+          "NCT04135092",
+          "NCT04194190"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02083484",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03311542",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04135092",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04194190",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 4,
+        "derived": false,
+        "members": null,
+        "percent": 0.1
+      },
+      {
+        "value": "NO_LONGER_AVAILABLE",
+        "label": "No Longer Available",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 5,
+        "count_mentions": 5,
+        "source_ids": [
+          "NCT02142218",
+          "NCT02186249",
+          "NCT02475382",
+          "NCT05170685",
+          "NCT06590480"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02142218",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02186249",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02475382",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT05170685",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06590480",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "NO_LONGER_AVAILABLE",
+            "excerpt": "NO_LONGER_AVAILABLE",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 5,
+        "derived": false,
+        "members": null,
+        "percent": 0.2
+      },
+      {
+        "value": "TEMPORARILY_NOT_AVAILABLE",
+        "label": "Temporarily Not Available",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT05389514"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT05389514",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null,
+        "percent": 0.0
+      },
+      {
+        "value": "TEMPORARILY_NOT_AVAILABLE",
+        "label": "Temporarily Not Available",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 0,
+        "count_mentions": 0,
+        "source_ids": [],
+        "citations": [],
+        "citations_truncated": false,
+        "contributing_count": 0,
+        "derived": false,
+        "members": null,
+        "percent": 0.0
+      },
+      {
+        "value": "UNKNOWN",
+        "label": "Unknown status",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 224,
+        "count_mentions": 224,
+        "source_ids": [
+          "NCT02305186",
+          "NCT02364076",
+          "NCT02430363",
+          "NCT02557321",
+          "NCT02581228",
+          "NCT02617849",
+          "NCT02625337",
+          "NCT02673970",
+          "NCT02675946",
+          "NCT02758587",
+          "NCT02779101",
+          "NCT02824965",
+          "NCT02858921",
+          "NCT02901301",
+          "NCT02977468",
+          "NCT02990416",
+          "NCT03021057",
+          "NCT03044730",
+          "NCT03053856",
+          "NCT03065764"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02305186",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02364076",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02430363",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02557321",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02581228",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02617849",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02625337",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02673970",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02675946",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02758587",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02779101",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02824965",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02858921",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02901301",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02977468",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02990416",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03021057",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03044730",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03053856",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03065764",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 224,
+        "derived": false,
+        "members": null,
+        "percent": 7.7
+      },
+      {
+        "value": "UNKNOWN",
+        "label": "Unknown status",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 171,
+        "count_mentions": 171,
+        "source_ids": [
+          "NCT01818323",
+          "NCT02437279",
+          "NCT02460068",
+          "NCT02499367",
+          "NCT02581228",
+          "NCT02637531",
+          "NCT02852083",
+          "NCT02901145",
+          "NCT02913417",
+          "NCT02948348",
+          "NCT02968303",
+          "NCT02977052",
+          "NCT02982486",
+          "NCT03040791",
+          "NCT03048500",
+          "NCT03132675",
+          "NCT03146468",
+          "NCT03146650",
+          "NCT03161756",
+          "NCT03166397"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT01818323",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02437279",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02460068",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02499367",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02581228",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02637531",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02852083",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02901145",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02913417",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02948348",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02968303",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02977052",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02982486",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03040791",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03048500",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03132675",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03146468",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03146650",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03161756",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03166397",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "UNKNOWN",
+            "excerpt": "UNKNOWN",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 171,
+        "derived": false,
+        "members": null,
+        "percent": 8.5
+      },
+      {
+        "value": "APPROVED_FOR_MARKETING",
+        "label": "Approved For Marketing",
+        "period": null,
+        "series": "pembrolizumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 0,
+        "count_mentions": 0,
+        "source_ids": [],
+        "citations": [],
+        "citations_truncated": false,
+        "contributing_count": 0,
+        "derived": false,
+        "members": null,
+        "percent": 0.0
+      },
+      {
+        "value": "APPROVED_FOR_MARKETING",
+        "label": "Approved For Marketing",
+        "period": null,
+        "series": "nivolumab",
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT03126643"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03126643",
+            "field_path": "protocolSection.statusModule.overallStatus",
+            "value": "APPROVED_FOR_MARKETING",
+            "excerpt": "APPROVED_FOR_MARKETING",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null,
+        "percent": 0.0
+      }
+    ]
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "pembrolizumab vs nivolumab trials by status",
+    "data": {
+      "values": [
+        {
+          "value": "COMPLETED",
+          "percent": 28.2,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "COMPLETED",
+          "percent": 36.8,
+          "series": "nivolumab"
+        },
+        {
+          "value": "RECRUITING",
+          "percent": 24.4,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "RECRUITING",
+          "percent": 16.9,
+          "series": "nivolumab"
+        },
+        {
+          "value": "ACTIVE_NOT_RECRUITING",
+          "percent": 16.8,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "ACTIVE_NOT_RECRUITING",
+          "percent": 17.2,
+          "series": "nivolumab"
+        },
+        {
+          "value": "TERMINATED",
+          "percent": 12.5,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "TERMINATED",
+          "percent": 12.6,
+          "series": "nivolumab"
+        },
+        {
+          "value": "NOT_YET_RECRUITING",
+          "percent": 5.0,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "NOT_YET_RECRUITING",
+          "percent": 2.2,
+          "series": "nivolumab"
+        },
+        {
+          "value": "WITHDRAWN",
+          "percent": 4.5,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "WITHDRAWN",
+          "percent": 4.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "SUSPENDED",
+          "percent": 0.4,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "SUSPENDED",
+          "percent": 0.8,
+          "series": "nivolumab"
+        },
+        {
+          "value": "ENROLLING_BY_INVITATION",
+          "percent": 0.3,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "ENROLLING_BY_INVITATION",
+          "percent": 0.3,
+          "series": "nivolumab"
+        },
+        {
+          "value": "NO_LONGER_AVAILABLE",
+          "percent": 0.1,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "NO_LONGER_AVAILABLE",
+          "percent": 0.2,
+          "series": "nivolumab"
+        },
+        {
+          "value": "TEMPORARILY_NOT_AVAILABLE",
+          "percent": 0.0,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "TEMPORARILY_NOT_AVAILABLE",
+          "percent": 0.0,
+          "series": "nivolumab"
+        },
+        {
+          "value": "UNKNOWN",
+          "percent": 7.7,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "UNKNOWN",
+          "percent": 8.5,
+          "series": "nivolumab"
+        },
+        {
+          "value": "APPROVED_FOR_MARKETING",
+          "percent": 0.0,
+          "series": "pembrolizumab"
+        },
+        {
+          "value": "APPROVED_FOR_MARKETING",
+          "percent": 0.0,
+          "series": "nivolumab"
+        }
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "type": "nominal",
+        "title": "Status"
+      },
+      "y": {
+        "field": "percent",
+        "type": "quantitative",
+        "title": "% within series"
+      },
+      "color": {
+        "field": "series",
+        "type": "nominal",
+        "title": "Series"
+      },
+      "xOffset": {
+        "field": "series",
+        "type": "nominal"
+      }
+    }
+  },
+  "answer": null,
+  "question": null,
+  "error": null,
+  "citations": {
+    "NCT01295827": {
+      "nct_id": "NCT01295827",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01676753": {
+      "nct_id": "NCT01676753",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01704287": {
+      "nct_id": "NCT01704287",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01789827": {
+      "nct_id": "NCT01789827",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01840579": {
+      "nct_id": "NCT01840579",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01848834": {
+      "nct_id": "NCT01848834",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01866319": {
+      "nct_id": "NCT01866319",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01876511": {
+      "nct_id": "NCT01876511",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01905657": {
+      "nct_id": "NCT01905657",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01953692": {
+      "nct_id": "NCT01953692",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01986426": {
+      "nct_id": "NCT01986426",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01993719": {
+      "nct_id": "NCT01993719",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02007070": {
+      "nct_id": "NCT02007070",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02009449": {
+      "nct_id": "NCT02009449",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02013154": {
+      "nct_id": "NCT02013154",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02014636": {
+      "nct_id": "NCT02014636",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02039674": {
+      "nct_id": "NCT02039674",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02043665": {
+      "nct_id": "NCT02043665",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02054806": {
+      "nct_id": "NCT02054806",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT02073123": {
+      "nct_id": "NCT02073123",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT00441337": {
+      "nct_id": "NCT00441337",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT00703469": {
+      "nct_id": "NCT00703469",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT00730639": {
+      "nct_id": "NCT00730639",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT00836888": {
+      "nct_id": "NCT00836888",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01024231": {
+      "nct_id": "NCT01024231",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01176461": {
+      "nct_id": "NCT01176461",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01176474": {
+      "nct_id": "NCT01176474",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01354431": {
+      "nct_id": "NCT01354431",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01358721": {
+      "nct_id": "NCT01358721",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01454102": {
+      "nct_id": "NCT01454102",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01472081": {
+      "nct_id": "NCT01472081",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01585194": {
+      "nct_id": "NCT01585194",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01592370": {
+      "nct_id": "NCT01592370",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01621490": {
+      "nct_id": "NCT01621490",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01629758": {
+      "nct_id": "NCT01629758",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01642004": {
+      "nct_id": "NCT01642004",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01658878": {
+      "nct_id": "NCT01658878",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01668784": {
+      "nct_id": "NCT01668784",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01673867": {
+      "nct_id": "NCT01673867",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01714739": {
+      "nct_id": "NCT01714739",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "COMPLETED",
+      "excerpt": "COMPLETED",
+      "excerpt_tokens": null
+    },
+    "NCT01042379": {
+      "nct_id": "NCT01042379",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT01174121": {
+      "nct_id": "NCT01174121",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02332668": {
+      "nct_id": "NCT02332668",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02621021": {
+      "nct_id": "NCT02621021",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02896335": {
+      "nct_id": "NCT02896335",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02925234": {
+      "nct_id": "NCT02925234",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03219450": {
+      "nct_id": "NCT03219450",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03295227": {
+      "nct_id": "NCT03295227",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03412877": {
+      "nct_id": "NCT03412877",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03449238": {
+      "nct_id": "NCT03449238",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03486873": {
+      "nct_id": "NCT03486873",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03526835": {
+      "nct_id": "NCT03526835",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03547973": {
+      "nct_id": "NCT03547973",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03556228": {
+      "nct_id": "NCT03556228",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03563729": {
+      "nct_id": "NCT03563729",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03591276": {
+      "nct_id": "NCT03591276",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03603223": {
+      "nct_id": "NCT03603223",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03618550": {
+      "nct_id": "NCT03618550",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03719105": {
+      "nct_id": "NCT03719105",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03753243": {
+      "nct_id": "NCT03753243",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02693535": {
+      "nct_id": "NCT02693535",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02813135": {
+      "nct_id": "NCT02813135",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03017820": {
+      "nct_id": "NCT03017820",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03026140": {
+      "nct_id": "NCT03026140",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03080974": {
+      "nct_id": "NCT03080974",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03138161": {
+      "nct_id": "NCT03138161",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03258567": {
+      "nct_id": "NCT03258567",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03259867": {
+      "nct_id": "NCT03259867",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03297606": {
+      "nct_id": "NCT03297606",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03340129": {
+      "nct_id": "NCT03340129",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03406247": {
+      "nct_id": "NCT03406247",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03465592": {
+      "nct_id": "NCT03465592",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03521830": {
+      "nct_id": "NCT03521830",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03646617": {
+      "nct_id": "NCT03646617",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03681561": {
+      "nct_id": "NCT03681561",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03685890": {
+      "nct_id": "NCT03685890",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03686124": {
+      "nct_id": "NCT03686124",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT03690986": {
+      "nct_id": "NCT03690986",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT01822652": {
+      "nct_id": "NCT01822652",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02194738": {
+      "nct_id": "NCT02194738",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02287428": {
+      "nct_id": "NCT02287428",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02298959": {
+      "nct_id": "NCT02298959",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02312557": {
+      "nct_id": "NCT02312557",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02337686": {
+      "nct_id": "NCT02337686",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02359565": {
+      "nct_id": "NCT02359565",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02362594": {
+      "nct_id": "NCT02362594",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02411656": {
+      "nct_id": "NCT02411656",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02414269": {
+      "nct_id": "NCT02414269",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02422381": {
+      "nct_id": "NCT02422381",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02432963": {
+      "nct_id": "NCT02432963",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02446457": {
+      "nct_id": "NCT02446457",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02506153": {
+      "nct_id": "NCT02506153",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02521844": {
+      "nct_id": "NCT02521844",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02560636": {
+      "nct_id": "NCT02560636",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02603887": {
+      "nct_id": "NCT02603887",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02608385": {
+      "nct_id": "NCT02608385",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02621151": {
+      "nct_id": "NCT02621151",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02628067": {
+      "nct_id": "NCT02628067",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT01703949": {
+      "nct_id": "NCT01703949",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT01896999": {
+      "nct_id": "NCT01896999",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02099058": {
+      "nct_id": "NCT02099058",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02210117": {
+      "nct_id": "NCT02210117",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02224781": {
+      "nct_id": "NCT02224781",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02257528": {
+      "nct_id": "NCT02257528",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02259621": {
+      "nct_id": "NCT02259621",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02275533": {
+      "nct_id": "NCT02275533",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02293980": {
+      "nct_id": "NCT02293980",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02314169": {
+      "nct_id": "NCT02314169",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02339571": {
+      "nct_id": "NCT02339571",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02374242": {
+      "nct_id": "NCT02374242",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02393625": {
+      "nct_id": "NCT02393625",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02393794": {
+      "nct_id": "NCT02393794",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02451982": {
+      "nct_id": "NCT02451982",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02453620": {
+      "nct_id": "NCT02453620",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02465060": {
+      "nct_id": "NCT02465060",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02496208": {
+      "nct_id": "NCT02496208",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02530463": {
+      "nct_id": "NCT02530463",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "ACTIVE_NOT_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02036502": {
+      "nct_id": "NCT02036502",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02054520": {
+      "nct_id": "NCT02054520",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02212730": {
+      "nct_id": "NCT02212730",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02263508": {
+      "nct_id": "NCT02263508",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02268825": {
+      "nct_id": "NCT02268825",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02289222": {
+      "nct_id": "NCT02289222",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02302339": {
+      "nct_id": "NCT02302339",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02318901": {
+      "nct_id": "NCT02318901",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02331251": {
+      "nct_id": "NCT02331251",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02346955": {
+      "nct_id": "NCT02346955",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02359851": {
+      "nct_id": "NCT02359851",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02376699": {
+      "nct_id": "NCT02376699",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02382406": {
+      "nct_id": "NCT02382406",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02393248": {
+      "nct_id": "NCT02393248",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02395627": {
+      "nct_id": "NCT02395627",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02419495": {
+      "nct_id": "NCT02419495",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02452424": {
+      "nct_id": "NCT02452424",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02499952": {
+      "nct_id": "NCT02499952",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02501473": {
+      "nct_id": "NCT02501473",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02511184": {
+      "nct_id": "NCT02511184",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT01940809": {
+      "nct_id": "NCT01940809",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02124850": {
+      "nct_id": "NCT02124850",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02253992": {
+      "nct_id": "NCT02253992",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02323126": {
+      "nct_id": "NCT02323126",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02341625": {
+      "nct_id": "NCT02341625",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02408861": {
+      "nct_id": "NCT02408861",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02421354": {
+      "nct_id": "NCT02421354",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02423954": {
+      "nct_id": "NCT02423954",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02446860": {
+      "nct_id": "NCT02446860",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02469701": {
+      "nct_id": "NCT02469701",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02472977": {
+      "nct_id": "NCT02472977",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02595918": {
+      "nct_id": "NCT02595918",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02599649": {
+      "nct_id": "NCT02599649",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02621515": {
+      "nct_id": "NCT02621515",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02635061": {
+      "nct_id": "NCT02635061",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02648633": {
+      "nct_id": "NCT02648633",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT02663518": {
+      "nct_id": "NCT02663518",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TERMINATED",
+      "excerpt": "TERMINATED",
+      "excerpt_tokens": null
+    },
+    "NCT03345134": {
+      "nct_id": "NCT03345134",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT04153734": {
+      "nct_id": "NCT04153734",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT04901741": {
+      "nct_id": "NCT04901741",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05077215": {
+      "nct_id": "NCT05077215",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05106127": {
+      "nct_id": "NCT05106127",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05286320": {
+      "nct_id": "NCT05286320",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05366062": {
+      "nct_id": "NCT05366062",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05425576": {
+      "nct_id": "NCT05425576",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05806385": {
+      "nct_id": "NCT05806385",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05909423": {
+      "nct_id": "NCT05909423",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06028633": {
+      "nct_id": "NCT06028633",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06045195": {
+      "nct_id": "NCT06045195",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06045767": {
+      "nct_id": "NCT06045767",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06086288": {
+      "nct_id": "NCT06086288",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06093425": {
+      "nct_id": "NCT06093425",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06142617": {
+      "nct_id": "NCT06142617",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06146777": {
+      "nct_id": "NCT06146777",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06212388": {
+      "nct_id": "NCT06212388",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06276504": {
+      "nct_id": "NCT06276504",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06371807": {
+      "nct_id": "NCT06371807",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05597800": {
+      "nct_id": "NCT05597800",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT05835804": {
+      "nct_id": "NCT05835804",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06047015": {
+      "nct_id": "NCT06047015",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06561763": {
+      "nct_id": "NCT06561763",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06683755": {
+      "nct_id": "NCT06683755",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06692491": {
+      "nct_id": "NCT06692491",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06841185": {
+      "nct_id": "NCT06841185",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT06888037": {
+      "nct_id": "NCT06888037",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07035860": {
+      "nct_id": "NCT07035860",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07050524": {
+      "nct_id": "NCT07050524",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07187869": {
+      "nct_id": "NCT07187869",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07190027": {
+      "nct_id": "NCT07190027",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07233668": {
+      "nct_id": "NCT07233668",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07277777": {
+      "nct_id": "NCT07277777",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07315035": {
+      "nct_id": "NCT07315035",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07338981": {
+      "nct_id": "NCT07338981",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07403877": {
+      "nct_id": "NCT07403877",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07420439": {
+      "nct_id": "NCT07420439",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07430202": {
+      "nct_id": "NCT07430202",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT07444619": {
+      "nct_id": "NCT07444619",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NOT_YET_RECRUITING",
+      "excerpt": "NOT_YET_RECRUITING",
+      "excerpt_tokens": null
+    },
+    "NCT02408042": {
+      "nct_id": "NCT02408042",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02586610": {
+      "nct_id": "NCT02586610",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02661100": {
+      "nct_id": "NCT02661100",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02663258": {
+      "nct_id": "NCT02663258",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02719015": {
+      "nct_id": "NCT02719015",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02812693": {
+      "nct_id": "NCT02812693",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02880345": {
+      "nct_id": "NCT02880345",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02943603": {
+      "nct_id": "NCT02943603",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03111901": {
+      "nct_id": "NCT03111901",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03114280": {
+      "nct_id": "NCT03114280",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03166254": {
+      "nct_id": "NCT03166254",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03182894": {
+      "nct_id": "NCT03182894",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03189186": {
+      "nct_id": "NCT03189186",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03191981": {
+      "nct_id": "NCT03191981",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03221634": {
+      "nct_id": "NCT03221634",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03238638": {
+      "nct_id": "NCT03238638",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03245177": {
+      "nct_id": "NCT03245177",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03291353": {
+      "nct_id": "NCT03291353",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03310567": {
+      "nct_id": "NCT03310567",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03311672": {
+      "nct_id": "NCT03311672",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02357732": {
+      "nct_id": "NCT02357732",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02400385": {
+      "nct_id": "NCT02400385",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02466568": {
+      "nct_id": "NCT02466568",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02639234": {
+      "nct_id": "NCT02639234",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02736123": {
+      "nct_id": "NCT02736123",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02763761": {
+      "nct_id": "NCT02763761",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02924233": {
+      "nct_id": "NCT02924233",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02950038": {
+      "nct_id": "NCT02950038",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT02962804": {
+      "nct_id": "NCT02962804",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03014804": {
+      "nct_id": "NCT03014804",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03023904": {
+      "nct_id": "NCT03023904",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03048136": {
+      "nct_id": "NCT03048136",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03121417": {
+      "nct_id": "NCT03121417",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03126461": {
+      "nct_id": "NCT03126461",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03149120": {
+      "nct_id": "NCT03149120",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03149159": {
+      "nct_id": "NCT03149159",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03161613": {
+      "nct_id": "NCT03161613",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03167177": {
+      "nct_id": "NCT03167177",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03169738": {
+      "nct_id": "NCT03169738",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03169764": {
+      "nct_id": "NCT03169764",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "WITHDRAWN",
+      "excerpt": "WITHDRAWN",
+      "excerpt_tokens": null
+    },
+    "NCT03316573": {
+      "nct_id": "NCT03316573",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT03384836": {
+      "nct_id": "NCT03384836",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT03969446": {
+      "nct_id": "NCT03969446",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04266730": {
+      "nct_id": "NCT04266730",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04754321": {
+      "nct_id": "NCT04754321",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04866810": {
+      "nct_id": "NCT04866810",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05101356": {
+      "nct_id": "NCT05101356",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05669352": {
+      "nct_id": "NCT05669352",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05673200": {
+      "nct_id": "NCT05673200",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT06219174": {
+      "nct_id": "NCT06219174",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT06728657": {
+      "nct_id": "NCT06728657",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT06860386": {
+      "nct_id": "NCT06860386",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT03604991": {
+      "nct_id": "NCT03604991",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT03704714": {
+      "nct_id": "NCT03704714",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT03970382": {
+      "nct_id": "NCT03970382",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04042116": {
+      "nct_id": "NCT04042116",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04268888": {
+      "nct_id": "NCT04268888",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04840589": {
+      "nct_id": "NCT04840589",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT04929041": {
+      "nct_id": "NCT04929041",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05445609": {
+      "nct_id": "NCT05445609",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05904080": {
+      "nct_id": "NCT05904080",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT05928806": {
+      "nct_id": "NCT05928806",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT06325683": {
+      "nct_id": "NCT06325683",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT07011550": {
+      "nct_id": "NCT07011550",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT07176975": {
+      "nct_id": "NCT07176975",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT07655583": {
+      "nct_id": "NCT07655583",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "SUSPENDED",
+      "excerpt": "SUSPENDED",
+      "excerpt_tokens": null
+    },
+    "NCT02600949": {
+      "nct_id": "NCT02600949",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT04361370": {
+      "nct_id": "NCT04361370",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT04399876": {
+      "nct_id": "NCT04399876",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT05745233": {
+      "nct_id": "NCT05745233",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT06204614": {
+      "nct_id": "NCT06204614",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT07218003": {
+      "nct_id": "NCT07218003",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT07285434": {
+      "nct_id": "NCT07285434",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT07633353": {
+      "nct_id": "NCT07633353",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT06871007": {
+      "nct_id": "NCT06871007",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT06896110": {
+      "nct_id": "NCT06896110",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT06931613": {
+      "nct_id": "NCT06931613",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT07542262": {
+      "nct_id": "NCT07542262",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "ENROLLING_BY_INVITATION",
+      "excerpt": "ENROLLING_BY_INVITATION",
+      "excerpt_tokens": null
+    },
+    "NCT02083484": {
+      "nct_id": "NCT02083484",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT03311542": {
+      "nct_id": "NCT03311542",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT04135092": {
+      "nct_id": "NCT04135092",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT04194190": {
+      "nct_id": "NCT04194190",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT02142218": {
+      "nct_id": "NCT02142218",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT02186249": {
+      "nct_id": "NCT02186249",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT02475382": {
+      "nct_id": "NCT02475382",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT05170685": {
+      "nct_id": "NCT05170685",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT06590480": {
+      "nct_id": "NCT06590480",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "NO_LONGER_AVAILABLE",
+      "excerpt": "NO_LONGER_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT05389514": {
+      "nct_id": "NCT05389514",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt_tokens": null
+    },
+    "NCT02305186": {
+      "nct_id": "NCT02305186",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02364076": {
+      "nct_id": "NCT02364076",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02430363": {
+      "nct_id": "NCT02430363",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02557321": {
+      "nct_id": "NCT02557321",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02581228": {
+      "nct_id": "NCT02581228",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02617849": {
+      "nct_id": "NCT02617849",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02625337": {
+      "nct_id": "NCT02625337",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02673970": {
+      "nct_id": "NCT02673970",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02675946": {
+      "nct_id": "NCT02675946",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02758587": {
+      "nct_id": "NCT02758587",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02779101": {
+      "nct_id": "NCT02779101",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02824965": {
+      "nct_id": "NCT02824965",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02858921": {
+      "nct_id": "NCT02858921",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02901301": {
+      "nct_id": "NCT02901301",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02977468": {
+      "nct_id": "NCT02977468",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02990416": {
+      "nct_id": "NCT02990416",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03021057": {
+      "nct_id": "NCT03021057",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03044730": {
+      "nct_id": "NCT03044730",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03053856": {
+      "nct_id": "NCT03053856",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03065764": {
+      "nct_id": "NCT03065764",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT01818323": {
+      "nct_id": "NCT01818323",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02437279": {
+      "nct_id": "NCT02437279",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02460068": {
+      "nct_id": "NCT02460068",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02499367": {
+      "nct_id": "NCT02499367",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02637531": {
+      "nct_id": "NCT02637531",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02852083": {
+      "nct_id": "NCT02852083",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02901145": {
+      "nct_id": "NCT02901145",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02913417": {
+      "nct_id": "NCT02913417",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02948348": {
+      "nct_id": "NCT02948348",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02968303": {
+      "nct_id": "NCT02968303",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02977052": {
+      "nct_id": "NCT02977052",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT02982486": {
+      "nct_id": "NCT02982486",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03040791": {
+      "nct_id": "NCT03040791",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03048500": {
+      "nct_id": "NCT03048500",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03132675": {
+      "nct_id": "NCT03132675",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03146468": {
+      "nct_id": "NCT03146468",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03146650": {
+      "nct_id": "NCT03146650",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03161756": {
+      "nct_id": "NCT03161756",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03166397": {
+      "nct_id": "NCT03166397",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "UNKNOWN",
+      "excerpt": "UNKNOWN",
+      "excerpt_tokens": null
+    },
+    "NCT03126643": {
+      "nct_id": "NCT03126643",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "APPROVED_FOR_MARKETING",
+      "excerpt": "APPROVED_FOR_MARKETING",
+      "excerpt_tokens": null
+    }
+  },
+  "meta": {
+    "count_basis": {
+      "trials": 4914,
+      "mentions": 4914
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {},
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.intr": "pembrolizumab",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|overallStatus"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:32:22.957976+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "pembrolizumab N=2903; nivolumab N=2011",
+      "Percent is within-series (denominator = each series' own N), so a large-N series does not visually swamp a small-N one; raw trial counts are retained per bar."
+    ]
+  }
+}

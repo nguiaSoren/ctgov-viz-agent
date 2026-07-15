@@ -1,0 +1,33 @@
+{
+  "status": "too_large",
+  "kind": "answer",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": "142,411 trials match \"cancer\" — too large to chart faithfully within the paging budget (20,000 trials). Here is the exact total: 142,411 trials. Narrow the query (e.g. add a phase, status, or year range) to render a distribution.",
+  "error": null,
+  "citations": {},
+  "meta": {
+    "count_basis": {"trials": 142411, "mentions": null},
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "condition": "cancer"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "cancer",
+        "countTotal": true,
+        "pageSize": 1,
+        "fields": "NCTId"
+      }
+    },
+    "retrieved_at": "2026-07-15T09:41:48Z",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "Match set (142,411) exceeds the 20,000-trial page budget. Per the faithfulness-over-completeness contract, the chart is refused rather than shipping a biased sorted-prefix sample (§B.7).",
+      "meta.partial is null: refusing to chart is not truncating (G-39). The exact countTotal is one cheap call and is always exact; it is surfaced in count_basis.trials and this note."
+    ]
+  }
+}

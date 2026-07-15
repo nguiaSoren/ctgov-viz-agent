@@ -1,0 +1,217 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "bar",
+    "title": "Phase distribution of interventional pancreatic cancer trials (1,000 trials)",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Phase",
+        "sort": "NA,EARLY_PHASE1,PHASE1,PHASE1/2,PHASE2,PHASE3,PHASE4,MISSING"
+      },
+      "y": {
+        "field": "count_trials",
+        "label": "Trials",
+        "unit": "trials",
+        "scale": "linear"
+      }
+    },
+    "data": [
+      {
+        "value": "NA",
+        "label": "NA (not applicable)",
+        "count_trials": 200,
+        "count_mentions": 200,
+        "source_ids": ["NCT03005678"],
+        "citations": [
+          {
+            "nct_id": "NCT03005678",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["NA"],
+            "excerpt": "NA"
+          }
+        ],
+        "contributing_count": 200,
+        "citations_truncated": true
+      },
+      {
+        "value": "EARLY_PHASE1",
+        "label": "Early Phase 1",
+        "count_trials": 20,
+        "count_mentions": 20,
+        "source_ids": ["NCT05231007"],
+        "citations": [
+          {
+            "nct_id": "NCT05231007",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["EARLY_PHASE1"],
+            "excerpt": "EARLY_PHASE1"
+          }
+        ],
+        "contributing_count": 20
+      },
+      {
+        "value": "PHASE1",
+        "label": "Phase 1",
+        "count_trials": 190,
+        "count_mentions": 190,
+        "source_ids": ["NCT01234567"],
+        "citations": [
+          {
+            "nct_id": "NCT01234567",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["PHASE1"],
+            "excerpt": "PHASE1"
+          }
+        ],
+        "contributing_count": 190,
+        "citations_truncated": true
+      },
+      {
+        "value": "PHASE1/2",
+        "label": "Phase 1/2",
+        "count_trials": 60,
+        "count_mentions": 60,
+        "source_ids": ["NCT03900012"],
+        "citations": [
+          {
+            "nct_id": "NCT03900012",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["PHASE1", "PHASE2"],
+            "excerpt": "PHASE1"
+          }
+        ],
+        "contributing_count": 60
+      },
+      {
+        "value": "PHASE2",
+        "label": "Phase 2",
+        "count_trials": 240,
+        "count_mentions": 240,
+        "source_ids": ["NCT02998877"],
+        "citations": [
+          {
+            "nct_id": "NCT02998877",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["PHASE2"],
+            "excerpt": "PHASE2"
+          }
+        ],
+        "contributing_count": 240,
+        "citations_truncated": true
+      },
+      {
+        "value": "PHASE3",
+        "label": "Phase 3",
+        "count_trials": 150,
+        "count_mentions": 150,
+        "source_ids": ["NCT01778739"],
+        "citations": [
+          {
+            "nct_id": "NCT01778739",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["PHASE3"],
+            "excerpt": "PHASE3"
+          }
+        ],
+        "contributing_count": 150
+      },
+      {
+        "value": "PHASE4",
+        "label": "Phase 4",
+        "count_trials": 40,
+        "count_mentions": 40,
+        "source_ids": ["NCT02110043"],
+        "citations": [
+          {
+            "nct_id": "NCT02110043",
+            "field_path": "protocolSection.designModule.phases",
+            "value": ["PHASE4"],
+            "excerpt": "PHASE4"
+          }
+        ],
+        "contributing_count": 40
+      },
+      {
+        "value": "MISSING",
+        "label": "Missing (not reported)",
+        "count_trials": 100,
+        "count_mentions": 100,
+        "source_ids": ["NCT05590001"],
+        "citations": [
+          {
+            "nct_id": "NCT05590001",
+            "field_path": "protocolSection.designModule.phases",
+            "value": [],
+            "excerpt": ""
+          }
+        ],
+        "contributing_count": 100
+      }
+    ]
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Phase distribution of interventional pancreatic cancer trials",
+    "data": {
+      "values": [
+        {"phase": "NA (not applicable)", "trials": 200},
+        {"phase": "Early Phase 1", "trials": 20},
+        {"phase": "Phase 1", "trials": 190},
+        {"phase": "Phase 1/2", "trials": 60},
+        {"phase": "Phase 2", "trials": 240},
+        {"phase": "Phase 3", "trials": 150},
+        {"phase": "Phase 4", "trials": 40},
+        {"phase": "Missing (not reported)", "trials": 100}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "phase", "type": "nominal", "title": "Phase"},
+      "y": {"field": "trials", "type": "quantitative", "title": "Trials"}
+    }
+  },
+  "answer": null,
+  "error": null,
+  "citations": {
+    "NCT01234567": {
+      "nct_id": "NCT01234567",
+      "field_path": "protocolSection.designModule.phases",
+      "value": ["PHASE1"],
+      "excerpt": "PHASE1"
+    },
+    "NCT01778739": {
+      "nct_id": "NCT01778739",
+      "field_path": "protocolSection.designModule.phases",
+      "value": ["PHASE3"],
+      "excerpt": "PHASE3"
+    }
+  },
+  "meta": {
+    "count_basis": {"trials": 1000, "mentions": 1000},
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "condition": "pancreatic cancer",
+      "studyType": "INTERVENTIONAL"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "pancreatic cancer",
+        "filter.advanced": "AREA[StudyType]COVERAGE[FullMatch]INTERVENTIONAL",
+        "countTotal": true,
+        "fields": "NCTId|Phase"
+      }
+    },
+    "retrieved_at": "2026-07-15T09:14:22Z",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "Phase is combine-bucketed: a combined trial (e.g. [\"PHASE1\",\"PHASE2\"]) gets its own \"Phase 1/2\" bucket, so buckets sum to the distinct-trial total (CC-15).",
+      "Two distinct empty buckets are kept: \"NA (not applicable)\" (phase does not apply) and \"Missing (not reported)\" (phase absent) — never silently dropped (G-21).",
+      "Denominator is interventional trials only (interventional_only=true); observational trials legitimately have no phase (CC-5)."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "empty",
+  "kind": "clarification",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": null,
+  "question": "Which drug do you mean? Please name the drug (e.g. in the drug_name field).",
+  "error": null,
+  "citations": {},
+  "meta": {
+    "count_basis": null,
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {},
+    "query_provenance": {},
+    "retrieved_at": null,
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "The query referred to an entity it did not name; asking for clarification rather than guessing (E-13)."
+    ]
+  }
+}

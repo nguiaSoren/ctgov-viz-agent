@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "kind": "answer",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": "Yes. 3 Phase 3 trials of pembrolizumab for melanoma are currently recruiting.",
+  "error": null,
+  "citations": {
+    "NCT01234567": {
+      "nct_id": "NCT01234567",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING"
+    },
+    "NCT02998877": {
+      "nct_id": "NCT02998877",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING"
+    },
+    "NCT03900012": {
+      "nct_id": "NCT03900012",
+      "field_path": "protocolSection.statusModule.overallStatus",
+      "value": "RECRUITING",
+      "excerpt": "RECRUITING"
+    }
+  },
+  "meta": {
+    "count_basis": {"trials": 3, "mentions": null},
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "drug": "pembrolizumab",
+      "condition": "melanoma",
+      "phase": ["PHASE3"],
+      "overallStatus": "RECRUITING"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.intr": "pembrolizumab",
+        "query.cond": "melanoma",
+        "aggFilters": "phase:3",
+        "filter.overallStatus": "RECRUITING",
+        "countTotal": true,
+        "fields": "NCTId|OverallStatus"
+      }
+    },
+    "retrieved_at": "2026-07-15T09:31:57Z",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "A boolean/scalar question yields a natural-language answer (kind:\"answer\"); the answer text is code-templated from the computed count of 3 (G-30 — no digit is LLM-authored).",
+      "\"Recruiting\" is interpreted strictly as overallStatus == RECRUITING (not NOT_YET_RECRUITING or ENROLLING_BY_INVITATION)."
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "status": "empty",
+  "kind": "visualization",
+  "visualization": {
+    "type": "bar",
+    "title": "Phase distribution of cancer OR diabetes trials",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Phase",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      },
+      "y": {
+        "field": "count_trials",
+        "label": "Trials",
+        "unit": "trials",
+        "sort": null,
+        "scale": "linear"
+      }
+    },
+    "data": []
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Phase distribution of cancer OR diabetes trials",
+    "data": {
+      "values": []
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "type": "nominal",
+        "title": "Phase"
+      },
+      "y": {
+        "field": "count_trials",
+        "type": "quantitative",
+        "title": "Trials"
+      }
+    }
+  },
+  "answer": null,
+  "question": null,
+  "error": null,
+  "citations": {},
+  "meta": {
+    "count_basis": {
+      "trials": 0,
+      "mentions": null
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {},
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "\"cancer OR diabetes\"",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|Phase"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:33:20.907645+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "No trials matched this query.",
+      "Use the authoritative structured condition dimension: cancer OR diabetes.",
+      "Broadened scope by avoiding extra entities or filters not requested; classify as a phase distribution over the matched trials."
+    ]
+  }
+}

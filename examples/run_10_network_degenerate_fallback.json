@@ -1,0 +1,470 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "bar",
+    "title": "Most-studied drugs in progeria trials",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Value",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      },
+      "y": {
+        "field": "count_trials",
+        "label": "Trials",
+        "unit": "trials",
+        "sort": null,
+        "scale": "linear"
+      }
+    },
+    "data": [
+      {
+        "value": "Lonafarnib",
+        "label": "Lonafarnib",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 4,
+        "count_mentions": 4,
+        "source_ids": [
+          "NCT00425607",
+          "NCT00879034",
+          "NCT03895528",
+          "NCT06775041"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00425607",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib"
+            ],
+            "excerpt": "Lonafarnib",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00879034",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib",
+              "Zoledronic Acid",
+              "Pravastatin"
+            ],
+            "excerpt": "Lonafarnib",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03895528",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib"
+            ],
+            "excerpt": "Lonafarnib",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06775041",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Progerinin",
+              "Lonafarnib"
+            ],
+            "excerpt": "Lonafarnib",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 4,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Progerinin",
+        "label": "Progerinin",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 2,
+        "count_mentions": 2,
+        "source_ids": [
+          "NCT04512963",
+          "NCT06775041"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT04512963",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Progerinin"
+            ],
+            "excerpt": "Progerinin",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT06775041",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Progerinin",
+              "Lonafarnib"
+            ],
+            "excerpt": "Progerinin",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 2,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Everolimus and lonafarnib",
+        "label": "Everolimus and lonafarnib",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT02579044"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT02579044",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Everolimus and lonafarnib"
+            ],
+            "excerpt": "Everolimus and lonafarnib",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Lonafarnib, Zoledronic Acid, and Pravastatin",
+        "label": "Lonafarnib, Zoledronic Acid, and Pravastatin",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT00916747"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00916747",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib, Zoledronic Acid, and Pravastatin"
+            ],
+            "excerpt": "Lonafarnib, Zoledronic Acid, and Pravastatin",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Pravastatin",
+        "label": "Pravastatin",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT00879034"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00879034",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib",
+              "Zoledronic Acid",
+              "Pravastatin"
+            ],
+            "excerpt": "Pravastatin",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Umbilical Cord Blood Unit",
+        "label": "Umbilical Cord Blood Unit",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT03871972"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT03871972",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Umbilical Cord Blood Unit"
+            ],
+            "excerpt": "Umbilical Cord Blood Unit",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Zoledronic Acid",
+        "label": "Zoledronic Acid",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT00879034"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00879034",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Lonafarnib",
+              "Zoledronic Acid",
+              "Pravastatin"
+            ],
+            "excerpt": "Zoledronic Acid",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "Zoledronic acid, pravastatin",
+        "label": "Zoledronic acid, pravastatin",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 1,
+        "count_mentions": 1,
+        "source_ids": [
+          "NCT00731016"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00731016",
+            "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+            "value": [
+              "Zoledronic acid, pravastatin"
+            ],
+            "excerpt": "Zoledronic acid, pravastatin",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": false,
+        "contributing_count": 1,
+        "derived": false,
+        "members": null
+      }
+    ]
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Most-studied drugs in progeria trials",
+    "data": {
+      "values": [
+        {
+          "value": "Lonafarnib",
+          "count_trials": 4
+        },
+        {
+          "value": "Progerinin",
+          "count_trials": 2
+        },
+        {
+          "value": "Everolimus and lonafarnib",
+          "count_trials": 1
+        },
+        {
+          "value": "Lonafarnib, Zoledronic Acid, and Pravastatin",
+          "count_trials": 1
+        },
+        {
+          "value": "Pravastatin",
+          "count_trials": 1
+        },
+        {
+          "value": "Umbilical Cord Blood Unit",
+          "count_trials": 1
+        },
+        {
+          "value": "Zoledronic Acid",
+          "count_trials": 1
+        },
+        {
+          "value": "Zoledronic acid, pravastatin",
+          "count_trials": 1
+        }
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "type": "nominal",
+        "title": "Value"
+      },
+      "y": {
+        "field": "count_trials",
+        "type": "quantitative",
+        "title": "Trials"
+      }
+    }
+  },
+  "answer": null,
+  "question": null,
+  "error": null,
+  "citations": {
+    "NCT00425607": {
+      "nct_id": "NCT00425607",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Lonafarnib"
+      ],
+      "excerpt": "Lonafarnib",
+      "excerpt_tokens": null
+    },
+    "NCT00879034": {
+      "nct_id": "NCT00879034",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Lonafarnib",
+        "Zoledronic Acid",
+        "Pravastatin"
+      ],
+      "excerpt": "Lonafarnib",
+      "excerpt_tokens": null
+    },
+    "NCT03895528": {
+      "nct_id": "NCT03895528",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Lonafarnib"
+      ],
+      "excerpt": "Lonafarnib",
+      "excerpt_tokens": null
+    },
+    "NCT06775041": {
+      "nct_id": "NCT06775041",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Progerinin",
+        "Lonafarnib"
+      ],
+      "excerpt": "Lonafarnib",
+      "excerpt_tokens": null
+    },
+    "NCT04512963": {
+      "nct_id": "NCT04512963",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Progerinin"
+      ],
+      "excerpt": "Progerinin",
+      "excerpt_tokens": null
+    },
+    "NCT02579044": {
+      "nct_id": "NCT02579044",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Everolimus and lonafarnib"
+      ],
+      "excerpt": "Everolimus and lonafarnib",
+      "excerpt_tokens": null
+    },
+    "NCT00916747": {
+      "nct_id": "NCT00916747",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Lonafarnib, Zoledronic Acid, and Pravastatin"
+      ],
+      "excerpt": "Lonafarnib, Zoledronic Acid, and Pravastatin",
+      "excerpt_tokens": null
+    },
+    "NCT03871972": {
+      "nct_id": "NCT03871972",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Umbilical Cord Blood Unit"
+      ],
+      "excerpt": "Umbilical Cord Blood Unit",
+      "excerpt_tokens": null
+    },
+    "NCT00731016": {
+      "nct_id": "NCT00731016",
+      "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
+      "value": [
+        "Zoledronic acid, pravastatin"
+      ],
+      "excerpt": "Zoledronic acid, pravastatin",
+      "excerpt_tokens": null
+    }
+  },
+  "meta": {
+    "count_basis": {
+      "trials": 9,
+      "mentions": 12
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {},
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "progeria",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType|InterventionOtherName"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:32:59.792927+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "Network too sparse to graph (≤1 entity or no repeated co-occurrence); showing individual drug frequencies instead (G-41e).",
+      "Drug nodes are keyed by active ingredient: names are normalized (case, punctuation, dose/strength, salt, and dose-form/route stripped — 'Sunitinib Malate'≡'Sunitinib', 'Selumetinib, 100mg'≡'Selumetinib'), then a brand folds into its generic via an alias-only synonym merge — an otherName merges two drugs ONLY when it is itself another drug's primary name (Keytruda↔pembrolizumab) AND that alias is corroborated by ≥2 trials, so a single-trial registry mislabel can't collapse two drugs. A combination product ('Drug A + Drug B') never merges its components (CC-12). Conservative tradeoff: a brand/generic pair attested by only ONE trial stays split (the safe direction).",
+      "Placebo / standard-of-care interventions are excluded by name to avoid a false mega-hub (G-36).",
+      "9 of 10 matched trials study ≥1 drug intervention; the remaining 1 have none and are not shown here.",
+      "Degenerate-network fallback: individual drug frequencies (distinct trials studying each canonical drug), each cited to the drug's own name in a contributing record.",
+      "Build a drug co-occurrence network for trials on the named condition.",
+      "The question asks for a network of drugs studied together, but the response falls back to a bar chart of individual drug frequencies instead. That changes the requested encoding and does not show co-occurrence relationships."
+    ]
+  }
+}

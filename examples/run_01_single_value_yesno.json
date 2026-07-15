@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "kind": "answer",
+  "visualization": null,
+  "vega_lite": null,
+  "answer": "Yes — 325 trials match this query.",
+  "question": null,
+  "error": null,
+  "citations": {
+    "NCT00083512": {
+      "nct_id": "NCT00083512",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT00083512",
+      "excerpt": "NCT00083512",
+      "excerpt_tokens": null
+    },
+    "NCT01269853": {
+      "nct_id": "NCT01269853",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT01269853",
+      "excerpt": "NCT01269853",
+      "excerpt_tokens": null
+    },
+    "NCT01906385": {
+      "nct_id": "NCT01906385",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT01906385",
+      "excerpt": "NCT01906385",
+      "excerpt_tokens": null
+    },
+    "NCT02394626": {
+      "nct_id": "NCT02394626",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT02394626",
+      "excerpt": "NCT02394626",
+      "excerpt_tokens": null
+    },
+    "NCT02704858": {
+      "nct_id": "NCT02704858",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT02704858",
+      "excerpt": "NCT02704858",
+      "excerpt_tokens": null
+    },
+    "NCT02800486": {
+      "nct_id": "NCT02800486",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT02800486",
+      "excerpt": "NCT02800486",
+      "excerpt_tokens": null
+    },
+    "NCT02861898": {
+      "nct_id": "NCT02861898",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT02861898",
+      "excerpt": "NCT02861898",
+      "excerpt_tokens": null
+    },
+    "NCT02977780": {
+      "nct_id": "NCT02977780",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT02977780",
+      "excerpt": "NCT02977780",
+      "excerpt_tokens": null
+    },
+    "NCT03005132": {
+      "nct_id": "NCT03005132",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03005132",
+      "excerpt": "NCT03005132",
+      "excerpt_tokens": null
+    },
+    "NCT03144167": {
+      "nct_id": "NCT03144167",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03144167",
+      "excerpt": "NCT03144167",
+      "excerpt_tokens": null
+    },
+    "NCT03175224": {
+      "nct_id": "NCT03175224",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03175224",
+      "excerpt": "NCT03175224",
+      "excerpt_tokens": null
+    },
+    "NCT03213002": {
+      "nct_id": "NCT03213002",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03213002",
+      "excerpt": "NCT03213002",
+      "excerpt_tokens": null
+    },
+    "NCT03383978": {
+      "nct_id": "NCT03383978",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03383978",
+      "excerpt": "NCT03383978",
+      "excerpt_tokens": null
+    },
+    "NCT03423628": {
+      "nct_id": "NCT03423628",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03423628",
+      "excerpt": "NCT03423628",
+      "excerpt_tokens": null
+    },
+    "NCT03452774": {
+      "nct_id": "NCT03452774",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03452774",
+      "excerpt": "NCT03452774",
+      "excerpt_tokens": null
+    },
+    "NCT03526822": {
+      "nct_id": "NCT03526822",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03526822",
+      "excerpt": "NCT03526822",
+      "excerpt_tokens": null
+    },
+    "NCT03596086": {
+      "nct_id": "NCT03596086",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03596086",
+      "excerpt": "NCT03596086",
+      "excerpt_tokens": null
+    },
+    "NCT03603405": {
+      "nct_id": "NCT03603405",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03603405",
+      "excerpt": "NCT03603405",
+      "excerpt_tokens": null
+    },
+    "NCT03672721": {
+      "nct_id": "NCT03672721",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03672721",
+      "excerpt": "NCT03672721",
+      "excerpt_tokens": null
+    },
+    "NCT03787056": {
+      "nct_id": "NCT03787056",
+      "field_path": "protocolSection.identificationModule.nctId",
+      "value": "NCT03787056",
+      "excerpt": "NCT03787056",
+      "excerpt_tokens": null
+    }
+  },
+  "meta": {
+    "count_basis": {
+      "trials": 325,
+      "mentions": null
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "overallStatus": "RECRUITING"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "glioblastoma",
+        "filter.overallStatus": "RECRUITING",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:31:56.951484+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": []
+  }
+}

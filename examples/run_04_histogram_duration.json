@@ -1,0 +1,2337 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "histogram",
+    "title": "Study-duration distribution of interventional pancreatic cancer trials",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "label": "Study duration",
+        "unit": null,
+        "sort": null,
+        "scale": null
+      },
+      "y": {
+        "field": "count_trials",
+        "label": "Trials",
+        "unit": "trials",
+        "sort": null,
+        "scale": "linear"
+      }
+    },
+    "data": [
+      {
+        "value": "0–6 mo",
+        "label": "0–6 mo",
+        "period": null,
+        "series": null,
+        "bin_start": 0.0,
+        "bin_end": 6.0,
+        "count_trials": 45,
+        "count_mentions": 45,
+        "source_ids": [
+          "NCT00558207",
+          "NCT00637728",
+          "NCT01056601",
+          "NCT01092689",
+          "NCT01094600",
+          "NCT01386502",
+          "NCT01394159",
+          "NCT01501903",
+          "NCT01677312",
+          "NCT02027311",
+          "NCT02109445",
+          "NCT02310971",
+          "NCT02324868",
+          "NCT02496832",
+          "NCT02779257",
+          "NCT03009058",
+          "NCT03210948",
+          "NCT03778879",
+          "NCT03925428",
+          "NCT04037241"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00558207",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-11",
+            "excerpt": "2007-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00637728",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-06",
+            "excerpt": "2006-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01056601",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2010-09",
+            "excerpt": "2010-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01092689",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2012-01",
+            "excerpt": "2012-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01094600",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2012-06",
+            "excerpt": "2012-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01386502",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2011-06-15",
+            "excerpt": "2011-06-15",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01394159",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2011-07",
+            "excerpt": "2011-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01501903",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2011-09",
+            "excerpt": "2011-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01677312",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2012-08",
+            "excerpt": "2012-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02027311",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-04",
+            "excerpt": "2013-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02109445",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2014-09-03",
+            "excerpt": "2014-09-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02310971",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2015-02",
+            "excerpt": "2015-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02324868",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2016-01",
+            "excerpt": "2016-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02496832",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2014-11",
+            "excerpt": "2014-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT02779257",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2016-04",
+            "excerpt": "2016-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03009058",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2017-05-31",
+            "excerpt": "2017-05-31",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03210948",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2019-01-23",
+            "excerpt": "2019-01-23",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03778879",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2019-08-01",
+            "excerpt": "2019-08-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT03925428",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2020-09-18",
+            "excerpt": "2020-09-18",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT04037241",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2021-11-01",
+            "excerpt": "2021-11-01",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 45,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "6–12 mo",
+        "label": "6–12 mo",
+        "period": null,
+        "series": null,
+        "bin_start": 6.0,
+        "bin_end": 12.0,
+        "count_trials": 111,
+        "count_mentions": 111,
+        "source_ids": [
+          "NCT00005926",
+          "NCT00325104",
+          "NCT00609765",
+          "NCT00621556",
+          "NCT00625586",
+          "NCT00657995",
+          "NCT00683358",
+          "NCT01108458",
+          "NCT01198821",
+          "NCT01318642",
+          "NCT01354795",
+          "NCT01437007",
+          "NCT01774162",
+          "NCT01789073",
+          "NCT01809028",
+          "NCT01815606",
+          "NCT01819961",
+          "NCT01911416",
+          "NCT01929460",
+          "NCT01929941"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00005926",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-06",
+            "excerpt": "2000-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00325104",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-05-09",
+            "excerpt": "2006-05-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00609765",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-08",
+            "excerpt": "2007-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00621556",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2008-02",
+            "excerpt": "2008-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00625586",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2008-04-15",
+            "excerpt": "2008-04-15",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00657995",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-04",
+            "excerpt": "2007-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00683358",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2008-05",
+            "excerpt": "2008-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01108458",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2010-07",
+            "excerpt": "2010-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01198821",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2010-08",
+            "excerpt": "2010-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01318642",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2012-05-31",
+            "excerpt": "2012-05-31",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01354795",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2010-09",
+            "excerpt": "2010-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01437007",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2011-08-26",
+            "excerpt": "2011-08-26",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01774162",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2011-09",
+            "excerpt": "2011-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01789073",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-02",
+            "excerpt": "2013-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01809028",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-02",
+            "excerpt": "2013-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01815606",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-02",
+            "excerpt": "2013-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01819961",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-04",
+            "excerpt": "2013-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01911416",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2014-01",
+            "excerpt": "2014-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01929460",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2014-01",
+            "excerpt": "2014-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT01929941",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2013-09",
+            "excerpt": "2013-09",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 111,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "1–2 yr",
+        "label": "1–2 yr",
+        "period": null,
+        "series": null,
+        "bin_start": 12.0,
+        "bin_end": 24.0,
+        "count_trials": 543,
+        "count_mentions": 543,
+        "source_ids": [
+          "NCT00001805",
+          "NCT00003760",
+          "NCT00004861",
+          "NCT00006387",
+          "NCT00014651",
+          "NCT00020345",
+          "NCT00025168",
+          "NCT00033384",
+          "NCT00034281",
+          "NCT00034827",
+          "NCT00040833",
+          "NCT00041808",
+          "NCT00068432",
+          "NCT00159471",
+          "NCT00179751",
+          "NCT00222469",
+          "NCT00255827",
+          "NCT00338026",
+          "NCT00344851",
+          "NCT00364364"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00001805",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-03",
+            "excerpt": "1999-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003760",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-11",
+            "excerpt": "1998-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004861",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-10",
+            "excerpt": "1999-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00006387",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-10",
+            "excerpt": "2000-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00014651",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-03",
+            "excerpt": "2001-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00020345",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-09",
+            "excerpt": "2000-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00025168",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-11-01",
+            "excerpt": "2001-11-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00033384",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2002-02",
+            "excerpt": "2002-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00034281",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2002-06",
+            "excerpt": "2002-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00034827",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2002-01",
+            "excerpt": "2002-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00040833",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2002-02",
+            "excerpt": "2002-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00041808",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-07",
+            "excerpt": "2001-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00068432",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2003-12",
+            "excerpt": "2003-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00159471",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-02",
+            "excerpt": "2005-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00179751",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-04",
+            "excerpt": "2005-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00222469",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-08",
+            "excerpt": "2005-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00255827",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-11",
+            "excerpt": "2005-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00338026",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-02",
+            "excerpt": "2006-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00344851",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-06",
+            "excerpt": "2006-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00364364",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-05",
+            "excerpt": "2007-05",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 543,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "2–4 yr",
+        "label": "2–4 yr",
+        "period": null,
+        "series": null,
+        "bin_start": 24.0,
+        "bin_end": 48.0,
+        "count_trials": 1510,
+        "count_mentions": 1510,
+        "source_ids": [
+          "NCT00003085",
+          "NCT00003411",
+          "NCT00003426",
+          "NCT00003677",
+          "NCT00003769",
+          "NCT00003923",
+          "NCT00004178",
+          "NCT00004190",
+          "NCT00004895",
+          "NCT00004910",
+          "NCT00005591",
+          "NCT00005858",
+          "NCT00006467",
+          "NCT00010166",
+          "NCT00019474",
+          "NCT00023972",
+          "NCT00027638",
+          "NCT00033241",
+          "NCT00040183",
+          "NCT00041639"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00003085",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1996-09",
+            "excerpt": "1996-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003411",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-11",
+            "excerpt": "1998-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003426",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-04",
+            "excerpt": "1998-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003677",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-02-01",
+            "excerpt": "1999-02-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003769",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-02",
+            "excerpt": "1999-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003923",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-03",
+            "excerpt": "1999-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004178",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-04",
+            "excerpt": "1998-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004190",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-10",
+            "excerpt": "1999-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004895",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-10",
+            "excerpt": "1999-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004910",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-01",
+            "excerpt": "2000-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005591",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-10",
+            "excerpt": "1999-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005858",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-04",
+            "excerpt": "2000-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00006467",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-02",
+            "excerpt": "2001-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00010166",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-12-01",
+            "excerpt": "2000-12-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00019474",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-03",
+            "excerpt": "1998-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00023972",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-07",
+            "excerpt": "2001-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00027638",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-03",
+            "excerpt": "2001-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00033241",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-07-23",
+            "excerpt": "2001-07-23",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00040183",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-11-29",
+            "excerpt": "2001-11-29",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00041639",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-01",
+            "excerpt": "2000-01",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 1510,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "4–10 yr",
+        "label": "4–10 yr",
+        "period": null,
+        "series": null,
+        "bin_start": 48.0,
+        "bin_end": 120.0,
+        "count_trials": 1448,
+        "count_mentions": 1448,
+        "source_ids": [
+          "NCT00001431",
+          "NCT00002773",
+          "NCT00002947",
+          "NCT00003018",
+          "NCT00003025",
+          "NCT00003046",
+          "NCT00003125",
+          "NCT00003157",
+          "NCT00003427",
+          "NCT00003434",
+          "NCT00003531",
+          "NCT00003546",
+          "NCT00003591",
+          "NCT00003851",
+          "NCT00003867",
+          "NCT00003951",
+          "NCT00004003",
+          "NCT00004095",
+          "NCT00004604",
+          "NCT00005648"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00001431",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1995-02",
+            "excerpt": "1995-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002773",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1996-05",
+            "excerpt": "1996-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002947",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1996-10",
+            "excerpt": "1996-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003018",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-09",
+            "excerpt": "1997-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003025",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-03",
+            "excerpt": "1997-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003046",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-08",
+            "excerpt": "1997-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003125",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-01",
+            "excerpt": "1998-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003157",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-02",
+            "excerpt": "1998-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003427",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-04",
+            "excerpt": "1998-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003434",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-06",
+            "excerpt": "1998-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003531",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1996-04-10",
+            "excerpt": "1996-04-10",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003546",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-09",
+            "excerpt": "1998-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003591",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-11",
+            "excerpt": "1998-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003851",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-03",
+            "excerpt": "1999-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003867",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-03",
+            "excerpt": "1999-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003951",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-06",
+            "excerpt": "1999-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004003",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-04",
+            "excerpt": "1999-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004095",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-08",
+            "excerpt": "1999-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004604",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-02",
+            "excerpt": "1997-02",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005648",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-11",
+            "excerpt": "1999-11",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 1448,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "10+ yr",
+        "label": "10+ yr",
+        "period": null,
+        "series": null,
+        "bin_start": 120.0,
+        "bin_end": null,
+        "count_trials": 152,
+        "count_mentions": 152,
+        "source_ids": [
+          "NCT00001165",
+          "NCT00001191",
+          "NCT00001228",
+          "NCT00002475",
+          "NCT00002689",
+          "NCT00002854",
+          "NCT00002955",
+          "NCT00003049",
+          "NCT00077519",
+          "NCT00089024",
+          "NCT00161187",
+          "NCT00227617",
+          "NCT00251355",
+          "NCT00253383",
+          "NCT00313560",
+          "NCT00376987",
+          "NCT00389610",
+          "NCT00414570",
+          "NCT00438256",
+          "NCT00442533"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00001165",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1978-09",
+            "excerpt": "1978-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00001191",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1983-02-03",
+            "excerpt": "1983-02-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00001228",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1988-10-25",
+            "excerpt": "1988-10-25",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002475",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1991-04",
+            "excerpt": "1991-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002689",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1995-09",
+            "excerpt": "1995-09",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002854",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1994-12",
+            "excerpt": "1994-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00002955",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1995-08",
+            "excerpt": "1995-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003049",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-05",
+            "excerpt": "1997-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00077519",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2004-01",
+            "excerpt": "2004-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00089024",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2004-02-25",
+            "excerpt": "2004-02-25",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00161187",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2001-05",
+            "excerpt": "2001-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00227617",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-06-08",
+            "excerpt": "2005-06-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00251355",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-01",
+            "excerpt": "1998-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00253383",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2003-01",
+            "excerpt": "2003-01",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00313560",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-03-16",
+            "excerpt": "2006-03-16",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00376987",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2003-12",
+            "excerpt": "2003-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00389610",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2006-09-11",
+            "excerpt": "2006-09-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00414570",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-11",
+            "excerpt": "2007-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00438256",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2007-12",
+            "excerpt": "2007-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00442533",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2005-08",
+            "excerpt": "2005-08",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 152,
+        "derived": false,
+        "members": null
+      },
+      {
+        "value": "UNDATED",
+        "label": "Unknown (undated)",
+        "period": null,
+        "series": null,
+        "bin_start": null,
+        "bin_end": null,
+        "count_trials": 141,
+        "count_mentions": 141,
+        "source_ids": [
+          "NCT00003029",
+          "NCT00003216",
+          "NCT00003332",
+          "NCT00003439",
+          "NCT00003514",
+          "NCT00003548",
+          "NCT00003780",
+          "NCT00003797",
+          "NCT00003798",
+          "NCT00003810",
+          "NCT00004074",
+          "NCT00004087",
+          "NCT00004879",
+          "NCT00004884",
+          "NCT00005053",
+          "NCT00005594",
+          "NCT00005842",
+          "NCT00005843",
+          "NCT00005860",
+          "NCT00005869"
+        ],
+        "citations": [
+          {
+            "nct_id": "NCT00003029",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-05",
+            "excerpt": "1997-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003216",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-07",
+            "excerpt": "1998-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003332",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-07",
+            "excerpt": "1997-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003439",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-08",
+            "excerpt": "1998-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003514",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": null,
+            "excerpt": "",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003548",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-08",
+            "excerpt": "1998-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003780",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-12",
+            "excerpt": "1998-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003797",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-03",
+            "excerpt": "1999-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003798",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-04",
+            "excerpt": "2000-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00003810",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-08-11",
+            "excerpt": "1999-08-11",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004074",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-08",
+            "excerpt": "1999-08",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004087",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1997-03",
+            "excerpt": "1997-03",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004879",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-04",
+            "excerpt": "2000-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00004884",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-07",
+            "excerpt": "1999-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005053",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1999-12",
+            "excerpt": "1999-12",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005594",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-07",
+            "excerpt": "2000-07",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005842",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-06",
+            "excerpt": "2000-06",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005843",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-05",
+            "excerpt": "2000-05",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005860",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "2000-04",
+            "excerpt": "2000-04",
+            "excerpt_tokens": null
+          },
+          {
+            "nct_id": "NCT00005869",
+            "field_path": "protocolSection.statusModule.startDateStruct.date",
+            "value": "1998-11",
+            "excerpt": "1998-11",
+            "excerpt_tokens": null
+          }
+        ],
+        "citations_truncated": true,
+        "contributing_count": 141,
+        "derived": false,
+        "members": null
+      }
+    ]
+  },
+  "vega_lite": {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Study-duration distribution of interventional pancreatic cancer trials",
+    "data": {
+      "values": [
+        {
+          "value": "0–6 mo",
+          "count_trials": 45
+        },
+        {
+          "value": "6–12 mo",
+          "count_trials": 111
+        },
+        {
+          "value": "1–2 yr",
+          "count_trials": 543
+        },
+        {
+          "value": "2–4 yr",
+          "count_trials": 1510
+        },
+        {
+          "value": "4–10 yr",
+          "count_trials": 1448
+        },
+        {
+          "value": "10+ yr",
+          "count_trials": 152
+        },
+        {
+          "value": "UNDATED",
+          "count_trials": 141
+        }
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "value",
+        "type": "nominal",
+        "title": "Study duration"
+      },
+      "y": {
+        "field": "count_trials",
+        "type": "quantitative",
+        "title": "Trials"
+      }
+    }
+  },
+  "answer": null,
+  "question": null,
+  "error": null,
+  "citations": {
+    "NCT00558207": {
+      "nct_id": "NCT00558207",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-11",
+      "excerpt": "2007-11",
+      "excerpt_tokens": null
+    },
+    "NCT00637728": {
+      "nct_id": "NCT00637728",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-06",
+      "excerpt": "2006-06",
+      "excerpt_tokens": null
+    },
+    "NCT01056601": {
+      "nct_id": "NCT01056601",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2010-09",
+      "excerpt": "2010-09",
+      "excerpt_tokens": null
+    },
+    "NCT01092689": {
+      "nct_id": "NCT01092689",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2012-01",
+      "excerpt": "2012-01",
+      "excerpt_tokens": null
+    },
+    "NCT01094600": {
+      "nct_id": "NCT01094600",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2012-06",
+      "excerpt": "2012-06",
+      "excerpt_tokens": null
+    },
+    "NCT01386502": {
+      "nct_id": "NCT01386502",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2011-06-15",
+      "excerpt": "2011-06-15",
+      "excerpt_tokens": null
+    },
+    "NCT01394159": {
+      "nct_id": "NCT01394159",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2011-07",
+      "excerpt": "2011-07",
+      "excerpt_tokens": null
+    },
+    "NCT01501903": {
+      "nct_id": "NCT01501903",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2011-09",
+      "excerpt": "2011-09",
+      "excerpt_tokens": null
+    },
+    "NCT01677312": {
+      "nct_id": "NCT01677312",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2012-08",
+      "excerpt": "2012-08",
+      "excerpt_tokens": null
+    },
+    "NCT02027311": {
+      "nct_id": "NCT02027311",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-04",
+      "excerpt": "2013-04",
+      "excerpt_tokens": null
+    },
+    "NCT02109445": {
+      "nct_id": "NCT02109445",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2014-09-03",
+      "excerpt": "2014-09-03",
+      "excerpt_tokens": null
+    },
+    "NCT02310971": {
+      "nct_id": "NCT02310971",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2015-02",
+      "excerpt": "2015-02",
+      "excerpt_tokens": null
+    },
+    "NCT02324868": {
+      "nct_id": "NCT02324868",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2016-01",
+      "excerpt": "2016-01",
+      "excerpt_tokens": null
+    },
+    "NCT02496832": {
+      "nct_id": "NCT02496832",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2014-11",
+      "excerpt": "2014-11",
+      "excerpt_tokens": null
+    },
+    "NCT02779257": {
+      "nct_id": "NCT02779257",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2016-04",
+      "excerpt": "2016-04",
+      "excerpt_tokens": null
+    },
+    "NCT03009058": {
+      "nct_id": "NCT03009058",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2017-05-31",
+      "excerpt": "2017-05-31",
+      "excerpt_tokens": null
+    },
+    "NCT03210948": {
+      "nct_id": "NCT03210948",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2019-01-23",
+      "excerpt": "2019-01-23",
+      "excerpt_tokens": null
+    },
+    "NCT03778879": {
+      "nct_id": "NCT03778879",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2019-08-01",
+      "excerpt": "2019-08-01",
+      "excerpt_tokens": null
+    },
+    "NCT03925428": {
+      "nct_id": "NCT03925428",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2020-09-18",
+      "excerpt": "2020-09-18",
+      "excerpt_tokens": null
+    },
+    "NCT04037241": {
+      "nct_id": "NCT04037241",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2021-11-01",
+      "excerpt": "2021-11-01",
+      "excerpt_tokens": null
+    },
+    "NCT00005926": {
+      "nct_id": "NCT00005926",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-06",
+      "excerpt": "2000-06",
+      "excerpt_tokens": null
+    },
+    "NCT00325104": {
+      "nct_id": "NCT00325104",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-05-09",
+      "excerpt": "2006-05-09",
+      "excerpt_tokens": null
+    },
+    "NCT00609765": {
+      "nct_id": "NCT00609765",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-08",
+      "excerpt": "2007-08",
+      "excerpt_tokens": null
+    },
+    "NCT00621556": {
+      "nct_id": "NCT00621556",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2008-02",
+      "excerpt": "2008-02",
+      "excerpt_tokens": null
+    },
+    "NCT00625586": {
+      "nct_id": "NCT00625586",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2008-04-15",
+      "excerpt": "2008-04-15",
+      "excerpt_tokens": null
+    },
+    "NCT00657995": {
+      "nct_id": "NCT00657995",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-04",
+      "excerpt": "2007-04",
+      "excerpt_tokens": null
+    },
+    "NCT00683358": {
+      "nct_id": "NCT00683358",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2008-05",
+      "excerpt": "2008-05",
+      "excerpt_tokens": null
+    },
+    "NCT01108458": {
+      "nct_id": "NCT01108458",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2010-07",
+      "excerpt": "2010-07",
+      "excerpt_tokens": null
+    },
+    "NCT01198821": {
+      "nct_id": "NCT01198821",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2010-08",
+      "excerpt": "2010-08",
+      "excerpt_tokens": null
+    },
+    "NCT01318642": {
+      "nct_id": "NCT01318642",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2012-05-31",
+      "excerpt": "2012-05-31",
+      "excerpt_tokens": null
+    },
+    "NCT01354795": {
+      "nct_id": "NCT01354795",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2010-09",
+      "excerpt": "2010-09",
+      "excerpt_tokens": null
+    },
+    "NCT01437007": {
+      "nct_id": "NCT01437007",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2011-08-26",
+      "excerpt": "2011-08-26",
+      "excerpt_tokens": null
+    },
+    "NCT01774162": {
+      "nct_id": "NCT01774162",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2011-09",
+      "excerpt": "2011-09",
+      "excerpt_tokens": null
+    },
+    "NCT01789073": {
+      "nct_id": "NCT01789073",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-02",
+      "excerpt": "2013-02",
+      "excerpt_tokens": null
+    },
+    "NCT01809028": {
+      "nct_id": "NCT01809028",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-02",
+      "excerpt": "2013-02",
+      "excerpt_tokens": null
+    },
+    "NCT01815606": {
+      "nct_id": "NCT01815606",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-02",
+      "excerpt": "2013-02",
+      "excerpt_tokens": null
+    },
+    "NCT01819961": {
+      "nct_id": "NCT01819961",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-04",
+      "excerpt": "2013-04",
+      "excerpt_tokens": null
+    },
+    "NCT01911416": {
+      "nct_id": "NCT01911416",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2014-01",
+      "excerpt": "2014-01",
+      "excerpt_tokens": null
+    },
+    "NCT01929460": {
+      "nct_id": "NCT01929460",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2014-01",
+      "excerpt": "2014-01",
+      "excerpt_tokens": null
+    },
+    "NCT01929941": {
+      "nct_id": "NCT01929941",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2013-09",
+      "excerpt": "2013-09",
+      "excerpt_tokens": null
+    },
+    "NCT00001805": {
+      "nct_id": "NCT00001805",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-03",
+      "excerpt": "1999-03",
+      "excerpt_tokens": null
+    },
+    "NCT00003760": {
+      "nct_id": "NCT00003760",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-11",
+      "excerpt": "1998-11",
+      "excerpt_tokens": null
+    },
+    "NCT00004861": {
+      "nct_id": "NCT00004861",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-10",
+      "excerpt": "1999-10",
+      "excerpt_tokens": null
+    },
+    "NCT00006387": {
+      "nct_id": "NCT00006387",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-10",
+      "excerpt": "2000-10",
+      "excerpt_tokens": null
+    },
+    "NCT00014651": {
+      "nct_id": "NCT00014651",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-03",
+      "excerpt": "2001-03",
+      "excerpt_tokens": null
+    },
+    "NCT00020345": {
+      "nct_id": "NCT00020345",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-09",
+      "excerpt": "2000-09",
+      "excerpt_tokens": null
+    },
+    "NCT00025168": {
+      "nct_id": "NCT00025168",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-11-01",
+      "excerpt": "2001-11-01",
+      "excerpt_tokens": null
+    },
+    "NCT00033384": {
+      "nct_id": "NCT00033384",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2002-02",
+      "excerpt": "2002-02",
+      "excerpt_tokens": null
+    },
+    "NCT00034281": {
+      "nct_id": "NCT00034281",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2002-06",
+      "excerpt": "2002-06",
+      "excerpt_tokens": null
+    },
+    "NCT00034827": {
+      "nct_id": "NCT00034827",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2002-01",
+      "excerpt": "2002-01",
+      "excerpt_tokens": null
+    },
+    "NCT00040833": {
+      "nct_id": "NCT00040833",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2002-02",
+      "excerpt": "2002-02",
+      "excerpt_tokens": null
+    },
+    "NCT00041808": {
+      "nct_id": "NCT00041808",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-07",
+      "excerpt": "2001-07",
+      "excerpt_tokens": null
+    },
+    "NCT00068432": {
+      "nct_id": "NCT00068432",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2003-12",
+      "excerpt": "2003-12",
+      "excerpt_tokens": null
+    },
+    "NCT00159471": {
+      "nct_id": "NCT00159471",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-02",
+      "excerpt": "2005-02",
+      "excerpt_tokens": null
+    },
+    "NCT00179751": {
+      "nct_id": "NCT00179751",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-04",
+      "excerpt": "2005-04",
+      "excerpt_tokens": null
+    },
+    "NCT00222469": {
+      "nct_id": "NCT00222469",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-08",
+      "excerpt": "2005-08",
+      "excerpt_tokens": null
+    },
+    "NCT00255827": {
+      "nct_id": "NCT00255827",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-11",
+      "excerpt": "2005-11",
+      "excerpt_tokens": null
+    },
+    "NCT00338026": {
+      "nct_id": "NCT00338026",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-02",
+      "excerpt": "2006-02",
+      "excerpt_tokens": null
+    },
+    "NCT00344851": {
+      "nct_id": "NCT00344851",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-06",
+      "excerpt": "2006-06",
+      "excerpt_tokens": null
+    },
+    "NCT00364364": {
+      "nct_id": "NCT00364364",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-05",
+      "excerpt": "2007-05",
+      "excerpt_tokens": null
+    },
+    "NCT00003085": {
+      "nct_id": "NCT00003085",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1996-09",
+      "excerpt": "1996-09",
+      "excerpt_tokens": null
+    },
+    "NCT00003411": {
+      "nct_id": "NCT00003411",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-11",
+      "excerpt": "1998-11",
+      "excerpt_tokens": null
+    },
+    "NCT00003426": {
+      "nct_id": "NCT00003426",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-04",
+      "excerpt": "1998-04",
+      "excerpt_tokens": null
+    },
+    "NCT00003677": {
+      "nct_id": "NCT00003677",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-02-01",
+      "excerpt": "1999-02-01",
+      "excerpt_tokens": null
+    },
+    "NCT00003769": {
+      "nct_id": "NCT00003769",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-02",
+      "excerpt": "1999-02",
+      "excerpt_tokens": null
+    },
+    "NCT00003923": {
+      "nct_id": "NCT00003923",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-03",
+      "excerpt": "1999-03",
+      "excerpt_tokens": null
+    },
+    "NCT00004178": {
+      "nct_id": "NCT00004178",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-04",
+      "excerpt": "1998-04",
+      "excerpt_tokens": null
+    },
+    "NCT00004190": {
+      "nct_id": "NCT00004190",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-10",
+      "excerpt": "1999-10",
+      "excerpt_tokens": null
+    },
+    "NCT00004895": {
+      "nct_id": "NCT00004895",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-10",
+      "excerpt": "1999-10",
+      "excerpt_tokens": null
+    },
+    "NCT00004910": {
+      "nct_id": "NCT00004910",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-01",
+      "excerpt": "2000-01",
+      "excerpt_tokens": null
+    },
+    "NCT00005591": {
+      "nct_id": "NCT00005591",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-10",
+      "excerpt": "1999-10",
+      "excerpt_tokens": null
+    },
+    "NCT00005858": {
+      "nct_id": "NCT00005858",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-04",
+      "excerpt": "2000-04",
+      "excerpt_tokens": null
+    },
+    "NCT00006467": {
+      "nct_id": "NCT00006467",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-02",
+      "excerpt": "2001-02",
+      "excerpt_tokens": null
+    },
+    "NCT00010166": {
+      "nct_id": "NCT00010166",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-12-01",
+      "excerpt": "2000-12-01",
+      "excerpt_tokens": null
+    },
+    "NCT00019474": {
+      "nct_id": "NCT00019474",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-03",
+      "excerpt": "1998-03",
+      "excerpt_tokens": null
+    },
+    "NCT00023972": {
+      "nct_id": "NCT00023972",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-07",
+      "excerpt": "2001-07",
+      "excerpt_tokens": null
+    },
+    "NCT00027638": {
+      "nct_id": "NCT00027638",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-03",
+      "excerpt": "2001-03",
+      "excerpt_tokens": null
+    },
+    "NCT00033241": {
+      "nct_id": "NCT00033241",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-07-23",
+      "excerpt": "2001-07-23",
+      "excerpt_tokens": null
+    },
+    "NCT00040183": {
+      "nct_id": "NCT00040183",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-11-29",
+      "excerpt": "2001-11-29",
+      "excerpt_tokens": null
+    },
+    "NCT00041639": {
+      "nct_id": "NCT00041639",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-01",
+      "excerpt": "2000-01",
+      "excerpt_tokens": null
+    },
+    "NCT00001431": {
+      "nct_id": "NCT00001431",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1995-02",
+      "excerpt": "1995-02",
+      "excerpt_tokens": null
+    },
+    "NCT00002773": {
+      "nct_id": "NCT00002773",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1996-05",
+      "excerpt": "1996-05",
+      "excerpt_tokens": null
+    },
+    "NCT00002947": {
+      "nct_id": "NCT00002947",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1996-10",
+      "excerpt": "1996-10",
+      "excerpt_tokens": null
+    },
+    "NCT00003018": {
+      "nct_id": "NCT00003018",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-09",
+      "excerpt": "1997-09",
+      "excerpt_tokens": null
+    },
+    "NCT00003025": {
+      "nct_id": "NCT00003025",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-03",
+      "excerpt": "1997-03",
+      "excerpt_tokens": null
+    },
+    "NCT00003046": {
+      "nct_id": "NCT00003046",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-08",
+      "excerpt": "1997-08",
+      "excerpt_tokens": null
+    },
+    "NCT00003125": {
+      "nct_id": "NCT00003125",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-01",
+      "excerpt": "1998-01",
+      "excerpt_tokens": null
+    },
+    "NCT00003157": {
+      "nct_id": "NCT00003157",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-02",
+      "excerpt": "1998-02",
+      "excerpt_tokens": null
+    },
+    "NCT00003427": {
+      "nct_id": "NCT00003427",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-04",
+      "excerpt": "1998-04",
+      "excerpt_tokens": null
+    },
+    "NCT00003434": {
+      "nct_id": "NCT00003434",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-06",
+      "excerpt": "1998-06",
+      "excerpt_tokens": null
+    },
+    "NCT00003531": {
+      "nct_id": "NCT00003531",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1996-04-10",
+      "excerpt": "1996-04-10",
+      "excerpt_tokens": null
+    },
+    "NCT00003546": {
+      "nct_id": "NCT00003546",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-09",
+      "excerpt": "1998-09",
+      "excerpt_tokens": null
+    },
+    "NCT00003591": {
+      "nct_id": "NCT00003591",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-11",
+      "excerpt": "1998-11",
+      "excerpt_tokens": null
+    },
+    "NCT00003851": {
+      "nct_id": "NCT00003851",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-03",
+      "excerpt": "1999-03",
+      "excerpt_tokens": null
+    },
+    "NCT00003867": {
+      "nct_id": "NCT00003867",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-03",
+      "excerpt": "1999-03",
+      "excerpt_tokens": null
+    },
+    "NCT00003951": {
+      "nct_id": "NCT00003951",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-06",
+      "excerpt": "1999-06",
+      "excerpt_tokens": null
+    },
+    "NCT00004003": {
+      "nct_id": "NCT00004003",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-04",
+      "excerpt": "1999-04",
+      "excerpt_tokens": null
+    },
+    "NCT00004095": {
+      "nct_id": "NCT00004095",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-08",
+      "excerpt": "1999-08",
+      "excerpt_tokens": null
+    },
+    "NCT00004604": {
+      "nct_id": "NCT00004604",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-02",
+      "excerpt": "1997-02",
+      "excerpt_tokens": null
+    },
+    "NCT00005648": {
+      "nct_id": "NCT00005648",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-11",
+      "excerpt": "1999-11",
+      "excerpt_tokens": null
+    },
+    "NCT00001165": {
+      "nct_id": "NCT00001165",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1978-09",
+      "excerpt": "1978-09",
+      "excerpt_tokens": null
+    },
+    "NCT00001191": {
+      "nct_id": "NCT00001191",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1983-02-03",
+      "excerpt": "1983-02-03",
+      "excerpt_tokens": null
+    },
+    "NCT00001228": {
+      "nct_id": "NCT00001228",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1988-10-25",
+      "excerpt": "1988-10-25",
+      "excerpt_tokens": null
+    },
+    "NCT00002475": {
+      "nct_id": "NCT00002475",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1991-04",
+      "excerpt": "1991-04",
+      "excerpt_tokens": null
+    },
+    "NCT00002689": {
+      "nct_id": "NCT00002689",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1995-09",
+      "excerpt": "1995-09",
+      "excerpt_tokens": null
+    },
+    "NCT00002854": {
+      "nct_id": "NCT00002854",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1994-12",
+      "excerpt": "1994-12",
+      "excerpt_tokens": null
+    },
+    "NCT00002955": {
+      "nct_id": "NCT00002955",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1995-08",
+      "excerpt": "1995-08",
+      "excerpt_tokens": null
+    },
+    "NCT00003049": {
+      "nct_id": "NCT00003049",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-05",
+      "excerpt": "1997-05",
+      "excerpt_tokens": null
+    },
+    "NCT00077519": {
+      "nct_id": "NCT00077519",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2004-01",
+      "excerpt": "2004-01",
+      "excerpt_tokens": null
+    },
+    "NCT00089024": {
+      "nct_id": "NCT00089024",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2004-02-25",
+      "excerpt": "2004-02-25",
+      "excerpt_tokens": null
+    },
+    "NCT00161187": {
+      "nct_id": "NCT00161187",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2001-05",
+      "excerpt": "2001-05",
+      "excerpt_tokens": null
+    },
+    "NCT00227617": {
+      "nct_id": "NCT00227617",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-06-08",
+      "excerpt": "2005-06-08",
+      "excerpt_tokens": null
+    },
+    "NCT00251355": {
+      "nct_id": "NCT00251355",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-01",
+      "excerpt": "1998-01",
+      "excerpt_tokens": null
+    },
+    "NCT00253383": {
+      "nct_id": "NCT00253383",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2003-01",
+      "excerpt": "2003-01",
+      "excerpt_tokens": null
+    },
+    "NCT00313560": {
+      "nct_id": "NCT00313560",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-03-16",
+      "excerpt": "2006-03-16",
+      "excerpt_tokens": null
+    },
+    "NCT00376987": {
+      "nct_id": "NCT00376987",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2003-12",
+      "excerpt": "2003-12",
+      "excerpt_tokens": null
+    },
+    "NCT00389610": {
+      "nct_id": "NCT00389610",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2006-09-11",
+      "excerpt": "2006-09-11",
+      "excerpt_tokens": null
+    },
+    "NCT00414570": {
+      "nct_id": "NCT00414570",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-11",
+      "excerpt": "2007-11",
+      "excerpt_tokens": null
+    },
+    "NCT00438256": {
+      "nct_id": "NCT00438256",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2007-12",
+      "excerpt": "2007-12",
+      "excerpt_tokens": null
+    },
+    "NCT00442533": {
+      "nct_id": "NCT00442533",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2005-08",
+      "excerpt": "2005-08",
+      "excerpt_tokens": null
+    },
+    "NCT00003029": {
+      "nct_id": "NCT00003029",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-05",
+      "excerpt": "1997-05",
+      "excerpt_tokens": null
+    },
+    "NCT00003216": {
+      "nct_id": "NCT00003216",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-07",
+      "excerpt": "1998-07",
+      "excerpt_tokens": null
+    },
+    "NCT00003332": {
+      "nct_id": "NCT00003332",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-07",
+      "excerpt": "1997-07",
+      "excerpt_tokens": null
+    },
+    "NCT00003439": {
+      "nct_id": "NCT00003439",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-08",
+      "excerpt": "1998-08",
+      "excerpt_tokens": null
+    },
+    "NCT00003514": {
+      "nct_id": "NCT00003514",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": null,
+      "excerpt": "",
+      "excerpt_tokens": null
+    },
+    "NCT00003548": {
+      "nct_id": "NCT00003548",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-08",
+      "excerpt": "1998-08",
+      "excerpt_tokens": null
+    },
+    "NCT00003780": {
+      "nct_id": "NCT00003780",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-12",
+      "excerpt": "1998-12",
+      "excerpt_tokens": null
+    },
+    "NCT00003797": {
+      "nct_id": "NCT00003797",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-03",
+      "excerpt": "1999-03",
+      "excerpt_tokens": null
+    },
+    "NCT00003798": {
+      "nct_id": "NCT00003798",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-04",
+      "excerpt": "2000-04",
+      "excerpt_tokens": null
+    },
+    "NCT00003810": {
+      "nct_id": "NCT00003810",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-08-11",
+      "excerpt": "1999-08-11",
+      "excerpt_tokens": null
+    },
+    "NCT00004074": {
+      "nct_id": "NCT00004074",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-08",
+      "excerpt": "1999-08",
+      "excerpt_tokens": null
+    },
+    "NCT00004087": {
+      "nct_id": "NCT00004087",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1997-03",
+      "excerpt": "1997-03",
+      "excerpt_tokens": null
+    },
+    "NCT00004879": {
+      "nct_id": "NCT00004879",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-04",
+      "excerpt": "2000-04",
+      "excerpt_tokens": null
+    },
+    "NCT00004884": {
+      "nct_id": "NCT00004884",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-07",
+      "excerpt": "1999-07",
+      "excerpt_tokens": null
+    },
+    "NCT00005053": {
+      "nct_id": "NCT00005053",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1999-12",
+      "excerpt": "1999-12",
+      "excerpt_tokens": null
+    },
+    "NCT00005594": {
+      "nct_id": "NCT00005594",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-07",
+      "excerpt": "2000-07",
+      "excerpt_tokens": null
+    },
+    "NCT00005842": {
+      "nct_id": "NCT00005842",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-06",
+      "excerpt": "2000-06",
+      "excerpt_tokens": null
+    },
+    "NCT00005843": {
+      "nct_id": "NCT00005843",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-05",
+      "excerpt": "2000-05",
+      "excerpt_tokens": null
+    },
+    "NCT00005860": {
+      "nct_id": "NCT00005860",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "2000-04",
+      "excerpt": "2000-04",
+      "excerpt_tokens": null
+    },
+    "NCT00005869": {
+      "nct_id": "NCT00005869",
+      "field_path": "protocolSection.statusModule.startDateStruct.date",
+      "value": "1998-11",
+      "excerpt": "1998-11",
+      "excerpt_tokens": null
+    }
+  },
+  "meta": {
+    "count_basis": {
+      "trials": 3950,
+      "mentions": 3950
+    },
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "studyType": "INTERVENTIONAL",
+      "interventional_only": true
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "pancreatic cancer",
+        "filter.advanced": "AREA[StudyType]COVERAGE[FullMatch]INTERVENTIONAL",
+        "countTotal": "true",
+        "pageSize": 1000,
+        "fields": "NCTId|StartDate|CompletionDate"
+      }
+    },
+    "retrieved_at": "2026-07-15T22:32:14.369933+00:00",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "Duration measured start→completion at month precision (day ignored; a year-only date is treated as January). Derived from the two dated status fields, not the unverified enrollment field (R-16).",
+      "141 trial(s) are undated or have an implausible negative duration (completion before start) and are grouped in an 'Unknown (undated)' bucket, kept for reconciliation and excluded from the duration bins.",
+      "User asks for a distribution of study durations scoped to pancreatic cancer interventional trials.",
+      "The chart type is appropriate, but the response does not faithfully answer the question as phrased: it shows a duration distribution only for bins with a large 'Unknown (undated)' bucket and the title/encoding are generic rather than explicitly reflecting that this is a duration histogram for the requested interventional pancreatic cancer trials."
+    ]
+  }
+}

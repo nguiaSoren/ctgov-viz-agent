@@ -1,0 +1,125 @@
+{
+  "status": "ok",
+  "kind": "visualization",
+  "visualization": {
+    "type": "network_graph",
+    "title": "Sponsor-drug network for melanoma trials (top sponsors and drugs)",
+    "encoding": {
+      "nodes": {
+        "field": "id",
+        "label": "Entity"
+      },
+      "edges": {
+        "field": "weight",
+        "label": "Co-sponsored trials",
+        "unit": "trials"
+      }
+    },
+    "data": {
+      "nodes": [
+        {"id": "sponsor:msd", "label": "Merck Sharp & Dohme", "kind": "sponsor", "degree": 2},
+        {"id": "sponsor:bms", "label": "Bristol-Myers Squibb", "kind": "sponsor", "degree": 1},
+        {"id": "drug:pembrolizumab", "label": "Pembrolizumab", "kind": "drug", "degree": 1},
+        {"id": "drug:nivolumab", "label": "Nivolumab", "kind": "drug", "degree": 1},
+        {"id": "drug:lenvatinib", "label": "Lenvatinib", "kind": "drug", "degree": 1}
+      ],
+      "edges": [
+        {
+          "source": "sponsor:msd",
+          "target": "drug:pembrolizumab",
+          "weight": 12,
+          "source_ids": ["NCT01234567"],
+          "citations": [
+            {
+              "nct_id": "NCT01234567",
+              "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+              "value": "Merck Sharp & Dohme LLC",
+              "excerpt": "Merck Sharp & Dohme"
+            },
+            {
+              "nct_id": "NCT01234567",
+              "field_path": "protocolSection.armsInterventionsModule.interventions[0].name",
+              "value": "Pembrolizumab",
+              "excerpt": "Pembrolizumab"
+            }
+          ]
+        },
+        {
+          "source": "sponsor:msd",
+          "target": "drug:lenvatinib",
+          "weight": 5,
+          "source_ids": ["NCT03900012"],
+          "citations": [
+            {
+              "nct_id": "NCT03900012",
+              "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+              "value": "Merck Sharp & Dohme LLC",
+              "excerpt": "Merck Sharp & Dohme"
+            },
+            {
+              "nct_id": "NCT03900012",
+              "field_path": "protocolSection.armsInterventionsModule.interventions[1].name",
+              "value": "Lenvatinib",
+              "excerpt": "Lenvatinib"
+            }
+          ]
+        },
+        {
+          "source": "sponsor:bms",
+          "target": "drug:nivolumab",
+          "weight": 9,
+          "source_ids": ["NCT01778739"],
+          "citations": [
+            {
+              "nct_id": "NCT01778739",
+              "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+              "value": "Bristol-Myers Squibb",
+              "excerpt": "Bristol-Myers Squibb"
+            },
+            {
+              "nct_id": "NCT01778739",
+              "field_path": "protocolSection.armsInterventionsModule.interventions[0].name",
+              "value": "Nivolumab",
+              "excerpt": "Nivolumab"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vega_lite": null,
+  "answer": null,
+  "error": null,
+  "citations": {
+    "NCT01234567": {
+      "nct_id": "NCT01234567",
+      "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+      "value": "Merck Sharp & Dohme LLC",
+      "excerpt": "Merck Sharp & Dohme"
+    }
+  },
+  "meta": {
+    "count_basis": {"trials": 26, "mentions": 26},
+    "date_field_used": null,
+    "time_granularity": null,
+    "filters": {
+      "condition": "melanoma"
+    },
+    "query_provenance": {
+      "endpoint": "/api/v2/studies",
+      "params": {
+        "query.cond": "melanoma",
+        "countTotal": true,
+        "fields": "NCTId|LeadSponsorName|InterventionName|InterventionType"
+      }
+    },
+    "retrieved_at": "2026-07-15T09:27:03Z",
+    "source": "clinicaltrials.gov",
+    "partial": null,
+    "notes": [
+      "Edges are derived (weight = number of trials pairing the sponsor and drug); each edge carries two citations, one per endpoint field_path (G-25).",
+      "Drug names are synonym-merged (name + otherNames), e.g. Keytruda folds into Pembrolizumab; placebo/standard-of-care nodes are excluded to avoid a false mega-hub (CC-12).",
+      "Nodes capped at top-N by degree and edges pruned below a minimum weight; networks are never emitted as Vega-Lite (vega_lite is null)."
+    ]
+  }
+}
