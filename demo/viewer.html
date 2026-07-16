@@ -503,6 +503,13 @@ function renderMeta(resp){
     ? `<div class="notes"><div class="nh">⚑ Honest disclosures &amp; interpretation notes</div><ul>${notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>`
     : "";
 
+  // Raw REQUEST JSON — reconstructed from the embedded example's _query + _fields
+  // (assignment §3.1: the input request schema should be visible next to the response).
+  // Omitted entirely (graceful hide) when there is no _query (e.g. picker-loaded files).
+  const reqBlock = resp._query
+    ? `<details class="raw-toggle"><summary>View raw request JSON</summary><pre class="raw">${esc(JSON.stringify(Object.assign({ query: resp._query }, resp._fields || {}), null, 2))}</pre></details>`
+    : "";
+
   $("meta").innerHTML =
     `<div class="meta-head">
        <h2 class="meta-title">${esc(title)}</h2>
@@ -510,6 +517,7 @@ function renderMeta(resp){
      </div>
      <div class="meta-grid">${rows.join("")}</div>
      ${notesHtml}
+     ${reqBlock}
      <details class="raw-toggle" open><summary>View raw VisualizeResponse JSON</summary><pre class="raw">${esc(JSON.stringify(stripBulk(resp), null, 2))}</pre></details>`;
 }
 function metaRow(k, v){ return `<div class="mrow"><div class="k">${esc(k)}</div><div class="v">${v}</div></div>`; }
