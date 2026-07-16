@@ -216,7 +216,7 @@ def test_sponsor_drug_edge_has_two_endpoint_citations() -> None:
 
     # Each excerpt round-trips against the contributing record (never authored).
     for citation in edge["citations"]:
-        assert is_substring_at(records[0], citation.field_path, citation.excerpt)
+        assert is_substring_at(records[0], citation.field_path, citation.matched_value)
 
 
 def test_drug_drug_edge_has_two_drug_citations() -> None:
@@ -229,10 +229,10 @@ def test_drug_drug_edge_has_two_drug_citations() -> None:
     assert len(edge["citations"]) == 2
     # both endpoints are drugs → both cite the interventions[].name path
     assert {c.field_path for c in edge["citations"]} == {_DRUG_PATH}
-    excerpts = {c.excerpt for c in edge["citations"]}
+    excerpts = {c.matched_value for c in edge["citations"]}
     assert excerpts == {"Pembrolizumab", "Nivolumab"}
     for citation in edge["citations"]:
-        assert is_substring_at(records[0], citation.field_path, citation.excerpt)
+        assert is_substring_at(records[0], citation.field_path, citation.matched_value)
 
 
 # --- TOTAL over malformed records (LESSON K1) -------------------------------
@@ -317,10 +317,10 @@ def test_over_merge_regression_shared_noncanonical_code() -> None:
     assert edge is not None
     assert edge["weight"] == 1
     # both endpoint excerpts round-trip against the contributing record
-    excerpts = {c.excerpt for c in edge["citations"]}
+    excerpts = {c.matched_value for c in edge["citations"]}
     assert excerpts == {"Pembrolizumab", "Vemurafenib"}
     for citation in edge["citations"]:
-        assert is_substring_at(records[0], citation.field_path, citation.excerpt)
+        assert is_substring_at(records[0], citation.field_path, citation.matched_value)
 
 
 def test_brand_generic_still_merges() -> None:
@@ -455,7 +455,7 @@ def test_fallback_payload_buckets_cited() -> None:
     for bucket in buckets:
         for citation in bucket["citations"]:
             record = by_nct[citation.nct_id]
-            assert is_substring_at(record, citation.field_path, citation.excerpt)
+            assert is_substring_at(record, citation.field_path, citation.matched_value)
 
 
 # --- Phase-3 hardening regressions (adversarial pass) ------------------------
@@ -507,7 +507,7 @@ def test_edge_citation_value_is_real_list_not_copy() -> None:
     edge = graph["edges"][0]
     for citation in edge["citations"]:
         assert isinstance(citation.value, list)  # real list, teeth
-        assert citation.excerpt in citation.value  # excerpt equals a genuine element
+        assert citation.matched_value in citation.value  # excerpt equals a genuine element
 
 
 def test_fallback_notes_exclude_graph_notes_and_disclose_truncation() -> None:
@@ -542,8 +542,8 @@ def test_punctuation_variant_names_merge_no_empty_citation() -> None:
     assert graph["edges"][0]["weight"] == 2  # both trials merged into the one edge
     for edge in graph["edges"]:
         for citation in edge["citations"]:
-            assert citation.excerpt != ""  # never an empty endpoint citation
-            assert citation.excerpt in citation.value  # element-precise (teeth)
+            assert citation.matched_value != ""  # never an empty endpoint citation
+            assert citation.matched_value in citation.value  # element-precise (teeth)
 
 
 def test_single_trial_mislabel_not_merged() -> None:
@@ -583,5 +583,5 @@ def test_dose_and_salt_variants_merge_to_ingredient() -> None:
     assert graph["edges"][0]["weight"] == 3
     for edge in graph["edges"]:
         for citation in edge["citations"]:
-            assert citation.excerpt != ""
-            assert citation.excerpt in citation.value
+            assert citation.matched_value != ""
+            assert citation.matched_value in citation.value

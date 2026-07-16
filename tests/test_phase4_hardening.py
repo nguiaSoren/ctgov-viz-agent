@@ -30,7 +30,7 @@ def _spec_with_excerpt(excerpt: str) -> VisualizeResponse:
         nct_id="NCT00000001",
         field_path="protocolSection.designModule.phases",
         value=["PHASE1"],
-        excerpt=excerpt,
+        matched_value=excerpt,
     )
     datum = Datum(value="PHASE1", label="Phase 1", count_trials=1, citations=[citation])
     viz = Visualization(type="bar", title="t", encoding={}, data=[datum])
@@ -172,7 +172,7 @@ def test_cc1_override_echo_reaches_meta_notes() -> None:
                                        "count_mentions": 126, "source_ids": ["NCT00000001"],
                                        "citations": [{"nct_id": "NCT00000001",
                                                       "field_path": "protocolSection.designModule.phases",
-                                                      "value": ["PHASE1"], "excerpt": "PHASE1"}],
+                                                      "value": ["PHASE1"], "matched_value": "PHASE1"}],
                                        "contributing_count": 126}]}],
     }
     spec = build_spec(state)["spec"]

@@ -180,7 +180,7 @@ class TestLiveReconciliation:
                         "designModule": {"phases": citation.value},
                     }
                 }
-                assert is_substring_at(record, _PHASE_FIELD_PATH, citation.excerpt), (
-                    f"excerpt {citation.excerpt!r} not present at {_PHASE_FIELD_PATH} "
+                assert is_substring_at(record, _PHASE_FIELD_PATH, citation.matched_value), (
+                    f"excerpt {citation.matched_value!r} not present at {_PHASE_FIELD_PATH} "
                     f"for {citation.nct_id}"
                 )

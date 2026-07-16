@@ -124,7 +124,7 @@ class TestBinDurations:
         citation = bucket["citations"][0]
         assert citation.field_path == _START_PATH
         assert citation.nct_id == "NCT01"
-        assert is_substring_at(_record("NCT01", citation.value, None), _START_PATH, citation.excerpt)
+        assert is_substring_at(_record("NCT01", citation.value, None), _START_PATH, citation.matched_value)
 
     def test_distinct_nctid_dedup(self):
         # A duplicate page row (same nctId, same dates) must not double-count (K3).

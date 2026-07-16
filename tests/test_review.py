@@ -33,7 +33,7 @@ def _datum(
     value: str,
     count: int,
     *,
-    excerpt: str | None = None,
+    matched_value: str | None = None,
     cited: bool = True,
     derived: bool = False,
 ) -> Datum:
@@ -44,7 +44,7 @@ def _datum(
                 nct_id="NCT00000001",
                 field_path=_FIELD_PATH,
                 value=[value],
-                excerpt=value if excerpt is None else excerpt,
+                matched_value=value if matched_value is None else matched_value,
             )
         ]
     return Datum(
@@ -88,7 +88,7 @@ def _check(spec, *, count_total, mode="combine", distinct=None, truncated=False)
 
 
 def test_fabricated_excerpt_hard_fails() -> None:
-    spec = _ok_spec([_datum("PHASE1", 50, excerpt="FABRICATED-NOT-PRESENT")])
+    spec = _ok_spec([_datum("PHASE1", 50, matched_value="FABRICATED-NOT-PRESENT")])
     pc = _check(spec, count_total=50)
     assert pc.hard_fail
     assert pc.reason == "citation_invalid"

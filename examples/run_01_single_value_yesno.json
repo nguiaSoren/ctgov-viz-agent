@@ -9,163 +9,163 @@
   "citations": {
     "NCT00083512": {
       "nct_id": "NCT00083512",
+      "excerpt": "Collection of Blood and Urine Samples in Patients Receiving Radiation Therapy for Glioblastoma Multiforme",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT00083512",
-      "excerpt": "NCT00083512",
-      "excerpt_tokens": null,
-      "title": "Collection of Blood and Urine Samples in Patients Receiving Radiation Therapy for Glioblastoma Multiforme"
+      "matched_value": "NCT00083512",
+      "matched_tokens": null
     },
     "NCT01269853": {
       "nct_id": "NCT01269853",
+      "excerpt": "Repeated Super-selective Intraarterial Cerebral Infusion of Bevacizumab (Avastin) for Treatment of Relapsed GBM and AA",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01269853",
-      "excerpt": "NCT01269853",
-      "excerpt_tokens": null,
-      "title": "Repeated Super-selective Intraarterial Cerebral Infusion of Bevacizumab (Avastin) for Treatment of Relapsed GBM and AA"
+      "matched_value": "NCT01269853",
+      "matched_tokens": null
     },
     "NCT01906385": {
       "nct_id": "NCT01906385",
+      "excerpt": "Maximum Tolerated Dose, Safety, and Efficacy of Rhenium Nanoliposomes in Recurrent Glioma (ReSPECT)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01906385",
-      "excerpt": "NCT01906385",
-      "excerpt_tokens": null,
-      "title": "Maximum Tolerated Dose, Safety, and Efficacy of Rhenium Nanoliposomes in Recurrent Glioma (ReSPECT)"
+      "matched_value": "NCT01906385",
+      "matched_tokens": null
     },
     "NCT02394626": {
       "nct_id": "NCT02394626",
+      "excerpt": "Surgery for Recurrent Glioblastoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02394626",
-      "excerpt": "NCT02394626",
-      "excerpt_tokens": null,
-      "title": "Surgery for Recurrent Glioblastoma"
+      "matched_value": "NCT02394626",
+      "matched_tokens": null
     },
     "NCT02704858": {
       "nct_id": "NCT02704858",
+      "excerpt": "Safety and Efficacy Study in Recurrent or Progressive Grade III or IV IDH1 Mutated Glioma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02704858",
-      "excerpt": "NCT02704858",
-      "excerpt_tokens": null,
-      "title": "Safety and Efficacy Study in Recurrent or Progressive Grade III or IV IDH1 Mutated Glioma"
+      "matched_value": "NCT02704858",
+      "matched_tokens": null
     },
     "NCT02800486": {
       "nct_id": "NCT02800486",
+      "excerpt": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02800486",
-      "excerpt": "NCT02800486",
-      "excerpt_tokens": null,
-      "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA"
+      "matched_value": "NCT02800486",
+      "matched_tokens": null
     },
     "NCT02861898": {
       "nct_id": "NCT02861898",
+      "excerpt": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02861898",
-      "excerpt": "NCT02861898",
-      "excerpt_tokens": null,
-      "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma"
+      "matched_value": "NCT02861898",
+      "matched_tokens": null
     },
     "NCT02977780": {
       "nct_id": "NCT02977780",
+      "excerpt": "INdividualized Screening Trial of Innovative Glioblastoma Therapy (INSIGhT)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02977780",
-      "excerpt": "NCT02977780",
-      "excerpt_tokens": null,
-      "title": "INdividualized Screening Trial of Innovative Glioblastoma Therapy (INSIGhT)"
+      "matched_value": "NCT02977780",
+      "matched_tokens": null
     },
     "NCT03005132": {
       "nct_id": "NCT03005132",
+      "excerpt": "Integrative Analysis of Human Glioblastoma Multiforme",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03005132",
-      "excerpt": "NCT03005132",
-      "excerpt_tokens": null,
-      "title": "Integrative Analysis of Human Glioblastoma Multiforme"
+      "matched_value": "NCT03005132",
+      "matched_tokens": null
     },
     "NCT03144167": {
       "nct_id": "NCT03144167",
+      "excerpt": "Study of Prognostic Biomarkers of Survival at 6 Months for Patients Treated With Bevacizumab Glioblastomas in First Relapse After Failure of Radiochemotherapy",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03144167",
-      "excerpt": "NCT03144167",
-      "excerpt_tokens": null,
-      "title": "Study of Prognostic Biomarkers of Survival at 6 Months for Patients Treated With Bevacizumab Glioblastomas in First Relapse After Failure of Radiochemotherapy"
+      "matched_value": "NCT03144167",
+      "matched_tokens": null
     },
     "NCT03175224": {
       "nct_id": "NCT03175224",
+      "excerpt": "APL-101 Study of Subjects With NSCLC With c-Met EXON 14 Skip Mutations and c-Met Dysregulation Advanced Solid Tumors",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03175224",
-      "excerpt": "NCT03175224",
-      "excerpt_tokens": null,
-      "title": "APL-101 Study of Subjects With NSCLC With c-Met EXON 14 Skip Mutations and c-Met Dysregulation Advanced Solid Tumors"
+      "matched_value": "NCT03175224",
+      "matched_tokens": null
     },
     "NCT03213002": {
       "nct_id": "NCT03213002",
+      "excerpt": "Oral Capecitabine and Temozolomide (CAPTEM) for Newly Diagnosed GBM",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03213002",
-      "excerpt": "NCT03213002",
-      "excerpt_tokens": null,
-      "title": "Oral Capecitabine and Temozolomide (CAPTEM) for Newly Diagnosed GBM"
+      "matched_value": "NCT03213002",
+      "matched_tokens": null
     },
     "NCT03383978": {
       "nct_id": "NCT03383978",
+      "excerpt": "Intracranial Injection of NK-92/5.28.z Cells in Combination With Intravenous Ezabenlimab in Patients With Recurrent HER2-positive Glioblastoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03383978",
-      "excerpt": "NCT03383978",
-      "excerpt_tokens": null,
-      "title": "Intracranial Injection of NK-92/5.28.z Cells in Combination With Intravenous Ezabenlimab in Patients With Recurrent HER2-positive Glioblastoma"
+      "matched_value": "NCT03383978",
+      "matched_tokens": null
     },
     "NCT03423628": {
       "nct_id": "NCT03423628",
+      "excerpt": "A Study to Assess the Safety and Tolerability of AZD1390 Given With Radiation Therapy in Patients With Brain Cancer",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03423628",
-      "excerpt": "NCT03423628",
-      "excerpt_tokens": null,
-      "title": "A Study to Assess the Safety and Tolerability of AZD1390 Given With Radiation Therapy in Patients With Brain Cancer"
+      "matched_value": "NCT03423628",
+      "matched_tokens": null
     },
     "NCT03452774": {
       "nct_id": "NCT03452774",
+      "excerpt": "SYNERGY-AI: Artificial Intelligence Based Precision Oncology Clinical Trial Matching and Registry",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03452774",
-      "excerpt": "NCT03452774",
-      "excerpt_tokens": null,
-      "title": "SYNERGY-AI: Artificial Intelligence Based Precision Oncology Clinical Trial Matching and Registry"
+      "matched_value": "NCT03452774",
+      "matched_tokens": null
     },
     "NCT03526822": {
       "nct_id": "NCT03526822",
+      "excerpt": "Prospective Cohort of Patients With Newly Diagnosed Glioblastoma: Analysis of MMP2 and MMP9 Expression and Correlation to Neuro-imaging Features.",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03526822",
-      "excerpt": "NCT03526822",
-      "excerpt_tokens": null,
-      "title": "Prospective Cohort of Patients With Newly Diagnosed Glioblastoma: Analysis of MMP2 and MMP9 Expression and Correlation to Neuro-imaging Features."
+      "matched_value": "NCT03526822",
+      "matched_tokens": null
     },
     "NCT03596086": {
       "nct_id": "NCT03596086",
+      "excerpt": "HSV-tk + Valacyclovir + SBRT + Chemotherapy for Recurrent GBM",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03596086",
-      "excerpt": "NCT03596086",
-      "excerpt_tokens": null,
-      "title": "HSV-tk + Valacyclovir + SBRT + Chemotherapy for Recurrent GBM"
+      "matched_value": "NCT03596086",
+      "matched_tokens": null
     },
     "NCT03603405": {
       "nct_id": "NCT03603405",
+      "excerpt": "HSV-tk and XRT and Chemotherapy for Newly Diagnosed GBM",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03603405",
-      "excerpt": "NCT03603405",
-      "excerpt_tokens": null,
-      "title": "HSV-tk and XRT and Chemotherapy for Newly Diagnosed GBM"
+      "matched_value": "NCT03603405",
+      "matched_tokens": null
     },
     "NCT03672721": {
       "nct_id": "NCT03672721",
+      "excerpt": "IA Carboplatin + Radiotherapy in Relapsing GBM",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03672721",
-      "excerpt": "NCT03672721",
-      "excerpt_tokens": null,
-      "title": "IA Carboplatin + Radiotherapy in Relapsing GBM"
+      "matched_value": "NCT03672721",
+      "matched_tokens": null
     },
     "NCT03787056": {
       "nct_id": "NCT03787056",
+      "excerpt": "Predictive Value of Progastrin Titer at Diagnosis and of Progastrin Kinetics During Treatment in Cancer Patients",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT03787056",
-      "excerpt": "NCT03787056",
-      "excerpt_tokens": null,
-      "title": "Predictive Value of Progastrin Titer at Diagnosis and of Progastrin Kinetics During Treatment in Cancer Patients"
+      "matched_value": "NCT03787056",
+      "matched_tokens": null
     }
   },
   "meta": {
@@ -188,7 +188,7 @@
         "fields": "NCTId"
       }
     },
-    "retrieved_at": "2026-07-15T23:35:56.788324+00:00",
+    "retrieved_at": "2026-07-16T00:01:31.965309+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": []

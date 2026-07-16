@@ -144,7 +144,7 @@ _CANNED_PHASE_BUCKETS: list[dict] = [
                 "nct_id": "NCT00000001",
                 "field_path": "protocolSection.designModule.phases",
                 "value": ["PHASE1"],
-                "excerpt": "PHASE1",
+                "matched_value": "PHASE1", "excerpt": "A Phase 1 dose-escalation study",
             }
         ],
         "contributing_count": 32,
@@ -160,7 +160,7 @@ _CANNED_PHASE_BUCKETS: list[dict] = [
                 "nct_id": "NCT00000002",
                 "field_path": "protocolSection.designModule.phases",
                 "value": ["PHASE2"],
-                "excerpt": "PHASE2",
+                "matched_value": "PHASE2", "excerpt": "A Phase 2 efficacy study",
             }
         ],
         "contributing_count": 54,
@@ -176,7 +176,7 @@ _CANNED_PHASE_BUCKETS: list[dict] = [
                 "nct_id": "NCT00000003",
                 "field_path": "protocolSection.designModule.phases",
                 "value": ["NA"],
-                "excerpt": "NA",
+                "matched_value": "NA", "excerpt": "An observational study (no assigned phase)",
             }
         ],
         "contributing_count": 40,
@@ -808,7 +808,7 @@ def _execute_single_value(plan: Plan, query: dict, filters: dict, retrieved_at: 
                 continue
             record_index[nct] = record
             citations.append(
-                Citation(nct_id=nct, field_path=_NCTID_PATH, value=nct, excerpt=nct, title=brief_title(record))
+                Citation(nct_id=nct, field_path=_NCTID_PATH, value=nct, matched_value=nct, excerpt=brief_title(record) or nct)
             )
 
     kind = "answer" if plan.answer_kind == "answer" else "visualization"

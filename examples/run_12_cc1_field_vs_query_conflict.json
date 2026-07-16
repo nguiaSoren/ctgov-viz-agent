@@ -27,163 +27,163 @@
         "citations": [
           {
             "nct_id": "NCT00836888",
+            "excerpt": "ONO-4538 Phase I Study in Patients With Advanced Malignant Solid Tumors in Japan",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT00836888",
-            "excerpt": "NCT00836888",
-            "excerpt_tokens": null,
-            "title": "ONO-4538 Phase I Study in Patients With Advanced Malignant Solid Tumors in Japan"
+            "matched_value": "NCT00836888",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01176461",
+            "excerpt": "Multiple Class I Peptides & Montanide ISA 51 VG w Escalating Doses of Anti-PD-1 ab BMS936558",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01176461",
-            "excerpt": "NCT01176461",
-            "excerpt_tokens": null,
-            "title": "Multiple Class I Peptides & Montanide ISA 51 VG w Escalating Doses of Anti-PD-1 ab BMS936558"
+            "matched_value": "NCT01176461",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01176474",
+            "excerpt": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01176474",
-            "excerpt": "NCT01176474",
-            "excerpt_tokens": null,
-            "title": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma"
+            "matched_value": "NCT01176474",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01454102",
+            "excerpt": "Study of Nivolumab (BMS-936558) in Combination With Gemcitabine/Cisplatin, Pemetrexed/Cisplatin, Carboplatin/Paclitaxel, Bevacizumab Maintenance, Erlotinib, Ipilimumab or as Monotherapy in Subjects With Stage IIIB/IV Non-small Cell Lung Cancer (NSCLC) (CheckMate 012)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01454102",
-            "excerpt": "NCT01454102",
-            "excerpt_tokens": null,
-            "title": "Study of Nivolumab (BMS-936558) in Combination With Gemcitabine/Cisplatin, Pemetrexed/Cisplatin, Carboplatin/Paclitaxel, Bevacizumab Maintenance, Erlotinib, Ipilimumab or as Monotherapy in Subjects With Stage IIIB/IV Non-small Cell Lung Cancer (NSCLC) (CheckMate 012)"
+            "matched_value": "NCT01454102",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01585194",
+            "excerpt": "Nivolumab and Ipilimumab in Treating Patients With Metastatic Uveal Melanoma",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01585194",
-            "excerpt": "NCT01585194",
-            "excerpt_tokens": null,
-            "title": "Nivolumab and Ipilimumab in Treating Patients With Metastatic Uveal Melanoma"
+            "matched_value": "NCT01585194",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01621490",
+            "excerpt": "PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01621490",
-            "excerpt": "NCT01621490",
-            "excerpt_tokens": null,
-            "title": "PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma"
+            "matched_value": "NCT01621490",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01629758",
+            "excerpt": "Safety Study of IL-21/Anti-PD-1 Combination in the Treatment of Solid Tumors",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01629758",
-            "excerpt": "NCT01629758",
-            "excerpt_tokens": null,
-            "title": "Safety Study of IL-21/Anti-PD-1 Combination in the Treatment of Solid Tumors"
+            "matched_value": "NCT01629758",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01642004",
+            "excerpt": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01642004",
-            "excerpt": "NCT01642004",
-            "excerpt_tokens": null,
-            "title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)"
+            "matched_value": "NCT01642004",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01703949",
+            "excerpt": "Brentuximab Vedotin With or Without Nivolumab in Treating Patients With Relapsed or Refractory CD30+ Lymphoma",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01703949",
-            "excerpt": "NCT01703949",
-            "excerpt_tokens": null,
-            "title": "Brentuximab Vedotin With or Without Nivolumab in Treating Patients With Relapsed or Refractory CD30+ Lymphoma"
+            "matched_value": "NCT01703949",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01721746",
+            "excerpt": "A Study to Compare BMS-936558 to the Physician's Choice of Either Dacarbazine or Carboplatin and Paclitaxel in Advanced Melanoma Patients That Have Progressed Following Anti-CTLA-4 Therapy (CheckMate 037)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01721746",
-            "excerpt": "NCT01721746",
-            "excerpt_tokens": null,
-            "title": "A Study to Compare BMS-936558 to the Physician's Choice of Either Dacarbazine or Carboplatin and Paclitaxel in Advanced Melanoma Patients That Have Progressed Following Anti-CTLA-4 Therapy (CheckMate 037)"
+            "matched_value": "NCT01721746",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01783938",
+            "excerpt": "Study of Nivolumab Given Sequentially With Ipilimumab in Subjects With Advanced or Metastatic Melanoma (CheckMate 064)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01783938",
-            "excerpt": "NCT01783938",
-            "excerpt_tokens": null,
-            "title": "Study of Nivolumab Given Sequentially With Ipilimumab in Subjects With Advanced or Metastatic Melanoma (CheckMate 064)"
+            "matched_value": "NCT01783938",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01844505",
+            "excerpt": "Phase 3 Study of Nivolumab or Nivolumab Plus Ipilimumab Versus Ipilimumab Alone in Previously Untreated Advanced Melanoma (CheckMate 067)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01844505",
-            "excerpt": "NCT01844505",
-            "excerpt_tokens": null,
-            "title": "Phase 3 Study of Nivolumab or Nivolumab Plus Ipilimumab Versus Ipilimumab Alone in Previously Untreated Advanced Melanoma (CheckMate 067)"
+            "matched_value": "NCT01844505",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01928394",
+            "excerpt": "A Study of Nivolumab by Itself or Nivolumab Combined With Ipilimumab in Patients With Advanced or Metastatic Solid Tumors",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01928394",
-            "excerpt": "NCT01928394",
-            "excerpt_tokens": null,
-            "title": "A Study of Nivolumab by Itself or Nivolumab Combined With Ipilimumab in Patients With Advanced or Metastatic Solid Tumors"
+            "matched_value": "NCT01928394",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01928576",
+            "excerpt": "Phase II Anti-PD1 Epigenetic Therapy Study in NSCLC.",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01928576",
-            "excerpt": "NCT01928576",
-            "excerpt_tokens": null,
-            "title": "Phase II Anti-PD1 Epigenetic Therapy Study in NSCLC."
+            "matched_value": "NCT01928576",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01940809",
+            "excerpt": "Ipilimumab With or Without Dabrafenib, Trametinib, and/or Nivolumab in Treating Patients With Melanoma That Is Metastatic or Cannot Be Removed by Surgery",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01940809",
-            "excerpt": "NCT01940809",
-            "excerpt_tokens": null,
-            "title": "Ipilimumab With or Without Dabrafenib, Trametinib, and/or Nivolumab in Treating Patients With Melanoma That Is Metastatic or Cannot Be Removed by Surgery"
+            "matched_value": "NCT01940809",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01968109",
+            "excerpt": "An Investigational Immuno-therapy Study to Assess the Safety, Tolerability and Effectiveness of Anti-LAG-3 With and Without Anti-PD-1 in the Treatment of Solid Tumors",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01968109",
-            "excerpt": "NCT01968109",
-            "excerpt_tokens": null,
-            "title": "An Investigational Immuno-therapy Study to Assess the Safety, Tolerability and Effectiveness of Anti-LAG-3 With and Without Anti-PD-1 in the Treatment of Solid Tumors"
+            "matched_value": "NCT01968109",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01993719",
+            "excerpt": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01993719",
-            "excerpt": "NCT01993719",
-            "excerpt_tokens": null,
-            "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
+            "matched_value": "NCT01993719",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01998126",
+            "excerpt": "Combination Checkpoint Inhibitor Plus Erlotinib or Crizotinib for EGFR or ALK Mutated Stage IV Non-small Cell Lung Cancer",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT01998126",
-            "excerpt": "NCT01998126",
-            "excerpt_tokens": null,
-            "title": "Combination Checkpoint Inhibitor Plus Erlotinib or Crizotinib for EGFR or ALK Mutated Stage IV Non-small Cell Lung Cancer"
+            "matched_value": "NCT01998126",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02009449",
+            "excerpt": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT02009449",
-            "excerpt": "NCT02009449",
-            "excerpt_tokens": null,
-            "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
+            "matched_value": "NCT02009449",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02038946",
+            "excerpt": "Study of Nivolumab in Subjects With Relapsed or Refractory Follicular Lymphoma (FL) (CheckMate 140)",
             "field_path": "protocolSection.identificationModule.nctId",
             "value": "NCT02038946",
-            "excerpt": "NCT02038946",
-            "excerpt_tokens": null,
-            "title": "Study of Nivolumab in Subjects With Relapsed or Refractory Follicular Lymphoma (FL) (CheckMate 140)"
+            "matched_value": "NCT02038946",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -200,163 +200,163 @@
   "citations": {
     "NCT00836888": {
       "nct_id": "NCT00836888",
+      "excerpt": "ONO-4538 Phase I Study in Patients With Advanced Malignant Solid Tumors in Japan",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT00836888",
-      "excerpt": "NCT00836888",
-      "excerpt_tokens": null,
-      "title": "ONO-4538 Phase I Study in Patients With Advanced Malignant Solid Tumors in Japan"
+      "matched_value": "NCT00836888",
+      "matched_tokens": null
     },
     "NCT01176461": {
       "nct_id": "NCT01176461",
+      "excerpt": "Multiple Class I Peptides & Montanide ISA 51 VG w Escalating Doses of Anti-PD-1 ab BMS936558",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01176461",
-      "excerpt": "NCT01176461",
-      "excerpt_tokens": null,
-      "title": "Multiple Class I Peptides & Montanide ISA 51 VG w Escalating Doses of Anti-PD-1 ab BMS936558"
+      "matched_value": "NCT01176461",
+      "matched_tokens": null
     },
     "NCT01176474": {
       "nct_id": "NCT01176474",
+      "excerpt": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01176474",
-      "excerpt": "NCT01176474",
-      "excerpt_tokens": null,
-      "title": "Vaccine Combining Multiple Class I Peptides and Montanide ISA 51VG With Escalating Doses of Anti-PD-1 Antibody Nivolumab or Ipilimumab With Nivolumab For Patients With Resected Stages IIIC/ IV Melanoma"
+      "matched_value": "NCT01176474",
+      "matched_tokens": null
     },
     "NCT01454102": {
       "nct_id": "NCT01454102",
+      "excerpt": "Study of Nivolumab (BMS-936558) in Combination With Gemcitabine/Cisplatin, Pemetrexed/Cisplatin, Carboplatin/Paclitaxel, Bevacizumab Maintenance, Erlotinib, Ipilimumab or as Monotherapy in Subjects With Stage IIIB/IV Non-small Cell Lung Cancer (NSCLC) (CheckMate 012)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01454102",
-      "excerpt": "NCT01454102",
-      "excerpt_tokens": null,
-      "title": "Study of Nivolumab (BMS-936558) in Combination With Gemcitabine/Cisplatin, Pemetrexed/Cisplatin, Carboplatin/Paclitaxel, Bevacizumab Maintenance, Erlotinib, Ipilimumab or as Monotherapy in Subjects With Stage IIIB/IV Non-small Cell Lung Cancer (NSCLC) (CheckMate 012)"
+      "matched_value": "NCT01454102",
+      "matched_tokens": null
     },
     "NCT01585194": {
       "nct_id": "NCT01585194",
+      "excerpt": "Nivolumab and Ipilimumab in Treating Patients With Metastatic Uveal Melanoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01585194",
-      "excerpt": "NCT01585194",
-      "excerpt_tokens": null,
-      "title": "Nivolumab and Ipilimumab in Treating Patients With Metastatic Uveal Melanoma"
+      "matched_value": "NCT01585194",
+      "matched_tokens": null
     },
     "NCT01621490": {
       "nct_id": "NCT01621490",
+      "excerpt": "PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01621490",
-      "excerpt": "NCT01621490",
-      "excerpt_tokens": null,
-      "title": "PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma"
+      "matched_value": "NCT01621490",
+      "matched_tokens": null
     },
     "NCT01629758": {
       "nct_id": "NCT01629758",
+      "excerpt": "Safety Study of IL-21/Anti-PD-1 Combination in the Treatment of Solid Tumors",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01629758",
-      "excerpt": "NCT01629758",
-      "excerpt_tokens": null,
-      "title": "Safety Study of IL-21/Anti-PD-1 Combination in the Treatment of Solid Tumors"
+      "matched_value": "NCT01629758",
+      "matched_tokens": null
     },
     "NCT01642004": {
       "nct_id": "NCT01642004",
+      "excerpt": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01642004",
-      "excerpt": "NCT01642004",
-      "excerpt_tokens": null,
-      "title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)"
+      "matched_value": "NCT01642004",
+      "matched_tokens": null
     },
     "NCT01703949": {
       "nct_id": "NCT01703949",
+      "excerpt": "Brentuximab Vedotin With or Without Nivolumab in Treating Patients With Relapsed or Refractory CD30+ Lymphoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01703949",
-      "excerpt": "NCT01703949",
-      "excerpt_tokens": null,
-      "title": "Brentuximab Vedotin With or Without Nivolumab in Treating Patients With Relapsed or Refractory CD30+ Lymphoma"
+      "matched_value": "NCT01703949",
+      "matched_tokens": null
     },
     "NCT01721746": {
       "nct_id": "NCT01721746",
+      "excerpt": "A Study to Compare BMS-936558 to the Physician's Choice of Either Dacarbazine or Carboplatin and Paclitaxel in Advanced Melanoma Patients That Have Progressed Following Anti-CTLA-4 Therapy (CheckMate 037)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01721746",
-      "excerpt": "NCT01721746",
-      "excerpt_tokens": null,
-      "title": "A Study to Compare BMS-936558 to the Physician's Choice of Either Dacarbazine or Carboplatin and Paclitaxel in Advanced Melanoma Patients That Have Progressed Following Anti-CTLA-4 Therapy (CheckMate 037)"
+      "matched_value": "NCT01721746",
+      "matched_tokens": null
     },
     "NCT01783938": {
       "nct_id": "NCT01783938",
+      "excerpt": "Study of Nivolumab Given Sequentially With Ipilimumab in Subjects With Advanced or Metastatic Melanoma (CheckMate 064)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01783938",
-      "excerpt": "NCT01783938",
-      "excerpt_tokens": null,
-      "title": "Study of Nivolumab Given Sequentially With Ipilimumab in Subjects With Advanced or Metastatic Melanoma (CheckMate 064)"
+      "matched_value": "NCT01783938",
+      "matched_tokens": null
     },
     "NCT01844505": {
       "nct_id": "NCT01844505",
+      "excerpt": "Phase 3 Study of Nivolumab or Nivolumab Plus Ipilimumab Versus Ipilimumab Alone in Previously Untreated Advanced Melanoma (CheckMate 067)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01844505",
-      "excerpt": "NCT01844505",
-      "excerpt_tokens": null,
-      "title": "Phase 3 Study of Nivolumab or Nivolumab Plus Ipilimumab Versus Ipilimumab Alone in Previously Untreated Advanced Melanoma (CheckMate 067)"
+      "matched_value": "NCT01844505",
+      "matched_tokens": null
     },
     "NCT01928394": {
       "nct_id": "NCT01928394",
+      "excerpt": "A Study of Nivolumab by Itself or Nivolumab Combined With Ipilimumab in Patients With Advanced or Metastatic Solid Tumors",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01928394",
-      "excerpt": "NCT01928394",
-      "excerpt_tokens": null,
-      "title": "A Study of Nivolumab by Itself or Nivolumab Combined With Ipilimumab in Patients With Advanced or Metastatic Solid Tumors"
+      "matched_value": "NCT01928394",
+      "matched_tokens": null
     },
     "NCT01928576": {
       "nct_id": "NCT01928576",
+      "excerpt": "Phase II Anti-PD1 Epigenetic Therapy Study in NSCLC.",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01928576",
-      "excerpt": "NCT01928576",
-      "excerpt_tokens": null,
-      "title": "Phase II Anti-PD1 Epigenetic Therapy Study in NSCLC."
+      "matched_value": "NCT01928576",
+      "matched_tokens": null
     },
     "NCT01940809": {
       "nct_id": "NCT01940809",
+      "excerpt": "Ipilimumab With or Without Dabrafenib, Trametinib, and/or Nivolumab in Treating Patients With Melanoma That Is Metastatic or Cannot Be Removed by Surgery",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01940809",
-      "excerpt": "NCT01940809",
-      "excerpt_tokens": null,
-      "title": "Ipilimumab With or Without Dabrafenib, Trametinib, and/or Nivolumab in Treating Patients With Melanoma That Is Metastatic or Cannot Be Removed by Surgery"
+      "matched_value": "NCT01940809",
+      "matched_tokens": null
     },
     "NCT01968109": {
       "nct_id": "NCT01968109",
+      "excerpt": "An Investigational Immuno-therapy Study to Assess the Safety, Tolerability and Effectiveness of Anti-LAG-3 With and Without Anti-PD-1 in the Treatment of Solid Tumors",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01968109",
-      "excerpt": "NCT01968109",
-      "excerpt_tokens": null,
-      "title": "An Investigational Immuno-therapy Study to Assess the Safety, Tolerability and Effectiveness of Anti-LAG-3 With and Without Anti-PD-1 in the Treatment of Solid Tumors"
+      "matched_value": "NCT01968109",
+      "matched_tokens": null
     },
     "NCT01993719": {
       "nct_id": "NCT01993719",
+      "excerpt": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01993719",
-      "excerpt": "NCT01993719",
-      "excerpt_tokens": null,
-      "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Melanoma"
+      "matched_value": "NCT01993719",
+      "matched_tokens": null
     },
     "NCT01998126": {
       "nct_id": "NCT01998126",
+      "excerpt": "Combination Checkpoint Inhibitor Plus Erlotinib or Crizotinib for EGFR or ALK Mutated Stage IV Non-small Cell Lung Cancer",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT01998126",
-      "excerpt": "NCT01998126",
-      "excerpt_tokens": null,
-      "title": "Combination Checkpoint Inhibitor Plus Erlotinib or Crizotinib for EGFR or ALK Mutated Stage IV Non-small Cell Lung Cancer"
+      "matched_value": "NCT01998126",
+      "matched_tokens": null
     },
     "NCT02009449": {
       "nct_id": "NCT02009449",
+      "excerpt": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02009449",
-      "excerpt": "NCT02009449",
-      "excerpt_tokens": null,
-      "title": "A Phase 1 Study of Pegilodecakin (LY3500518) in Participants With Advanced Solid Tumors"
+      "matched_value": "NCT02009449",
+      "matched_tokens": null
     },
     "NCT02038946": {
       "nct_id": "NCT02038946",
+      "excerpt": "Study of Nivolumab in Subjects With Relapsed or Refractory Follicular Lymphoma (FL) (CheckMate 140)",
       "field_path": "protocolSection.identificationModule.nctId",
       "value": "NCT02038946",
-      "excerpt": "NCT02038946",
-      "excerpt_tokens": null,
-      "title": "Study of Nivolumab in Subjects With Relapsed or Refractory Follicular Lymphoma (FL) (CheckMate 140)"
+      "matched_value": "NCT02038946",
+      "matched_tokens": null
     }
   },
   "meta": {
@@ -376,7 +376,7 @@
         "fields": "NCTId"
       }
     },
-    "retrieved_at": "2026-07-15T23:37:07.371481+00:00",
+    "retrieved_at": "2026-07-16T00:02:49.793353+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [

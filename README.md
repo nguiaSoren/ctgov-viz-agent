@@ -189,10 +189,12 @@ the number that reconciles) and `count_mentions` (the honest per-membership tall
   "visualization": { "type": "bar", "title": "Phase distribution of interventional pancreatic cancer trials",
     "encoding": { "x": {"field":"label"}, "y": {"field":"count_trials","unit":"trials"} },
     "data": [
-      { "value": "NA", "label": "NA (not applicable)", "count_trials": 937,
-        "contributing_count": 937, "citations_truncated": true,
-        "citations": [ { "nct_id": "NCT…", "field_path": "protocolSection.designModule.phases",
-                         "value": [], "excerpt": "" } /* …up to 20 */ ] },
+      { "value": "PHASE1", "label": "Phase 1", "count_trials": 895,
+        "contributing_count": 895, "citations_truncated": true,
+        "citations": [ { "nct_id": "NCT00001431",
+                         "excerpt": "A Phase I Trial of Gemcitabine and Radiation in …",  // §5: readable brief title
+                         "field_path": "protocolSection.designModule.phases",
+                         "value": ["PHASE1"], "matched_value": "PHASE1" }  /* …up to 20 */ ] },
       { "value": "PHASE1|PHASE2", "label": "Phase 1/2", "count_trials": 505, "…": "…" },
       { "value": "PHASE2", "label": "Phase 2", "count_trials": 1143, "…": "…" }
       /* Early Phase 1: 109 · Phase 1: 895 · Phase 2/3: 58 · Phase 3: 232 · Phase 4: 71 */
@@ -254,19 +256,20 @@ Every chart datum carries its own provenance, but a "Recruiting: 120,000" bucket
 citation objects. So each datum carries the exact `contributing_count` (always the true bucket size)
 plus a **bounded, deterministic sample of up to `K = 20` citations** (the first 20 contributing
 nctIds, sorted — stable across runs) and a `citations_truncated` flag when the true set exceeds `K`.
-Each citation is **two-part**, so it is deep in both senses §5 asks for:
+Each citation is **two-part**, so it is deep in both senses §5 names — and it reads exactly like §5's
+illustrative example:
 
-- **`excerpt`** — the *exact field value that decided membership* (e.g. `"PHASE1"`, `"2015-01-28"`,
-  `"France"`), string-extracted from the record at its `field_path`, never authored by the model, and
-  re-verified element-precise by a deterministic Output-Reviewer check. This is the *rigorous* proof:
-  it says precisely **why** this trial is in this bucket.
-- **`title`** — the trial's human-readable **brief title** (`protocolSection.identificationModule.briefTitle`),
-  also string-extracted from the record, never authored. This is the descriptive *"text excerpt that
-  supports the datum"* — e.g. *"Gemcitabine Compared With Pancreatic Enzyme Therapy … in Treating Patients
-  With Stage II–IV Pancreatic Cancer."*
+- **`excerpt`** — §5's headline, *"an exact text excerpt from the API response that supports the
+  datum"*: the trial's human-readable **brief title** (`protocolSection.identificationModule.briefTitle`),
+  e.g. *"A Phase I Trial of Gemcitabine and Radiation in Locally Advanced Unresectable Cancer of the
+  Pancreas."* String-extracted from the record, never model-authored.
+- **`matched_value`** — §5's *"(or a specific field/value)"*: the exact field value at `field_path`
+  that *decided membership* (e.g. `"PHASE1"`, `"2015-01-28"`, `"France"`), re-verified element-precise
+  by a deterministic Output-Reviewer check. This is the rigorous **why** this trial is in this bucket —
+  the anti-fabrication anchor (a fabricated value fails at build time).
 
-So a reviewer clicking any bar, time bucket, or edge sees both the exact field that put a trial there
-**and** a sentence they can read. `K` is a deploy-time constant, not agent-tunable.
+So a reviewer clicking any bar, time bucket, or edge sees a readable sentence **and** the exact field
+that put a trial there. `K` is a deploy-time constant, not agent-tunable.
 
 For a network, each edge's `weight` is a *derived* count, so it cites its **members** (the contributing
 trials) via two citations, one per endpoint field path. A trial in the `NA` phase bucket has no phase
@@ -448,7 +451,7 @@ produces the identical result — because the number was never the model's to ge
 | **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 580 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
 | **15%** | Query & Viz Coverage | 6 query classes + 7 chart types (bar/grouped/time-series/histogram/network/single-value/table) + a meaningful network graph, all off one core; 15 example rungs simple→complex incl. the two refuses + a clarification. `EXAMPLE_RUNS.md`. |
 | **10%** | Input/Output Design | Documented, per-field-validated request schema; a `status`/`kind`-discriminated envelope with a `vega_lite` projection so a frontend renders without guessing. `app/api/schemas.py`. |
-| **bonus** | Deep citations | Per-datum `nct_id` + a **two-part** excerpt (the exact field value that proves membership *and* the trial's readable brief `title`, §5), both string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
+| **bonus** | Deep citations | Per-datum `nct_id` + a **two-part** reference (a readable `excerpt` = the trial's brief title, §5's descriptive excerpt, *and* the exact `matched_value` that proves membership), both string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
 
 ---
 

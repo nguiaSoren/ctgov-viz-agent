@@ -62,163 +62,163 @@
         "citations": [
           {
             "nct_id": "NCT03486873",
+            "excerpt": "Long-term Safety and Efficacy Extension Study for Participants With Advanced Tumors Who Are Currently on Treatment or in Follow-up in a Pembrolizumab (MK-3475) Study (MK-3475-587/KEYNOTE-587)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Long-term Safety and Efficacy Extension Study for Participants With Advanced Tumors Who Are Currently on Treatment or in Follow-up in a Pembrolizumab (MK-3475) Study (MK-3475-587/KEYNOTE-587)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04534205",
+            "excerpt": "A Clinical Trial Investigating the Safety, Tolerability, and Therapeutic Effects of BNT113 in Combination With Pembrolizumab Versus Pembrolizumab Alone for Patients With a Form of Head and Neck Cancer Positive for Human Papilloma Virus 16 and Expressing the Protein PD-L1",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Clinical Trial Investigating the Safety, Tolerability, and Therapeutic Effects of BNT113 in Combination With Pembrolizumab Versus Pembrolizumab Alone for Patients With a Form of Head and Neck Cancer Positive for Human Papilloma Virus 16 and Expressing the Protein PD-L1"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04613596",
+            "excerpt": "Phase 2 Trial of Adagrasib Monotherapy and in Combination With Pembrolizumab and a Phase 3 Trial of Adagrasib in Combination in Patients With a KRAS G12C Mutation KRYSTAL-7",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Phase 2 Trial of Adagrasib Monotherapy and in Combination With Pembrolizumab and a Phase 3 Trial of Adagrasib in Combination in Patients With a KRAS G12C Mutation KRYSTAL-7"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05317858",
+            "excerpt": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05549297",
+            "excerpt": "Tebentafusp Regimen Versus Investigator's Choice in Previously Treated Advanced Melanoma (TEBE-AM)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Tebentafusp Regimen Versus Investigator's Choice in Previously Treated Advanced Melanoma (TEBE-AM)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05633654",
+            "excerpt": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/GBG 119/NSABP B-63)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/GBG 119/NSABP B-63)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05668650",
+            "excerpt": "Double-blind Study to Evaluate the PK, Efficacy, Safety and Immunogenicity of MB12 Versus Keytruda® in Stage IV NSCLC",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Double-blind Study to Evaluate the PK, Efficacy, Safety and Immunogenicity of MB12 Versus Keytruda® in Stage IV NSCLC"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05727904",
+            "excerpt": "Study to Investigate Lifileucel Regimen Plus Pembrolizumab Compared With Pembrolizumab Alone in Participants With Untreated Advanced Melanoma.",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Study to Investigate Lifileucel Regimen Plus Pembrolizumab Compared With Pembrolizumab Alone in Participants With Untreated Advanced Melanoma."
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05899608",
+            "excerpt": "Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05920356",
+            "excerpt": "A Study Evaluating Sotorasib Platinum Doublet Combination Versus Pembrolizumab Platinum Doublet Combination as a Front-Line Therapy in Participants With Stage IV or Advanced Stage IIIB/C Nonsquamous Non-Small Cell Lung Cancers (CodeBreaK 202)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study Evaluating Sotorasib Platinum Doublet Combination Versus Pembrolizumab Platinum Doublet Combination as a Front-Line Therapy in Participants With Stage IV or Advanced Stage IIIB/C Nonsquamous Non-Small Cell Lung Cancers (CodeBreaK 202)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06077760",
+            "excerpt": "A Study of Intismeran Autogene (V940) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Non-small Cell Lung Cancer (V940-002)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study of Intismeran Autogene (V940) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Non-small Cell Lung Cancer (V940-002)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06103864",
+            "excerpt": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06119581",
+            "excerpt": "A Study of First-Line Olomorasib (LY3537982) and Pembrolizumab With or Without Chemotherapy in Patients With Advanced KRAS G12C-Mutant Non-small Cell Lung Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study of First-Line Olomorasib (LY3537982) and Pembrolizumab With or Without Chemotherapy in Patients With Advanced KRAS G12C-Mutant Non-small Cell Lung Cancer"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06170788",
+            "excerpt": "Sacituzumab Tirumotecan (MK-2870) in Combination With Pembrolizumab Versus Pembrolizumab Alone in Metastatic Non-small Cell Lung Cancer (NSCLC) With Programmed Cell Death Ligand 1 (PD-L1) Tumor Proportion Score (TPS) ≥ 50% (MK-2870-007)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Sacituzumab Tirumotecan (MK-2870) in Combination With Pembrolizumab Versus Pembrolizumab Alone in Metastatic Non-small Cell Lung Cancer (NSCLC) With Programmed Cell Death Ligand 1 (PD-L1) Tumor Proportion Score (TPS) ≥ 50% (MK-2870-007)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06216301",
+            "excerpt": "LUNAR-2: TTFields With Pembrolizumab + Platinum-based Chemotherapy for Metastatic NSCLC",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "LUNAR-2: TTFields With Pembrolizumab + Platinum-based Chemotherapy for Metastatic NSCLC"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06236438",
+            "excerpt": "Study to Evaluate Adverse Events, Optimal Dose, and Change in Disease Activity, With Livmoniplimab in Combination With Budigalimab Plus Chemotherapy Versus IV Infused Pembrolizumab Plus Chemotherapy in Adult Participants With Untreated Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Study to Evaluate Adverse Events, Optimal Dose, and Change in Disease Activity, With Livmoniplimab in Combination With Budigalimab Plus Chemotherapy Versus IV Infused Pembrolizumab Plus Chemotherapy in Adult Participants With Untreated Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06264180",
+            "excerpt": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06282575",
+            "excerpt": "Efficacy and Safety of Zanidatamab With Standard-of-care Therapy Against Standard-of-care Therapy for Advanced HER2-positive Biliary Tract Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Efficacy and Safety of Zanidatamab With Standard-of-care Therapy Against Standard-of-care Therapy for Advanced HER2-positive Biliary Tract Cancer"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06312137",
+            "excerpt": "A Study to Assess Efficacy and Safety of Pembrolizumab With or Without Sacituzumab Tirumotecan (MK- 2870) in Adult Participants With Resectable Non Small Cell Lung Cancer (NSCLC) Not Achieving Pathological Complete Response (pCR) (MK-2870-019)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study to Assess Efficacy and Safety of Pembrolizumab With or Without Sacituzumab Tirumotecan (MK- 2870) in Adult Participants With Resectable Non Small Cell Lung Cancer (NSCLC) Not Achieving Pathological Complete Response (pCR) (MK-2870-019)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06312176",
+            "excerpt": "A Study of Sacituzumab Tirumotecan (MK-2870) as a Single Agent and in Combination With Pembrolizumab (MK-3475) Versus Treatment of Physician's Choice in Participants With HR+/HER2- Unresectable Locally Advanced or Metastatic Breast Cancer (MK-2870-010)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study of Sacituzumab Tirumotecan (MK-2870) as a Single Agent and in Combination With Pembrolizumab (MK-3475) Versus Treatment of Physician's Choice in Participants With HR+/HER2- Unresectable Locally Advanced or Metastatic Breast Cancer (MK-2870-010)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -258,139 +258,139 @@
         "citations": [
           {
             "nct_id": "NCT05317858",
+            "excerpt": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06022861",
+            "excerpt": "A Study to Compare the Efficacy and Safety of LY01015 and Opdivo® Combined Respectively With Chemotherapy in Advanced or Metastatic Esophageal Squamous Cell Carcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study to Compare the Efficacy and Safety of LY01015 and Opdivo® Combined Respectively With Chemotherapy in Advanced or Metastatic Esophageal Squamous Cell Carcinoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06112314",
+            "excerpt": "IMC-F106C Regimen Versus Nivolumab Regimens in Previously Untreated Advanced Melanoma (PRISM-MEL-301)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "IMC-F106C Regimen Versus Nivolumab Regimens in Previously Untreated Advanced Melanoma (PRISM-MEL-301)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06246916",
+            "excerpt": "A Study With Combinations of Anti-LAG-3 and Anti-PD-1 Antibodies in Adult Participants With Advanced or Metastatic Melanoma (Harmony Head-to-Head)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study With Combinations of Anti-LAG-3 and Anti-PD-1 Antibodies in Adult Participants With Advanced or Metastatic Melanoma (Harmony Head-to-Head)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06264180",
+            "excerpt": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06561386",
+            "excerpt": "A Study to Compare the Efficacy of Nivolumab and Relatlimab Plus Chemotherapy vs Pembrolizumab Plus Chemotherapy for Stage IV/Recurrent Non-squamous Non-small Cell Lung Cancer With PD-L1 Expression ≥ 1%",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study to Compare the Efficacy of Nivolumab and Relatlimab Plus Chemotherapy vs Pembrolizumab Plus Chemotherapy for Stage IV/Recurrent Non-squamous Non-small Cell Lung Cancer With PD-L1 Expression ≥ 1%"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06581406",
+            "excerpt": "A Randomized, Phase 2/3 Study to Investigate the Efficacy and Safety of RP2 in Combination With Nivolumab in Immune Checkpoint Inhibitor-Naïve Adult Patients With Metastatic Uveal Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Randomized, Phase 2/3 Study to Investigate the Efficacy and Safety of RP2 in Combination With Nivolumab in Immune Checkpoint Inhibitor-Naïve Adult Patients With Metastatic Uveal Melanoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06624644",
+            "excerpt": "A Trial of LNS8801 With or Without Pembrolizumab in Patients With Refractory Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Trial of LNS8801 With or Without Pembrolizumab in Patients With Refractory Melanoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06646276",
+            "excerpt": "A Study to Compare the Efficacy and Safety of BMS-986489 (BMS-986012+ Nivolumab Fixed Dose Combination) in Combination With Carboplatin Plus Etoposide to That of Atezolizumab With Carboplatin Plus Etoposide as First-Line Therapy in Participants With Extensive-Stage Small Cell Lung Cancer (TIGOS).",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study to Compare the Efficacy and Safety of BMS-986489 (BMS-986012+ Nivolumab Fixed Dose Combination) in Combination With Carboplatin Plus Etoposide to That of Atezolizumab With Carboplatin Plus Etoposide as First-Line Therapy in Participants With Extensive-Stage Small Cell Lung Cancer (TIGOS)."
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06743126",
+            "excerpt": "SUPRAME-ACTengine® IMA203 vs. Investigator's Choice of Treatment in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "SUPRAME-ACTengine® IMA203 vs. Investigator's Choice of Treatment in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06841679",
+            "excerpt": "Utidelone Capsule Combined With Fluoropyrimidine- and Platinum-containing Therapy in First-line Treatment of Patients With Gastric or Gastroesophageal Junction Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Utidelone Capsule Combined With Fluoropyrimidine- and Platinum-containing Therapy in First-line Treatment of Patients With Gastric or Gastroesophageal Junction Adenocarcinoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07195695",
+            "excerpt": "Beamion LUNG-3: Adjuvant Zongertinib vs Standard Treatment in People With Completely Resected Stage II-IIIB NSCLC Harboring Activating HER2 TKD Mutations",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Beamion LUNG-3: Adjuvant Zongertinib vs Standard Treatment in People With Completely Resected Stage II-IIIB NSCLC Harboring Activating HER2 TKD Mutations"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07221149",
+            "excerpt": "A Study to Evaluate the Safety and Efficacy of Pumitamig in Combination With Chemotherapy Versus Nivolumab in Combination With Chemotherapy in Participants With Previously Untreated Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma (ROSETTA Gastric-204)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "A Study to Evaluate the Safety and Efficacy of Pumitamig in Combination With Chemotherapy Versus Nivolumab in Combination With Chemotherapy in Participants With Previously Untreated Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma (ROSETTA Gastric-204)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07221734",
+            "excerpt": "Study to Compare Pharmacokinetics, Efficacy, Safety, and Immunogenicity of MB11 Versus EU-/US-Opdivo® in Subjects With Previously Untreated Advanced [Unresectable or Metastatic] Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Study to Compare Pharmacokinetics, Efficacy, Safety, and Immunogenicity of MB11 Versus EU-/US-Opdivo® in Subjects With Previously Untreated Advanced [Unresectable or Metastatic] Melanoma"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07392892",
+            "excerpt": "Symbiotic-GI-16: A Study to Learn About the Study Medicine Called PF-08634404 in Combination With Chemotherapy in Gastroesophageal Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Symbiotic-GI-16: A Study to Learn About the Study Medicine Called PF-08634404 in Combination With Chemotherapy in Gastroesophageal Cancer"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07405164",
+            "excerpt": "Extension Study for Participants in Studies That Include Belzutifan (MK-6482-043/LITESPARK-043)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Extension Study for Participants in Studies That Include Belzutifan (MK-6482-043/LITESPARK-043)"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07431281",
+            "excerpt": "Sonesitatug Vedotin in Combination With Capecitabine With or Without Rilvegostomig in Participants With Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma Expressing Claudin18.2",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "INDUSTRY",
-            "excerpt": "INDUSTRY",
-            "excerpt_tokens": null,
-            "title": "Sonesitatug Vedotin in Combination With Capecitabine With or Without Rilvegostomig in Participants With Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma Expressing Claudin18.2"
+            "matched_value": "INDUSTRY",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -433,163 +433,163 @@
         "citations": [
           {
             "nct_id": "NCT03755739",
+            "excerpt": "Trans-Artery/Intra-Tumor Infusion of Checkpoint Inhibitors Plus Chemodrug for Immunotherapy of Advanced Solid Tumors",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Trans-Artery/Intra-Tumor Infusion of Checkpoint Inhibitors Plus Chemodrug for Immunotherapy of Advanced Solid Tumors"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04322617",
+            "excerpt": "Anlotinib Plus Immune Checkpoint Inhibitors for Lung Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Anlotinib Plus Immune Checkpoint Inhibitors for Lung Cancer"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04339218",
+            "excerpt": "Cryoablation in Combination (or Not) With Pembrolizumab and Pemetrexed-carboplatin in 1st-line Treatment for Patients With Metastatic Lung Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Cryoablation in Combination (or Not) With Pembrolizumab and Pemetrexed-carboplatin in 1st-line Treatment for Patients With Metastatic Lung Adenocarcinoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04747054",
+            "excerpt": "Study on the Efficacy of Treatment by Radiotherapy and Pembrolizumab in Newly Diagnosed Metastatic Head & Neck Cancers",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Study on the Efficacy of Treatment by Radiotherapy and Pembrolizumab in Newly Diagnosed Metastatic Head & Neck Cancers"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04807673",
+            "excerpt": "Pembrolizumab Plus Neoadjuvant Chemotherapy vs. Neoadjuvant Chemoradiotherapy for Locally Advanced ESCC (KEYSTONE-002)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Pembrolizumab Plus Neoadjuvant Chemotherapy vs. Neoadjuvant Chemoradiotherapy for Locally Advanced ESCC (KEYSTONE-002)"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04997837",
+            "excerpt": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05055908",
+            "excerpt": "Efficacy and Biomarker Development for Lung Cancer Treated With Immune Checkpoint Inhibitors",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Efficacy and Biomarker Development for Lung Cancer Treated With Immune Checkpoint Inhibitors"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05085028",
+            "excerpt": "A Randomised Open-label Phase III Trial of REduced Frequency Pembrolizumab immuNothErapy for First-line Treatment of Patients With Advanced Non-small Cell Lung Cancer (NSCLC)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "A Randomised Open-label Phase III Trial of REduced Frequency Pembrolizumab immuNothErapy for First-line Treatment of Patients With Advanced Non-small Cell Lung Cancer (NSCLC)"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05255302",
+            "excerpt": "De-escalation Immunotherapy mAintenance Duration Trial for Stage IV Lung Cancer Patients With Disease Control After Chemo-immunotherapy Induction",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "De-escalation Immunotherapy mAintenance Duration Trial for Stage IV Lung Cancer Patients With Disease Control After Chemo-immunotherapy Induction"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05595447",
+            "excerpt": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05692999",
+            "excerpt": "Maintenance Pembrolizumab at Usual or Low doSE in Non-squamous Lung Cancer: a Non-inferiority Study",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Maintenance Pembrolizumab at Usual or Low doSE in Non-squamous Lung Cancer: a Non-inferiority Study"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05812807",
+            "excerpt": "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06081244",
+            "excerpt": "NeoAdj. Therapy Comparing Sacituzumab Govitecan (SG) vs. SG+Pembrolizumab in Low-risk, Triple-neg. EBC (ADAPT-TN-III)",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "NeoAdj. Therapy Comparing Sacituzumab Govitecan (SG) vs. SG+Pembrolizumab in Low-risk, Triple-neg. EBC (ADAPT-TN-III)"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06102395",
+            "excerpt": "Evaluating the Efficacy and Safety of Pembrolizumab Plus Standard Chemotherapy in the Neoadjuvant Treatment of Local Advanced (LA) HNSCC",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Evaluating the Efficacy and Safety of Pembrolizumab Plus Standard Chemotherapy in the Neoadjuvant Treatment of Local Advanced (LA) HNSCC"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06135714",
+            "excerpt": "Metastasis-directed Therapy for Oligometastases of Breast Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Metastasis-directed Therapy for Oligometastases of Breast Cancer"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06364631",
+            "excerpt": "CARE1 Pragmatic Clinical Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "CARE1 Pragmatic Clinical Trial"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06383780",
+            "excerpt": "Tislelizumab in Combination With GP or TPC Regimen for the Treatment of Nasopharyngeal Carcinoma With Bone Metastasis.",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Tislelizumab in Combination With GP or TPC Regimen for the Treatment of Nasopharyngeal Carcinoma With Bone Metastasis."
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06488482",
+            "excerpt": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06555003",
+            "excerpt": "DEBIRI Plus Chemotherapy vs. Chemotherapy Alone in Colorectal Cancer Liver Metastases",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "DEBIRI Plus Chemotherapy vs. Chemotherapy Alone in Colorectal Cancer Liver Metastases"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06606730",
+            "excerpt": "Personalizing the Use of Pembrolizumab for Patients Who Have a Strong Response in Early Triple Negative Breast Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Personalizing the Use of Pembrolizumab for Patients Who Have a Strong Response in Early Triple Negative Breast Cancer"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -627,123 +627,123 @@
         "citations": [
           {
             "nct_id": "NCT03803553",
+            "excerpt": "Identification and Treatment Of Micrometastatic Disease in Stage III Colon Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Identification and Treatment Of Micrometastatic Disease in Stage III Colon Cancer"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04997837",
+            "excerpt": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05595447",
+            "excerpt": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05677490",
+            "excerpt": "mFOLFIRINOX Versus mFOLFOX With or Without Nivolumab for the Treatment of Advanced, Unresectable, or Metastatic HER2 Negative Esophageal, Gastroesophageal Junction, and Gastric Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "mFOLFIRINOX Versus mFOLFOX With or Without Nivolumab for the Treatment of Advanced, Unresectable, or Metastatic HER2 Negative Esophageal, Gastroesophageal Junction, and Gastric Adenocarcinoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06346197",
+            "excerpt": "Combination of Immune Checkpoint in Locally Advanced or Metastatic MSI/dMMR Esogastric Adenocarcinomas",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Combination of Immune Checkpoint in Locally Advanced or Metastatic MSI/dMMR Esogastric Adenocarcinomas"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06364631",
+            "excerpt": "CARE1 Pragmatic Clinical Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "CARE1 Pragmatic Clinical Trial"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06488482",
+            "excerpt": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06490536",
+            "excerpt": "The Sagittarius Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "The Sagittarius Trial"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06632327",
+            "excerpt": "Comparing Impact of Treatment Before or After Surgery in Patients With Stage II-IIIB Resectable Non-small Cell Lung Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Comparing Impact of Treatment Before or After Surgery in Patients With Stage II-IIIB Resectable Non-small Cell Lung Cancer"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06794775",
+            "excerpt": "SWE-NEO: Swedish NeoAdjuvant Trial Comparing Monotherapy to Combined Immunotherapy in Resectable Stage III Melanoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "SWE-NEO: Swedish NeoAdjuvant Trial Comparing Monotherapy to Combined Immunotherapy in Resectable Stage III Melanoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06840782",
+            "excerpt": "First-line Immunotherapy-based Standard of Care and Local Ablative Treatments for Oligometastatic Non-small Cell Lung Cancer Patients.",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "First-line Immunotherapy-based Standard of Care and Local Ablative Treatments for Oligometastatic Non-small Cell Lung Cancer Patients."
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06908993",
+            "excerpt": "Tepotinib vs Standard Treatment in Patients With Advanced MET Exon 14 Mutated Non-Small Cell Lung Cancer Previously Treated",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Tepotinib vs Standard Treatment in Patients With Advanced MET Exon 14 Mutated Non-Small Cell Lung Cancer Previously Treated"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07000253",
+            "excerpt": "Timing of Minimally Invasive Local Treatment After First-Line Systemic Therapy in Oligometastatic Esophageal or Gastric Adenocarcinoma",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Timing of Minimally Invasive Local Treatment After First-Line Systemic Therapy in Oligometastatic Esophageal or Gastric Adenocarcinoma"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07166406",
+            "excerpt": "Testing Immunotherapy With or Without Stereotactic Body Radiation Therapy in Patients With Advanced Liver Cancer, HELIO-RT Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Testing Immunotherapy With or Without Stereotactic Body Radiation Therapy in Patients With Advanced Liver Cancer, HELIO-RT Trial"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07174453",
+            "excerpt": "Trial to Evaluate irAEs With Different Standard of Care Dosing Strategies of Standard of Care Immunotherapies",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER",
-            "excerpt": "OTHER",
-            "excerpt_tokens": null,
-            "title": "Trial to Evaluate irAEs With Different Standard of Care Dosing Strategies of Standard of Care Immunotherapies"
+            "matched_value": "OTHER",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -773,59 +773,59 @@
         "citations": [
           {
             "nct_id": "NCT04267848",
+            "excerpt": "Testing the Addition of a Type of Drug Called Immunotherapy to the Usual Chemotherapy Treatment for Non-small Cell Lung Cancer, an ALCHEMIST Treatment Trial (Chemo-IO [ACCIO])",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Testing the Addition of a Type of Drug Called Immunotherapy to the Usual Chemotherapy Treatment for Non-small Cell Lung Cancer, an ALCHEMIST Treatment Trial (Chemo-IO [ACCIO])"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06096844",
+            "excerpt": "Chemotherapy Combined With Immunotherapy Versus Immunotherapy Alone for Older Adults With Stage IIIB-IV Lung Cancer, The ACHIEVE Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Chemotherapy Combined With Immunotherapy Versus Immunotherapy Alone for Older Adults With Stage IIIB-IV Lung Cancer, The ACHIEVE Trial"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06422806",
+            "excerpt": "Measuring if Immunotherapy Plus Chemotherapy is Better Than Chemotherapy Alone for Patients With Aggressive Poorly Differentiated Sarcomas",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Measuring if Immunotherapy Plus Chemotherapy is Better Than Chemotherapy Alone for Patients With Aggressive Poorly Differentiated Sarcomas"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06524544",
+            "excerpt": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitean-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitean-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06589804",
+            "excerpt": "Testing the Addition of Anti-Cancer Drug, Cetuximab, to Standard of Care Treatment (Pembrolizumab) for Returning or Spreading Head and Neck Cancer After Previous Treatment",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Testing the Addition of Anti-Cancer Drug, Cetuximab, to Standard of Care Treatment (Pembrolizumab) for Returning or Spreading Head and Neck Cancer After Previous Treatment"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07061977",
+            "excerpt": "Induction Pembrolizumab and Chemotherapy Followed by Pembrolizumab Before Chemoradiation and Pembrolizumab Maintenance Compared to Standard Chemoradiation With Pembrolizumab Followed by Pembrolizumab Maintenance in High-Risk Cervical Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Induction Pembrolizumab and Chemotherapy Followed by Pembrolizumab Before Chemoradiation and Pembrolizumab Maintenance Compared to Standard Chemoradiation With Pembrolizumab Followed by Pembrolizumab Maintenance in High-Risk Cervical Cancer"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07198074",
+            "excerpt": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer"
+            "matched_value": "NIH",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -851,27 +851,27 @@
         "citations": [
           {
             "nct_id": "NCT05675410",
+            "excerpt": "A Study to Compare Standard Therapy to Treat Hodgkin Lymphoma to the Use of Two Drugs, Brentuximab Vedotin and Nivolumab",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "A Study to Compare Standard Therapy to Treat Hodgkin Lymphoma to the Use of Two Drugs, Brentuximab Vedotin and Nivolumab"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05987241",
+            "excerpt": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study"
+            "matched_value": "NIH",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06203600",
+            "excerpt": "Adding Nivolumab to Usual Treatment for People With Advanced Stomach or Esophageal Cancer, PARAMUNE Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NIH",
-            "excerpt": "NIH",
-            "excerpt_tokens": null,
-            "title": "Adding Nivolumab to Usual Treatment for People With Advanced Stomach or Esophageal Cancer, PARAMUNE Trial"
+            "matched_value": "NIH",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -899,43 +899,43 @@
         "citations": [
           {
             "nct_id": "NCT04093167",
+            "excerpt": "Study of CTDNA Response Adaptive Immuno-Chemotherapy in Lung Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Study of CTDNA Response Adaptive Immuno-Chemotherapy in Lung Cancer"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04510597",
+            "excerpt": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05815927",
+            "excerpt": "Pembrolizumab and Radiotherapy for Oligometastatic Head and Neck Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Pembrolizumab and Radiotherapy for Oligometastatic Head and Neck Cancer"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05929768",
+            "excerpt": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07383441",
+            "excerpt": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -961,27 +961,27 @@
         "citations": [
           {
             "nct_id": "NCT04510597",
+            "excerpt": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06188676",
+            "excerpt": "Multicenter Study of Safety and Efficacy Nivolumab at the Fixed Dose 40 mg (Nivo40) in Combination With Chemo-Immunotherapy for the Treatment of Newly Diagnosed PMBL",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Multicenter Study of Safety and Efficacy Nivolumab at the Fixed Dose 40 mg (Nivo40) in Combination With Chemo-Immunotherapy for the Treatment of Newly Diagnosed PMBL"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07383441",
+            "excerpt": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "NETWORK",
-            "excerpt": "NETWORK",
-            "excerpt_tokens": null,
-            "title": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer"
+            "matched_value": "NETWORK",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -1023,19 +1023,19 @@
         "citations": [
           {
             "nct_id": "NCT06519266",
+            "excerpt": "PHP in Combination With IPI1/NIVO3 Compared to IPI3/NIVO1 Only in Patients With Uveal Melanoma Liver Metastases",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER_GOV",
-            "excerpt": "OTHER_GOV",
-            "excerpt_tokens": null,
-            "title": "PHP in Combination With IPI1/NIVO3 Compared to IPI3/NIVO1 Only in Patients With Uveal Melanoma Liver Metastases"
+            "matched_value": "OTHER_GOV",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07050043",
+            "excerpt": "Low Dose Nivolumab With Chemotherapy vs Standard Chemotherapy as First-Line Treatment in Advanced or Metastatic NSCLC",
             "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
             "value": "OTHER_GOV",
-            "excerpt": "OTHER_GOV",
-            "excerpt_tokens": null,
-            "title": "Low Dose Nivolumab With Chemotherapy vs Standard Chemotherapy as First-Line Treatment in Advanced or Metastatic NSCLC"
+            "matched_value": "OTHER_GOV",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -1132,675 +1132,675 @@
   "citations": {
     "NCT03486873": {
       "nct_id": "NCT03486873",
+      "excerpt": "Long-term Safety and Efficacy Extension Study for Participants With Advanced Tumors Who Are Currently on Treatment or in Follow-up in a Pembrolizumab (MK-3475) Study (MK-3475-587/KEYNOTE-587)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Long-term Safety and Efficacy Extension Study for Participants With Advanced Tumors Who Are Currently on Treatment or in Follow-up in a Pembrolizumab (MK-3475) Study (MK-3475-587/KEYNOTE-587)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT04534205": {
       "nct_id": "NCT04534205",
+      "excerpt": "A Clinical Trial Investigating the Safety, Tolerability, and Therapeutic Effects of BNT113 in Combination With Pembrolizumab Versus Pembrolizumab Alone for Patients With a Form of Head and Neck Cancer Positive for Human Papilloma Virus 16 and Expressing the Protein PD-L1",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Clinical Trial Investigating the Safety, Tolerability, and Therapeutic Effects of BNT113 in Combination With Pembrolizumab Versus Pembrolizumab Alone for Patients With a Form of Head and Neck Cancer Positive for Human Papilloma Virus 16 and Expressing the Protein PD-L1"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT04613596": {
       "nct_id": "NCT04613596",
+      "excerpt": "Phase 2 Trial of Adagrasib Monotherapy and in Combination With Pembrolizumab and a Phase 3 Trial of Adagrasib in Combination in Patients With a KRAS G12C Mutation KRYSTAL-7",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Phase 2 Trial of Adagrasib Monotherapy and in Combination With Pembrolizumab and a Phase 3 Trial of Adagrasib in Combination in Patients With a KRAS G12C Mutation KRYSTAL-7"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05317858": {
       "nct_id": "NCT05317858",
+      "excerpt": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Blood-brain Barrier (BBB) Opening Using Exablate Focused Ultrasound With Standard of Care Treatment of NSCLC Brain Mets"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05549297": {
       "nct_id": "NCT05549297",
+      "excerpt": "Tebentafusp Regimen Versus Investigator's Choice in Previously Treated Advanced Melanoma (TEBE-AM)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Tebentafusp Regimen Versus Investigator's Choice in Previously Treated Advanced Melanoma (TEBE-AM)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05633654": {
       "nct_id": "NCT05633654",
+      "excerpt": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/GBG 119/NSABP B-63)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/GBG 119/NSABP B-63)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05668650": {
       "nct_id": "NCT05668650",
+      "excerpt": "Double-blind Study to Evaluate the PK, Efficacy, Safety and Immunogenicity of MB12 Versus Keytruda® in Stage IV NSCLC",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Double-blind Study to Evaluate the PK, Efficacy, Safety and Immunogenicity of MB12 Versus Keytruda® in Stage IV NSCLC"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05727904": {
       "nct_id": "NCT05727904",
+      "excerpt": "Study to Investigate Lifileucel Regimen Plus Pembrolizumab Compared With Pembrolizumab Alone in Participants With Untreated Advanced Melanoma.",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Study to Investigate Lifileucel Regimen Plus Pembrolizumab Compared With Pembrolizumab Alone in Participants With Untreated Advanced Melanoma."
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05899608": {
       "nct_id": "NCT05899608",
+      "excerpt": "Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT05920356": {
       "nct_id": "NCT05920356",
+      "excerpt": "A Study Evaluating Sotorasib Platinum Doublet Combination Versus Pembrolizumab Platinum Doublet Combination as a Front-Line Therapy in Participants With Stage IV or Advanced Stage IIIB/C Nonsquamous Non-Small Cell Lung Cancers (CodeBreaK 202)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study Evaluating Sotorasib Platinum Doublet Combination Versus Pembrolizumab Platinum Doublet Combination as a Front-Line Therapy in Participants With Stage IV or Advanced Stage IIIB/C Nonsquamous Non-Small Cell Lung Cancers (CodeBreaK 202)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06077760": {
       "nct_id": "NCT06077760",
+      "excerpt": "A Study of Intismeran Autogene (V940) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Non-small Cell Lung Cancer (V940-002)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study of Intismeran Autogene (V940) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Non-small Cell Lung Cancer (V940-002)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06103864": {
       "nct_id": "NCT06103864",
+      "excerpt": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer (TROPION-Breast05)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06119581": {
       "nct_id": "NCT06119581",
+      "excerpt": "A Study of First-Line Olomorasib (LY3537982) and Pembrolizumab With or Without Chemotherapy in Patients With Advanced KRAS G12C-Mutant Non-small Cell Lung Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study of First-Line Olomorasib (LY3537982) and Pembrolizumab With or Without Chemotherapy in Patients With Advanced KRAS G12C-Mutant Non-small Cell Lung Cancer"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06170788": {
       "nct_id": "NCT06170788",
+      "excerpt": "Sacituzumab Tirumotecan (MK-2870) in Combination With Pembrolizumab Versus Pembrolizumab Alone in Metastatic Non-small Cell Lung Cancer (NSCLC) With Programmed Cell Death Ligand 1 (PD-L1) Tumor Proportion Score (TPS) ≥ 50% (MK-2870-007)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Sacituzumab Tirumotecan (MK-2870) in Combination With Pembrolizumab Versus Pembrolizumab Alone in Metastatic Non-small Cell Lung Cancer (NSCLC) With Programmed Cell Death Ligand 1 (PD-L1) Tumor Proportion Score (TPS) ≥ 50% (MK-2870-007)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06216301": {
       "nct_id": "NCT06216301",
+      "excerpt": "LUNAR-2: TTFields With Pembrolizumab + Platinum-based Chemotherapy for Metastatic NSCLC",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "LUNAR-2: TTFields With Pembrolizumab + Platinum-based Chemotherapy for Metastatic NSCLC"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06236438": {
       "nct_id": "NCT06236438",
+      "excerpt": "Study to Evaluate Adverse Events, Optimal Dose, and Change in Disease Activity, With Livmoniplimab in Combination With Budigalimab Plus Chemotherapy Versus IV Infused Pembrolizumab Plus Chemotherapy in Adult Participants With Untreated Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Study to Evaluate Adverse Events, Optimal Dose, and Change in Disease Activity, With Livmoniplimab in Combination With Budigalimab Plus Chemotherapy Versus IV Infused Pembrolizumab Plus Chemotherapy in Adult Participants With Untreated Metastatic Non-Squamous Non-Small Cell Lung Cancer (NSCLC)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06264180": {
       "nct_id": "NCT06264180",
+      "excerpt": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "VO and Nivolumab vs Physician's Choice in Advanced Melanoma That Progressed on Anti-PD-1 & Anti-CTLA-4 Drugs [IGNYTE-3]"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06282575": {
       "nct_id": "NCT06282575",
+      "excerpt": "Efficacy and Safety of Zanidatamab With Standard-of-care Therapy Against Standard-of-care Therapy for Advanced HER2-positive Biliary Tract Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Efficacy and Safety of Zanidatamab With Standard-of-care Therapy Against Standard-of-care Therapy for Advanced HER2-positive Biliary Tract Cancer"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06312137": {
       "nct_id": "NCT06312137",
+      "excerpt": "A Study to Assess Efficacy and Safety of Pembrolizumab With or Without Sacituzumab Tirumotecan (MK- 2870) in Adult Participants With Resectable Non Small Cell Lung Cancer (NSCLC) Not Achieving Pathological Complete Response (pCR) (MK-2870-019)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study to Assess Efficacy and Safety of Pembrolizumab With or Without Sacituzumab Tirumotecan (MK- 2870) in Adult Participants With Resectable Non Small Cell Lung Cancer (NSCLC) Not Achieving Pathological Complete Response (pCR) (MK-2870-019)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06312176": {
       "nct_id": "NCT06312176",
+      "excerpt": "A Study of Sacituzumab Tirumotecan (MK-2870) as a Single Agent and in Combination With Pembrolizumab (MK-3475) Versus Treatment of Physician's Choice in Participants With HR+/HER2- Unresectable Locally Advanced or Metastatic Breast Cancer (MK-2870-010)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study of Sacituzumab Tirumotecan (MK-2870) as a Single Agent and in Combination With Pembrolizumab (MK-3475) Versus Treatment of Physician's Choice in Participants With HR+/HER2- Unresectable Locally Advanced or Metastatic Breast Cancer (MK-2870-010)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06022861": {
       "nct_id": "NCT06022861",
+      "excerpt": "A Study to Compare the Efficacy and Safety of LY01015 and Opdivo® Combined Respectively With Chemotherapy in Advanced or Metastatic Esophageal Squamous Cell Carcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study to Compare the Efficacy and Safety of LY01015 and Opdivo® Combined Respectively With Chemotherapy in Advanced or Metastatic Esophageal Squamous Cell Carcinoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06112314": {
       "nct_id": "NCT06112314",
+      "excerpt": "IMC-F106C Regimen Versus Nivolumab Regimens in Previously Untreated Advanced Melanoma (PRISM-MEL-301)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "IMC-F106C Regimen Versus Nivolumab Regimens in Previously Untreated Advanced Melanoma (PRISM-MEL-301)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06246916": {
       "nct_id": "NCT06246916",
+      "excerpt": "A Study With Combinations of Anti-LAG-3 and Anti-PD-1 Antibodies in Adult Participants With Advanced or Metastatic Melanoma (Harmony Head-to-Head)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study With Combinations of Anti-LAG-3 and Anti-PD-1 Antibodies in Adult Participants With Advanced or Metastatic Melanoma (Harmony Head-to-Head)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06561386": {
       "nct_id": "NCT06561386",
+      "excerpt": "A Study to Compare the Efficacy of Nivolumab and Relatlimab Plus Chemotherapy vs Pembrolizumab Plus Chemotherapy for Stage IV/Recurrent Non-squamous Non-small Cell Lung Cancer With PD-L1 Expression ≥ 1%",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study to Compare the Efficacy of Nivolumab and Relatlimab Plus Chemotherapy vs Pembrolizumab Plus Chemotherapy for Stage IV/Recurrent Non-squamous Non-small Cell Lung Cancer With PD-L1 Expression ≥ 1%"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06581406": {
       "nct_id": "NCT06581406",
+      "excerpt": "A Randomized, Phase 2/3 Study to Investigate the Efficacy and Safety of RP2 in Combination With Nivolumab in Immune Checkpoint Inhibitor-Naïve Adult Patients With Metastatic Uveal Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Randomized, Phase 2/3 Study to Investigate the Efficacy and Safety of RP2 in Combination With Nivolumab in Immune Checkpoint Inhibitor-Naïve Adult Patients With Metastatic Uveal Melanoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06624644": {
       "nct_id": "NCT06624644",
+      "excerpt": "A Trial of LNS8801 With or Without Pembrolizumab in Patients With Refractory Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Trial of LNS8801 With or Without Pembrolizumab in Patients With Refractory Melanoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06646276": {
       "nct_id": "NCT06646276",
+      "excerpt": "A Study to Compare the Efficacy and Safety of BMS-986489 (BMS-986012+ Nivolumab Fixed Dose Combination) in Combination With Carboplatin Plus Etoposide to That of Atezolizumab With Carboplatin Plus Etoposide as First-Line Therapy in Participants With Extensive-Stage Small Cell Lung Cancer (TIGOS).",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study to Compare the Efficacy and Safety of BMS-986489 (BMS-986012+ Nivolumab Fixed Dose Combination) in Combination With Carboplatin Plus Etoposide to That of Atezolizumab With Carboplatin Plus Etoposide as First-Line Therapy in Participants With Extensive-Stage Small Cell Lung Cancer (TIGOS)."
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06743126": {
       "nct_id": "NCT06743126",
+      "excerpt": "SUPRAME-ACTengine® IMA203 vs. Investigator's Choice of Treatment in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "SUPRAME-ACTengine® IMA203 vs. Investigator's Choice of Treatment in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT06841679": {
       "nct_id": "NCT06841679",
+      "excerpt": "Utidelone Capsule Combined With Fluoropyrimidine- and Platinum-containing Therapy in First-line Treatment of Patients With Gastric or Gastroesophageal Junction Adenocarcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Utidelone Capsule Combined With Fluoropyrimidine- and Platinum-containing Therapy in First-line Treatment of Patients With Gastric or Gastroesophageal Junction Adenocarcinoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07195695": {
       "nct_id": "NCT07195695",
+      "excerpt": "Beamion LUNG-3: Adjuvant Zongertinib vs Standard Treatment in People With Completely Resected Stage II-IIIB NSCLC Harboring Activating HER2 TKD Mutations",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Beamion LUNG-3: Adjuvant Zongertinib vs Standard Treatment in People With Completely Resected Stage II-IIIB NSCLC Harboring Activating HER2 TKD Mutations"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07221149": {
       "nct_id": "NCT07221149",
+      "excerpt": "A Study to Evaluate the Safety and Efficacy of Pumitamig in Combination With Chemotherapy Versus Nivolumab in Combination With Chemotherapy in Participants With Previously Untreated Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma (ROSETTA Gastric-204)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "A Study to Evaluate the Safety and Efficacy of Pumitamig in Combination With Chemotherapy Versus Nivolumab in Combination With Chemotherapy in Participants With Previously Untreated Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma (ROSETTA Gastric-204)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07221734": {
       "nct_id": "NCT07221734",
+      "excerpt": "Study to Compare Pharmacokinetics, Efficacy, Safety, and Immunogenicity of MB11 Versus EU-/US-Opdivo® in Subjects With Previously Untreated Advanced [Unresectable or Metastatic] Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Study to Compare Pharmacokinetics, Efficacy, Safety, and Immunogenicity of MB11 Versus EU-/US-Opdivo® in Subjects With Previously Untreated Advanced [Unresectable or Metastatic] Melanoma"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07392892": {
       "nct_id": "NCT07392892",
+      "excerpt": "Symbiotic-GI-16: A Study to Learn About the Study Medicine Called PF-08634404 in Combination With Chemotherapy in Gastroesophageal Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Symbiotic-GI-16: A Study to Learn About the Study Medicine Called PF-08634404 in Combination With Chemotherapy in Gastroesophageal Cancer"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07405164": {
       "nct_id": "NCT07405164",
+      "excerpt": "Extension Study for Participants in Studies That Include Belzutifan (MK-6482-043/LITESPARK-043)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Extension Study for Participants in Studies That Include Belzutifan (MK-6482-043/LITESPARK-043)"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT07431281": {
       "nct_id": "NCT07431281",
+      "excerpt": "Sonesitatug Vedotin in Combination With Capecitabine With or Without Rilvegostomig in Participants With Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma Expressing Claudin18.2",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "INDUSTRY",
-      "excerpt": "INDUSTRY",
-      "excerpt_tokens": null,
-      "title": "Sonesitatug Vedotin in Combination With Capecitabine With or Without Rilvegostomig in Participants With Advanced or Metastatic Gastric, Gastroesophageal Junction, or Esophageal Adenocarcinoma Expressing Claudin18.2"
+      "matched_value": "INDUSTRY",
+      "matched_tokens": null
     },
     "NCT03755739": {
       "nct_id": "NCT03755739",
+      "excerpt": "Trans-Artery/Intra-Tumor Infusion of Checkpoint Inhibitors Plus Chemodrug for Immunotherapy of Advanced Solid Tumors",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Trans-Artery/Intra-Tumor Infusion of Checkpoint Inhibitors Plus Chemodrug for Immunotherapy of Advanced Solid Tumors"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04322617": {
       "nct_id": "NCT04322617",
+      "excerpt": "Anlotinib Plus Immune Checkpoint Inhibitors for Lung Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Anlotinib Plus Immune Checkpoint Inhibitors for Lung Cancer"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04339218": {
       "nct_id": "NCT04339218",
+      "excerpt": "Cryoablation in Combination (or Not) With Pembrolizumab and Pemetrexed-carboplatin in 1st-line Treatment for Patients With Metastatic Lung Adenocarcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Cryoablation in Combination (or Not) With Pembrolizumab and Pemetrexed-carboplatin in 1st-line Treatment for Patients With Metastatic Lung Adenocarcinoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04747054": {
       "nct_id": "NCT04747054",
+      "excerpt": "Study on the Efficacy of Treatment by Radiotherapy and Pembrolizumab in Newly Diagnosed Metastatic Head & Neck Cancers",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Study on the Efficacy of Treatment by Radiotherapy and Pembrolizumab in Newly Diagnosed Metastatic Head & Neck Cancers"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04807673": {
       "nct_id": "NCT04807673",
+      "excerpt": "Pembrolizumab Plus Neoadjuvant Chemotherapy vs. Neoadjuvant Chemoradiotherapy for Locally Advanced ESCC (KEYSTONE-002)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Pembrolizumab Plus Neoadjuvant Chemotherapy vs. Neoadjuvant Chemoradiotherapy for Locally Advanced ESCC (KEYSTONE-002)"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04997837": {
       "nct_id": "NCT04997837",
+      "excerpt": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Study of Adjuvant Chemotherapy With or Without PD-1 Inhibitors and Chemoradiotherapy in Resected pN3 Gastric (G) or GEJ Adenocarcinoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05055908": {
       "nct_id": "NCT05055908",
+      "excerpt": "Efficacy and Biomarker Development for Lung Cancer Treated With Immune Checkpoint Inhibitors",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Efficacy and Biomarker Development for Lung Cancer Treated With Immune Checkpoint Inhibitors"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05085028": {
       "nct_id": "NCT05085028",
+      "excerpt": "A Randomised Open-label Phase III Trial of REduced Frequency Pembrolizumab immuNothErapy for First-line Treatment of Patients With Advanced Non-small Cell Lung Cancer (NSCLC)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "A Randomised Open-label Phase III Trial of REduced Frequency Pembrolizumab immuNothErapy for First-line Treatment of Patients With Advanced Non-small Cell Lung Cancer (NSCLC)"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05255302": {
       "nct_id": "NCT05255302",
+      "excerpt": "De-escalation Immunotherapy mAintenance Duration Trial for Stage IV Lung Cancer Patients With Disease Control After Chemo-immunotherapy Induction",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "De-escalation Immunotherapy mAintenance Duration Trial for Stage IV Lung Cancer Patients With Disease Control After Chemo-immunotherapy Induction"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05595447": {
       "nct_id": "NCT05595447",
+      "excerpt": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Treatment Strategy for Relapsed/Refractory Hodgkin Lymphoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05692999": {
       "nct_id": "NCT05692999",
+      "excerpt": "Maintenance Pembrolizumab at Usual or Low doSE in Non-squamous Lung Cancer: a Non-inferiority Study",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Maintenance Pembrolizumab at Usual or Low doSE in Non-squamous Lung Cancer: a Non-inferiority Study"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05812807": {
       "nct_id": "NCT05812807",
+      "excerpt": "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06081244": {
       "nct_id": "NCT06081244",
+      "excerpt": "NeoAdj. Therapy Comparing Sacituzumab Govitecan (SG) vs. SG+Pembrolizumab in Low-risk, Triple-neg. EBC (ADAPT-TN-III)",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "NeoAdj. Therapy Comparing Sacituzumab Govitecan (SG) vs. SG+Pembrolizumab in Low-risk, Triple-neg. EBC (ADAPT-TN-III)"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06102395": {
       "nct_id": "NCT06102395",
+      "excerpt": "Evaluating the Efficacy and Safety of Pembrolizumab Plus Standard Chemotherapy in the Neoadjuvant Treatment of Local Advanced (LA) HNSCC",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Evaluating the Efficacy and Safety of Pembrolizumab Plus Standard Chemotherapy in the Neoadjuvant Treatment of Local Advanced (LA) HNSCC"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06135714": {
       "nct_id": "NCT06135714",
+      "excerpt": "Metastasis-directed Therapy for Oligometastases of Breast Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Metastasis-directed Therapy for Oligometastases of Breast Cancer"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06364631": {
       "nct_id": "NCT06364631",
+      "excerpt": "CARE1 Pragmatic Clinical Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "CARE1 Pragmatic Clinical Trial"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06383780": {
       "nct_id": "NCT06383780",
+      "excerpt": "Tislelizumab in Combination With GP or TPC Regimen for the Treatment of Nasopharyngeal Carcinoma With Bone Metastasis.",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Tislelizumab in Combination With GP or TPC Regimen for the Treatment of Nasopharyngeal Carcinoma With Bone Metastasis."
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06488482": {
       "nct_id": "NCT06488482",
+      "excerpt": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Assessment of Short Immunotherapy After Radical Surgery of High-risk Malignant Melanoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06555003": {
       "nct_id": "NCT06555003",
+      "excerpt": "DEBIRI Plus Chemotherapy vs. Chemotherapy Alone in Colorectal Cancer Liver Metastases",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "DEBIRI Plus Chemotherapy vs. Chemotherapy Alone in Colorectal Cancer Liver Metastases"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06606730": {
       "nct_id": "NCT06606730",
+      "excerpt": "Personalizing the Use of Pembrolizumab for Patients Who Have a Strong Response in Early Triple Negative Breast Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Personalizing the Use of Pembrolizumab for Patients Who Have a Strong Response in Early Triple Negative Breast Cancer"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT03803553": {
       "nct_id": "NCT03803553",
+      "excerpt": "Identification and Treatment Of Micrometastatic Disease in Stage III Colon Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Identification and Treatment Of Micrometastatic Disease in Stage III Colon Cancer"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT05677490": {
       "nct_id": "NCT05677490",
+      "excerpt": "mFOLFIRINOX Versus mFOLFOX With or Without Nivolumab for the Treatment of Advanced, Unresectable, or Metastatic HER2 Negative Esophageal, Gastroesophageal Junction, and Gastric Adenocarcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "mFOLFIRINOX Versus mFOLFOX With or Without Nivolumab for the Treatment of Advanced, Unresectable, or Metastatic HER2 Negative Esophageal, Gastroesophageal Junction, and Gastric Adenocarcinoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06346197": {
       "nct_id": "NCT06346197",
+      "excerpt": "Combination of Immune Checkpoint in Locally Advanced or Metastatic MSI/dMMR Esogastric Adenocarcinomas",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Combination of Immune Checkpoint in Locally Advanced or Metastatic MSI/dMMR Esogastric Adenocarcinomas"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06490536": {
       "nct_id": "NCT06490536",
+      "excerpt": "The Sagittarius Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "The Sagittarius Trial"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06632327": {
       "nct_id": "NCT06632327",
+      "excerpt": "Comparing Impact of Treatment Before or After Surgery in Patients With Stage II-IIIB Resectable Non-small Cell Lung Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Comparing Impact of Treatment Before or After Surgery in Patients With Stage II-IIIB Resectable Non-small Cell Lung Cancer"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06794775": {
       "nct_id": "NCT06794775",
+      "excerpt": "SWE-NEO: Swedish NeoAdjuvant Trial Comparing Monotherapy to Combined Immunotherapy in Resectable Stage III Melanoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "SWE-NEO: Swedish NeoAdjuvant Trial Comparing Monotherapy to Combined Immunotherapy in Resectable Stage III Melanoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06840782": {
       "nct_id": "NCT06840782",
+      "excerpt": "First-line Immunotherapy-based Standard of Care and Local Ablative Treatments for Oligometastatic Non-small Cell Lung Cancer Patients.",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "First-line Immunotherapy-based Standard of Care and Local Ablative Treatments for Oligometastatic Non-small Cell Lung Cancer Patients."
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT06908993": {
       "nct_id": "NCT06908993",
+      "excerpt": "Tepotinib vs Standard Treatment in Patients With Advanced MET Exon 14 Mutated Non-Small Cell Lung Cancer Previously Treated",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Tepotinib vs Standard Treatment in Patients With Advanced MET Exon 14 Mutated Non-Small Cell Lung Cancer Previously Treated"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT07000253": {
       "nct_id": "NCT07000253",
+      "excerpt": "Timing of Minimally Invasive Local Treatment After First-Line Systemic Therapy in Oligometastatic Esophageal or Gastric Adenocarcinoma",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Timing of Minimally Invasive Local Treatment After First-Line Systemic Therapy in Oligometastatic Esophageal or Gastric Adenocarcinoma"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT07166406": {
       "nct_id": "NCT07166406",
+      "excerpt": "Testing Immunotherapy With or Without Stereotactic Body Radiation Therapy in Patients With Advanced Liver Cancer, HELIO-RT Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Testing Immunotherapy With or Without Stereotactic Body Radiation Therapy in Patients With Advanced Liver Cancer, HELIO-RT Trial"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT07174453": {
       "nct_id": "NCT07174453",
+      "excerpt": "Trial to Evaluate irAEs With Different Standard of Care Dosing Strategies of Standard of Care Immunotherapies",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER",
-      "excerpt": "OTHER",
-      "excerpt_tokens": null,
-      "title": "Trial to Evaluate irAEs With Different Standard of Care Dosing Strategies of Standard of Care Immunotherapies"
+      "matched_value": "OTHER",
+      "matched_tokens": null
     },
     "NCT04267848": {
       "nct_id": "NCT04267848",
+      "excerpt": "Testing the Addition of a Type of Drug Called Immunotherapy to the Usual Chemotherapy Treatment for Non-small Cell Lung Cancer, an ALCHEMIST Treatment Trial (Chemo-IO [ACCIO])",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Testing the Addition of a Type of Drug Called Immunotherapy to the Usual Chemotherapy Treatment for Non-small Cell Lung Cancer, an ALCHEMIST Treatment Trial (Chemo-IO [ACCIO])"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT06096844": {
       "nct_id": "NCT06096844",
+      "excerpt": "Chemotherapy Combined With Immunotherapy Versus Immunotherapy Alone for Older Adults With Stage IIIB-IV Lung Cancer, The ACHIEVE Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Chemotherapy Combined With Immunotherapy Versus Immunotherapy Alone for Older Adults With Stage IIIB-IV Lung Cancer, The ACHIEVE Trial"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT06422806": {
       "nct_id": "NCT06422806",
+      "excerpt": "Measuring if Immunotherapy Plus Chemotherapy is Better Than Chemotherapy Alone for Patients With Aggressive Poorly Differentiated Sarcomas",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Measuring if Immunotherapy Plus Chemotherapy is Better Than Chemotherapy Alone for Patients With Aggressive Poorly Differentiated Sarcomas"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT06524544": {
       "nct_id": "NCT06524544",
+      "excerpt": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitean-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitean-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT06589804": {
       "nct_id": "NCT06589804",
+      "excerpt": "Testing the Addition of Anti-Cancer Drug, Cetuximab, to Standard of Care Treatment (Pembrolizumab) for Returning or Spreading Head and Neck Cancer After Previous Treatment",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Testing the Addition of Anti-Cancer Drug, Cetuximab, to Standard of Care Treatment (Pembrolizumab) for Returning or Spreading Head and Neck Cancer After Previous Treatment"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT07061977": {
       "nct_id": "NCT07061977",
+      "excerpt": "Induction Pembrolizumab and Chemotherapy Followed by Pembrolizumab Before Chemoradiation and Pembrolizumab Maintenance Compared to Standard Chemoradiation With Pembrolizumab Followed by Pembrolizumab Maintenance in High-Risk Cervical Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Induction Pembrolizumab and Chemotherapy Followed by Pembrolizumab Before Chemoradiation and Pembrolizumab Maintenance Compared to Standard Chemoradiation With Pembrolizumab Followed by Pembrolizumab Maintenance in High-Risk Cervical Cancer"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT07198074": {
       "nct_id": "NCT07198074",
+      "excerpt": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT05675410": {
       "nct_id": "NCT05675410",
+      "excerpt": "A Study to Compare Standard Therapy to Treat Hodgkin Lymphoma to the Use of Two Drugs, Brentuximab Vedotin and Nivolumab",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "A Study to Compare Standard Therapy to Treat Hodgkin Lymphoma to the Use of Two Drugs, Brentuximab Vedotin and Nivolumab"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT05987241": {
       "nct_id": "NCT05987241",
+      "excerpt": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT06203600": {
       "nct_id": "NCT06203600",
+      "excerpt": "Adding Nivolumab to Usual Treatment for People With Advanced Stomach or Esophageal Cancer, PARAMUNE Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NIH",
-      "excerpt": "NIH",
-      "excerpt_tokens": null,
-      "title": "Adding Nivolumab to Usual Treatment for People With Advanced Stomach or Esophageal Cancer, PARAMUNE Trial"
+      "matched_value": "NIH",
+      "matched_tokens": null
     },
     "NCT04093167": {
       "nct_id": "NCT04093167",
+      "excerpt": "Study of CTDNA Response Adaptive Immuno-Chemotherapy in Lung Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Study of CTDNA Response Adaptive Immuno-Chemotherapy in Lung Cancer"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT04510597": {
       "nct_id": "NCT04510597",
+      "excerpt": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Comparing the Outcome of Immunotherapy-Based Drug Combination Therapy With or Without Surgery to Remove the Kidney in Metastatic Kidney Cancer, the PROBE Trial"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT05815927": {
       "nct_id": "NCT05815927",
+      "excerpt": "Pembrolizumab and Radiotherapy for Oligometastatic Head and Neck Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Pembrolizumab and Radiotherapy for Oligometastatic Head and Neck Cancer"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT05929768": {
       "nct_id": "NCT05929768",
+      "excerpt": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT07383441": {
       "nct_id": "NCT07383441",
+      "excerpt": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Adding Biotherapy or Placebo to Standard Treatment for Advanced Kidney Cancer"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT06188676": {
       "nct_id": "NCT06188676",
+      "excerpt": "Multicenter Study of Safety and Efficacy Nivolumab at the Fixed Dose 40 mg (Nivo40) in Combination With Chemo-Immunotherapy for the Treatment of Newly Diagnosed PMBL",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "NETWORK",
-      "excerpt": "NETWORK",
-      "excerpt_tokens": null,
-      "title": "Multicenter Study of Safety and Efficacy Nivolumab at the Fixed Dose 40 mg (Nivo40) in Combination With Chemo-Immunotherapy for the Treatment of Newly Diagnosed PMBL"
+      "matched_value": "NETWORK",
+      "matched_tokens": null
     },
     "NCT06519266": {
       "nct_id": "NCT06519266",
+      "excerpt": "PHP in Combination With IPI1/NIVO3 Compared to IPI3/NIVO1 Only in Patients With Uveal Melanoma Liver Metastases",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER_GOV",
-      "excerpt": "OTHER_GOV",
-      "excerpt_tokens": null,
-      "title": "PHP in Combination With IPI1/NIVO3 Compared to IPI3/NIVO1 Only in Patients With Uveal Melanoma Liver Metastases"
+      "matched_value": "OTHER_GOV",
+      "matched_tokens": null
     },
     "NCT07050043": {
       "nct_id": "NCT07050043",
+      "excerpt": "Low Dose Nivolumab With Chemotherapy vs Standard Chemotherapy as First-Line Treatment in Advanced or Metastatic NSCLC",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.class",
       "value": "OTHER_GOV",
-      "excerpt": "OTHER_GOV",
-      "excerpt_tokens": null,
-      "title": "Low Dose Nivolumab With Chemotherapy vs Standard Chemotherapy as First-Line Treatment in Advanced or Metastatic NSCLC"
+      "matched_value": "OTHER_GOV",
+      "matched_tokens": null
     }
   },
   "meta": {
@@ -1829,15 +1829,13 @@
         "fields": "NCTId|sponsorClass"
       }
     },
-    "retrieved_at": "2026-07-15T23:37:27.981117+00:00",
+    "retrieved_at": "2026-07-16T00:03:05.824747+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [
       "pembrolizumab N=123; nivolumab N=40",
       "Percent is within-series (denominator = each series' own N), so a large-N series does not visually swamp a small-N one; raw trial counts are retained per bar.",
-      "Explicit side-by-side drug comparison; no top-level drug entity so the primary query structure is centered on the comparison arms.",
-      "Breakdown requested is by lead sponsor type, mapped to sponsor_class.",
-      "'started in 2018 or later' mapped to start_year with startDate semantics implied by the start-year filter."
+      "The chart encodes sponsor-class breakdowns for two series, but the question asks to compare pembrolizumab versus nivolumab trials by lead sponsor type; the visualization title and grouped-bar percent-within-series framing are apt, yet the response appears to include all sponsor classes rather than clearly emphasizing the requested comparison across sponsor type, and the series are not clearly labeled by drug in the plot title/legend context."
     ]
   }
 }

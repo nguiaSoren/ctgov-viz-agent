@@ -157,7 +157,7 @@ def build_citation(record: dict, field_path: str) -> Citation:
     excerpt = extract_excerpt(record, field_path)
     return Citation(
         nct_id=nct_id or "", field_path=field_path, value=value,
-        excerpt=excerpt, title=brief_title(record),
+        matched_value=excerpt, excerpt=brief_title(record) or excerpt,
     )
 
 
@@ -220,7 +220,7 @@ def build_bucket_citations(
         if tokens is not None:  # composite bucket: identify EVERY verified member
             verified = [t for t in tokens if is_substring_at(record, field_path, t)]
             citation = citation.model_copy(
-                update={"excerpt": tokens[0], "excerpt_tokens": verified}
+                update={"matched_value": tokens[0], "matched_tokens": verified}
             )
         citations.append(citation)
 

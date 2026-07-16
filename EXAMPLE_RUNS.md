@@ -4,7 +4,7 @@ This is an annotated walkthrough of fifteen real runs, ordered simplest to most 
 
 The full, untruncated JSON for each rung lives in `examples/run_NN_<slug>.json` and is regenerated — never hand-edited — by `scripts/run_ladder.py`. The excerpts below are truncated for reading (arrays shown as `… (N more)`), but every value quoted here is copied from the actual file. Where my prose and the JSON could disagree, the JSON wins; I verified each number against it.
 
-Every chart datum carries deep citations, and each citation is **two-part**: the exact field-value `excerpt` that proves *why* the trial belongs in that bucket (e.g. `"PHASE1"`, `"1996-09"`), string-extracted from the record at its `field_path`, plus the trial's human-readable `title` (from `protocolSection.identificationModule.briefTitle`, e.g. *"A Phase I Trial of Gemcitabine and Radiation…"*) — the readable descriptive excerpt §5 of the assignment illustrates. Neither is authored by the model.
+Every chart datum carries deep citations, and each citation is **two-part**: the trial's human-readable `excerpt` — the descriptive text excerpt §5 of the assignment illustrates, taken verbatim from the trial's `briefTitle` (e.g. *"A Phase I Trial of Gemcitabine and Radiation…"*) — plus `matched_value`, the exact field value that proves *why* the trial belongs in that bucket (e.g. `"PHASE1"`, `"1996-09"`), read from the record at its `field_path`. Neither is authored by the model.
 
 ### Reproduce
 
@@ -96,9 +96,9 @@ Full output: `examples/run_01_single_value_yesno.json`
         "contributing_count": 895, "citations_truncated": true,
         "citations": [
           { "nct_id": "NCT00001431",
+            "excerpt": "A Phase I Trial of Gemcitabine and Radiation in Locally Advanced Unresectable Cancer of the Pancreas",
             "field_path": "protocolSection.designModule.phases",
-            "value": ["PHASE1"], "excerpt": "PHASE1",
-            "title": "A Phase I Trial of Gemcitabine and Radiation in Locally Advanced Unresectable Cancer of the Pancreas" }
+            "value": ["PHASE1"], "matched_value": "PHASE1" }
           , "… (19 more)"
         ] },
       { "value": "PHASE1|PHASE2", "label": "Phase 1/2", "count_trials": 505 },
@@ -119,7 +119,7 @@ The eight buckets in full: `NA` 937, `EARLY_PHASE1` 109, `PHASE1` 895, `PHASE1|P
 
 - **The ~63% non-phased mass.** `NA (not applicable)` is 937 trials and non-phasing is a real registry outcome — a phase histogram that silently dropped it would misreport the field. It is charted as its own labeled bucket, not discarded.
 - **Composite phase buckets.** `PHASE1|PHASE2` (505) and `PHASE2|PHASE3` (58) are genuine registry values — a trial spanning two phases. They are kept as distinct buckets ("Phase 1/2", "Phase 2/3"), never split across `PHASE1` and `PHASE2` (which would double-count and break the sum).
-- **The deep-citation shape.** Each datum carries the true `contributing_count` (895 for Phase 1) plus a bounded, deterministic sample of up to 20 citations and a `citations_truncated` flag. Each citation is two-part: the exact field-value `excerpt` ("PHASE1"), string-extracted from the record at its `field_path` — the rigorous proof of *why* this trial belongs in the bucket — plus the trial's human-readable `title` from `briefTitle` ("A Phase I Trial of Gemcitabine and Radiation…"), the descriptive text excerpt §5 of the assignment calls for. Neither is authored by the model.
+- **The deep-citation shape.** Each datum carries the true `contributing_count` (895 for Phase 1) plus a bounded, deterministic sample of up to 20 citations and a `citations_truncated` flag. Each citation is two-part: the trial's human-readable `excerpt` from `briefTitle` ("A Phase I Trial of Gemcitabine and Radiation…") — the descriptive text excerpt §5 of the assignment calls for — plus `matched_value` ("PHASE1"), the exact field value read from the record at its `field_path` that proves *why* this trial belongs in the bucket. Neither is authored by the model.
 
 The `interventional_only` field is compiled into a server-side `filter.advanced=AREA[StudyType]…INTERVENTIONAL`, so the population is filtered by the API, not post-hoc in memory.
 
@@ -186,9 +186,9 @@ Full output: `examples/run_03_timeseries_year.json`
       { "value": "2–4 yr",  "bin_start": 24, "bin_end": 48,  "count_trials": 1510,
         "contributing_count": 1510, "citations_truncated": true,
         "citations": [ { "nct_id": "NCT00003085",
+          "excerpt": "Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer",
           "field_path": "protocolSection.statusModule.startDateStruct.date",
-          "value": "1996-09", "excerpt": "1996-09",
-          "title": "Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer" }, "… (19 more)" ] },
+          "value": "1996-09", "matched_value": "1996-09" }, "… (19 more)" ] },
       { "value": "4–10 yr", "bin_start": 48,  "bin_end": 120,  "count_trials": 1448 },
       { "value": "10+ yr",  "bin_start": 120, "bin_end": null, "count_trials": 152 },
       { "value": "UNDATED", "bin_start": null, "bin_end": null, "count_trials": 141,
@@ -207,7 +207,7 @@ Seven bins — six numeric ranges plus one undated bucket — **summing to 3,950
 
 **What to notice.** This fills the histogram slot in the type system, and it is genuinely a different animal from a categorical bar (rung 02). There is no `study_duration` field in ClinicalTrials.gov; the magnitude is *derived* on the fly — `completionDate − startDate`, at month precision — and then bucketed into ranges (`bin_start`/`bin_end` carry the numeric edges, which a categorical bar never has). Three decisions make it faithful:
 
-- **A principled source.** Duration comes from the two *dated status fields*, not the softer enrollment field — noted explicitly (R-16). Each citation pairs the raw `startDateStruct.date` `excerpt` it was computed from ("1996-09") with the trial's readable `title` ("Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer").
+- **A principled source.** Duration comes from the two *dated status fields*, not the softer enrollment field — noted explicitly (R-16). Each citation pairs the raw `startDateStruct.date` `matched_value` it was computed from ("1996-09") with the trial's readable `excerpt` ("Laparoscopic Ultrasound in Diagnosing Patients With Pancreatic Cancer").
 - **The undated/ill-formed tail is not silently dropped.** 141 trials are either undated or carry a negative duration (completion recorded before start — real, dirty data). They go into an explicit `Unknown (undated)` bucket that is excluded from the numeric bins but *kept for reconciliation*, which is exactly why the seven buckets still sum to 3,950. Drop them and the histogram would quietly under-count; hide them in a numeric bin and it would lie about durations.
 - **Month precision, stated.** Day is ignored and a year-only date is treated as January — a real modeling choice, disclosed rather than buried.
 
@@ -311,13 +311,14 @@ Full output: `examples/run_06_geographic_ranked_bar.json`
           "source_ids": ["NCT00001832", "NCT00003552", "… (20-id sample of 84)"],
           "citations": [
             { "nct_id": "NCT00001832",
+              "excerpt": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma",
               "field_path": "protocolSection.armsInterventionsModule.interventions[].name",
               "value": ["gp100:209-217 (210M)", "…", "Fludarabine", "Cyclophosphamide"],
-              "excerpt": "Cyclophosphamide",
-              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma" },
-            { "nct_id": "NCT00001832", "field_path": "…interventions[].name",
-              "value": ["gp100:209-217 (210M)", "…", "Fludarabine", "…"], "excerpt": "Fludarabine",
-              "title": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma" }
+              "matched_value": "Cyclophosphamide" },
+            { "nct_id": "NCT00001832",
+              "excerpt": "Lymphocyte Re-infusion During Immune Suppression to Treat Metastatic Melanoma",
+              "field_path": "…interventions[].name",
+              "value": ["gp100:209-217 (210M)", "…", "Fludarabine", "…"], "matched_value": "Fludarabine" }
           ] }
         , "… (193 more edges) …"
       ]
@@ -331,7 +332,7 @@ Full output: `examples/run_06_geographic_ranked_bar.json`
 
 **What to notice.** The graph is the hardest artifact to make *trustworthy*, and the traps are all about false structure:
 
-- **Every edge weight is traceable.** An edge weight is the number of distinct trials that studied both drugs (cyclophosphamide ↔ fludarabine: 84 shared trials). The edge carries a bounded sample of those `source_ids` and two citations — one per endpoint — that each string-extract the endpoint's drug name (the `excerpt`) from a real record's `interventions[].name` and attach that trial's readable `title`. No weight is asserted; each traces to its contributing `nctId`s.
+- **Every edge weight is traceable.** An edge weight is the number of distinct trials that studied both drugs (cyclophosphamide ↔ fludarabine: 84 shared trials). The edge carries a bounded sample of those `source_ids` and two citations — one per endpoint — that each pin the endpoint's drug name as the `matched_value` (read from a real record's `interventions[].name`) alongside that trial's readable `excerpt`. No weight is asserted; each traces to its contributing `nctId`s.
 - **No placebo mega-hub.** Placebo and standard-of-care interventions are excluded by name (`placebo present? False`), because otherwise nearly every arm would connect through placebo and the graph would collapse into one meaningless hub.
 - **Alias-only synonym merge, guarded.** Drug nodes are keyed by active ingredient — names normalized for case, dose, salt, and route — and a brand folds into its generic only when the alias is *itself* another drug's primary name *and* corroborated by ≥ 2 trials. That's why the node id `drug:bcd-201` (a biosimilar identifier) resolves to the label `Pembrolizumab`. A combination product ("Drug A + Drug B") never merges its components, and a single-trial registry mislabel can't collapse two distinct drugs.
 - **Legibility caps, disclosed.** Nodes are capped at the top 60 by degree and edges below weight 2 are pruned — flagged in a note as a configurable interpretability default that leaves the underlying co-occurrence graph unchanged.

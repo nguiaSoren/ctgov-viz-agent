@@ -424,8 +424,8 @@ def _endpoint_citation(record: dict, node_kind: str, node_key: str, uf: _UnionFi
         nct_id=_nct_id(record) or "",
         field_path=_DRUG_PATH,
         value=_drug_names_in_record(record),  # REAL list → excerpt must equal an element (teeth)
-        excerpt=name,  # the targeted drug's own literal .name → round-trips (is_substring_at)
-        title=brief_title(record),
+        matched_value=name,  # the targeted drug's own literal .name → round-trips (is_substring_at)
+        excerpt=brief_title(record) or name,
     )
 
 
@@ -659,8 +659,8 @@ def _build_fallback(
                     nct_id=nct,
                     field_path=_DRUG_PATH,
                     value=_drug_names_in_record(trials[nct]),
-                    excerpt=name,
-                    title=brief_title(trials[nct]),
+                    matched_value=name,
+                    excerpt=brief_title(trials[nct]) or name,
                 )
             )
         buckets.append(

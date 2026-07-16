@@ -231,7 +231,7 @@ def _explode_citations(
         record_values = [value for value, _ in spec.key_fn(record) if value != UNKNOWN_VALUE]
         if bucket_value == UNKNOWN_VALUE:
             # Genuine absence: no value at the path -> empty excerpt against [].
-            citations.append(Citation(nct_id=nct, field_path=spec.field_path, value=[], excerpt="", title=brief_title(record)))
+            citations.append(Citation(nct_id=nct, field_path=spec.field_path, value=[], matched_value="", excerpt=brief_title(record) or ""))
             continue
         if member_set is not None:
             # Other fold: quote THIS record's own folded value.
@@ -243,8 +243,8 @@ def _explode_citations(
                 nct_id=nct,
                 field_path=spec.field_path,
                 value=record_values,
-                excerpt=excerpt if excerpt is not None else "",
-                title=brief_title(record),
+                matched_value=excerpt if excerpt is not None else "",
+                excerpt=brief_title(record) or (excerpt or ""),
             )
         )
     return citations, contributing, contributing > 20
@@ -409,7 +409,7 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
             # it would empty the value and fail the citation against its own real record.
             real_values = [value for value, _ in spec.key_fn(record)]
             citations.append(
-                Citation(nct_id=nct, field_path=spec.field_path, value=real_values, excerpt=token, title=brief_title(record))
+                Citation(nct_id=nct, field_path=spec.field_path, value=real_values, matched_value=token, excerpt=brief_title(record) or token)
             )
         buckets.append({
             "value": token,

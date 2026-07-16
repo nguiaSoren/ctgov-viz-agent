@@ -59,7 +59,7 @@ def test_every_excerpt_is_a_real_substring_at_field_path() -> None:
     assert citations  # sanity: the sample is non-empty
     for citation, record in zip(citations, records, strict=True):
         assert citation.field_path == FIELD_PATH
-        assert is_substring_at(record, FIELD_PATH, citation.excerpt) is True
+        assert is_substring_at(record, FIELD_PATH, citation.matched_value) is True
 
 
 def test_sample_is_deterministic_first_k_by_sorted_nctid() -> None:

@@ -110,7 +110,7 @@ def _check_provenance(spec: VisualizeResponse) -> Check:
     """(II) Every deep citation is an element-precise quote of its own ``value``.
 
     Reuses the runtime's ``_spec_citations`` (row data + both endpoints of every
-    edge) and ``_citation_valid`` (excerpt AND every ``excerpt_tokens`` member
+    edge) and ``_citation_valid`` (excerpt AND every ``matched_tokens`` member
     must be a verbatim element/substring of ``citation.value``; an empty excerpt
     is valid only against a genuinely-absent value). A fabricated excerpt fails.
     """
@@ -122,7 +122,7 @@ def _check_provenance(spec: VisualizeResponse) -> Check:
                 _I_PROV,
                 "FAIL",
                 f"fabricated/mismatched excerpt: nct={cit.nct_id} field={cit.field_path} "
-                f"excerpt={cit.excerpt!r} tokens={cit.excerpt_tokens!r} value={cit.value!r}",
+                f"excerpt={cit.matched_value!r} tokens={cit.matched_tokens!r} value={cit.value!r}",
             )
     if n == 0:
         return Check(_I_PROV, "PASS", "no row/edge citations (kind carries no chart data)")

@@ -24,13 +24,15 @@
         "period": "2019",
         "count_trials": 12,
         "count_mentions": 12,
-        "source_ids": ["NCT03811119"],
+        "source_ids": [
+          "NCT03811119"
+        ],
         "citations": [
           {
             "nct_id": "NCT03811119",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2019-04-01",
-            "excerpt": "2019-04-01"
+            "matched_value": "2019-04-01"
           }
         ],
         "contributing_count": 12,
@@ -42,13 +44,15 @@
         "period": "2020",
         "count_trials": 18,
         "count_mentions": 18,
-        "source_ids": ["NCT04231001"],
+        "source_ids": [
+          "NCT04231001"
+        ],
         "citations": [
           {
             "nct_id": "NCT04231001",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2020-09-15",
-            "excerpt": "2020-09-15"
+            "matched_value": "2020-09-15"
           }
         ],
         "contributing_count": 18
@@ -59,13 +63,15 @@
         "period": "2021",
         "count_trials": 25,
         "count_mentions": 25,
-        "source_ids": ["NCT04770012"],
+        "source_ids": [
+          "NCT04770012"
+        ],
         "citations": [
           {
             "nct_id": "NCT04770012",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2021-02",
-            "excerpt": "2021-02"
+            "matched_value": "2021-02"
           }
         ],
         "contributing_count": 25,
@@ -87,13 +93,15 @@
         "period": "2023",
         "count_trials": 31,
         "count_mentions": 31,
-        "source_ids": ["NCT05678120"],
+        "source_ids": [
+          "NCT05678120"
+        ],
         "citations": [
           {
             "nct_id": "NCT05678120",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2023-06-30",
-            "excerpt": "2023-06-30"
+            "matched_value": "2023-06-30"
           }
         ],
         "contributing_count": 31,
@@ -105,13 +113,15 @@
         "period": "2024",
         "count_trials": 22,
         "count_mentions": 22,
-        "source_ids": ["NCT06120933"],
+        "source_ids": [
+          "NCT06120933"
+        ],
         "citations": [
           {
             "nct_id": "NCT06120933",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2024-01-10",
-            "excerpt": "2024-01-10"
+            "matched_value": "2024-01-10"
           }
         ],
         "contributing_count": 22
@@ -123,13 +133,15 @@
         "planned": true,
         "count_trials": 3,
         "count_mentions": 3,
-        "source_ids": ["NCT06890012"],
+        "source_ids": [
+          "NCT06890012"
+        ],
         "citations": [
           {
             "nct_id": "NCT06890012",
             "field_path": "protocolSection.statusModule.startDateStruct.date",
             "value": "2030-12-18",
-            "excerpt": "2030-12-18"
+            "matched_value": "2030-12-18"
           }
         ],
         "contributing_count": 3
@@ -141,19 +153,48 @@
     "title": "Melanoma trials started per year",
     "data": {
       "values": [
-        {"year": "2019", "trials": 12},
-        {"year": "2020", "trials": 18},
-        {"year": "2021", "trials": 25},
-        {"year": "2022", "trials": 0},
-        {"year": "2023", "trials": 31},
-        {"year": "2024", "trials": 22},
-        {"year": "2030", "trials": 3}
+        {
+          "year": "2019",
+          "trials": 12
+        },
+        {
+          "year": "2020",
+          "trials": 18
+        },
+        {
+          "year": "2021",
+          "trials": 25
+        },
+        {
+          "year": "2022",
+          "trials": 0
+        },
+        {
+          "year": "2023",
+          "trials": 31
+        },
+        {
+          "year": "2024",
+          "trials": 22
+        },
+        {
+          "year": "2030",
+          "trials": 3
+        }
       ]
     },
     "mark": "line",
     "encoding": {
-      "x": {"field": "year", "type": "ordinal", "title": "Start year"},
-      "y": {"field": "trials", "type": "quantitative", "title": "Trials started"}
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Start year"
+      },
+      "y": {
+        "field": "trials",
+        "type": "quantitative",
+        "title": "Trials started"
+      }
     }
   },
   "answer": null,
@@ -163,11 +204,14 @@
       "nct_id": "NCT06890012",
       "field_path": "protocolSection.statusModule.startDateStruct.date",
       "value": "2030-12-18",
-      "excerpt": "2030-12-18"
+      "matched_value": "2030-12-18"
     }
   },
   "meta": {
-    "count_basis": {"trials": 111, "mentions": 111},
+    "count_basis": {
+      "trials": 111,
+      "mentions": 111
+    },
     "date_field_used": "startDate",
     "time_granularity": "year",
     "filters": {
@@ -188,7 +232,7 @@
     "partial": null,
     "notes": [
       "Date field: startDate (trial start intent, CC-4). Precision is mixed on the wire (e.g. \"2021-02\") and normalized to the year grain.",
-      "The 2030 bucket holds genuine future/estimated start dates and is flagged \"planned\" — not clamped into the current year (would inflate it) and not dropped (would break reconciliation) (G-40).",
+      "The 2030 bucket holds genuine future/estimated start dates and is flagged \"planned\" \u2014 not clamped into the current year (would inflate it) and not dropped (would break reconciliation) (G-40).",
       "The gap year 2022 is filled with a 0-count bucket so the line does not lie by connecting across a missing year; a legitimately-empty bucket ships no citations (G-35)."
     ]
   }

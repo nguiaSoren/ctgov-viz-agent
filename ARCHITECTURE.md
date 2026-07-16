@@ -108,10 +108,11 @@ consistency against the one server number you can check** — the API's `countTo
 Each datum carries the exact `contributing_count` (always the true bucket size) plus a bounded,
 deterministic sample of up to twenty citations (the first twenty contributing nctIds, sorted — stable
 across runs) with a `citations_truncated` flag when the true set exceeds the cap. A citation is
-**two-part**: an `excerpt` — the exact field value that decided membership, verified element-precise
-against the record at its field path (a fabricated excerpt fails at build time) — and a `title`, the
-trial's human-readable brief title, also string-extracted from the record. The excerpt is the rigorous
-"why this trial is in this bucket"; the title is the readable "text excerpt that supports the datum."
+**two-part**: an `excerpt` — the trial's human-readable brief title (§5's descriptive "text excerpt
+that supports the datum"), string-extracted from the record — and a `matched_value`, the exact field
+value at `field_path` that decided membership, verified element-precise against the record (a
+fabricated value fails at build time). The excerpt reads like a source; the matched_value is the
+rigorous "why this trial is in this bucket."
 A *derived* value (a network edge weight) cites its **members** — the contributing trials — since it
 has no single source field to quote.
 

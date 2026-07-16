@@ -3,7 +3,7 @@
 Covers the two Wave-B integrations that live only at the graph/viz boundary:
 
 1. **Composite-citation teeth** — the Output-Reviewer precheck must reject a
-   fabricated ``excerpt_tokens`` member (not just a fabricated primary excerpt),
+   fabricated ``matched_tokens`` member (not just a fabricated primary excerpt),
    so a composite bucket can't smuggle an unverifiable token past the gate.
 2. **Degeneracy → BAR fallback** — a ``network_fallback`` tool-result (emitted by
    ``_execute_network`` when ``build_graph`` reports a degenerate graph) must
@@ -27,7 +27,7 @@ from app.plan.models import NetworkSpec, Plan
 from app.viz.review import deterministic_precheck
 from app.viz.spec import build_envelope
 
-# --- 1. composite-citation teeth (excerpt_tokens verified) ------------------
+# --- 1. composite-citation teeth (matched_tokens verified) ------------------
 
 
 def _spec_with_citation(citation: Citation) -> VisualizeResponse:
@@ -43,13 +43,13 @@ def _spec_with_citation(citation: Citation) -> VisualizeResponse:
     )
 
 
-def test_valid_composite_excerpt_tokens_pass() -> None:
+def test_valid_composite_matched_tokens_pass() -> None:
     cit = Citation(
         nct_id="NCT00000001",
         field_path="protocolSection.designModule.phases",
         value=["PHASE1", "PHASE2"],
-        excerpt="PHASE1",
-        excerpt_tokens=["PHASE1", "PHASE2"],
+        matched_value="PHASE1",
+        matched_tokens=["PHASE1", "PHASE2"],
     )
     pc = deterministic_precheck(
         _spec_with_citation(cit), count_total=3, mode="combine", distinct_trials=3, truncated=False
@@ -64,8 +64,8 @@ def test_fabricated_excerpt_token_hard_fails() -> None:
         nct_id="NCT00000001",
         field_path="protocolSection.designModule.phases",
         value=["PHASE1", "PHASE2"],
-        excerpt="PHASE1",
-        excerpt_tokens=["PHASE1", "PHASE9"],
+        matched_value="PHASE1",
+        matched_tokens=["PHASE1", "PHASE9"],
     )
     pc = deterministic_precheck(
         _spec_with_citation(cit), count_total=3, mode="combine", distinct_trials=3, truncated=False
@@ -105,7 +105,7 @@ def _fallback_tool_result() -> dict:
                         nct_id="NCT00000001",
                         field_path="protocolSection.armsInterventionsModule.interventions[].name",
                         value="Lonafarnib",
-                        excerpt="Lonafarnib",
+                        matched_value="Lonafarnib",
                     )
                 ],
                 "citations_truncated": False,

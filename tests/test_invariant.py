@@ -76,7 +76,7 @@ def test_number_in_spec_is_inserted_by_code_from_the_tool() -> None:
         "tool": "count_trials", "total_count": 42, "kind": "visualization",
         "citations": [{"nct_id": "NCT00000001", "field_path":
                        "protocolSection.identificationModule.nctId", "value": "NCT00000001",
-                       "excerpt": "NCT00000001"}],
+                       "matched_value": "NCT00000001"}],
     }]
     spec = build_envelope(
         plan=plan, tool_results=tool_results, status="ok", question="How many melanoma trials?"

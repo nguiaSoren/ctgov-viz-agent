@@ -72,7 +72,7 @@ def test_explode_counts_distinct_trials_and_per_occurrence_mentions() -> None:
 
 
 @pytest.mark.parametrize(
-    ("value", "excerpt", "expected"),
+    ("value", "matched_value", "expected"),
     [
         (["PHASE10"], "PHASE1", False),  # substring false positive
         (["PHASE10"], "1", False),
@@ -84,8 +84,8 @@ def test_explode_counts_distinct_trials_and_per_occurrence_mentions() -> None:
         ([], "", True),
     ],
 )
-def test_excerpt_in_value_element_precise(value, excerpt, expected) -> None:
-    assert _excerpt_in_value(excerpt, value) is expected
+def test_excerpt_in_value_element_precise(value, matched_value, expected) -> None:
+    assert _excerpt_in_value(matched_value, value) is expected
 
 
 def test_is_substring_at_element_precise() -> None:
@@ -100,7 +100,7 @@ def test_precheck_rejects_fabricated_element_citation() -> None:
     """A citation whose excerpt is not a real element of its value hard-fails."""
     d = _datum("PHASE1", 1)
     d.citations[0].value = ["PHASE10"]  # excerpt "PHASE1" is NOT an element of ["PHASE10"]
-    d.citations[0].excerpt = "PHASE1"
+    d.citations[0].matched_value = "PHASE1"
     pc = deterministic_precheck(
         _ok_spec([d]), count_total=1, mode="combine", distinct_trials=1, truncated=False
     )

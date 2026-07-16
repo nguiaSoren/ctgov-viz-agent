@@ -49,9 +49,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Electron Beam Intraoperative Radiation Therapy Following Chemoradiation in Patients With Pancreatic Cancer With Vascular Involvement"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Electron Beam Intraoperative Radiation Therapy Following Chemoradiation in Patients With Pancreatic Cancer With Vascular Involvement",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03747120",
@@ -59,9 +59,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Neoadjuvant Her2-targeted Therapy and Immunotherapy With Pembrolizumab [IIT2018-04-MCARTHUR-NEOHP]"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Neoadjuvant Her2-targeted Therapy and Immunotherapy With Pembrolizumab [IIT2018-04-MCARTHUR-NEOHP]",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04146051",
@@ -69,9 +69,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Descartes-08 CAR-T Cells in Generalized Myasthenia Gravis (MG)"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Descartes-08 CAR-T Cells in Generalized Myasthenia Gravis (MG)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05055323",
@@ -79,9 +79,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "A Study to Determine if the Drug, Pyrvinium Pamoate, is Safe and Tolerable in Patients With Pancreatic Cancer"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "A Study to Determine if the Drug, Pyrvinium Pamoate, is Safe and Tolerable in Patients With Pancreatic Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05123131",
@@ -89,9 +89,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Isa-RVD Study in Patients With Newly Diagnosed Multiple Myeloma"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Isa-RVD Study in Patients With Newly Diagnosed Multiple Myeloma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05164094",
@@ -99,9 +99,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "A Study of an Epstein-Barr Virus (EBV) Candidate Vaccine, mRNA-1189, in 10- to 30-Year-Old Healthy Adolescents and Adults"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "A Study of an Epstein-Barr Virus (EBV) Candidate Vaccine, mRNA-1189, in 10- to 30-Year-Old Healthy Adolescents and Adults",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05566574",
@@ -109,9 +109,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "A Study of RP-3500 in Combination With Standard Radiation Therapy in People With Solid Tumor Cancer"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "A Study of RP-3500 in Combination With Standard Radiation Therapy in People With Solid Tumor Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05598853",
@@ -119,9 +119,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Intrathecal Double Checkpoint Inhibition"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Intrathecal Double Checkpoint Inhibition",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05712902",
@@ -129,9 +129,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Sunvozertinib (DZD9008) in Pretreated Lung Cancer Patients with EGFR Exon20 Insertion Mutation (WU-KONG6)"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Sunvozertinib (DZD9008) in Pretreated Lung Cancer Patients with EGFR Exon20 Insertion Mutation (WU-KONG6)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05931302",
@@ -139,9 +139,9 @@
             "value": [
               "ACTIVE_NOT_RECRUITING"
             ],
-            "excerpt": "ACTIVE_NOT_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Initial Staging of Lobular Breast Carcinoma: Head to Head Comparison of 68Ga-FAPI-46 and 18F-FDG PET/CT"
+            "matched_value": "ACTIVE_NOT_RECRUITING",
+            "excerpt": "Initial Staging of Lobular Breast Carcinoma: Head to Head Comparison of 68Ga-FAPI-46 and 18F-FDG PET/CT",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -177,9 +177,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "A Phase III Second Line Trial in Advanced Pancreatic Cancer CONKO 003"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "A Phase III Second Line Trial in Advanced Pancreatic Cancer CONKO 003",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00872950",
@@ -187,9 +187,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "3,4-Diaminopyridine Use in Lambert-Eaton Myasthenic Syndrome(LEMS) and Congenital Myasthenic Syndromes (CMS)"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "3,4-Diaminopyridine Use in Lambert-Eaton Myasthenic Syndrome(LEMS) and Congenital Myasthenic Syndromes (CMS)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02307812",
@@ -197,9 +197,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Ramucirumab Use in Combination With Paclitaxel in Gastric or Gastroesophageal Junction Adenocarcinoma; Temporary Authorization for Use (ATU) in France"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Ramucirumab Use in Combination With Paclitaxel in Gastric or Gastroesophageal Junction Adenocarcinoma; Temporary Authorization for Use (ATU) in France",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02792725",
@@ -207,9 +207,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Program to Provide Abemaciclib (LY2835219) for the Treatment of Metastatic Breast Cancer"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Expanded Access Program to Provide Abemaciclib (LY2835219) for the Treatment of Metastatic Breast Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03079687",
@@ -217,9 +217,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Program for Olaparib Tablets as Maintenance Therapy in Patients With Ovarian, Fallopian Tube or Primary Peritoneal Cancer."
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Expanded Access Program for Olaparib Tablets as Maintenance Therapy in Patients With Ovarian, Fallopian Tube or Primary Peritoneal Cancer.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03825484",
@@ -227,9 +227,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Program (EAP) for Participants With Advanced Cancers and Fibroblast Growth Factor Receptor (FGFR) Genetic Alterations Who Have Exhausted All Treatment Options"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Expanded Access Program (EAP) for Participants With Advanced Cancers and Fibroblast Growth Factor Receptor (FGFR) Genetic Alterations Who Have Exhausted All Treatment Options",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04204928",
@@ -237,9 +237,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Pre-Approval Access Program (PAAP) for Pralsetinib (BLU-667) in Patients With Unresectable or Metastatic NSCLC or MTC"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Pre-Approval Access Program (PAAP) for Pralsetinib (BLU-667) in Patients With Unresectable or Metastatic NSCLC or MTC",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04291937",
@@ -247,9 +247,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "A Multicenter Expanded Access Treatment Protocol of Lurbinectedin in Previously Treated SCLC in the USA"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "A Multicenter Expanded Access Treatment Protocol of Lurbinectedin in Previously Treated SCLC in the USA",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04599712",
@@ -257,9 +257,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Pre-Approval Access With Amivantamab (JNJ-61186372) in Participants With Metastatic Non-Small Cell Lung Cancer"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Pre-Approval Access With Amivantamab (JNJ-61186372) in Participants With Metastatic Non-Small Cell Lung Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04617002",
@@ -267,9 +267,9 @@
             "value": [
               "APPROVED_FOR_MARKETING"
             ],
-            "excerpt": "APPROVED_FOR_MARKETING",
-            "excerpt_tokens": null,
-            "title": "Intermediate-size Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline Gliomas"
+            "matched_value": "APPROVED_FOR_MARKETING",
+            "excerpt": "Intermediate-size Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline Gliomas",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -305,9 +305,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Efficacy and Safety Study of Neoadjuvant Chemotherapy for Local Advanced Triple Negative Breast Cancer Patients"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Efficacy and Safety Study of Neoadjuvant Chemotherapy for Local Advanced Triple Negative Breast Cancer Patients",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01317953",
@@ -315,9 +315,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Oral Green Tea Extract for Small Cell Lung Cancer"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Oral Green Tea Extract for Small Cell Lung Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03763370",
@@ -325,9 +325,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Managed Access Program for Combination Treatment With Belantamab Mafodotin in Multiple Myeloma"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Managed Access Program for Combination Treatment With Belantamab Mafodotin in Multiple Myeloma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04809233",
@@ -335,9 +335,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to Tipifarnib"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Expanded Access to Tipifarnib",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05038631",
@@ -345,9 +345,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Managed Access Programs for LEE011, Ribociclib"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Managed Access Programs for LEE011, Ribociclib",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06370013",
@@ -355,9 +355,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Rollover Study to Provide Continued Access to TT-00420 (Tinengotinib) for Subjects With Advanced Solid Tumors"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Rollover Study to Provide Continued Access to TT-00420 (Tinengotinib) for Subjects With Advanced Solid Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06751524",
@@ -365,9 +365,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Program (EAP) Designed to Provide Access to Botensilimab and Balstilimab Before Regulatory Approval"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Expanded Access Program (EAP) Designed to Provide Access to Botensilimab and Balstilimab Before Regulatory Approval",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06761976",
@@ -375,9 +375,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to Provide Sevabertinib (BAY 2927088) for the Treatment of Locally Advanced or Metastatic NSCLC With HER2 Mutation"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Expanded Access to Provide Sevabertinib (BAY 2927088) for the Treatment of Locally Advanced or Metastatic NSCLC With HER2 Mutation",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07535359",
@@ -385,9 +385,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Medical Access Program for Ifinatamab Deruxtecan in 3L+ Pretreated Extensive-stage Small Cell Lung Cancer"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Medical Access Program for Ifinatamab Deruxtecan in 3L+ Pretreated Extensive-stage Small Cell Lung Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07689942",
@@ -395,9 +395,9 @@
             "value": [
               "AVAILABLE"
             ],
-            "excerpt": "AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to 0.5 mg eRapa for Familial Adenomatous Polyposis"
+            "matched_value": "AVAILABLE",
+            "excerpt": "Expanded Access to 0.5 mg eRapa for Familial Adenomatous Polyposis",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -433,9 +433,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Radiofrequency Ablation in Relieving Pain in Patients With Bones Metastases"
+            "matched_value": "COMPLETED",
+            "excerpt": "Radiofrequency Ablation in Relieving Pain in Patients With Bones Metastases",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00539253",
@@ -443,9 +443,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Assessment of Liver Cancer Response to TACE Using MultiHance-Enhanced MRI."
+            "matched_value": "COMPLETED",
+            "excerpt": "Assessment of Liver Cancer Response to TACE Using MultiHance-Enhanced MRI.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00573729",
@@ -453,9 +453,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Pulsed Dye Laser Treatment of Port Wine Stain Birthmarks: Comparison of 577 nm Versus 595 nm Wavelengths"
+            "matched_value": "COMPLETED",
+            "excerpt": "Pulsed Dye Laser Treatment of Port Wine Stain Birthmarks: Comparison of 577 nm Versus 595 nm Wavelengths",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00747253",
@@ -463,9 +463,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Monteris AutoLITT™ FIM Safety Trial for Recurrent/Progressive Brain Tumors"
+            "matched_value": "COMPLETED",
+            "excerpt": "Monteris AutoLITT™ FIM Safety Trial for Recurrent/Progressive Brain Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01160302",
@@ -473,9 +473,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Curcumin Biomarker Trial in Head and Neck Cancer"
+            "matched_value": "COMPLETED",
+            "excerpt": "Curcumin Biomarker Trial in Head and Neck Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03518853",
@@ -483,9 +483,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Short Course Radiotherapy for Localized Prostate Cancer"
+            "matched_value": "COMPLETED",
+            "excerpt": "Short Course Radiotherapy for Localized Prostate Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03986437",
@@ -493,9 +493,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "A Prospective Study to Collect Images in Patients Treated With Iodine-131 as Part of a European Research Project in Radiation Protection."
+            "matched_value": "COMPLETED",
+            "excerpt": "A Prospective Study to Collect Images in Patients Treated With Iodine-131 as Part of a European Research Project in Radiation Protection.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05084729",
@@ -503,9 +503,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "CONFIDENCE Registry"
+            "matched_value": "COMPLETED",
+            "excerpt": "CONFIDENCE Registry",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05615129",
@@ -513,9 +513,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Sequence and Time-of-day Infusion of immunoCHemotherapy Affect Response in Oesophageal Cancer in the NeOadjuvant Setting"
+            "matched_value": "COMPLETED",
+            "excerpt": "Sequence and Time-of-day Infusion of immunoCHemotherapy Affect Response in Oesophageal Cancer in the NeOadjuvant Setting",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06386653",
@@ -523,9 +523,9 @@
             "value": [
               "COMPLETED"
             ],
-            "excerpt": "COMPLETED",
-            "excerpt_tokens": null,
-            "title": "Molecular Imaging of EpCAM Receptors Using [123I]I-DARPIN-Ec1"
+            "matched_value": "COMPLETED",
+            "excerpt": "Molecular Imaging of EpCAM Receptors Using [123I]I-DARPIN-Ec1",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -561,9 +561,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Protocol to Permit the Acquisition of Circulating Tumor Material in Pancreatic Diseases"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Protocol to Permit the Acquisition of Circulating Tumor Material in Pancreatic Diseases",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06227962",
@@ -571,9 +571,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Cognitive Functioning and Health Related Quality of Life in Retinoblastoma Survivors"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Cognitive Functioning and Health Related Quality of Life in Retinoblastoma Survivors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06261190",
@@ -581,9 +581,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Active Surveillance for Low-risk Papillary Thyroid Carcinoma"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Active Surveillance for Low-risk Papillary Thyroid Carcinoma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06531135",
@@ -591,9 +591,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "A RCT of Psychosocial Interventions Facilitating Positive Psychological Adaptation in Breast Cancer"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "A RCT of Psychosocial Interventions Facilitating Positive Psychological Adaptation in Breast Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06618300",
@@ -601,9 +601,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Streamlined Resin Y90 Radiation Segmentectomy for Small HCC"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Streamlined Resin Y90 Radiation Segmentectomy for Small HCC",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06812767",
@@ -611,9 +611,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Risk Factors at Chronic Non-communicable Diseases in People of Working Age"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Risk Factors at Chronic Non-communicable Diseases in People of Working Age",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07528079",
@@ -621,9 +621,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Organoid-based Sensitivity-guided Chemotherapy for Advanced / Refractory Pediatric Tumors"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Organoid-based Sensitivity-guided Chemotherapy for Advanced / Refractory Pediatric Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07575230",
@@ -631,9 +631,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Suzetrigine vs Norco-postoperative Mohs Pain"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Suzetrigine vs Norco-postoperative Mohs Pain",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07644845",
@@ -641,9 +641,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "MammoVerse: Clinicians Focus Group"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "MammoVerse: Clinicians Focus Group",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07651176",
@@ -651,9 +651,9 @@
             "value": [
               "ENROLLING_BY_INVITATION"
             ],
-            "excerpt": "ENROLLING_BY_INVITATION",
-            "excerpt_tokens": null,
-            "title": "Comparing the Efficacy of the LDA, LHAA, and DA Regimens in Young Adults With Low-Risk Acute Myeloid Leukemia Eligible for Intensive Chemotherapy"
+            "matched_value": "ENROLLING_BY_INVITATION",
+            "excerpt": "Comparing the Efficacy of the LDA, LHAA, and DA Regimens in Young Adults With Low-Risk Acute Myeloid Leukemia Eligible for Intensive Chemotherapy",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -689,9 +689,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "HIPEC-AS in Patients With Peritoneal Metastasis of the Stomach or Esophagogastric Junction"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "HIPEC-AS in Patients With Peritoneal Metastasis of the Stomach or Esophagogastric Junction",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06495853",
@@ -699,9 +699,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Prospective Phase II Study on Continuous Circumferential Reinforcement of Laparoscopic Rectal Anastomosis to Prevent Complications"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Prospective Phase II Study on Continuous Circumferential Reinforcement of Laparoscopic Rectal Anastomosis to Prevent Complications",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06647602",
@@ -709,9 +709,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Thyroid Hormone Replacement After Radio Iodine: Value and Efficacy"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Thyroid Hormone Replacement After Radio Iodine: Value and Efficacy",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06850402",
@@ -719,9 +719,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Evaluation of a Novel Optical Microscope With a Deep Depth of Field (DeepDOF) to Provide Histologic-quality Images on Cervical Biopsies and Loop Electrosurgical Excision Procedure (LEEP) Specimens at the Point-of-care"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Evaluation of a Novel Optical Microscope With a Deep Depth of Field (DeepDOF) to Provide Histologic-quality Images on Cervical Biopsies and Loop Electrosurgical Excision Procedure (LEEP) Specimens at the Point-of-care",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07035600",
@@ -729,9 +729,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Walking and Sitting Difficulties After Rectal Cancer Surgery"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Walking and Sitting Difficulties After Rectal Cancer Surgery",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07319481",
@@ -739,9 +739,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Preliminary Effectiveness and Feasibility of Transcutaneous Acupoints Electrical Stimulation on Chemotherapy-induced Peripheral Neuropathy Among Children With Acute Lymphoblastic Leukemia"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Preliminary Effectiveness and Feasibility of Transcutaneous Acupoints Electrical Stimulation on Chemotherapy-induced Peripheral Neuropathy Among Children With Acute Lymphoblastic Leukemia",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07490002",
@@ -749,9 +749,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Neoadjuvant Therapy With Iparomlimab and Tuvonralimab, Lenvatinib and Chemotherapy in Resectable ESCC"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Neoadjuvant Therapy With Iparomlimab and Tuvonralimab, Lenvatinib and Chemotherapy in Resectable ESCC",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07515729",
@@ -759,9 +759,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Raising Awareness of Colorectal Screening in American Indian Communities"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Raising Awareness of Colorectal Screening in American Indian Communities",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07593482",
@@ -769,9 +769,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Bendamustine Versus Fludarabine/Cyclophosphamide for Lymphodepletion in Chimeric Antigen Receptor T-cell Immunotherapy (CAR-T): a Randomized Trial."
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Bendamustine Versus Fludarabine/Cyclophosphamide for Lymphodepletion in Chimeric Antigen Receptor T-cell Immunotherapy (CAR-T): a Randomized Trial.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07634653",
@@ -779,9 +779,9 @@
             "value": [
               "NOT_YET_RECRUITING"
             ],
-            "excerpt": "NOT_YET_RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Strength Training Exercise in Pediatric Acute Lymphoblastic Leukemia and Lymphoblastic Lymphoma (STEP-ALL)"
+            "matched_value": "NOT_YET_RECRUITING",
+            "excerpt": "Strength Training Exercise in Pediatric Acute Lymphoblastic Leukemia and Lymphoblastic Lymphoma (STEP-ALL)",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -817,9 +817,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "A Study to Assess Two Different Strategies of Combining Dexamethasone and VELCADE"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "A Study to Assess Two Different Strategies of Combining Dexamethasone and VELCADE",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00655252",
@@ -827,9 +827,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Study of RAD001 in Metastatic Renal Cell Cancer Patients Who Are Intolerant of or Who Have Failed Despite Prior Vascular Endothelial Growth Factor Therapy"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Expanded Access Study of RAD001 in Metastatic Renal Cell Cancer Patients Who Are Intolerant of or Who Have Failed Despite Prior Vascular Endothelial Growth Factor Therapy",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT01005537",
@@ -837,9 +837,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Cyclophosphamide, Autologous Lymphocytes, and Aldesleukin in Treating Patients With Metastatic Melanoma"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Cyclophosphamide, Autologous Lymphocytes, and Aldesleukin in Treating Patients With Metastatic Melanoma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03085186",
@@ -847,9 +847,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Treatment With Crizotinib Single Patient Expanded Access IND 134375"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Treatment With Crizotinib Single Patient Expanded Access IND 134375",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03134131",
@@ -857,9 +857,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline High Grade Gliomas"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline High Grade Gliomas",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03178071",
@@ -867,9 +867,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access For Lorlatinib For Patients With Non Small Cell Lung Cancer ALK Positive or ROS1 Positive"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Expanded Access For Lorlatinib For Patients With Non Small Cell Lung Cancer ALK Positive or ROS1 Positive",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04559555",
@@ -877,9 +877,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "MAP to Provide Access to Nilotinib, for Patients With Relapsed or Refractory Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "MAP to Provide Access to Nilotinib, for Patients With Relapsed or Refractory Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05518838",
@@ -887,9 +887,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to OKN-007 for Patients With Diffuse Midline Glioma, H3 K27-altered"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Expanded Access to OKN-007 for Patients With Diffuse Midline Glioma, H3 K27-altered",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05692050",
@@ -897,9 +897,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to Epcoritamab"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "Expanded Access to Epcoritamab",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05941637",
@@ -907,9 +907,9 @@
             "value": [
               "NO_LONGER_AVAILABLE"
             ],
-            "excerpt": "NO_LONGER_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "An Expanded Access Program to Axitinib is Available for Patients With Advanced Forms of Kidney Cancer (Ductal; Papillary; Chromophobic; Oncocytic) With Mutations in VHL, PBRM1 / BAP1, SETD2, VEGF)"
+            "matched_value": "NO_LONGER_AVAILABLE",
+            "excerpt": "An Expanded Access Program to Axitinib is Available for Patients With Advanced Forms of Kidney Cancer (Ductal; Papillary; Chromophobic; Oncocytic) With Mutations in VHL, PBRM1 / BAP1, SETD2, VEGF)",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -945,9 +945,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "A New Study Evaluating the Activity of Modular CAR T for mYeloma"
+            "matched_value": "RECRUITING",
+            "excerpt": "A New Study Evaluating the Activity of Modular CAR T for mYeloma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05338931",
@@ -955,9 +955,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Safety, Tolerability, and Efficacy of AT101 in Patients With Relapsed or Refractory B-cell Non-Hodgkin's Lymphoma"
+            "matched_value": "RECRUITING",
+            "excerpt": "Safety, Tolerability, and Efficacy of AT101 in Patients With Relapsed or Refractory B-cell Non-Hodgkin's Lymphoma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05451602",
@@ -965,9 +965,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "HEC169096 in Participants With Advanced Solid Tumors"
+            "matched_value": "RECRUITING",
+            "excerpt": "HEC169096 in Participants With Advanced Solid Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06129253",
@@ -975,9 +975,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Global Burden Estimation of Human Papillomavirus (GLOBE-HPV)"
+            "matched_value": "RECRUITING",
+            "excerpt": "Global Burden Estimation of Human Papillomavirus (GLOBE-HPV)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06142929",
@@ -985,9 +985,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Micronerves in Dupuytren and the Impact of Its Dissection on Recurrence"
+            "matched_value": "RECRUITING",
+            "excerpt": "Micronerves in Dupuytren and the Impact of Its Dissection on Recurrence",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06353529",
@@ -995,9 +995,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Postop Pain Management in Pituitary Tumour Patients"
+            "matched_value": "RECRUITING",
+            "excerpt": "Postop Pain Management in Pituitary Tumour Patients",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06452602",
@@ -1005,9 +1005,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Induction Immunochemotherapy Followed by Concurrent Chemoradiotherapy in Patients With ESCC."
+            "matched_value": "RECRUITING",
+            "excerpt": "Induction Immunochemotherapy Followed by Concurrent Chemoradiotherapy in Patients With ESCC.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06534437",
@@ -1015,9 +1015,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "MEN1703 (SEL24) to Treat Relapsed or Refractory Aggressive B-cell Non-Hodgkin Lymphoma (JASPIS-01)"
+            "matched_value": "RECRUITING",
+            "excerpt": "MEN1703 (SEL24) to Treat Relapsed or Refractory Aggressive B-cell Non-Hodgkin Lymphoma (JASPIS-01)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06664229",
@@ -1025,9 +1025,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Development of Pressure Sensor Based Dementia and Fall Prevention Program for Older Adults"
+            "matched_value": "RECRUITING",
+            "excerpt": "Development of Pressure Sensor Based Dementia and Fall Prevention Program for Older Adults",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06792253",
@@ -1035,9 +1035,9 @@
             "value": [
               "RECRUITING"
             ],
-            "excerpt": "RECRUITING",
-            "excerpt_tokens": null,
-            "title": "Study Comparing BEBT-908 Combined With R to SOC for the Treatment of Relapsed/Refractory Diffuse Large B-Cell Lymphoma"
+            "matched_value": "RECRUITING",
+            "excerpt": "Study Comparing BEBT-908 Combined With R to SOC for the Treatment of Relapsed/Refractory Diffuse Large B-Cell Lymphoma",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -1073,9 +1073,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Vaginal Testosterone Cream For Atrophic Vaginitis in Women Taking Aromatase Inhibitors for Breast Cancer."
+            "matched_value": "SUSPENDED",
+            "excerpt": "Vaginal Testosterone Cream For Atrophic Vaginitis in Women Taking Aromatase Inhibitors for Breast Cancer.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03081897",
@@ -1083,9 +1083,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Regional Anaesthesia and Substance P in Head and Neck Cancer"
+            "matched_value": "SUSPENDED",
+            "excerpt": "Regional Anaesthesia and Substance P in Head and Neck Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03253575",
@@ -1093,9 +1093,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "CANscriptTM Clinical Outcomes in a Real-World Setting (ANCERS)-2"
+            "matched_value": "SUSPENDED",
+            "excerpt": "CANscriptTM Clinical Outcomes in a Real-World Setting (ANCERS)-2",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03906565",
@@ -1103,9 +1103,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Clinical Study of Utidelone Injection in Patients With Advanced or Metastatic Colorectal Cancer"
+            "matched_value": "SUSPENDED",
+            "excerpt": "Clinical Study of Utidelone Injection in Patients With Advanced or Metastatic Colorectal Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04031469",
@@ -1113,9 +1113,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "A Non-Interventional Pilot Study to Explore the Role of Gut Flora in Disease"
+            "matched_value": "SUSPENDED",
+            "excerpt": "A Non-Interventional Pilot Study to Explore the Role of Gut Flora in Disease",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04714983",
@@ -1123,9 +1123,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "DNX-2440 for Resectable Colorectal Liver Metastasis"
+            "matched_value": "SUSPENDED",
+            "excerpt": "DNX-2440 for Resectable Colorectal Liver Metastasis",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04981834",
@@ -1133,9 +1133,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Robot-Assisted Radical Prostatectomy With or Without Vesicopexy in Patients With Prostate Cancer"
+            "matched_value": "SUSPENDED",
+            "excerpt": "Robot-Assisted Radical Prostatectomy With or Without Vesicopexy in Patients With Prostate Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06575686",
@@ -1143,9 +1143,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Epcoritamab and Tazemetostat for the Treatment of Relapsed or Refractory Grade I-IIIa Follicular Lymphoma"
+            "matched_value": "SUSPENDED",
+            "excerpt": "Epcoritamab and Tazemetostat for the Treatment of Relapsed or Refractory Grade I-IIIa Follicular Lymphoma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06581211",
@@ -1153,9 +1153,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "Aromatherapy Oil Associated for Managing Anxiety and Pain During Bone Marrow Biopsy Procedures"
+            "matched_value": "SUSPENDED",
+            "excerpt": "Aromatherapy Oil Associated for Managing Anxiety and Pain During Bone Marrow Biopsy Procedures",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07353229",
@@ -1163,9 +1163,9 @@
             "value": [
               "SUSPENDED"
             ],
-            "excerpt": "SUSPENDED",
-            "excerpt_tokens": null,
-            "title": "68Ga-Dotatate PET and MRI Guided Radiation Dose Escalation for High Risk Meningioma"
+            "matched_value": "SUSPENDED",
+            "excerpt": "68Ga-Dotatate PET and MRI Guided Radiation Dose Escalation for High Risk Meningioma",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -1201,9 +1201,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Evaluating Efficacy and Safety of Erlotinib Versus Gemcitabine Plus Cisplatin as Neoadjuvant Chemotherapy"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Evaluating Efficacy and Safety of Erlotinib Versus Gemcitabine Plus Cisplatin as Neoadjuvant Chemotherapy",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02011880",
@@ -1211,9 +1211,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Standardization Research of TCM Syndrome Differentiation and Treatment on Advanced Breast Cancer"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Standardization Research of TCM Syndrome Differentiation and Treatment on Advanced Breast Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03842865",
@@ -1221,9 +1221,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access of Vigil in Solid Tumors"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Expanded Access of Vigil in Solid Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04830202",
@@ -1231,9 +1231,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access to Telisotuzumab Vedotin"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Expanded Access to Telisotuzumab Vedotin",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05274204",
@@ -1241,9 +1241,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Individual Patient Expanded Access to CA102N"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Individual Patient Expanded Access to CA102N",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05389514",
@@ -1251,9 +1251,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Intermediate-size IND for Treatment of KRAS G12V-mutant Tumors"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Intermediate-size IND for Treatment of KRAS G12V-mutant Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06033001",
@@ -1261,9 +1261,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Expanded Access Treatment with [Lu-177]-PNT2002 for Adult Patients with Prostate-Specific Membrane Antigen (PSMA)-Positive Metastatic Castration-Resistant Prostate Cancer (mCRPC)"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Expanded Access Treatment with [Lu-177]-PNT2002 for Adult Patients with Prostate-Specific Membrane Antigen (PSMA)-Positive Metastatic Castration-Resistant Prostate Cancer (mCRPC)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07319910",
@@ -1271,9 +1271,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Continued Access Program for Tumor Treating Fields (TTFields) Used With Chemotherapy (Gemcitabine and Nab-Paclitaxel) in Adults With Locally Advanced Pancreatic Cancer (PANOVA-3CA)"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Continued Access Program for Tumor Treating Fields (TTFields) Used With Chemotherapy (Gemcitabine and Nab-Paclitaxel) in Adults With Locally Advanced Pancreatic Cancer (PANOVA-3CA)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07346105",
@@ -1281,9 +1281,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Orca-T Expanded Access Program Study for Patients With Advanced Hematologic Malignancies"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Orca-T Expanded Access Program Study for Patients With Advanced Hematologic Malignancies",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT07614048",
@@ -1291,9 +1291,9 @@
             "value": [
               "TEMPORARILY_NOT_AVAILABLE"
             ],
-            "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-            "excerpt_tokens": null,
-            "title": "Intermediate-size IND for Treatment of Patients With Advanced Cancer Using T Cells Engineered to Express TCR Targeting Mutant KRAS"
+            "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+            "excerpt": "Intermediate-size IND for Treatment of Patients With Advanced Cancer Using T Cells Engineered to Express TCR Targeting Mutant KRAS",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": false,
@@ -1329,9 +1329,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Genetic Testing in Predicting Response to Paclitaxel in Women With Breast Cancer"
+            "matched_value": "TERMINATED",
+            "excerpt": "Genetic Testing in Predicting Response to Paclitaxel in Women With Breast Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00314353",
@@ -1339,9 +1339,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Study of Bevacizumab Combined With Capecitabine and Either Oxaliplatin or Irinotecan as First Course of Treatment for Patients With Colorectal Cancer That Has Spread Beyond the Colon"
+            "matched_value": "TERMINATED",
+            "excerpt": "Study of Bevacizumab Combined With Capecitabine and Either Oxaliplatin or Irinotecan as First Course of Treatment for Patients With Colorectal Cancer That Has Spread Beyond the Colon",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT00369629",
@@ -1349,9 +1349,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Gemcitabine and Pemetrexed Disodium in Treating Patients With Advanced Mycosis Fungoides or Sézary Syndrome"
+            "matched_value": "TERMINATED",
+            "excerpt": "Gemcitabine and Pemetrexed Disodium in Treating Patients With Advanced Mycosis Fungoides or Sézary Syndrome",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02512237",
@@ -1359,9 +1359,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "A Dose-escalation Study of ARX788, IV Administered in Subjects With Advanced Cancers With HER2 Expression"
+            "matched_value": "TERMINATED",
+            "excerpt": "A Dose-escalation Study of ARX788, IV Administered in Subjects With Advanced Cancers With HER2 Expression",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02900651",
@@ -1369,9 +1369,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Safety and Efficacy of MAK683 in Adult Patients With Advanced Malignancies"
+            "matched_value": "TERMINATED",
+            "excerpt": "Safety and Efficacy of MAK683 in Adult Patients With Advanced Malignancies",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03166631",
@@ -1379,9 +1379,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "A Trial to Find the Safe Dose for BI 891065 Alone and in Combination With BI 754091 in Patients With Incurable Tumours or Tumours That Have Spread"
+            "matched_value": "TERMINATED",
+            "excerpt": "A Trial to Find the Safe Dose for BI 891065 Alone and in Combination With BI 754091 in Patients With Incurable Tumours or Tumours That Have Spread",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03552029",
@@ -1389,9 +1389,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Milademetan Plus Quizartinib Combination Study in FLT3-ITD Mutant Acute Myeloid Leukemia (AML)"
+            "matched_value": "TERMINATED",
+            "excerpt": "Milademetan Plus Quizartinib Combination Study in FLT3-ITD Mutant Acute Myeloid Leukemia (AML)",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03963102",
@@ -1399,9 +1399,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Duration of Ameluz Application in Acral Actinic Keratoses Response"
+            "matched_value": "TERMINATED",
+            "excerpt": "Duration of Ameluz Application in Acral Actinic Keratoses Response",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04030429",
@@ -1409,9 +1409,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Crizotinib in c-MET Mutation Metastatic/Recurrent/Persistent Endometrial Cancer"
+            "matched_value": "TERMINATED",
+            "excerpt": "Crizotinib in c-MET Mutation Metastatic/Recurrent/Persistent Endometrial Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04936451",
@@ -1419,9 +1419,9 @@
             "value": [
               "TERMINATED"
             ],
-            "excerpt": "TERMINATED",
-            "excerpt_tokens": null,
-            "title": "Electrotherapy in the Management of Myofascial Syndrome"
+            "matched_value": "TERMINATED",
+            "excerpt": "Electrotherapy in the Management of Myofascial Syndrome",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -1457,9 +1457,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "First Clinical Study of Erbium - Yttrium Aluminium Garnet (YAG) Laser Vaporization of Cutaneous Neurofibromas"
+            "matched_value": "UNKNOWN",
+            "excerpt": "First Clinical Study of Erbium - Yttrium Aluminium Garnet (YAG) Laser Vaporization of Cutaneous Neurofibromas",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03260231",
@@ -1467,9 +1467,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "Dietary Milled Seed Mix in Patients With Non-Hodgkin Lymphoma"
+            "matched_value": "UNKNOWN",
+            "excerpt": "Dietary Milled Seed Mix in Patients With Non-Hodgkin Lymphoma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03776331",
@@ -1477,9 +1477,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "Vascular Functions in Myeloma Patients During Anti-tumor Therapy"
+            "matched_value": "UNKNOWN",
+            "excerpt": "Vascular Functions in Myeloma Patients During Anti-tumor Therapy",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03792529",
@@ -1487,9 +1487,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "Prognosis and Targeted Therapy Related Molecular Screening Program for Patients of Breast Cancer in China"
+            "matched_value": "UNKNOWN",
+            "excerpt": "Prognosis and Targeted Therapy Related Molecular Screening Program for Patients of Breast Cancer in China",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04241731",
@@ -1497,9 +1497,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "A Study of Cetuximab Plus Raltitrexed for Maintenance Treatment in Advanced Colorectal Cancer"
+            "matched_value": "UNKNOWN",
+            "excerpt": "A Study of Cetuximab Plus Raltitrexed for Maintenance Treatment in Advanced Colorectal Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04273451",
@@ -1507,9 +1507,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "RadioPathomics Artificial Intelligence Model to Predict Tumor Regression Grading in Locally Advanced Rectal Cancer"
+            "matched_value": "UNKNOWN",
+            "excerpt": "RadioPathomics Artificial Intelligence Model to Predict Tumor Regression Grading in Locally Advanced Rectal Cancer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04500431",
@@ -1517,9 +1517,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "Clinical Study to Evaluate the Safety and Feasibility of spCART-269 Injection in the Treatment of MM"
+            "matched_value": "UNKNOWN",
+            "excerpt": "Clinical Study to Evaluate the Safety and Feasibility of spCART-269 Injection in the Treatment of MM",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04783402",
@@ -1527,9 +1527,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "Telehealth Program to Prevent Cancer and Chemotherapy-related Cognitive Impairment."
+            "matched_value": "UNKNOWN",
+            "excerpt": "Telehealth Program to Prevent Cancer and Chemotherapy-related Cognitive Impairment.",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05875402",
@@ -1537,9 +1537,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "XKDCT080 in GCC-positive Recurrent or Refractory Solid Tumors With Single Center, Single Arm, and Dose Escalation"
+            "matched_value": "UNKNOWN",
+            "excerpt": "XKDCT080 in GCC-positive Recurrent or Refractory Solid Tumors With Single Center, Single Arm, and Dose Escalation",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT05881902",
@@ -1547,9 +1547,9 @@
             "value": [
               "UNKNOWN"
             ],
-            "excerpt": "UNKNOWN",
-            "excerpt_tokens": null,
-            "title": "THE EFFECT OF CANCER EDUCATION ON WOMEN'S AWARENESS LEVELS AND THEIR BEHAVIORS ON SCREENINGS"
+            "matched_value": "UNKNOWN",
+            "excerpt": "THE EFFECT OF CANCER EDUCATION ON WOMEN'S AWARENESS LEVELS AND THEIR BEHAVIORS ON SCREENINGS",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -1585,9 +1585,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02053597",
@@ -1595,9 +1595,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "TRIal evalUating the Menstrual and Ovarian Function of Young Breast Cancer Patients Treated With a cycloPHosphamide-free Regimen"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "TRIal evalUating the Menstrual and Ovarian Function of Young Breast Cancer Patients Treated With a cycloPHosphamide-free Regimen",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02338531",
@@ -1605,9 +1605,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "Biomarker Research Study for PF-03084014 in cHEmoresistant Triple-negative Breast cAncer"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "Biomarker Research Study for PF-03084014 in cHEmoresistant Triple-negative Breast cAncer",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT02796066",
@@ -1615,9 +1615,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "TSN2898-201 Safety and Efficacy of TSN2898 in the Treatment of Acne Vulgaris"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "TSN2898-201 Safety and Efficacy of TSN2898 in the Treatment of Acne Vulgaris",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03517995",
@@ -1625,9 +1625,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "Randomized, Phase II Clinical Trial of Sulforaphane in Bladder Cancer Chemoprevention"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "Randomized, Phase II Clinical Trial of Sulforaphane in Bladder Cancer Chemoprevention",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT03990597",
@@ -1635,9 +1635,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "StrataXRT in Preventing Radiation Dermatitis in Pediatric Patients Undergoing Radiation Therapy to the Brain or Spinal Cord"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "StrataXRT in Preventing Radiation Dermatitis in Pediatric Patients Undergoing Radiation Therapy to the Brain or Spinal Cord",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04230031",
@@ -1645,9 +1645,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "Phase II Study of Daratumumab Pre-Mobilization and Post-ASCT in Multiple Myeloma"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "Phase II Study of Daratumumab Pre-Mobilization and Post-ASCT in Multiple Myeloma",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04546802",
@@ -1655,9 +1655,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "HepATocellular Cancer Hcv Therapy Study"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "HepATocellular Cancer Hcv Therapy Study",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT04685551",
@@ -1665,9 +1665,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "Improving Survivorship Among Minority Cancer Dyads"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "Improving Survivorship Among Minority Cancer Dyads",
+            "matched_tokens": null
           },
           {
             "nct_id": "NCT06377202",
@@ -1675,9 +1675,9 @@
             "value": [
               "WITHDRAWN"
             ],
-            "excerpt": "WITHDRAWN",
-            "excerpt_tokens": null,
-            "title": "Long-Term Follow-Up Safety Study of Subjects Treated with SynKIR-110 in Cancer Studies"
+            "matched_value": "WITHDRAWN",
+            "excerpt": "Long-Term Follow-Up Safety Study of Subjects Treated with SynKIR-110 in Cancer Studies",
+            "matched_tokens": null
           }
         ],
         "citations_truncated": true,
@@ -1770,9 +1770,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Electron Beam Intraoperative Radiation Therapy Following Chemoradiation in Patients With Pancreatic Cancer With Vascular Involvement"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Electron Beam Intraoperative Radiation Therapy Following Chemoradiation in Patients With Pancreatic Cancer With Vascular Involvement",
+      "matched_tokens": null
     },
     "NCT03747120": {
       "nct_id": "NCT03747120",
@@ -1780,9 +1780,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Neoadjuvant Her2-targeted Therapy and Immunotherapy With Pembrolizumab [IIT2018-04-MCARTHUR-NEOHP]"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Neoadjuvant Her2-targeted Therapy and Immunotherapy With Pembrolizumab [IIT2018-04-MCARTHUR-NEOHP]",
+      "matched_tokens": null
     },
     "NCT04146051": {
       "nct_id": "NCT04146051",
@@ -1790,9 +1790,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Descartes-08 CAR-T Cells in Generalized Myasthenia Gravis (MG)"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Descartes-08 CAR-T Cells in Generalized Myasthenia Gravis (MG)",
+      "matched_tokens": null
     },
     "NCT05055323": {
       "nct_id": "NCT05055323",
@@ -1800,9 +1800,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "A Study to Determine if the Drug, Pyrvinium Pamoate, is Safe and Tolerable in Patients With Pancreatic Cancer"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "A Study to Determine if the Drug, Pyrvinium Pamoate, is Safe and Tolerable in Patients With Pancreatic Cancer",
+      "matched_tokens": null
     },
     "NCT05123131": {
       "nct_id": "NCT05123131",
@@ -1810,9 +1810,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Isa-RVD Study in Patients With Newly Diagnosed Multiple Myeloma"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Isa-RVD Study in Patients With Newly Diagnosed Multiple Myeloma",
+      "matched_tokens": null
     },
     "NCT05164094": {
       "nct_id": "NCT05164094",
@@ -1820,9 +1820,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "A Study of an Epstein-Barr Virus (EBV) Candidate Vaccine, mRNA-1189, in 10- to 30-Year-Old Healthy Adolescents and Adults"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "A Study of an Epstein-Barr Virus (EBV) Candidate Vaccine, mRNA-1189, in 10- to 30-Year-Old Healthy Adolescents and Adults",
+      "matched_tokens": null
     },
     "NCT05566574": {
       "nct_id": "NCT05566574",
@@ -1830,9 +1830,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "A Study of RP-3500 in Combination With Standard Radiation Therapy in People With Solid Tumor Cancer"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "A Study of RP-3500 in Combination With Standard Radiation Therapy in People With Solid Tumor Cancer",
+      "matched_tokens": null
     },
     "NCT05598853": {
       "nct_id": "NCT05598853",
@@ -1840,9 +1840,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Intrathecal Double Checkpoint Inhibition"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Intrathecal Double Checkpoint Inhibition",
+      "matched_tokens": null
     },
     "NCT05712902": {
       "nct_id": "NCT05712902",
@@ -1850,9 +1850,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Sunvozertinib (DZD9008) in Pretreated Lung Cancer Patients with EGFR Exon20 Insertion Mutation (WU-KONG6)"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Sunvozertinib (DZD9008) in Pretreated Lung Cancer Patients with EGFR Exon20 Insertion Mutation (WU-KONG6)",
+      "matched_tokens": null
     },
     "NCT05931302": {
       "nct_id": "NCT05931302",
@@ -1860,9 +1860,9 @@
       "value": [
         "ACTIVE_NOT_RECRUITING"
       ],
-      "excerpt": "ACTIVE_NOT_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Initial Staging of Lobular Breast Carcinoma: Head to Head Comparison of 68Ga-FAPI-46 and 18F-FDG PET/CT"
+      "matched_value": "ACTIVE_NOT_RECRUITING",
+      "excerpt": "Initial Staging of Lobular Breast Carcinoma: Head to Head Comparison of 68Ga-FAPI-46 and 18F-FDG PET/CT",
+      "matched_tokens": null
     },
     "NCT00786058": {
       "nct_id": "NCT00786058",
@@ -1870,9 +1870,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "A Phase III Second Line Trial in Advanced Pancreatic Cancer CONKO 003"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "A Phase III Second Line Trial in Advanced Pancreatic Cancer CONKO 003",
+      "matched_tokens": null
     },
     "NCT00872950": {
       "nct_id": "NCT00872950",
@@ -1880,9 +1880,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "3,4-Diaminopyridine Use in Lambert-Eaton Myasthenic Syndrome(LEMS) and Congenital Myasthenic Syndromes (CMS)"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "3,4-Diaminopyridine Use in Lambert-Eaton Myasthenic Syndrome(LEMS) and Congenital Myasthenic Syndromes (CMS)",
+      "matched_tokens": null
     },
     "NCT02307812": {
       "nct_id": "NCT02307812",
@@ -1890,9 +1890,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Ramucirumab Use in Combination With Paclitaxel in Gastric or Gastroesophageal Junction Adenocarcinoma; Temporary Authorization for Use (ATU) in France"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Ramucirumab Use in Combination With Paclitaxel in Gastric or Gastroesophageal Junction Adenocarcinoma; Temporary Authorization for Use (ATU) in France",
+      "matched_tokens": null
     },
     "NCT02792725": {
       "nct_id": "NCT02792725",
@@ -1900,9 +1900,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Program to Provide Abemaciclib (LY2835219) for the Treatment of Metastatic Breast Cancer"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Expanded Access Program to Provide Abemaciclib (LY2835219) for the Treatment of Metastatic Breast Cancer",
+      "matched_tokens": null
     },
     "NCT03079687": {
       "nct_id": "NCT03079687",
@@ -1910,9 +1910,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Program for Olaparib Tablets as Maintenance Therapy in Patients With Ovarian, Fallopian Tube or Primary Peritoneal Cancer."
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Expanded Access Program for Olaparib Tablets as Maintenance Therapy in Patients With Ovarian, Fallopian Tube or Primary Peritoneal Cancer.",
+      "matched_tokens": null
     },
     "NCT03825484": {
       "nct_id": "NCT03825484",
@@ -1920,9 +1920,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Program (EAP) for Participants With Advanced Cancers and Fibroblast Growth Factor Receptor (FGFR) Genetic Alterations Who Have Exhausted All Treatment Options"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Expanded Access Program (EAP) for Participants With Advanced Cancers and Fibroblast Growth Factor Receptor (FGFR) Genetic Alterations Who Have Exhausted All Treatment Options",
+      "matched_tokens": null
     },
     "NCT04204928": {
       "nct_id": "NCT04204928",
@@ -1930,9 +1930,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Pre-Approval Access Program (PAAP) for Pralsetinib (BLU-667) in Patients With Unresectable or Metastatic NSCLC or MTC"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Pre-Approval Access Program (PAAP) for Pralsetinib (BLU-667) in Patients With Unresectable or Metastatic NSCLC or MTC",
+      "matched_tokens": null
     },
     "NCT04291937": {
       "nct_id": "NCT04291937",
@@ -1940,9 +1940,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "A Multicenter Expanded Access Treatment Protocol of Lurbinectedin in Previously Treated SCLC in the USA"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "A Multicenter Expanded Access Treatment Protocol of Lurbinectedin in Previously Treated SCLC in the USA",
+      "matched_tokens": null
     },
     "NCT04599712": {
       "nct_id": "NCT04599712",
@@ -1950,9 +1950,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Pre-Approval Access With Amivantamab (JNJ-61186372) in Participants With Metastatic Non-Small Cell Lung Cancer"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Pre-Approval Access With Amivantamab (JNJ-61186372) in Participants With Metastatic Non-Small Cell Lung Cancer",
+      "matched_tokens": null
     },
     "NCT04617002": {
       "nct_id": "NCT04617002",
@@ -1960,9 +1960,9 @@
       "value": [
         "APPROVED_FOR_MARKETING"
       ],
-      "excerpt": "APPROVED_FOR_MARKETING",
-      "excerpt_tokens": null,
-      "title": "Intermediate-size Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline Gliomas"
+      "matched_value": "APPROVED_FOR_MARKETING",
+      "excerpt": "Intermediate-size Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline Gliomas",
+      "matched_tokens": null
     },
     "NCT01216124": {
       "nct_id": "NCT01216124",
@@ -1970,9 +1970,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Efficacy and Safety Study of Neoadjuvant Chemotherapy for Local Advanced Triple Negative Breast Cancer Patients"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Efficacy and Safety Study of Neoadjuvant Chemotherapy for Local Advanced Triple Negative Breast Cancer Patients",
+      "matched_tokens": null
     },
     "NCT01317953": {
       "nct_id": "NCT01317953",
@@ -1980,9 +1980,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Oral Green Tea Extract for Small Cell Lung Cancer"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Oral Green Tea Extract for Small Cell Lung Cancer",
+      "matched_tokens": null
     },
     "NCT03763370": {
       "nct_id": "NCT03763370",
@@ -1990,9 +1990,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Managed Access Program for Combination Treatment With Belantamab Mafodotin in Multiple Myeloma"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Managed Access Program for Combination Treatment With Belantamab Mafodotin in Multiple Myeloma",
+      "matched_tokens": null
     },
     "NCT04809233": {
       "nct_id": "NCT04809233",
@@ -2000,9 +2000,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to Tipifarnib"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Expanded Access to Tipifarnib",
+      "matched_tokens": null
     },
     "NCT05038631": {
       "nct_id": "NCT05038631",
@@ -2010,9 +2010,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Managed Access Programs for LEE011, Ribociclib"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Managed Access Programs for LEE011, Ribociclib",
+      "matched_tokens": null
     },
     "NCT06370013": {
       "nct_id": "NCT06370013",
@@ -2020,9 +2020,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Rollover Study to Provide Continued Access to TT-00420 (Tinengotinib) for Subjects With Advanced Solid Tumors"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Rollover Study to Provide Continued Access to TT-00420 (Tinengotinib) for Subjects With Advanced Solid Tumors",
+      "matched_tokens": null
     },
     "NCT06751524": {
       "nct_id": "NCT06751524",
@@ -2030,9 +2030,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Program (EAP) Designed to Provide Access to Botensilimab and Balstilimab Before Regulatory Approval"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Expanded Access Program (EAP) Designed to Provide Access to Botensilimab and Balstilimab Before Regulatory Approval",
+      "matched_tokens": null
     },
     "NCT06761976": {
       "nct_id": "NCT06761976",
@@ -2040,9 +2040,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to Provide Sevabertinib (BAY 2927088) for the Treatment of Locally Advanced or Metastatic NSCLC With HER2 Mutation"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Expanded Access to Provide Sevabertinib (BAY 2927088) for the Treatment of Locally Advanced or Metastatic NSCLC With HER2 Mutation",
+      "matched_tokens": null
     },
     "NCT07535359": {
       "nct_id": "NCT07535359",
@@ -2050,9 +2050,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Medical Access Program for Ifinatamab Deruxtecan in 3L+ Pretreated Extensive-stage Small Cell Lung Cancer"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Medical Access Program for Ifinatamab Deruxtecan in 3L+ Pretreated Extensive-stage Small Cell Lung Cancer",
+      "matched_tokens": null
     },
     "NCT07689942": {
       "nct_id": "NCT07689942",
@@ -2060,9 +2060,9 @@
       "value": [
         "AVAILABLE"
       ],
-      "excerpt": "AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to 0.5 mg eRapa for Familial Adenomatous Polyposis"
+      "matched_value": "AVAILABLE",
+      "excerpt": "Expanded Access to 0.5 mg eRapa for Familial Adenomatous Polyposis",
+      "matched_tokens": null
     },
     "NCT00029029": {
       "nct_id": "NCT00029029",
@@ -2070,9 +2070,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Radiofrequency Ablation in Relieving Pain in Patients With Bones Metastases"
+      "matched_value": "COMPLETED",
+      "excerpt": "Radiofrequency Ablation in Relieving Pain in Patients With Bones Metastases",
+      "matched_tokens": null
     },
     "NCT00539253": {
       "nct_id": "NCT00539253",
@@ -2080,9 +2080,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Assessment of Liver Cancer Response to TACE Using MultiHance-Enhanced MRI."
+      "matched_value": "COMPLETED",
+      "excerpt": "Assessment of Liver Cancer Response to TACE Using MultiHance-Enhanced MRI.",
+      "matched_tokens": null
     },
     "NCT00573729": {
       "nct_id": "NCT00573729",
@@ -2090,9 +2090,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Pulsed Dye Laser Treatment of Port Wine Stain Birthmarks: Comparison of 577 nm Versus 595 nm Wavelengths"
+      "matched_value": "COMPLETED",
+      "excerpt": "Pulsed Dye Laser Treatment of Port Wine Stain Birthmarks: Comparison of 577 nm Versus 595 nm Wavelengths",
+      "matched_tokens": null
     },
     "NCT00747253": {
       "nct_id": "NCT00747253",
@@ -2100,9 +2100,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Monteris AutoLITT™ FIM Safety Trial for Recurrent/Progressive Brain Tumors"
+      "matched_value": "COMPLETED",
+      "excerpt": "Monteris AutoLITT™ FIM Safety Trial for Recurrent/Progressive Brain Tumors",
+      "matched_tokens": null
     },
     "NCT01160302": {
       "nct_id": "NCT01160302",
@@ -2110,9 +2110,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Curcumin Biomarker Trial in Head and Neck Cancer"
+      "matched_value": "COMPLETED",
+      "excerpt": "Curcumin Biomarker Trial in Head and Neck Cancer",
+      "matched_tokens": null
     },
     "NCT03518853": {
       "nct_id": "NCT03518853",
@@ -2120,9 +2120,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Short Course Radiotherapy for Localized Prostate Cancer"
+      "matched_value": "COMPLETED",
+      "excerpt": "Short Course Radiotherapy for Localized Prostate Cancer",
+      "matched_tokens": null
     },
     "NCT03986437": {
       "nct_id": "NCT03986437",
@@ -2130,9 +2130,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "A Prospective Study to Collect Images in Patients Treated With Iodine-131 as Part of a European Research Project in Radiation Protection."
+      "matched_value": "COMPLETED",
+      "excerpt": "A Prospective Study to Collect Images in Patients Treated With Iodine-131 as Part of a European Research Project in Radiation Protection.",
+      "matched_tokens": null
     },
     "NCT05084729": {
       "nct_id": "NCT05084729",
@@ -2140,9 +2140,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "CONFIDENCE Registry"
+      "matched_value": "COMPLETED",
+      "excerpt": "CONFIDENCE Registry",
+      "matched_tokens": null
     },
     "NCT05615129": {
       "nct_id": "NCT05615129",
@@ -2150,9 +2150,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Sequence and Time-of-day Infusion of immunoCHemotherapy Affect Response in Oesophageal Cancer in the NeOadjuvant Setting"
+      "matched_value": "COMPLETED",
+      "excerpt": "Sequence and Time-of-day Infusion of immunoCHemotherapy Affect Response in Oesophageal Cancer in the NeOadjuvant Setting",
+      "matched_tokens": null
     },
     "NCT06386653": {
       "nct_id": "NCT06386653",
@@ -2160,9 +2160,9 @@
       "value": [
         "COMPLETED"
       ],
-      "excerpt": "COMPLETED",
-      "excerpt_tokens": null,
-      "title": "Molecular Imaging of EpCAM Receptors Using [123I]I-DARPIN-Ec1"
+      "matched_value": "COMPLETED",
+      "excerpt": "Molecular Imaging of EpCAM Receptors Using [123I]I-DARPIN-Ec1",
+      "matched_tokens": null
     },
     "NCT02471170": {
       "nct_id": "NCT02471170",
@@ -2170,9 +2170,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Protocol to Permit the Acquisition of Circulating Tumor Material in Pancreatic Diseases"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Protocol to Permit the Acquisition of Circulating Tumor Material in Pancreatic Diseases",
+      "matched_tokens": null
     },
     "NCT06227962": {
       "nct_id": "NCT06227962",
@@ -2180,9 +2180,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Cognitive Functioning and Health Related Quality of Life in Retinoblastoma Survivors"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Cognitive Functioning and Health Related Quality of Life in Retinoblastoma Survivors",
+      "matched_tokens": null
     },
     "NCT06261190": {
       "nct_id": "NCT06261190",
@@ -2190,9 +2190,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Active Surveillance for Low-risk Papillary Thyroid Carcinoma"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Active Surveillance for Low-risk Papillary Thyroid Carcinoma",
+      "matched_tokens": null
     },
     "NCT06531135": {
       "nct_id": "NCT06531135",
@@ -2200,9 +2200,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "A RCT of Psychosocial Interventions Facilitating Positive Psychological Adaptation in Breast Cancer"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "A RCT of Psychosocial Interventions Facilitating Positive Psychological Adaptation in Breast Cancer",
+      "matched_tokens": null
     },
     "NCT06618300": {
       "nct_id": "NCT06618300",
@@ -2210,9 +2210,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Streamlined Resin Y90 Radiation Segmentectomy for Small HCC"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Streamlined Resin Y90 Radiation Segmentectomy for Small HCC",
+      "matched_tokens": null
     },
     "NCT06812767": {
       "nct_id": "NCT06812767",
@@ -2220,9 +2220,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Risk Factors at Chronic Non-communicable Diseases in People of Working Age"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Risk Factors at Chronic Non-communicable Diseases in People of Working Age",
+      "matched_tokens": null
     },
     "NCT07528079": {
       "nct_id": "NCT07528079",
@@ -2230,9 +2230,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Organoid-based Sensitivity-guided Chemotherapy for Advanced / Refractory Pediatric Tumors"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Organoid-based Sensitivity-guided Chemotherapy for Advanced / Refractory Pediatric Tumors",
+      "matched_tokens": null
     },
     "NCT07575230": {
       "nct_id": "NCT07575230",
@@ -2240,9 +2240,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Suzetrigine vs Norco-postoperative Mohs Pain"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Suzetrigine vs Norco-postoperative Mohs Pain",
+      "matched_tokens": null
     },
     "NCT07644845": {
       "nct_id": "NCT07644845",
@@ -2250,9 +2250,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "MammoVerse: Clinicians Focus Group"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "MammoVerse: Clinicians Focus Group",
+      "matched_tokens": null
     },
     "NCT07651176": {
       "nct_id": "NCT07651176",
@@ -2260,9 +2260,9 @@
       "value": [
         "ENROLLING_BY_INVITATION"
       ],
-      "excerpt": "ENROLLING_BY_INVITATION",
-      "excerpt_tokens": null,
-      "title": "Comparing the Efficacy of the LDA, LHAA, and DA Regimens in Young Adults With Low-Risk Acute Myeloid Leukemia Eligible for Intensive Chemotherapy"
+      "matched_value": "ENROLLING_BY_INVITATION",
+      "excerpt": "Comparing the Efficacy of the LDA, LHAA, and DA Regimens in Young Adults With Low-Risk Acute Myeloid Leukemia Eligible for Intensive Chemotherapy",
+      "matched_tokens": null
     },
     "NCT05095467": {
       "nct_id": "NCT05095467",
@@ -2270,9 +2270,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "HIPEC-AS in Patients With Peritoneal Metastasis of the Stomach or Esophagogastric Junction"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "HIPEC-AS in Patients With Peritoneal Metastasis of the Stomach or Esophagogastric Junction",
+      "matched_tokens": null
     },
     "NCT06495853": {
       "nct_id": "NCT06495853",
@@ -2280,9 +2280,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Prospective Phase II Study on Continuous Circumferential Reinforcement of Laparoscopic Rectal Anastomosis to Prevent Complications"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Prospective Phase II Study on Continuous Circumferential Reinforcement of Laparoscopic Rectal Anastomosis to Prevent Complications",
+      "matched_tokens": null
     },
     "NCT06647602": {
       "nct_id": "NCT06647602",
@@ -2290,9 +2290,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Thyroid Hormone Replacement After Radio Iodine: Value and Efficacy"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Thyroid Hormone Replacement After Radio Iodine: Value and Efficacy",
+      "matched_tokens": null
     },
     "NCT06850402": {
       "nct_id": "NCT06850402",
@@ -2300,9 +2300,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Evaluation of a Novel Optical Microscope With a Deep Depth of Field (DeepDOF) to Provide Histologic-quality Images on Cervical Biopsies and Loop Electrosurgical Excision Procedure (LEEP) Specimens at the Point-of-care"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Evaluation of a Novel Optical Microscope With a Deep Depth of Field (DeepDOF) to Provide Histologic-quality Images on Cervical Biopsies and Loop Electrosurgical Excision Procedure (LEEP) Specimens at the Point-of-care",
+      "matched_tokens": null
     },
     "NCT07035600": {
       "nct_id": "NCT07035600",
@@ -2310,9 +2310,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Walking and Sitting Difficulties After Rectal Cancer Surgery"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Walking and Sitting Difficulties After Rectal Cancer Surgery",
+      "matched_tokens": null
     },
     "NCT07319481": {
       "nct_id": "NCT07319481",
@@ -2320,9 +2320,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Preliminary Effectiveness and Feasibility of Transcutaneous Acupoints Electrical Stimulation on Chemotherapy-induced Peripheral Neuropathy Among Children With Acute Lymphoblastic Leukemia"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Preliminary Effectiveness and Feasibility of Transcutaneous Acupoints Electrical Stimulation on Chemotherapy-induced Peripheral Neuropathy Among Children With Acute Lymphoblastic Leukemia",
+      "matched_tokens": null
     },
     "NCT07490002": {
       "nct_id": "NCT07490002",
@@ -2330,9 +2330,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Neoadjuvant Therapy With Iparomlimab and Tuvonralimab, Lenvatinib and Chemotherapy in Resectable ESCC"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Neoadjuvant Therapy With Iparomlimab and Tuvonralimab, Lenvatinib and Chemotherapy in Resectable ESCC",
+      "matched_tokens": null
     },
     "NCT07515729": {
       "nct_id": "NCT07515729",
@@ -2340,9 +2340,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Raising Awareness of Colorectal Screening in American Indian Communities"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Raising Awareness of Colorectal Screening in American Indian Communities",
+      "matched_tokens": null
     },
     "NCT07593482": {
       "nct_id": "NCT07593482",
@@ -2350,9 +2350,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Bendamustine Versus Fludarabine/Cyclophosphamide for Lymphodepletion in Chimeric Antigen Receptor T-cell Immunotherapy (CAR-T): a Randomized Trial."
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Bendamustine Versus Fludarabine/Cyclophosphamide for Lymphodepletion in Chimeric Antigen Receptor T-cell Immunotherapy (CAR-T): a Randomized Trial.",
+      "matched_tokens": null
     },
     "NCT07634653": {
       "nct_id": "NCT07634653",
@@ -2360,9 +2360,9 @@
       "value": [
         "NOT_YET_RECRUITING"
       ],
-      "excerpt": "NOT_YET_RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Strength Training Exercise in Pediatric Acute Lymphoblastic Leukemia and Lymphoblastic Lymphoma (STEP-ALL)"
+      "matched_value": "NOT_YET_RECRUITING",
+      "excerpt": "Strength Training Exercise in Pediatric Acute Lymphoblastic Leukemia and Lymphoblastic Lymphoma (STEP-ALL)",
+      "matched_tokens": null
     },
     "NCT00063791": {
       "nct_id": "NCT00063791",
@@ -2370,9 +2370,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "A Study to Assess Two Different Strategies of Combining Dexamethasone and VELCADE"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "A Study to Assess Two Different Strategies of Combining Dexamethasone and VELCADE",
+      "matched_tokens": null
     },
     "NCT00655252": {
       "nct_id": "NCT00655252",
@@ -2380,9 +2380,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Study of RAD001 in Metastatic Renal Cell Cancer Patients Who Are Intolerant of or Who Have Failed Despite Prior Vascular Endothelial Growth Factor Therapy"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Expanded Access Study of RAD001 in Metastatic Renal Cell Cancer Patients Who Are Intolerant of or Who Have Failed Despite Prior Vascular Endothelial Growth Factor Therapy",
+      "matched_tokens": null
     },
     "NCT01005537": {
       "nct_id": "NCT01005537",
@@ -2390,9 +2390,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Cyclophosphamide, Autologous Lymphocytes, and Aldesleukin in Treating Patients With Metastatic Melanoma"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Cyclophosphamide, Autologous Lymphocytes, and Aldesleukin in Treating Patients With Metastatic Melanoma",
+      "matched_tokens": null
     },
     "NCT03085186": {
       "nct_id": "NCT03085186",
@@ -2400,9 +2400,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Treatment With Crizotinib Single Patient Expanded Access IND 134375"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Treatment With Crizotinib Single Patient Expanded Access IND 134375",
+      "matched_tokens": null
     },
     "NCT03134131": {
       "nct_id": "NCT03134131",
@@ -2410,9 +2410,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline High Grade Gliomas"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Expanded Access to ONC201 for Patients With H3 K27M-mutant and/or Midline High Grade Gliomas",
+      "matched_tokens": null
     },
     "NCT03178071": {
       "nct_id": "NCT03178071",
@@ -2420,9 +2420,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access For Lorlatinib For Patients With Non Small Cell Lung Cancer ALK Positive or ROS1 Positive"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Expanded Access For Lorlatinib For Patients With Non Small Cell Lung Cancer ALK Positive or ROS1 Positive",
+      "matched_tokens": null
     },
     "NCT04559555": {
       "nct_id": "NCT04559555",
@@ -2430,9 +2430,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "MAP to Provide Access to Nilotinib, for Patients With Relapsed or Refractory Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "MAP to Provide Access to Nilotinib, for Patients With Relapsed or Refractory Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia",
+      "matched_tokens": null
     },
     "NCT05518838": {
       "nct_id": "NCT05518838",
@@ -2440,9 +2440,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to OKN-007 for Patients With Diffuse Midline Glioma, H3 K27-altered"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Expanded Access to OKN-007 for Patients With Diffuse Midline Glioma, H3 K27-altered",
+      "matched_tokens": null
     },
     "NCT05692050": {
       "nct_id": "NCT05692050",
@@ -2450,9 +2450,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to Epcoritamab"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "Expanded Access to Epcoritamab",
+      "matched_tokens": null
     },
     "NCT05941637": {
       "nct_id": "NCT05941637",
@@ -2460,9 +2460,9 @@
       "value": [
         "NO_LONGER_AVAILABLE"
       ],
-      "excerpt": "NO_LONGER_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "An Expanded Access Program to Axitinib is Available for Patients With Advanced Forms of Kidney Cancer (Ductal; Papillary; Chromophobic; Oncocytic) With Mutations in VHL, PBRM1 / BAP1, SETD2, VEGF)"
+      "matched_value": "NO_LONGER_AVAILABLE",
+      "excerpt": "An Expanded Access Program to Axitinib is Available for Patients With Advanced Forms of Kidney Cancer (Ductal; Papillary; Chromophobic; Oncocytic) With Mutations in VHL, PBRM1 / BAP1, SETD2, VEGF)",
+      "matched_tokens": null
     },
     "NCT04795882": {
       "nct_id": "NCT04795882",
@@ -2470,9 +2470,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "A New Study Evaluating the Activity of Modular CAR T for mYeloma"
+      "matched_value": "RECRUITING",
+      "excerpt": "A New Study Evaluating the Activity of Modular CAR T for mYeloma",
+      "matched_tokens": null
     },
     "NCT05338931": {
       "nct_id": "NCT05338931",
@@ -2480,9 +2480,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Safety, Tolerability, and Efficacy of AT101 in Patients With Relapsed or Refractory B-cell Non-Hodgkin's Lymphoma"
+      "matched_value": "RECRUITING",
+      "excerpt": "Safety, Tolerability, and Efficacy of AT101 in Patients With Relapsed or Refractory B-cell Non-Hodgkin's Lymphoma",
+      "matched_tokens": null
     },
     "NCT05451602": {
       "nct_id": "NCT05451602",
@@ -2490,9 +2490,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "HEC169096 in Participants With Advanced Solid Tumors"
+      "matched_value": "RECRUITING",
+      "excerpt": "HEC169096 in Participants With Advanced Solid Tumors",
+      "matched_tokens": null
     },
     "NCT06129253": {
       "nct_id": "NCT06129253",
@@ -2500,9 +2500,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Global Burden Estimation of Human Papillomavirus (GLOBE-HPV)"
+      "matched_value": "RECRUITING",
+      "excerpt": "Global Burden Estimation of Human Papillomavirus (GLOBE-HPV)",
+      "matched_tokens": null
     },
     "NCT06142929": {
       "nct_id": "NCT06142929",
@@ -2510,9 +2510,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Micronerves in Dupuytren and the Impact of Its Dissection on Recurrence"
+      "matched_value": "RECRUITING",
+      "excerpt": "Micronerves in Dupuytren and the Impact of Its Dissection on Recurrence",
+      "matched_tokens": null
     },
     "NCT06353529": {
       "nct_id": "NCT06353529",
@@ -2520,9 +2520,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Postop Pain Management in Pituitary Tumour Patients"
+      "matched_value": "RECRUITING",
+      "excerpt": "Postop Pain Management in Pituitary Tumour Patients",
+      "matched_tokens": null
     },
     "NCT06452602": {
       "nct_id": "NCT06452602",
@@ -2530,9 +2530,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Induction Immunochemotherapy Followed by Concurrent Chemoradiotherapy in Patients With ESCC."
+      "matched_value": "RECRUITING",
+      "excerpt": "Induction Immunochemotherapy Followed by Concurrent Chemoradiotherapy in Patients With ESCC.",
+      "matched_tokens": null
     },
     "NCT06534437": {
       "nct_id": "NCT06534437",
@@ -2540,9 +2540,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "MEN1703 (SEL24) to Treat Relapsed or Refractory Aggressive B-cell Non-Hodgkin Lymphoma (JASPIS-01)"
+      "matched_value": "RECRUITING",
+      "excerpt": "MEN1703 (SEL24) to Treat Relapsed or Refractory Aggressive B-cell Non-Hodgkin Lymphoma (JASPIS-01)",
+      "matched_tokens": null
     },
     "NCT06664229": {
       "nct_id": "NCT06664229",
@@ -2550,9 +2550,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Development of Pressure Sensor Based Dementia and Fall Prevention Program for Older Adults"
+      "matched_value": "RECRUITING",
+      "excerpt": "Development of Pressure Sensor Based Dementia and Fall Prevention Program for Older Adults",
+      "matched_tokens": null
     },
     "NCT06792253": {
       "nct_id": "NCT06792253",
@@ -2560,9 +2560,9 @@
       "value": [
         "RECRUITING"
       ],
-      "excerpt": "RECRUITING",
-      "excerpt_tokens": null,
-      "title": "Study Comparing BEBT-908 Combined With R to SOC for the Treatment of Relapsed/Refractory Diffuse Large B-Cell Lymphoma"
+      "matched_value": "RECRUITING",
+      "excerpt": "Study Comparing BEBT-908 Combined With R to SOC for the Treatment of Relapsed/Refractory Diffuse Large B-Cell Lymphoma",
+      "matched_tokens": null
     },
     "NCT01122342": {
       "nct_id": "NCT01122342",
@@ -2570,9 +2570,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Vaginal Testosterone Cream For Atrophic Vaginitis in Women Taking Aromatase Inhibitors for Breast Cancer."
+      "matched_value": "SUSPENDED",
+      "excerpt": "Vaginal Testosterone Cream For Atrophic Vaginitis in Women Taking Aromatase Inhibitors for Breast Cancer.",
+      "matched_tokens": null
     },
     "NCT03081897": {
       "nct_id": "NCT03081897",
@@ -2580,9 +2580,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Regional Anaesthesia and Substance P in Head and Neck Cancer"
+      "matched_value": "SUSPENDED",
+      "excerpt": "Regional Anaesthesia and Substance P in Head and Neck Cancer",
+      "matched_tokens": null
     },
     "NCT03253575": {
       "nct_id": "NCT03253575",
@@ -2590,9 +2590,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "CANscriptTM Clinical Outcomes in a Real-World Setting (ANCERS)-2"
+      "matched_value": "SUSPENDED",
+      "excerpt": "CANscriptTM Clinical Outcomes in a Real-World Setting (ANCERS)-2",
+      "matched_tokens": null
     },
     "NCT03906565": {
       "nct_id": "NCT03906565",
@@ -2600,9 +2600,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Clinical Study of Utidelone Injection in Patients With Advanced or Metastatic Colorectal Cancer"
+      "matched_value": "SUSPENDED",
+      "excerpt": "Clinical Study of Utidelone Injection in Patients With Advanced or Metastatic Colorectal Cancer",
+      "matched_tokens": null
     },
     "NCT04031469": {
       "nct_id": "NCT04031469",
@@ -2610,9 +2610,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "A Non-Interventional Pilot Study to Explore the Role of Gut Flora in Disease"
+      "matched_value": "SUSPENDED",
+      "excerpt": "A Non-Interventional Pilot Study to Explore the Role of Gut Flora in Disease",
+      "matched_tokens": null
     },
     "NCT04714983": {
       "nct_id": "NCT04714983",
@@ -2620,9 +2620,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "DNX-2440 for Resectable Colorectal Liver Metastasis"
+      "matched_value": "SUSPENDED",
+      "excerpt": "DNX-2440 for Resectable Colorectal Liver Metastasis",
+      "matched_tokens": null
     },
     "NCT04981834": {
       "nct_id": "NCT04981834",
@@ -2630,9 +2630,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Robot-Assisted Radical Prostatectomy With or Without Vesicopexy in Patients With Prostate Cancer"
+      "matched_value": "SUSPENDED",
+      "excerpt": "Robot-Assisted Radical Prostatectomy With or Without Vesicopexy in Patients With Prostate Cancer",
+      "matched_tokens": null
     },
     "NCT06575686": {
       "nct_id": "NCT06575686",
@@ -2640,9 +2640,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Epcoritamab and Tazemetostat for the Treatment of Relapsed or Refractory Grade I-IIIa Follicular Lymphoma"
+      "matched_value": "SUSPENDED",
+      "excerpt": "Epcoritamab and Tazemetostat for the Treatment of Relapsed or Refractory Grade I-IIIa Follicular Lymphoma",
+      "matched_tokens": null
     },
     "NCT06581211": {
       "nct_id": "NCT06581211",
@@ -2650,9 +2650,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "Aromatherapy Oil Associated for Managing Anxiety and Pain During Bone Marrow Biopsy Procedures"
+      "matched_value": "SUSPENDED",
+      "excerpt": "Aromatherapy Oil Associated for Managing Anxiety and Pain During Bone Marrow Biopsy Procedures",
+      "matched_tokens": null
     },
     "NCT07353229": {
       "nct_id": "NCT07353229",
@@ -2660,9 +2660,9 @@
       "value": [
         "SUSPENDED"
       ],
-      "excerpt": "SUSPENDED",
-      "excerpt_tokens": null,
-      "title": "68Ga-Dotatate PET and MRI Guided Radiation Dose Escalation for High Risk Meningioma"
+      "matched_value": "SUSPENDED",
+      "excerpt": "68Ga-Dotatate PET and MRI Guided Radiation Dose Escalation for High Risk Meningioma",
+      "matched_tokens": null
     },
     "NCT01297101": {
       "nct_id": "NCT01297101",
@@ -2670,9 +2670,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Evaluating Efficacy and Safety of Erlotinib Versus Gemcitabine Plus Cisplatin as Neoadjuvant Chemotherapy"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Evaluating Efficacy and Safety of Erlotinib Versus Gemcitabine Plus Cisplatin as Neoadjuvant Chemotherapy",
+      "matched_tokens": null
     },
     "NCT02011880": {
       "nct_id": "NCT02011880",
@@ -2680,9 +2680,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Standardization Research of TCM Syndrome Differentiation and Treatment on Advanced Breast Cancer"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Standardization Research of TCM Syndrome Differentiation and Treatment on Advanced Breast Cancer",
+      "matched_tokens": null
     },
     "NCT03842865": {
       "nct_id": "NCT03842865",
@@ -2690,9 +2690,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access of Vigil in Solid Tumors"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Expanded Access of Vigil in Solid Tumors",
+      "matched_tokens": null
     },
     "NCT04830202": {
       "nct_id": "NCT04830202",
@@ -2700,9 +2700,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access to Telisotuzumab Vedotin"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Expanded Access to Telisotuzumab Vedotin",
+      "matched_tokens": null
     },
     "NCT05274204": {
       "nct_id": "NCT05274204",
@@ -2710,9 +2710,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Individual Patient Expanded Access to CA102N"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Individual Patient Expanded Access to CA102N",
+      "matched_tokens": null
     },
     "NCT05389514": {
       "nct_id": "NCT05389514",
@@ -2720,9 +2720,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Intermediate-size IND for Treatment of KRAS G12V-mutant Tumors"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Intermediate-size IND for Treatment of KRAS G12V-mutant Tumors",
+      "matched_tokens": null
     },
     "NCT06033001": {
       "nct_id": "NCT06033001",
@@ -2730,9 +2730,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Expanded Access Treatment with [Lu-177]-PNT2002 for Adult Patients with Prostate-Specific Membrane Antigen (PSMA)-Positive Metastatic Castration-Resistant Prostate Cancer (mCRPC)"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Expanded Access Treatment with [Lu-177]-PNT2002 for Adult Patients with Prostate-Specific Membrane Antigen (PSMA)-Positive Metastatic Castration-Resistant Prostate Cancer (mCRPC)",
+      "matched_tokens": null
     },
     "NCT07319910": {
       "nct_id": "NCT07319910",
@@ -2740,9 +2740,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Continued Access Program for Tumor Treating Fields (TTFields) Used With Chemotherapy (Gemcitabine and Nab-Paclitaxel) in Adults With Locally Advanced Pancreatic Cancer (PANOVA-3CA)"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Continued Access Program for Tumor Treating Fields (TTFields) Used With Chemotherapy (Gemcitabine and Nab-Paclitaxel) in Adults With Locally Advanced Pancreatic Cancer (PANOVA-3CA)",
+      "matched_tokens": null
     },
     "NCT07346105": {
       "nct_id": "NCT07346105",
@@ -2750,9 +2750,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Orca-T Expanded Access Program Study for Patients With Advanced Hematologic Malignancies"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Orca-T Expanded Access Program Study for Patients With Advanced Hematologic Malignancies",
+      "matched_tokens": null
     },
     "NCT07614048": {
       "nct_id": "NCT07614048",
@@ -2760,9 +2760,9 @@
       "value": [
         "TEMPORARILY_NOT_AVAILABLE"
       ],
-      "excerpt": "TEMPORARILY_NOT_AVAILABLE",
-      "excerpt_tokens": null,
-      "title": "Intermediate-size IND for Treatment of Patients With Advanced Cancer Using T Cells Engineered to Express TCR Targeting Mutant KRAS"
+      "matched_value": "TEMPORARILY_NOT_AVAILABLE",
+      "excerpt": "Intermediate-size IND for Treatment of Patients With Advanced Cancer Using T Cells Engineered to Express TCR Targeting Mutant KRAS",
+      "matched_tokens": null
     },
     "NCT00088829": {
       "nct_id": "NCT00088829",
@@ -2770,9 +2770,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Genetic Testing in Predicting Response to Paclitaxel in Women With Breast Cancer"
+      "matched_value": "TERMINATED",
+      "excerpt": "Genetic Testing in Predicting Response to Paclitaxel in Women With Breast Cancer",
+      "matched_tokens": null
     },
     "NCT00314353": {
       "nct_id": "NCT00314353",
@@ -2780,9 +2780,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Study of Bevacizumab Combined With Capecitabine and Either Oxaliplatin or Irinotecan as First Course of Treatment for Patients With Colorectal Cancer That Has Spread Beyond the Colon"
+      "matched_value": "TERMINATED",
+      "excerpt": "Study of Bevacizumab Combined With Capecitabine and Either Oxaliplatin or Irinotecan as First Course of Treatment for Patients With Colorectal Cancer That Has Spread Beyond the Colon",
+      "matched_tokens": null
     },
     "NCT00369629": {
       "nct_id": "NCT00369629",
@@ -2790,9 +2790,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Gemcitabine and Pemetrexed Disodium in Treating Patients With Advanced Mycosis Fungoides or Sézary Syndrome"
+      "matched_value": "TERMINATED",
+      "excerpt": "Gemcitabine and Pemetrexed Disodium in Treating Patients With Advanced Mycosis Fungoides or Sézary Syndrome",
+      "matched_tokens": null
     },
     "NCT02512237": {
       "nct_id": "NCT02512237",
@@ -2800,9 +2800,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "A Dose-escalation Study of ARX788, IV Administered in Subjects With Advanced Cancers With HER2 Expression"
+      "matched_value": "TERMINATED",
+      "excerpt": "A Dose-escalation Study of ARX788, IV Administered in Subjects With Advanced Cancers With HER2 Expression",
+      "matched_tokens": null
     },
     "NCT02900651": {
       "nct_id": "NCT02900651",
@@ -2810,9 +2810,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Safety and Efficacy of MAK683 in Adult Patients With Advanced Malignancies"
+      "matched_value": "TERMINATED",
+      "excerpt": "Safety and Efficacy of MAK683 in Adult Patients With Advanced Malignancies",
+      "matched_tokens": null
     },
     "NCT03166631": {
       "nct_id": "NCT03166631",
@@ -2820,9 +2820,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "A Trial to Find the Safe Dose for BI 891065 Alone and in Combination With BI 754091 in Patients With Incurable Tumours or Tumours That Have Spread"
+      "matched_value": "TERMINATED",
+      "excerpt": "A Trial to Find the Safe Dose for BI 891065 Alone and in Combination With BI 754091 in Patients With Incurable Tumours or Tumours That Have Spread",
+      "matched_tokens": null
     },
     "NCT03552029": {
       "nct_id": "NCT03552029",
@@ -2830,9 +2830,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Milademetan Plus Quizartinib Combination Study in FLT3-ITD Mutant Acute Myeloid Leukemia (AML)"
+      "matched_value": "TERMINATED",
+      "excerpt": "Milademetan Plus Quizartinib Combination Study in FLT3-ITD Mutant Acute Myeloid Leukemia (AML)",
+      "matched_tokens": null
     },
     "NCT03963102": {
       "nct_id": "NCT03963102",
@@ -2840,9 +2840,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Duration of Ameluz Application in Acral Actinic Keratoses Response"
+      "matched_value": "TERMINATED",
+      "excerpt": "Duration of Ameluz Application in Acral Actinic Keratoses Response",
+      "matched_tokens": null
     },
     "NCT04030429": {
       "nct_id": "NCT04030429",
@@ -2850,9 +2850,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Crizotinib in c-MET Mutation Metastatic/Recurrent/Persistent Endometrial Cancer"
+      "matched_value": "TERMINATED",
+      "excerpt": "Crizotinib in c-MET Mutation Metastatic/Recurrent/Persistent Endometrial Cancer",
+      "matched_tokens": null
     },
     "NCT04936451": {
       "nct_id": "NCT04936451",
@@ -2860,9 +2860,9 @@
       "value": [
         "TERMINATED"
       ],
-      "excerpt": "TERMINATED",
-      "excerpt_tokens": null,
-      "title": "Electrotherapy in the Management of Myofascial Syndrome"
+      "matched_value": "TERMINATED",
+      "excerpt": "Electrotherapy in the Management of Myofascial Syndrome",
+      "matched_tokens": null
     },
     "NCT00921037": {
       "nct_id": "NCT00921037",
@@ -2870,9 +2870,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "First Clinical Study of Erbium - Yttrium Aluminium Garnet (YAG) Laser Vaporization of Cutaneous Neurofibromas"
+      "matched_value": "UNKNOWN",
+      "excerpt": "First Clinical Study of Erbium - Yttrium Aluminium Garnet (YAG) Laser Vaporization of Cutaneous Neurofibromas",
+      "matched_tokens": null
     },
     "NCT03260231": {
       "nct_id": "NCT03260231",
@@ -2880,9 +2880,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "Dietary Milled Seed Mix in Patients With Non-Hodgkin Lymphoma"
+      "matched_value": "UNKNOWN",
+      "excerpt": "Dietary Milled Seed Mix in Patients With Non-Hodgkin Lymphoma",
+      "matched_tokens": null
     },
     "NCT03776331": {
       "nct_id": "NCT03776331",
@@ -2890,9 +2890,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "Vascular Functions in Myeloma Patients During Anti-tumor Therapy"
+      "matched_value": "UNKNOWN",
+      "excerpt": "Vascular Functions in Myeloma Patients During Anti-tumor Therapy",
+      "matched_tokens": null
     },
     "NCT03792529": {
       "nct_id": "NCT03792529",
@@ -2900,9 +2900,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "Prognosis and Targeted Therapy Related Molecular Screening Program for Patients of Breast Cancer in China"
+      "matched_value": "UNKNOWN",
+      "excerpt": "Prognosis and Targeted Therapy Related Molecular Screening Program for Patients of Breast Cancer in China",
+      "matched_tokens": null
     },
     "NCT04241731": {
       "nct_id": "NCT04241731",
@@ -2910,9 +2910,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "A Study of Cetuximab Plus Raltitrexed for Maintenance Treatment in Advanced Colorectal Cancer"
+      "matched_value": "UNKNOWN",
+      "excerpt": "A Study of Cetuximab Plus Raltitrexed for Maintenance Treatment in Advanced Colorectal Cancer",
+      "matched_tokens": null
     },
     "NCT04273451": {
       "nct_id": "NCT04273451",
@@ -2920,9 +2920,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "RadioPathomics Artificial Intelligence Model to Predict Tumor Regression Grading in Locally Advanced Rectal Cancer"
+      "matched_value": "UNKNOWN",
+      "excerpt": "RadioPathomics Artificial Intelligence Model to Predict Tumor Regression Grading in Locally Advanced Rectal Cancer",
+      "matched_tokens": null
     },
     "NCT04500431": {
       "nct_id": "NCT04500431",
@@ -2930,9 +2930,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "Clinical Study to Evaluate the Safety and Feasibility of spCART-269 Injection in the Treatment of MM"
+      "matched_value": "UNKNOWN",
+      "excerpt": "Clinical Study to Evaluate the Safety and Feasibility of spCART-269 Injection in the Treatment of MM",
+      "matched_tokens": null
     },
     "NCT04783402": {
       "nct_id": "NCT04783402",
@@ -2940,9 +2940,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "Telehealth Program to Prevent Cancer and Chemotherapy-related Cognitive Impairment."
+      "matched_value": "UNKNOWN",
+      "excerpt": "Telehealth Program to Prevent Cancer and Chemotherapy-related Cognitive Impairment.",
+      "matched_tokens": null
     },
     "NCT05875402": {
       "nct_id": "NCT05875402",
@@ -2950,9 +2950,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "XKDCT080 in GCC-positive Recurrent or Refractory Solid Tumors With Single Center, Single Arm, and Dose Escalation"
+      "matched_value": "UNKNOWN",
+      "excerpt": "XKDCT080 in GCC-positive Recurrent or Refractory Solid Tumors With Single Center, Single Arm, and Dose Escalation",
+      "matched_tokens": null
     },
     "NCT05881902": {
       "nct_id": "NCT05881902",
@@ -2960,9 +2960,9 @@
       "value": [
         "UNKNOWN"
       ],
-      "excerpt": "UNKNOWN",
-      "excerpt_tokens": null,
-      "title": "THE EFFECT OF CANCER EDUCATION ON WOMEN'S AWARENESS LEVELS AND THEIR BEHAVIORS ON SCREENINGS"
+      "matched_value": "UNKNOWN",
+      "excerpt": "THE EFFECT OF CANCER EDUCATION ON WOMEN'S AWARENESS LEVELS AND THEIR BEHAVIORS ON SCREENINGS",
+      "matched_tokens": null
     },
     "NCT01386502": {
       "nct_id": "NCT01386502",
@@ -2970,9 +2970,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "CT-011 and p53 Genetic Vaccine for Advanced Solid Tumors",
+      "matched_tokens": null
     },
     "NCT02053597": {
       "nct_id": "NCT02053597",
@@ -2980,9 +2980,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "TRIal evalUating the Menstrual and Ovarian Function of Young Breast Cancer Patients Treated With a cycloPHosphamide-free Regimen"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "TRIal evalUating the Menstrual and Ovarian Function of Young Breast Cancer Patients Treated With a cycloPHosphamide-free Regimen",
+      "matched_tokens": null
     },
     "NCT02338531": {
       "nct_id": "NCT02338531",
@@ -2990,9 +2990,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "Biomarker Research Study for PF-03084014 in cHEmoresistant Triple-negative Breast cAncer"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "Biomarker Research Study for PF-03084014 in cHEmoresistant Triple-negative Breast cAncer",
+      "matched_tokens": null
     },
     "NCT02796066": {
       "nct_id": "NCT02796066",
@@ -3000,9 +3000,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "TSN2898-201 Safety and Efficacy of TSN2898 in the Treatment of Acne Vulgaris"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "TSN2898-201 Safety and Efficacy of TSN2898 in the Treatment of Acne Vulgaris",
+      "matched_tokens": null
     },
     "NCT03517995": {
       "nct_id": "NCT03517995",
@@ -3010,9 +3010,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "Randomized, Phase II Clinical Trial of Sulforaphane in Bladder Cancer Chemoprevention"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "Randomized, Phase II Clinical Trial of Sulforaphane in Bladder Cancer Chemoprevention",
+      "matched_tokens": null
     },
     "NCT03990597": {
       "nct_id": "NCT03990597",
@@ -3020,9 +3020,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "StrataXRT in Preventing Radiation Dermatitis in Pediatric Patients Undergoing Radiation Therapy to the Brain or Spinal Cord"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "StrataXRT in Preventing Radiation Dermatitis in Pediatric Patients Undergoing Radiation Therapy to the Brain or Spinal Cord",
+      "matched_tokens": null
     },
     "NCT04230031": {
       "nct_id": "NCT04230031",
@@ -3030,9 +3030,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "Phase II Study of Daratumumab Pre-Mobilization and Post-ASCT in Multiple Myeloma"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "Phase II Study of Daratumumab Pre-Mobilization and Post-ASCT in Multiple Myeloma",
+      "matched_tokens": null
     },
     "NCT04546802": {
       "nct_id": "NCT04546802",
@@ -3040,9 +3040,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "HepATocellular Cancer Hcv Therapy Study"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "HepATocellular Cancer Hcv Therapy Study",
+      "matched_tokens": null
     },
     "NCT04685551": {
       "nct_id": "NCT04685551",
@@ -3050,9 +3050,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "Improving Survivorship Among Minority Cancer Dyads"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "Improving Survivorship Among Minority Cancer Dyads",
+      "matched_tokens": null
     },
     "NCT06377202": {
       "nct_id": "NCT06377202",
@@ -3060,9 +3060,9 @@
       "value": [
         "WITHDRAWN"
       ],
-      "excerpt": "WITHDRAWN",
-      "excerpt_tokens": null,
-      "title": "Long-Term Follow-Up Safety Study of Subjects Treated with SynKIR-110 in Cancer Studies"
+      "matched_value": "WITHDRAWN",
+      "excerpt": "Long-Term Follow-Up Safety Study of Subjects Treated with SynKIR-110 in Cancer Studies",
+      "matched_tokens": null
     }
   },
   "meta": {

@@ -5,7 +5,7 @@ BEFORE the LLM half in ``app.graph.nodes.review_output``. It proves four things
 about an already-built ``ok`` visualization spec, using only computed data (it
 introduces no number, authors no excerpt):
 
-1. **excerpt provenance** -- every ``citation.excerpt`` is an element-precise quote
+1. **excerpt provenance** -- every ``citation.matched_value`` is an element-precise quote
    of its own ``citation.value`` (the field value the core string-extracted from
    the record); fabricated / broken excerpts are a hard fail.
 2. **reconciliation** (G-26) -- the **distinct-nctId** count (``distinct_trials``,
@@ -100,15 +100,15 @@ def _excerpt_in_value(excerpt: str, value: object) -> bool:
 
 
 def _citation_valid(citation: Citation) -> bool:
-    """A citation passes iff its ``excerpt`` AND every ``excerpt_tokens`` member are
+    """A citation passes iff its ``excerpt`` AND every ``matched_tokens`` member are
     element-precise quotes of its own ``value`` (the record's real field value the
-    core string-extracted). ``excerpt_tokens`` (CC-15 composite buckets, e.g.
+    core string-extracted). ``matched_tokens`` (CC-15 composite buckets, e.g.
     ``PHASE1|PHASE2``) carries the additional member literals; each must be as
     verbatim as the primary excerpt, so a fabricated composite token can't ride in
     unverified (the Citation invariant with teeth)."""
-    if not _excerpt_in_value(citation.excerpt, citation.value):
+    if not _excerpt_in_value(citation.matched_value, citation.value):
         return False
-    for token in citation.excerpt_tokens or []:
+    for token in citation.matched_tokens or []:
         if not _excerpt_in_value(token, citation.value):
             return False
     return True
@@ -138,7 +138,7 @@ def record_grounded_reverify(
     real record, and ``deterministic_precheck`` checks ``excerpt`` against ``citation.value`` (the
     record's real field). This adds a second, independent check for defense-in-depth once the LLM
     is in the loop: for each citation whose ``nct_id`` is present in the bounded ``fetched_records``
-    index (the records ``execute`` paged), assert the excerpt — and every ``excerpt_tokens``
+    index (the records ``execute`` paged), assert the excerpt — and every ``matched_tokens``
     member — is a real substring **at its ``field_path`` in that independent record** via
     :func:`is_substring_at`. A cited record that's PRESENT but whose excerpt doesn't appear in it
     HARD-FAILS ``citation_invalid`` **even when ``excerpt == value``** (defeating the tautology a
@@ -160,9 +160,9 @@ def record_grounded_reverify(
         record = fetched_records.get(citation.nct_id)
         if record is None:
             continue  # not in the bounded sample — build-time value-check already covered it
-        if not is_substring_at(record, citation.field_path, citation.excerpt):
+        if not is_substring_at(record, citation.field_path, citation.matched_value):
             return PrecheckResult(ok=False, hard_fail=True, reason="citation_invalid")
-        for token in citation.excerpt_tokens or []:
+        for token in citation.matched_tokens or []:
             if not is_substring_at(record, citation.field_path, token):
                 return PrecheckResult(ok=False, hard_fail=True, reason="citation_invalid")
     return PrecheckResult(ok=True, hard_fail=False)

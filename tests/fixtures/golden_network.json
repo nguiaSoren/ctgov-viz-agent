@@ -17,30 +17,57 @@
     },
     "data": {
       "nodes": [
-        {"id": "sponsor:msd", "label": "Merck Sharp & Dohme", "kind": "sponsor", "degree": 2},
-        {"id": "sponsor:bms", "label": "Bristol-Myers Squibb", "kind": "sponsor", "degree": 1},
-        {"id": "drug:pembrolizumab", "label": "Pembrolizumab", "kind": "drug", "degree": 1},
-        {"id": "drug:nivolumab", "label": "Nivolumab", "kind": "drug", "degree": 1},
-        {"id": "drug:lenvatinib", "label": "Lenvatinib", "kind": "drug", "degree": 1}
+        {
+          "id": "sponsor:msd",
+          "label": "Merck Sharp & Dohme",
+          "kind": "sponsor",
+          "degree": 2
+        },
+        {
+          "id": "sponsor:bms",
+          "label": "Bristol-Myers Squibb",
+          "kind": "sponsor",
+          "degree": 1
+        },
+        {
+          "id": "drug:pembrolizumab",
+          "label": "Pembrolizumab",
+          "kind": "drug",
+          "degree": 1
+        },
+        {
+          "id": "drug:nivolumab",
+          "label": "Nivolumab",
+          "kind": "drug",
+          "degree": 1
+        },
+        {
+          "id": "drug:lenvatinib",
+          "label": "Lenvatinib",
+          "kind": "drug",
+          "degree": 1
+        }
       ],
       "edges": [
         {
           "source": "sponsor:msd",
           "target": "drug:pembrolizumab",
           "weight": 12,
-          "source_ids": ["NCT01234567"],
+          "source_ids": [
+            "NCT01234567"
+          ],
           "citations": [
             {
               "nct_id": "NCT01234567",
               "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
               "value": "Merck Sharp & Dohme LLC",
-              "excerpt": "Merck Sharp & Dohme"
+              "matched_value": "Merck Sharp & Dohme"
             },
             {
               "nct_id": "NCT01234567",
               "field_path": "protocolSection.armsInterventionsModule.interventions[0].name",
               "value": "Pembrolizumab",
-              "excerpt": "Pembrolizumab"
+              "matched_value": "Pembrolizumab"
             }
           ]
         },
@@ -48,19 +75,21 @@
           "source": "sponsor:msd",
           "target": "drug:lenvatinib",
           "weight": 5,
-          "source_ids": ["NCT03900012"],
+          "source_ids": [
+            "NCT03900012"
+          ],
           "citations": [
             {
               "nct_id": "NCT03900012",
               "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
               "value": "Merck Sharp & Dohme LLC",
-              "excerpt": "Merck Sharp & Dohme"
+              "matched_value": "Merck Sharp & Dohme"
             },
             {
               "nct_id": "NCT03900012",
               "field_path": "protocolSection.armsInterventionsModule.interventions[1].name",
               "value": "Lenvatinib",
-              "excerpt": "Lenvatinib"
+              "matched_value": "Lenvatinib"
             }
           ]
         },
@@ -68,19 +97,21 @@
           "source": "sponsor:bms",
           "target": "drug:nivolumab",
           "weight": 9,
-          "source_ids": ["NCT01778739"],
+          "source_ids": [
+            "NCT01778739"
+          ],
           "citations": [
             {
               "nct_id": "NCT01778739",
               "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
               "value": "Bristol-Myers Squibb",
-              "excerpt": "Bristol-Myers Squibb"
+              "matched_value": "Bristol-Myers Squibb"
             },
             {
               "nct_id": "NCT01778739",
               "field_path": "protocolSection.armsInterventionsModule.interventions[0].name",
               "value": "Nivolumab",
-              "excerpt": "Nivolumab"
+              "matched_value": "Nivolumab"
             }
           ]
         }
@@ -95,11 +126,14 @@
       "nct_id": "NCT01234567",
       "field_path": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
       "value": "Merck Sharp & Dohme LLC",
-      "excerpt": "Merck Sharp & Dohme"
+      "matched_value": "Merck Sharp & Dohme"
     }
   },
   "meta": {
-    "count_basis": {"trials": 26, "mentions": 26},
+    "count_basis": {
+      "trials": 26,
+      "mentions": 26
+    },
     "date_field_used": null,
     "time_granularity": null,
     "filters": {

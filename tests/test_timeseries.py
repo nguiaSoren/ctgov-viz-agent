@@ -191,7 +191,7 @@ class TestFinalizeTimeseries:
                 "statusModule": {"startDateStruct": {"date": citation.value}},
             }
         }
-        assert is_substring_at(record, _START_PATH, citation.excerpt)
+        assert is_substring_at(record, _START_PATH, citation.matched_value)
 
 
 # --- year_key_fn: normalization + TOTAL-ness --------------------------------

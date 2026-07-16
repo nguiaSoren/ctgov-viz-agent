@@ -18,7 +18,7 @@ FIELD_PATH = "protocolSection.statusModule.overallStatus"
 
 def _citation(nct_id: str, value: str) -> Citation:
     """A real Citation (excerpt == the status token, string-extracted upstream)."""
-    return Citation(nct_id=nct_id, field_path=FIELD_PATH, value=value, excerpt=value)
+    return Citation(nct_id=nct_id, field_path=FIELD_PATH, value=value, matched_value=value)
 
 
 def _bucket(value: str, label: str, count: int, *, nct: str | None = None) -> dict:
@@ -123,7 +123,7 @@ def test_citations_passed_through_verbatim() -> None:
     citation = completed["citations"][0]
     assert isinstance(citation, Citation)
     assert citation.field_path == FIELD_PATH
-    assert citation.excerpt == "COMPLETED"
+    assert citation.matched_value == "COMPLETED"
 
 
 def test_deterministic_order_across_two_runs() -> None:

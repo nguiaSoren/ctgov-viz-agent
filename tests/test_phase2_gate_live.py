@@ -142,7 +142,7 @@ class TestGeographicGate:
         # A country bar cites THAT country, not locations[0] (element-precise).
         for d in x4_geographic["visualization"]["data"]:
             if d["value"] not in ("Other", "UNKNOWN") and d["citations"]:
-                assert d["citations"][0]["excerpt"] == d["value"]
+                assert d["citations"][0]["matched_value"] == d["value"]
                 break
 
 
@@ -158,7 +158,7 @@ class TestNetworkGate:
             # The two endpoints are distinct entities: for drug_drug both cite
             # interventions[].name (same path, DIFFERENT drug names); for
             # sponsor_drug the two field_paths differ. Either way the excerpts differ.
-            excerpts = {c["excerpt"] for c in edge["citations"]}
+            excerpts = {c["matched_value"] for c in edge["citations"]}
             assert len(excerpts) == 2
 
 

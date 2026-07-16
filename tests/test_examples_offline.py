@@ -83,7 +83,7 @@ def _check_by_label(report, label: str):
 def test_fabricated_excerpt_is_caught() -> None:
     """(II) A fabricated citation excerpt (not present in its value) hard-fails."""
     obj = copy.deepcopy(_first_row_example())
-    obj["visualization"]["data"][0]["citations"][0]["excerpt"] = "FABRICATED-NOT-IN-VALUE"
+    obj["visualization"]["data"][0]["citations"][0]["matched_value"] = "FABRICATED-NOT-IN-VALUE"
     report = verify_examples.verify_obj(obj, "tampered-excerpt")
     assert not report.ok
     assert _check_by_label(report, verify_examples._I_PROV).status == "FAIL"

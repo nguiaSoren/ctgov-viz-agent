@@ -82,7 +82,7 @@ def test_gate_every_excerpt_is_a_live_substring(gate_body: dict) -> None:
     for d in gate_body["visualization"]["data"]:
         for c in d["citations"]:
             value = c["value"]
-            excerpt = c["excerpt"]
+            excerpt = c["matched_value"]
             if isinstance(value, list):
                 assert excerpt in [str(el) for el in value], f"{excerpt!r} not in {value!r}"
             else:

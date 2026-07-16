@@ -48,7 +48,7 @@ def _sv_tool_result(total: int, kind: str) -> dict:
                 "nct_id": "NCT00000001",
                 "field_path": "protocolSection.identificationModule.nctId",
                 "value": "NCT00000001",
-                "excerpt": "NCT00000001",
+                "matched_value": "NCT00000001",
             }
         ],
     }
@@ -130,7 +130,7 @@ def test_single_value_datum_citations_are_membership_proof() -> None:
     datum = spec.visualization.data[0]
     assert len(datum.citations) == 1
     assert datum.citations[0].nct_id == "NCT00000001"
-    assert datum.citations[0].excerpt == "NCT00000001"
+    assert datum.citations[0].matched_value == "NCT00000001"
     # the sample (1) is honestly smaller than the counted set (5)
     assert datum.contributing_count == 5
     assert datum.citations_truncated is True

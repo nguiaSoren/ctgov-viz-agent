@@ -94,18 +94,20 @@ class Citation(BaseModel):
     """
 
     nct_id: str  # e.g. "NCT01234567"
-    field_path: str  # JSON path that decided membership, e.g. "protocolSection.designModule.phases"
-    value: Any  # the literal field value at that path (may be an array, e.g. ["PHASE1"])
-    excerpt: str  # a real substring of the source at field_path (round-trip verifiable)
-    # For a composite bucket: every verified member literal (each a verbatim element at
-    # field_path), in token order. None for single-value buckets (back-compat).
-    excerpt_tokens: list[str] | None = None
-    # A human-readable descriptive excerpt from the SAME record — the trial's brief title
-    # (protocolSection.identificationModule.briefTitle), string-extracted, never LLM-authored.
-    # It complements `excerpt` (the exact field VALUE that decided membership — the rigorous,
-    # verifiable proof) with the readable "text excerpt that supports the datum" (assignment §5),
-    # so each citation is deep in both senses. None only when the fetch didn't project the title.
-    title: str | None = None
+    # ``excerpt`` is assignment §5's headline: "an exact text excerpt from the API response that
+    # supports the datum" — the trial's **brief title**, string-extracted from the record (never
+    # model-authored). Falls back to ``matched_value`` only when a record carries no briefTitle, so a
+    # citation always ships a human-readable supporting excerpt.
+    excerpt: str = ""
+    field_path: str  # the JSON path whose value placed this trial in the datum
+    value: Any  # the record's real value(s) at field_path (may be an array, e.g. ["PHASE1"])
+    # ``matched_value`` is §5's "(or a specific field/value)": the exact value at ``field_path`` that
+    # decided membership (e.g. "PHASE1", "2015-01-28", "France") — the rigorous, element-precise proof,
+    # round-trip verified against the record. This is the anti-fabrication anchor the Output Reviewer checks.
+    matched_value: str = ""
+    # For a composite bucket: every verified matched member value (each a verbatim element at
+    # field_path), in token order. None for single-value buckets.
+    matched_tokens: list[str] | None = None
 
 
 class Datum(BaseModel):

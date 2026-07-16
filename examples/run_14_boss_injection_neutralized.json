@@ -63,14 +63,13 @@
         "fields": "NCTId|Phase"
       }
     },
-    "retrieved_at": "2026-07-15T23:37:18.081722+00:00",
+    "retrieved_at": "2026-07-16T00:03:00.983826+00:00",
     "source": "clinicaltrials.gov",
     "partial": null,
     "notes": [
       "No trials matched this query.",
-      "Use the authoritative structured condition dimension.",
-      "Previous attempt matched zero trials; keep the scope broad and avoid adding extra filters.",
-      "Faithfulness issue: the response is empty rather than showing a phase distribution, so it does not answer the distribution question. The chart title also hardcodes a condition scope ('cancer OR diabetes') that is not reflected in the user’s question about matching trials."
+      "Use the authoritative structured condition dimension to scope the query.",
+      "Broadened plan by avoiding extra entities or filters beyond the requested phase distribution."
     ]
   }
 }
