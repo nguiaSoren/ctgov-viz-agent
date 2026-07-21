@@ -7,8 +7,14 @@ tying every datum back to its `nct_id` and an exact field excerpt.
 
 **▶ Live demo (no install):** **<https://nguiasoren.github.io/ctgov-viz-agent/>** — the
 citation viewer with all 15 example runs; each shows its natural-language query, its chart or network
-graph, and every datum's citations clickable to the source trials on clinicaltrials.gov. To query the
-engine yourself, clone and run `uvicorn` (see [Quickstart](#quickstart)).
+graph, and every datum's citations clickable to the source trials on clinicaltrials.gov.
+
+**▶ Ask it your own question:** run the service and open the viewer *from it* —
+`uv run uvicorn app.main:app` then <http://localhost:8000/demo/viewer.html>. The ask bar posts to
+`POST /visualize/stream`, so the pipeline's fixed 8-stage status enum lights up live
+(`planning → validating → plan_approved → fetching → aggregating → building_spec → verifying → done`)
+and the result renders through the same chart + citation code as the saved runs. Served from the app
+it is same-origin, so no CORS is involved; see [Quickstart](#quickstart).
 
 **Highlights:**
 
@@ -100,18 +106,26 @@ uv sync                                   # or:  python -m venv .venv && pip ins
 uv run ct-doctor
 
 # 3. PROVE IT YOURSELF — re-check every shipped example, offline, $0, no key needed:
-uv run python scripts/verify_examples.py  # -> 14/14 examples pass all 5 invariants
+uv run python scripts/verify_examples.py  # -> 16/16 examples pass all 5 invariants
 #   (reconciliation Σ==countTotal, element-precise citations, no LLM-authored number —
 #    using the runtime's OWN verifier code, so it proves exactly what the live path proves)
 
 # 4. boot the service
 uv run uvicorn app.main:app --reload
 curl localhost:8000/healthz               # -> {"status":"ok"}
+
+# 5. ask it something — the viewer, served BY the app (same-origin, so no CORS):
+open http://localhost:8000/demo/viewer.html
+#   type a question -> POST /visualize/stream -> the 8 status stages light up as the
+#   graph advances -> the result renders through the same chart + citation code as the
+#   saved runs. Optional structured fields (drug_name, condition, trial_phase, ...) are
+#   under "+ structured fields". Opening demo/viewer.html straight off disk also works —
+#   a narrow CORS rule admits loopback and file:// (`null`) origins only.
 ```
 
 > **Reviewer shortcut:** step 3 needs no network and no API key — it re-proves that every number in
 > the shipped `examples/*.json` reconciles and every citation is a real source substring, in one
-> command. `uv run pytest` runs the same gate plus the full suite (580 tests).
+> command. `uv run pytest` runs the same gate plus the full suite (582 tests).
 
 **Runs with no API key.** With no LLM provider configured the service still runs end-to-end on a
 deterministic offline `StubAdapter` (a fixed plan, zero network), so it never hard-crashes and the
@@ -298,7 +312,7 @@ The registry has no canonical "right answer" to an aggregate query, so correctne
   coherence, `Σ`/`distinct` reconciliation, and a "no digit in a note that isn't a computed number"
   check — **reusing the same functions the runtime uses**, so the shipped bytes are held to the same
   bar as a live request. It is wired into the suite (`tests/test_examples_offline.py`).
-- **The suite.** `uv run pytest` — 580 tests: count invariants, the citation-substring check, the
+- **The suite.** `uv run pytest` — 582 tests: count invariants, the citation-substring check, the
   Plan Checker's anti-hallucination rejections, the graph routing, the security tests, and live
   reconciliation gates (which skip cleanly when the network is down or rate-limited). `uv run ruff
   check src app` is clean. `uv run ct-doctor` runs a live X-2 reconciliation as its final check.
@@ -448,7 +462,7 @@ produces the identical result — because the number was never the model's to ge
 |---|---|---|
 | **35%** | System Design | The one-general-core engine + cyclic-but-bounded LangGraph topology; deterministic-engine-first sequencing; real-world data handling shown *in the output* (NA/planned/dedup/refuse), not just prose; `app/config.py` as one legible safety envelope. This README's design section + `EXAMPLE_RUNS.md`. |
 | **20%** | AI / Agent Design | The "LLM never emits a number" invariant enforced *structurally*; a closed typed planner output (hallucinated filters unrepresentable); Plan Checker (code) + two Reviewers (LLM) as gates, not generators; a bounded escalation re-plan; a provider-agnostic adapter **proven by a cross-provider twin** (rung 02 planned by GPT *and* by Claude → identical numbers, `examples/run_02_*.anthropic.json`). `app/llm/*`, `app/plan/checker.py`, `app/graph/*`. |
-| **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 580 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
+| **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 582 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
 | **15%** | Query & Viz Coverage | 6 query classes + 7 chart types (bar/grouped/time-series/histogram/network/single-value/table) + a meaningful network graph, all off one core; 15 example rungs simple→complex incl. the two refuses + a clarification. `EXAMPLE_RUNS.md`. |
 | **10%** | Input/Output Design | Documented, per-field-validated request schema; a `status`/`kind`-discriminated envelope with a `vega_lite` projection so a frontend renders without guessing. `app/api/schemas.py`. |
 | **bonus** | Deep citations | Per-datum `nct_id` + a **two-part** reference (a readable `excerpt` = the trial's brief title, §5's descriptive excerpt, *and* the exact `matched_value` that proves membership), both string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
@@ -490,10 +504,11 @@ app/
   plan/              deterministic Plan Checker · query-class recipes
   ctgov/             least-privilege HTTP client · aggregation core · the 7 tools · citations · params (Essie neutralization)
   viz/               canonical spec builder · Vega-Lite projection · Output Reviewer
-tests/               580 tests (unit, invariants, security, live reconciliation gates, offline example re-check)
+tests/               582 tests (unit, invariants, security, live reconciliation gates, offline example re-check)
 scripts/             run_ladder.py (the 15 example runs) · verify_examples.py (offline $0 harness) · run_gate.py (live X-2 gate)
 examples/            the 15 example runs (+ the cross-provider twin) — actual JSON
-demo/viewer.html     a self-contained citation viewer (no server)
+demo/viewer.html     a self-contained citation viewer — saved runs render offline; the ask bar
+                     drives a running service over POST /visualize/stream (mounted at /demo)
 EXAMPLE_RUNS.md      the annotated simple→complex walkthrough
 ARCHITECTURE.md      the design rationale (components · control×autonomy · failure modes · security)
 ```

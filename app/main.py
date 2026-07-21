@@ -17,8 +17,11 @@ from __future__ import annotations
 
 import json
 import logging
+from pathlib import Path
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from sse_starlette.sse import EventSourceResponse
 
 from app import config
@@ -38,6 +41,26 @@ app = FastAPI(
     version="0.1.0",
     summary="A deterministic visualization engine orchestrated by a ReAct planner routing to validated recipes.",
 )
+
+# ---- Local demo surface (a dev affordance; not part of the service contract) -------------------
+# The bundled citation viewer (`demo/viewer.html`) can drive this API live. Serving it FROM the app
+# makes the viewer same-origin with `/visualize`, so the browser needs no CORS at all — that is the
+# intended path (`http://localhost:8000/demo/viewer.html`). The narrow rule below covers only the
+# other way an operator opens it: straight off the filesystem, whose `Origin` is the literal
+# string "null". Both are scoped to a local operator — the regex admits loopback and `null` and
+# nothing else, and the service holds no cookies, no auth and no persistent state, so credentials
+# stay off. Gating on the directory's presence means a slim packaged deploy (no `demo/`) gets
+# neither the mount nor the CORS rule: fail-closed in production, convenient locally.
+_DEMO_DIR = Path(__file__).resolve().parent.parent / "demo"
+if _DEMO_DIR.is_dir():
+    app.mount("/demo", StaticFiles(directory=_DEMO_DIR, html=True), name="demo")
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origin_regex=r"^(https?://(localhost|127\.0\.0\.1)(:\d+)?|null)$",
+        allow_methods=["GET", "POST"],  # GET is the viewer's /healthz capability probe
+        allow_headers=["content-type", "accept"],
+        allow_credentials=False,
+    )
 
 # The fixed, high-level SSE status enum (ARCHITECTURE_SPEC §3.9) — the 8-member CONTRACT a
 # client may see. Never token-level reasoning / private chain-of-thought. `_NODE_TO_STATUS`

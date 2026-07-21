@@ -93,6 +93,79 @@
     border-radius:var(--radius); box-shadow:var(--shadow);
   }
 
+  /* ---- Ask bar (live mode: drives POST /visualize/stream) ---------------- */
+  .ask{ padding:14px 20px 15px; margin-bottom:16px; }
+  .ask-row{ display:flex; gap:10px; align-items:stretch; }
+  #q{
+    flex:1 1 auto; min-width:0; font-family:inherit; font-size:15px; color:var(--text);
+    background:var(--surface-2); border:1px solid var(--border-strong); border-radius:9px;
+    padding:10px 13px;
+  }
+  #q:focus{ outline:2px solid var(--accent); outline-offset:-1px; border-color:var(--accent); }
+  #q::placeholder{ color:var(--faint); }
+  .run{
+    flex:0 0 auto; font-family:inherit; font-size:14px; font-weight:600; color:#fff;
+    background:var(--accent); border:1px solid var(--accent); border-radius:9px;
+    padding:0 18px; cursor:pointer; letter-spacing:.01em;
+  }
+  .run:hover{ filter:brightness(1.07); }
+  .run:disabled{ opacity:.55; cursor:progress; }
+
+  .ask-foot{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:9px; font-size:12px; color:var(--muted); }
+  .linkish{ background:none; border:none; padding:0; font-family:inherit; font-size:12px; color:var(--link); cursor:pointer; }
+  .linkish:hover{ text-decoration:underline; }
+  .ask-ep{ display:inline-flex; align-items:center; gap:6px; color:var(--faint); }
+  .epin{
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    background:var(--surface-2); border:1px solid var(--border); border-radius:6px;
+    padding:2px 7px; width:190px;
+  }
+  .ask-status{ margin-left:auto; font-size:11.5px; color:var(--faint); font-variant-numeric:tabular-nums; }
+
+  #q:disabled{ opacity:.6; }
+  .run:disabled{ opacity:.5; }
+  .ask-hint{ display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; margin-top:9px; font-size:11.5px; color:var(--muted); line-height:1.6; }
+  .ask-hint code{ font-family:var(--mono); font-size:11px; background:var(--surface-2); border:1px solid var(--border); padding:1px 5px; border-radius:5px; }
+  .dot{ width:7px; height:7px; border-radius:50%; flex:0 0 auto; align-self:center; }
+  .dot.on{ background:var(--ok); box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 20%,transparent); }
+  .dot.off{ background:var(--faint); }
+  .dot.wait{ background:var(--warn); animation:stgpulse 1.1s ease-in-out infinite; }
+
+  .ask-fields{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:9px 14px; margin-top:13px; padding-top:13px; border-top:1px solid var(--border); }
+  .ask-fields .ff{ display:flex; flex-direction:column; gap:3px; }
+  .ask-fields label{ font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--faint); font-weight:600; }
+  .ask-fields input[type=text], .ask-fields input[type=number]{
+    font-family:var(--mono); font-size:12.5px; color:var(--text);
+    background:var(--surface-2); border:1px solid var(--border); border-radius:7px; padding:6px 9px;
+    width:100%; min-width:0;
+  }
+  .ask-fields input:focus{ outline:1px solid var(--accent); border-color:var(--accent); }
+  .ask-fields .cb{ flex-direction:row; align-items:center; gap:7px; align-self:end; padding-bottom:7px; }
+  .ask-fields .cb label{ text-transform:none; letter-spacing:0; font-size:12px; color:var(--muted); font-weight:500; }
+
+  /* the 8-member SSE status enum, lighting up as the graph runs */
+  .stages{ display:flex; gap:5px; flex-wrap:wrap; margin-top:13px; }
+  .stg{
+    font-family:var(--mono); font-size:10.5px; padding:3px 9px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface-2); color:var(--faint);
+    transition:color .18s, background .18s, border-color .18s;
+  }
+  .stg.on{
+    color:var(--accent-ink); font-weight:600;
+    border-color:color-mix(in srgb,var(--accent) 45%,transparent); background:var(--accent-weak);
+  }
+  .stg.live{ animation:stgpulse 1.1s ease-in-out infinite; }
+  @keyframes stgpulse{ 0%,100%{ opacity:1 } 50%{ opacity:.45 } }
+  .stg-cap{ flex-basis:100%; font-size:11.5px; color:var(--faint); margin-top:2px; }
+
+  .ask-err{
+    margin-top:12px; padding:11px 13px; border-radius:9px; font-size:12.5px; line-height:1.5;
+    border:1px solid color-mix(in srgb,var(--danger) 40%,transparent);
+    background:color-mix(in srgb,var(--danger) 8%,transparent); color:var(--text);
+  }
+  .ask-err b{ color:var(--danger); }
+  .ask-err code{ font-family:var(--mono); font-size:11.5px; }
+
   /* ---- Query block (the input NL question) ------------------------------ */
   .query{ padding:15px 20px 16px; margin-bottom:16px; border-left:3px solid var(--accent); }
   .q-eyebrow{ font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; font-weight:700; color:var(--accent-ink); }
@@ -288,6 +361,31 @@
 </header>
 
 <main>
+  <section class="card ask" id="ask">
+    <form class="ask-row" id="askform" autocomplete="off">
+      <input id="q" type="text" placeholder="Ask a question about clinical trials — e.g. “How are pancreatic cancer trials distributed across phases?”" />
+      <button class="run" id="run" type="submit">Run &#9656;</button>
+    </form>
+    <div class="ask-foot">
+      <button type="button" class="linkish" id="togglefields">&#65291; structured fields</button>
+      <span class="ask-ep">endpoint <input id="ep" class="epin" type="text" spellcheck="false" /></span>
+      <span class="ask-status" id="askstatus"></span>
+    </div>
+    <div class="ask-hint" id="askhint"></div>
+    <div class="ask-fields" id="fields" hidden>
+      <div class="ff"><label for="f_drug_name">drug_name</label><input id="f_drug_name" type="text" /></div>
+      <div class="ff"><label for="f_condition">condition</label><input id="f_condition" type="text" /></div>
+      <div class="ff"><label for="f_sponsor">sponsor</label><input id="f_sponsor" type="text" /></div>
+      <div class="ff"><label for="f_country">country</label><input id="f_country" type="text" /></div>
+      <div class="ff"><label for="f_trial_phase">trial_phase</label><input id="f_trial_phase" type="text" placeholder="Phase 3" /></div>
+      <div class="ff"><label for="f_study_type">study_type</label><input id="f_study_type" type="text" placeholder="interventional" /></div>
+      <div class="ff"><label for="f_start_year">start_year</label><input id="f_start_year" type="number" min="1900" max="2100" /></div>
+      <div class="ff"><label for="f_end_year">end_year</label><input id="f_end_year" type="number" min="1900" max="2100" /></div>
+      <div class="ff cb"><input id="f_interventional_only" type="checkbox" /><label for="f_interventional_only">interventional_only</label></div>
+    </div>
+    <div class="stages" id="stages" hidden></div>
+    <div class="ask-err" id="askerr" hidden></div>
+  </section>
   <section class="card query" id="query"><!-- input NL query --></section>
   <section class="card meta" id="meta"><!-- meta strip --></section>
   <div class="split">
@@ -303,7 +401,8 @@
 </main>
 <footer>
   Deep-citation demo · every count links back to the exact <span class="mono">NCTId</span>s that produced it. NCT links open on
-  <span class="mono">clinicaltrials.gov</span>. Fully offline &amp; self-contained — no network, no libraries.
+  <span class="mono">clinicaltrials.gov</span>. Zero libraries, single file. The saved runs render fully offline; the ask bar
+  additionally drives a locally running service via <span class="mono">POST /visualize/stream</span>.
 </footer>
 
 <script>
@@ -386,8 +485,19 @@ function boot(){
   });
   $("file").addEventListener("change", onFiles);
 
+  // live mode
+  $("ep").value = defaultEndpoint();
+  $("ep").addEventListener("change", probeLive);
+  $("askform").addEventListener("submit", runLive);
+  $("togglefields").addEventListener("click", () => {
+    const f = $("fields");
+    f.hidden = !f.hidden;
+    $("togglefields").innerHTML = (f.hidden ? "&#65291;" : "&#8722;") + " structured fields";
+  });
+
   refreshSelector();
   render();
+  probeLive(); // after render, so the "N saved runs" count in the offline hint is accurate
 }
 
 function refreshSelector(){
@@ -421,6 +531,245 @@ function onFiles(e){
     reader.readAsText(f);
   });
   e.target.value = ""; // allow re-loading the same file
+}
+
+/* ===================================================================== *
+ *  Live mode — drive the running service straight from the viewer
+ *  ---------------------------------------------------------------------
+ *  Primary path: POST /visualize/stream (SSE). The service emits its fixed
+ *  8-member status enum as the LangGraph pipeline advances, then a terminal
+ *  `result` event carrying the full VisualizeResponse envelope. EventSource
+ *  is GET-only, so the stream is read by hand off fetch(). If the browser
+ *  hands back no readable body, fall back to the sync POST /visualize —
+ *  identical envelope, just no stage lights.
+ *
+ *  A live result is appended to the same `state.datasets` the embedded runs
+ *  live in, so it renders through the exact same chart + citation code.
+ * ===================================================================== */
+const SSE_STAGES = ["planning","validating","plan_approved","fetching","aggregating","building_spec","verifying","done"];
+const REQ_FIELDS = ["drug_name","condition","sponsor","country","trial_phase","study_type","start_year","end_year","interventional_only"];
+let running = false;
+
+/* Served by the app itself (`/demo/viewer.html`) ⇒ same-origin, CORS never enters the picture.
+   Opened straight off disk (`file://`) ⇒ assume the documented local port. */
+function defaultEndpoint(){
+  return /^https?:$/.test(location.protocol) ? location.origin : "http://localhost:8000";
+}
+
+/* This one file is served two ways: BY the app (live mode works) and from a static host such as
+   GitHub Pages (there is no backend to talk to, and an https page may not call http://localhost
+   anyway — mixed content). So discover the backend with a cheap `/healthz` probe rather than let
+   the ask bar fail later with a confusing 404, and say plainly how to get live mode if it's absent.
+   The endpoint is editable + re-probed, so pointing this at a real deployment also just works. */
+async function probeLive(){
+  const base = ($("ep").value.trim() || defaultEndpoint()).replace(/\/+$/, "");
+  setLiveAvailable(null, base);
+  let ok = false;
+  try {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 2500);
+    const r = await fetch(base + "/healthz", { signal: ctl.signal });
+    clearTimeout(timer);
+    ok = r.ok && ((await r.json()) || {}).status === "ok";
+  } catch(e){ ok = false; } // refused / CORS / mixed-content / not-JSON — all mean "no service here"
+  setLiveAvailable(ok, base);
+}
+
+/* ok === null ⇒ probing; true ⇒ live mode armed; false ⇒ disabled, with the recipe to enable it. */
+function setLiveAvailable(ok, base){
+  $("q").disabled = ok !== true;
+  $("run").disabled = ok !== true;
+  const hint = $("askhint");
+  if (ok === null){
+    hint.innerHTML = `<span class="dot wait"></span><span>looking for a service at <code>${esc(base)}</code>…</span>`;
+  } else if (ok){
+    hint.innerHTML = `<span class="dot on"></span><span>live — connected to <code>${esc(base)}</code>.
+      Answers are computed against the real ClinicalTrials.gov API, cited, and reconciled.</span>`;
+    askError(null);
+  } else {
+    hint.innerHTML = `<span class="dot off"></span><span><b>Live mode is off</b> — no service answering at
+      <code>${esc(base)}</code>. The ${state.datasets.length} saved runs in the picker are real recorded
+      responses and work fully offline. To ask your own question, run the service and open this viewer
+      <i>from it</i>: <code>uv run uvicorn app.main:app</code> &rarr;
+      <code>http://localhost:8000/demo/viewer.html</code>.</span>`;
+  }
+}
+
+/* Collect the optional structured fields. Empty inputs are OMITTED, not sent as null:
+   the request schema is `extra="forbid"` and every optional field defaults to None. */
+function readFields(){
+  const out = {};
+  for (const k of REQ_FIELDS){
+    const el = $("f_" + k);
+    if (!el) continue;
+    if (el.type === "checkbox"){ if (el.checked) out[k] = true; continue; }
+    const v = el.value.trim();
+    if (!v) continue;
+    out[k] = el.type === "number" ? Number(v) : v;
+  }
+  return out;
+}
+
+/* The pills are stage COMPLETIONS, not a fixed animation — an un-lit pill means that graph node
+   genuinely did not run. The common case is a response-cache hit: `route_after_execute` sends an
+   already-built, already-verified envelope straight to `respond`, so `build_spec` and
+   `review_output` are correctly skipped. Caption it rather than let it read as a dropped event. */
+function paintStages(seen, latest, final){
+  const host = $("stages");
+  host.hidden = false;
+  const pills = SSE_STAGES.map(s => {
+    const on = seen.has(s);
+    const live = on && s === latest && s !== "done";
+    return `<span class="stg${on ? " on" : ""}${live ? " live" : ""}">${esc(s)}</span>`;
+  }).join("");
+  let cap = "";
+  if (final){
+    const n = SSE_STAGES.filter(s => seen.has(s)).length;
+    cap = `<div class="stg-cap">${n}/${SSE_STAGES.length} stages emitted` +
+          (n < SSE_STAGES.length
+            ? ` — un-lit stages did not run. A response-cache hit replays an already-built,
+                already-verified envelope straight to <code>respond</code>, skipping
+                <code>build_spec</code> and <code>review_output</code>.`
+            : ``) +
+          `</div>`;
+  }
+  host.innerHTML = pills + cap;
+}
+
+function askError(html){
+  const el = $("askerr");
+  el.hidden = !html;
+  el.innerHTML = html || "";
+}
+
+async function httpError(r){
+  let detail = "";
+  try {
+    const body = await r.json();
+    detail = typeof body.detail === "string" ? body.detail : JSON.stringify(body.detail || body);
+  } catch(e){ /* non-JSON error body — the status alone is the signal */ }
+  const err = new Error("HTTP " + r.status + (detail ? " — " + detail : ""));
+  err.http = r.status;
+  return err;
+}
+
+/* Minimal SSE frame parser: split on a blank line, read `event:` / `data:`,
+   skip `:` keep-alive comments. Handles both LF and CRLF framing. */
+async function readSSE(body, onEvent){
+  const reader = body.getReader();
+  const dec = new TextDecoder();
+  let buf = "";
+  for (;;){
+    const { value, done } = await reader.read();
+    if (done) break;
+    buf = (buf + dec.decode(value, { stream: true })).replace(/\r\n/g, "\n");
+    let i;
+    while ((i = buf.indexOf("\n\n")) >= 0){
+      const frame = buf.slice(0, i);
+      buf = buf.slice(i + 2);
+      let name = "message";
+      const data = [];
+      for (const raw of frame.split("\n")){
+        if (!raw || raw[0] === ":") continue;
+        const c = raw.indexOf(":");
+        const field = c < 0 ? raw : raw.slice(0, c);
+        const val = c < 0 ? "" : raw.slice(c + 1).replace(/^ /, "");
+        if (field === "event") name = val;
+        else if (field === "data") data.push(val);
+      }
+      onEvent(name, data.join("\n"));
+    }
+  }
+}
+
+async function postStream(base, payload, onStatus){
+  const r = await fetch(base + "/visualize/stream", {
+    method: "POST",
+    headers: { "content-type": "application/json", "accept": "text/event-stream" },
+    body: JSON.stringify(payload),
+  });
+  if (!r.ok) throw await httpError(r);
+  if (!r.body || !r.body.getReader) return null; // no readable stream here → caller falls back
+  let final = null;
+  await readSSE(r.body, (name, data) => {
+    if (name === "status" && SSE_STAGES.indexOf(data) >= 0) onStatus(data);
+    else if (name === "result"){ try { final = JSON.parse(data); } catch(e){ /* keep waiting */ } }
+  });
+  if (!final) throw new Error("the stream ended without a terminal result event");
+  return final;
+}
+
+async function postSync(base, payload){
+  const r = await fetch(base + "/visualize", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!r.ok) throw await httpError(r);
+  return r.json();
+}
+
+function liveErrorHtml(err, base){
+  const msg = esc(err && err.message ? err.message : String(err));
+  // fetch() rejects with a TypeError for CORS / connection-refused / DNS — no `http` status on it.
+  const reachable = !!(err && err.http);
+  const hint = reachable
+    ? `The service answered and <b>rejected the request</b>. A <code>422</code> is the request schema
+       doing its job — <code>extra="forbid"</code>, a closed <code>trial_phase</code> vocabulary,
+       <code>start_year &le; end_year</code>.`
+    : `Could not reach <code>${esc(base)}</code>. Start the service, then open this viewer from it:
+       <br><code>uv run uvicorn app.main:app --port 8000</code>
+       <br>&rarr; <code>${esc(base)}/demo/viewer.html</code> &nbsp;(same-origin, so no CORS in the way).`;
+  return `<b>Live request failed</b> — ${msg}<br>${hint}
+          <br><span style="color:var(--muted)">The saved example runs in the picker still work offline.</span>`;
+}
+
+async function runLive(ev){
+  if (ev) ev.preventDefault();
+  if (running) return;
+  const query = $("q").value.trim();
+  if (!query){ $("q").focus(); return; }
+
+  const base = ($("ep").value.trim() || defaultEndpoint()).replace(/\/+$/, "");
+  const fields = readFields();
+  const payload = Object.assign({ query }, fields);
+
+  running = true;
+  $("run").disabled = true;
+  askError(null);
+  $("askstatus").textContent = "running…";
+  const seen = new Set();
+  let latest = null;
+  paintStages(seen, latest);
+  const t0 = performance.now();
+
+  try {
+    const streamed = await postStream(base, payload, (status) => {
+      seen.add(status); latest = status; paintStages(seen, latest);
+    });
+    const resp = streamed || await postSync(base, payload);
+
+    seen.add("done"); paintStages(seen, "done", true);
+    $("askstatus").textContent = ((performance.now() - t0) / 1000).toFixed(1) + "s";
+
+    // Viewer-only request echo (`_`-prefixed, exactly like the embedded runs) so the existing
+    // "Input query" card and the raw-request panel render for a live result too.
+    resp._query = query;
+    if (Object.keys(fields).length) resp._fields = fields;
+
+    const label = query.length > 70 ? query.slice(0, 70) + "…" : query;
+    state.datasets.push({ name: "live · " + label, resp });
+    state.current = state.datasets.length - 1;
+    refreshSelector();
+    render();
+  } catch (err){
+    $("askstatus").textContent = "";
+    $("stages").hidden = true;
+    askError(liveErrorHtml(err, base));
+  } finally {
+    running = false;
+    $("run").disabled = false;
+  }
 }
 
 /* ===================================================================== *
