@@ -28,6 +28,14 @@ call (``iter_count == 0``) never increments; any re-entry (``iter_count >
 0``, i.e. a back-edge from check/review_intent/execute) bumps
 ``escalation_count`` once. All three routers then just read the same shared
 counter -- which is exactly what "shared, <=1 across three triggers" means.
+
+That budget also bounds the LLM spend per request, and it is worth stating exactly:
+``plan`` is entered at most twice and ``review_intent`` at most twice, ``review_output``
+exactly once on a non-cached, non-clarification path -- so the worst case is **5 model
+calls** (2 plan + 2 intent + 1 output) and the ordinary path is 3 (or 2 when
+``should_skip_intent_review`` fires on an all-structured plan). Each of those is a
+single ``propose``/``verify`` call; the adapter may add ONE schema-repair re-ask per
+call when the model returns unparseable structured output (``app.llm.adapter``).
 """
 
 from __future__ import annotations
@@ -42,7 +50,16 @@ from app.cache import RESPONSE_CACHE, plan_cache_key
 from app.ctgov.aggregate import _nct_id
 from app.ctgov.citations import brief_title
 from app.ctgov.client import CTGovClient
+from app.ctgov.fields import FIELD_SPEC
 from app.ctgov.params import build_search_params
+
+# The study-duration histogram's ``fields=`` projection is a module-private literal inside
+# the tool that issues the request (``app.ctgov.tools._DURATION_FIELDS``). It is IMPORTED
+# rather than re-spelled here so the provenance stamp cannot drift from the request the tool
+# actually makes — re-spelling it is precisely the duplicate-switch defect this file used to
+# have. (A public ``DURATION_FIELDS`` alias in ``tools`` — the way ``NETWORK_FIELDS`` is
+# already exported — would make this import unremarkable.)
+from app.ctgov.tools import _DURATION_FIELDS as DURATION_FIELDS
 from app.ctgov.tools import (
     DATE_PROJECTION,
     NETWORK_FIELDS,
@@ -221,10 +238,17 @@ def merge_inputs(state: GraphState) -> dict:
 
 
 def plan(state: GraphState) -> dict:
-    """The ReAct planner (§3.2): ``plan_request`` classifies the NL query into one of the six
+    """The planner node (§3.2): ``plan_request`` classifies the NL query into one of the six
     query classes and fills that recipe's slots, emitting a typed Plan through the adapter (C-99).
-    The reason→act→observe loop is the bounded escalation back-edge — a re-entry threads the last
-    rejection's ``plan_feedback`` in so the re-plan is a real correction.
+
+    Be precise about the "ReAct" label, because the shape differs from the textbook one: this
+    node makes exactly ONE structured-output call with ``tools=None`` (``app.llm.planner``), so
+    the model never sees an action space and never selects a tool — the recipe registry does,
+    off ``plan.query_class``. The reason→act→observe cycle is real but lives at the GRAPH level:
+    act = ``execute``'s deterministic dispatch, observe = the checker reject / intent revise /
+    zero-results signal, reason = this node re-entered with that signal threaded in as
+    ``plan_feedback``. It is bounded to one turn by the escalation budget. There is no in-node
+    tool loop.
 
     Also owns the shared escalation-budget increment: a re-entry into this node
     (``iter_count > 0``, i.e. a back-edge from check/review_intent/execute) bumps
@@ -233,8 +257,9 @@ def plan(state: GraphState) -> dict:
     # --- Phase-5 runtime-harness guards, BEFORE an LLM call is spent (§4/§B.4) ---
     # Wall-clock deadline / iteration cap / node-visit backstop. A trip
     # short-circuits to a REDACTED error (``route_after_plan`` -> ``error``),
-    # never a hang. Under v1's single-shot planner the iteration/step caps are
-    # headroom (this node runs <=2x); ``tests/test_guards.py`` proves they fire.
+    # never a hang. Only the DEADLINE can trip in normal v1 operation; the
+    # iteration/step caps are headroom (this node runs <=2x). ``tests/test_guards.py``
+    # proves each one aborts when its pathological state is injected.
     tripped = guards.check_pre_plan_guards(state)
     if tripped is not None:
         logger.warning("plan: runtime guard tripped (%s)", tripped)
@@ -248,9 +273,10 @@ def plan(state: GraphState) -> dict:
     if forced_plan is not None:
         result_plan = forced_plan
     else:
-        # The reason -> act -> observe loop (§3.12): on a back-edge re-entry the last
-        # rejection's machine reason (``plan_feedback``) is threaded into the planner so the
-        # bounded re-plan is a real correction, not a blind retry.
+        # ONE structured-output call, tools=None (see this node's docstring). On a
+        # back-edge re-entry the last rejection's machine reason (``plan_feedback``) is
+        # threaded into the prompt, so the bounded re-plan is a real correction, not a
+        # blind retry — that threading is the "observe" half of the graph-level cycle.
         result_plan = plan_request(
             _adapter(), state["merged_inputs"], feedback=state.get("plan_feedback")
         )
@@ -475,11 +501,27 @@ def execute(state: GraphState) -> dict:
 
     # --- response cache (§3.10 · keyed on the normalized plan, non-authoritative) ---
     # A HIT replays the prior fully-computed envelope and short-circuits the rest of
-    # the pipeline (build_spec + review_output) — ``route_after_execute`` sees a
-    # populated ``spec`` and routes straight to ``respond``. Bypassed entirely when
+    # the pipeline (build_spec + review_output) — ``route_after_execute`` sees
+    # ``cache_hit`` and routes straight to ``respond``. Bypassed entirely when
     # a test sentinel is active (deterministic offline suite) or the cache is off.
     # The cache never overrides a live count; it only hands back a code-computed
     # envelope a prior miss produced for this exact plan.
+    #
+    # Three consequences of the lookup sitting HERE — inside execute, i.e. after
+    # ``plan``/``check``/``review_intent`` — rather than at the graph entry:
+    #   1. A hit saves the API calls, ``build_spec`` and the ``review_output`` LLM call, but
+    #      NOT the planner or Intent-Reviewer calls: those already ran. (§3.4 describes the
+    #      Intent Reviewer as "skippable on cache-hits"; the only skip actually implemented
+    #      is ``should_skip_intent_review``'s all-structured-plan case.)
+    #   2. A cached ``empty`` settles immediately instead of spending the zero-results
+    #      re-plan — ``route_after_execute`` tests ``cache_hit`` before the empty branch. The
+    #      re-plan already ran on the miss that produced the entry, so re-running it would
+    #      re-derive the same plan; the cost is that a hit cannot benefit from a *later*
+    #      change of mind.
+    #   3. The tool-call budget above is charged for the traversal but the hit's return dict
+    #      omits ``tool_call_count``, so no spend is RECORDED for a request served from
+    #      cache — deliberate (a hit makes no upstream call), and the reason the two are in
+    #      this order.
     if config.CACHE_ENABLED and not _has_force_sentinel(merged_inputs):
         cached = RESPONSE_CACHE.get(plan_cache_key(plan))
         if cached is not None:
@@ -517,15 +559,80 @@ def execute(state: GraphState) -> dict:
     return update
 
 
-# --- per-class execute dispatch (§3.6 runner; one core, five classes) --------
+# --- per-class execute dispatch (§3.6 runner; one core, six classes) ---------
 
 
 def _provenance(search_params: dict, projection: str) -> dict:
-    """Reproducibility stamp: endpoint + the effective, validated wire params."""
+    """Reproducibility stamp (CC-18): endpoint + the effective, validated wire params.
+
+    The SELECTING params (``query.*`` / ``filter.*``) are byte-exact: ``search_params`` is a
+    ``build_search_params`` result, and the tool re-derives the identical dict from the same
+    ``(query, filters)`` before calling the client. The two transport
+    components describe the class's PAGING call: ``pageSize`` is the client's page size
+    (``config.PAGE_SIZE``, which is also ``CTGovClient.iter_studies``'s default) and
+    ``fields`` is the projection that class's tool actually requests — sourced from the one
+    authority per path (``_projection``), never re-derived here.
+
+    Three paths issue calls a single stamp cannot fully describe, and it does not pretend
+    otherwise: (a) ``too_large`` stamps the projection that WOULD have been paged — nothing
+    was; (b) the exact-at-scale path (``aggregate_by_counts``) issues one ``countTotal``
+    call per token, each adding a per-token selector and a small citation-sample
+    ``pageSize`` instead of paging; (c) ``compare`` stamps the FIRST arm's params only — the
+    other arms' populations are evidenced by the per-arm ``N`` disclosed on ``meta.notes``
+    (e.g. ``"pembrolizumab N=2903; nivolumab N=2011"``, CC-14), not by these params.
+    """
     return {
         "endpoint": "/api/v2/studies",
-        "params": {**search_params, "countTotal": "true", "pageSize": 1000, "fields": projection},
+        "params": {
+            **search_params,
+            "countTotal": "true",
+            "pageSize": config.PAGE_SIZE,
+            "fields": projection,
+        },
     }
+
+
+# The projection ``_execute_single_value`` pages with — declared once and used BOTH for the
+# request and for the provenance stamp, so the two cannot disagree (CC-7 cites the nctId and
+# displays the brief title).
+_SINGLE_VALUE_FIELDS = "NCTId|BriefTitle"
+
+
+def _aggregation_field(plan: Plan) -> str:
+    """The ``FIELD_SPEC`` alias ``_execute_single`` aggregates on.
+
+    ``geographic`` always aggregates on ``country`` regardless of ``plan.field`` — the
+    Plan Checker requires ``plan.field == "country"`` for that class, so today the two are
+    identical; naming the coupling here means the executor and the provenance stamp read
+    the field from ONE place if that check is ever relaxed."""
+    if plan.query_class == "geographic":
+        return "country"
+    return plan.field or ""
+
+
+def _projection(plan: Plan) -> str:
+    """The ``fields=`` projection the class's tool will actually request.
+
+    ONE authority per path, all of them the module that issues the request:
+
+    * ``timeseries`` → ``app.ctgov.tools.timeseries`` (``DATE_PROJECTION`` + ``BriefTitle``)
+    * ``study_duration`` → ``app.ctgov.tools._DURATION_FIELDS`` (imported as
+      ``DURATION_FIELDS``)
+    * every other aggregation → ``FIELD_SPEC[field].fields_projection``
+      (``app.ctgov.fields``), which is what ``aggregate_by`` / ``aggregate_by_counts`` page
+      with
+
+    An unknown field (unreachable — the checker validates ``plan.field`` against the same
+    alias table) degrades to the bare ``NCTId`` every call projects, never to a guess.
+    """
+    if plan.query_class == "timeseries":
+        # tools.timeseries builds exactly this: NCTId + the date field's wire token + BriefTitle.
+        return f"NCTId|{DATE_PROJECTION.get(plan.date_field or '', plan.date_field)}|BriefTitle"
+    field = _aggregation_field(plan)
+    if field == "study_duration":
+        return DURATION_FIELDS
+    spec = FIELD_SPEC.get(field)
+    return spec.fields_projection if spec is not None else "NCTId"
 
 
 def _status_result(status: str, tool_results: list, retrieved_at: str, provenance: dict) -> dict:
@@ -555,8 +662,15 @@ def _series_query(entities: dict) -> dict:
 
 
 def _dispatch_execute(plan: Plan, retrieved_at: str) -> dict:
-    """Route the validated plan to its class runner — the single dispatch point
-    that makes breadth 'one core, five classes' (CC-11) literal."""
+    """Route the validated plan to its class runner — the single dispatch point that makes
+    breadth "one core, N classes" literal. N is SIX (``app.plan.models.QueryClass``): three
+    single-population classes (distribution / timeseries / geographic) share
+    ``_execute_single``, and compare / network / single_value each get their own runner.
+    (CC-11 says "five" — it predates ``single_value``, the CC-7 no-viz path.)
+
+    This if/elif IS the live tool dispatch. ``tools.TOOL_REGISTRY`` is a declarative
+    surface (least-privilege documentation + a build-time test that every recipe's
+    ``allowed_tools`` are real names); no runtime code looks a tool up in it."""
     query = _plan_query(plan)
     filters = _plan_filters(plan)
     if plan.query_class == "single_value":
@@ -569,19 +683,13 @@ def _dispatch_execute(plan: Plan, retrieved_at: str) -> dict:
 
 
 def _execute_single(plan: Plan, query: dict, filters: dict, retrieved_at: str) -> dict:
-    """distribution / geographic / timeseries / histogram — one population, one
-    ``countTotal`` oracle + budget gate, then the class's tool. The reconciliation
-    anchor (distinct-nctId == countTotal) holds for all four (combine or explode)."""
+    """The three single-population classes — distribution (incl. the study-duration histogram,
+    a distribution plan with ``field="study_duration"``), timeseries, geographic. One
+    ``countTotal`` oracle + budget gate, then the class's tool. The reconciliation anchor
+    (distinct-nctId == countTotal) holds on every one of those tool paths (combine or explode)."""
     search_params = build_search_params(query, filters)
-    if plan.query_class == "timeseries":
-        projection = f"NCTId|{DATE_PROJECTION.get(plan.date_field or '', plan.date_field)}"
-    elif plan.query_class == "geographic":
-        projection = "NCTId|LocationCountry"
-    elif plan.field == "study_duration":
-        projection = "NCTId|StartDate|CompletionDate"
-    else:
-        projection = "NCTId|Phase"
-    provenance = _provenance(search_params, projection)
+    field = _aggregation_field(plan)
+    provenance = _provenance(search_params, _projection(plan))
 
     total = count_trials(query, filters)  # exact oracle + budget gate
     if total > _TOO_LARGE_THRESHOLD:
@@ -589,8 +697,8 @@ def _execute_single(plan: Plan, query: dict, filters: dict, retrieved_at: str) -
         # interventionType) can be computed EXACTLY via one count query per token — no paging, no
         # biased prefix — so it charts instead of refusing (scales to any size). phase (composites)
         # and country (unbounded) are NOT count-aggregatable → they still refuse (§B.7).
-        if plan.query_class == "distribution" and is_count_aggregatable(plan.field):
-            result = aggregate_by_counts(query, filters, plan.field)
+        if plan.query_class == "distribution" and is_count_aggregatable(field):
+            result = aggregate_by_counts(query, filters, field)
             return {
                 "tool_results": [result],
                 "status": "ok",
@@ -611,12 +719,11 @@ def _execute_single(plan: Plan, query: dict, filters: dict, retrieved_at: str) -
 
     if plan.query_class == "timeseries":
         result = timeseries(query, filters, plan.date_field, plan.grain or "year")
-    elif plan.query_class == "geographic":
-        result = aggregate_by(query, filters, "country")
-    elif plan.field == "study_duration":
+    elif field == "study_duration":
         result = study_duration_histogram(query, filters)
     else:
-        result = aggregate_by(query, filters, plan.field)
+        # geographic lands here too: ``_aggregation_field`` resolves it to "country".
+        result = aggregate_by(query, filters, field)
 
     update: dict = {
         "tool_results": [result],
@@ -639,8 +746,10 @@ def _execute_single(plan: Plan, query: dict, filters: dict, retrieved_at: str) -
 def _execute_compare(plan: Plan, retrieved_at: str) -> dict:
     """compare — ≥2 independently-filtered arms (G-24). Each arm is budget-gated and
     self-reconciled by its own ``aggregate_by``; the union spans two populations so
-    ``count_total`` is None and the Output Reviewer reconciliation is waived
-    (``reconcile=False``), while the excerpt/cited checks still run."""
+    ``count_total`` is None and the Output Reviewer's COUNT checks are waived
+    (``reconcile=False`` skips both Σ==countTotal and the combine bar-sum). Nothing else
+    is waived: the matched-value provenance check, partial-iff-truncated and
+    cited-or-derived all still run, as does the record-grounded re-verify."""
     # Cap the number of arms (E-21): keep the first MAX_COMPARE_ENTITIES, disclose the
     # dropped ones in meta.notes — a grouped bar with too many series is unreadable, and
     # silent truncation would misstate the comparison.
@@ -656,11 +765,14 @@ def _execute_compare(plan: Plan, retrieved_at: str) -> dict:
         arm_filters = {**(plan.filters or {}), **(arm.filters or {})}
         series_list.append({"label": arm.label, "query": arm_query, "filters": arm_filters})
 
+    # Each arm runs its own ``aggregate_by(field)``, so every arm pages the SAME projection
+    # (``FIELD_SPEC[field].fields_projection``); only the selectors differ, and the stamp
+    # carries the first arm's (see ``_provenance``).
     provenance = _provenance(
         build_search_params(series_list[0]["query"], series_list[0]["filters"])
         if series_list
         else {},
-        f"NCTId|{plan.field}",
+        _projection(plan),
     )
     if not series_list:  # defense-in-depth: the checker requires >=2 arms, never assume it ran
         return _status_result("empty", [{"tool": "compare", "buckets": []}], retrieved_at, provenance)
@@ -699,8 +811,12 @@ def _execute_compare(plan: Plan, retrieved_at: str) -> dict:
 def _execute_network(plan: Plan, query: dict, filters: dict, retrieved_at: str) -> dict:
     """network — one population, budget-gated, then the graph builder. A network is
     reconciliation-exempt (its ``data`` is a NetworkData, not a row list, so the
-    Output Reviewer's list-only reconciliation never fires); ``count_total`` is
-    stamped for provenance only."""
+    Output Reviewer's row-oriented count checks never fire); ``count_total`` is
+    stamped for provenance only. The exemption is scoped to reconciliation ONLY:
+    ``deterministic_precheck`` still validates both endpoint citations of every edge,
+    and ``record_grounded_reverify`` still re-checks them against the fetched records
+    (LESSON M2 — an earlier version returned early on any non-list ``data`` and so
+    waived the provenance check too)."""
     search_params = build_search_params(query, filters)
     provenance = _provenance(search_params, NETWORK_FIELDS)
     total = count_trials(query, filters)
@@ -787,11 +903,12 @@ def _execute_single_value(plan: Plan, query: dict, filters: dict, retrieved_at: 
     """single_value (CC-7) -- one exact ``count_trials`` over the plan's scope, rendered as a
     scalar stat card (``kind:"visualization"``) or a yes/no (``kind:"answer"``). The number is the
     API's exact ``countTotal`` (code-inserted, never LLM-authored); the citation is an honest
-    "this trial is in the counted set" reference (excerpt = the nctId at the identification path,
-    which round-trips via ``is_substring_at``). One extra cheap page (``fields=NCTId``) fetches a
-    bounded citation sample only when there is something to cite."""
+    "this trial is in the counted set" reference — ``matched_value`` is the nctId at the
+    identification path (so it round-trips via ``is_substring_at``) and ``excerpt`` is the trial's
+    brief title for display. One extra cheap page (``fields=NCTId|BriefTitle``, one page) fetches
+    up to ``config.CITATION_SAMPLE_K`` records, and only when there is something to cite."""
     search_params = build_search_params(query, filters)
-    provenance = _provenance(search_params, "NCTId")
+    provenance = _provenance(search_params, _SINGLE_VALUE_FIELDS)
     total = count_trials(query, filters)  # exact oracle + budget gate
     if total > _TOO_LARGE_THRESHOLD:
         return _status_result(
@@ -801,8 +918,10 @@ def _execute_single_value(plan: Plan, query: dict, filters: dict, retrieved_at: 
     citations: list[Citation] = []
     record_index: dict[str, dict] = {}
     if total > 0:
-        records, _ = CTGovClient().iter_studies(search_params, fields="NCTId|BriefTitle", max_pages=1)
-        for record in sorted(records, key=lambda r: _nct_id(r) or "")[:20]:
+        records, _ = CTGovClient().iter_studies(
+            search_params, fields=_SINGLE_VALUE_FIELDS, max_pages=1
+        )
+        for record in sorted(records, key=lambda r: _nct_id(r) or "")[: config.CITATION_SAMPLE_K]:
             nct = _nct_id(record)
             if not isinstance(nct, str) or not nct:
                 continue
@@ -896,9 +1015,13 @@ def _latest_aggregate(tool_results: list | None) -> dict | None:
 
 
 def review_output(state: GraphState) -> dict:
-    """The Output Reviewer (§3.8). Runs the deterministic pre-checks FIRST
-    (excerpt-substring, ``countTotal`` reconciliation, partial-iff-truncated,
-    cited-or-derived), then the LLM half.
+    """The Output Reviewer (§3.8). Runs the deterministic pre-checks FIRST, then the LLM
+    half. ``deterministic_precheck`` runs five: (1) every citation's ``matched_value`` (and
+    each ``matched_tokens`` member) is an element-precise quote of its own ``value``;
+    (2) Σ buckets reconciles to the ``countTotal`` oracle; (2b) in combine mode the
+    DISPLAYED bars sum to the same anchor; (3) ``partial`` is set iff genuinely truncated;
+    (4) every datum is cited or explicitly derived. ``record_grounded_reverify`` then adds
+    an independent sixth pass against the actual fetched records.
 
     On a deterministic hard fail the spec is replaced with a REDACTED error
     envelope and ``status`` flipped to ``"error"`` (``route_after_output``
@@ -922,11 +1045,11 @@ def review_output(state: GraphState) -> dict:
     truncated = bool(state.get("partial"))
 
     # compare spans TWO populations (two countTotals) -- no single oracle to
-    # reconcile the union against, so the single-oracle count check is waived
-    # (each arm self-reconciled in-tool); the excerpt/cited checks still run. The
+    # reconcile the union against, so the count checks (2 and 2b) are waived
+    # (each arm self-reconciled in-tool); the matched-value/cited checks still run. The
     # network degeneracy fallback (a derived drug-frequency bar of the DRUG-bearing
     # subset, not the whole countTotal population) is likewise count-reconciliation
-    # exempt -- its excerpt/cited checks still run (teeth kept).
+    # exempt -- its matched-value/cited checks still run (teeth kept).
     plan = state.get("plan")
     reconcile = not (
         (plan is not None and plan.query_class == "compare")
@@ -941,9 +1064,12 @@ def review_output(state: GraphState) -> dict:
         truncated=truncated,
         reconcile=reconcile,
     )
-    # Phase-4 hardening (§3.8): re-verify each excerpt against the ACTUAL fetched record (an
-    # independent ground truth), now that the LLM is in the loop -- catches a fabricated citation
-    # even when excerpt == value, and gives is_substring_at a runtime caller (LESSON M3).
+    # Phase-4 hardening (§3.8): re-verify each citation's matched_value against the ACTUAL
+    # fetched record (an independent ground truth), now that the LLM is in the loop -- catches a
+    # fabricated citation even when matched_value is internally consistent with the citation's
+    # own stored `value`, and gives is_substring_at a runtime caller (LESSON M3). Note the
+    # `excerpt` field (the trial's brief title, from a different path) is NOT re-verified here
+    # or in the precheck: it is display text, never the provenance anchor.
     rg = record_grounded_reverify(spec, state.get("fetched_records"))
     failed = pc if pc.hard_fail else (rg if rg.hard_fail else None)
 
@@ -1109,12 +1235,16 @@ def route_after_intent(state: GraphState) -> str:
 
 
 def route_after_execute(state: GraphState) -> str:
-    """cache hit (execute populated ``spec``) -> respond (skips build_spec +
-    review_output — the envelope is already final); done -> build_spec;
-    too_large -> build_spec (over-budget is an always-refuse, not
+    """cache hit (``execute`` set ``cache_hit`` and put the replayed envelope in ``spec``) ->
+    respond (skips build_spec + review_output — the envelope is already final); done ->
+    build_spec; too_large -> build_spec (over-budget is an always-refuse, not
     escalation-eligible, §B.7); empty (zero-results) -> one bounded re-plan
     (esc < 1), else settle into build_spec(empty); a hard error -> the dedicated
-    error node (never build_spec)."""
+    error node (never build_spec).
+
+    Order matters: ``cache_hit`` is tested FIRST, so a cached ``empty`` replays straight to
+    ``respond`` instead of spending the zero-results re-plan (the miss that stored it already
+    spent one)."""
     status = state.get("status", "ok")
     if state.get("cache_hit"):
         return "respond"
