@@ -5,13 +5,20 @@ maps one fetched record to its ``(value, label)`` bucket key(s) and a ``mode``
 (``"combine"`` vs ``"explode"``). This module holds the *per-field* half of that
 contract -- the ``FieldSpec`` the tools layer selects by alias.
 
-Phase 1 needed exactly one field: ``phase`` (COMBINE mode -- a trial belongs to
-exactly one phase bucket, and a combined phase like ``["PHASE1","PHASE2"]`` is
-its OWN composite bucket, never split into two bars, CC-15). Phase 2 adds two
-EXPLODE fields -- ``country`` and ``interventionType`` -- where one trial can
-carry several distinct values (a distinct-trial count to each), plus per-field
-``sort_key`` (count-desc, sentinels pinned last) and ``top_n`` (the "Other"-fold
-threshold the tools layer applies). The ``phase`` spec's ordering is unchanged.
+``FIELD_SPEC`` registers FIVE fields today:
+
+* ``phase`` -- COMBINE (Phase 1). A trial belongs to exactly one phase bucket, and
+  a combined phase like ``["PHASE1","PHASE2"]`` is its OWN composite bucket, never
+  split into two bars (CC-15).
+* ``country`` and ``interventionType`` -- EXPLODE (Phase 2). One trial can carry
+  several distinct values and contributes a distinct-trial count to each. These
+  introduced the per-field ``sort_key`` (count-desc, sentinels pinned last) and
+  ``top_n`` (the "Other"-fold threshold the tools layer applies); ``country`` is
+  the only field that sets ``top_n``. The ``phase`` spec's ordering is unchanged.
+* ``overallStatus`` and ``sponsorClass`` -- COMBINE, single-valued, count-desc
+  ordered, no fold (bounded token sets of 14 and 9). Both are also
+  count-aggregatable, i.e. ``app.ctgov.tools.aggregate_by_counts`` can compute them
+  exactly above the paging budget.
 
 Design notes
 ------------
@@ -166,6 +173,20 @@ _UNKNOWN_LABEL = "Unknown"
 # never top the ranking. ``"Other"`` is the derived fold bucket value the tools
 # layer (W2) emits when a ``top_n`` spec folds its tail (see the ``country`` spec
 # note); ``"NA"``/``"MISSING"`` are the other explicit sentinels used elsewhere.
+#
+# KNOWN COLLISION (documented, not resolved): ``"UNKNOWN"`` is BOTH our
+# missing-value sentinel above AND a genuine wire token in
+# ``enums.OVERALL_STATUS_TOKENS`` and ``enums.SPONSOR_CLASS_TOKENS``. Consequence:
+# on a status/sponsorClass ranked bar, the real "UNKNOWN status" bucket is pinned
+# last by ``count_desc_sort_key`` even when it is large (in
+# examples/run_09 it is 19,713 trials, the third biggest). Only the ORDER is
+# affected -- the count, the label and the citations are correct, and the
+# reconciliation sum is order-independent. ``app.ctgov.tools.aggregate_by_counts``
+# handles the same collision explicitly on the CITATION path (it must not strip a
+# record's real "UNKNOWN" value); the sort path deliberately does not, because
+# separating them needs a per-field sentinel set rather than this shared one.
+# Near miss: interventionType's real ``"OTHER"`` token does NOT collide, because
+# the fold sentinel is title-case ``"Other"``.
 _SENTINEL_VALUES: frozenset[str] = frozenset({"UNKNOWN", "NA", "MISSING", "Other"})
 
 # Public aliases for the tools layer (aggregate_by's top-N/"Other" fold + explode
@@ -216,6 +237,12 @@ def country_key_fn(record: dict) -> list[tuple[str, str]]:
     normalized (``tools.aggregate_by`` — fires on every country facet, since the
     alias table is always applied). No locations / no usable country ->
     ``[("UNKNOWN", "Unknown")]``.
+
+    Consequence to know: this is the ONE ``key_fn`` that returns a value the record
+    may not literally contain. Everywhere else the bucket value IS the wire token, so
+    a citation quoting it round-trips verbatim; here a record saying "USA" produces
+    the bucket value "United States". See the "known latent defect" note in
+    ``tools._explode_citations`` for what that does to the record-grounded re-verify.
 
     TOTAL (K1/B2): a non-dict ``protocolSection``/``contactsLocationsModule``, a
     non-list ``locations`` (including present-but-``None`` -- ``.get`` does NOT
@@ -347,8 +374,14 @@ def sponsor_class_key_fn(record: dict) -> list[tuple[str, str]]:
     """Map one record to its lead-sponsor class bucket (combine).
 
     ``leadSponsor.class`` is single-valued (OTHER/INDUSTRY/NIH/…). TOTAL: a missing
-    class -> ``[("UNKNOWN", "Unknown")]``. Note: OTHER (academic/hospital) dominates
-    the registry -- the recipe surfaces that in a note (E-71)."""
+    class -> ``[("UNKNOWN", "Unknown")]``.
+
+    Reading caveat, NOT surfaced as a runtime note: ``OTHER`` here means
+    academic/hospital/foundation and is typically the largest bucket in the
+    registry, so an "OTHER dominates" bar is the expected shape rather than a
+    finding. ``tools.aggregate_by`` emits notes only for explode mode, the top-N
+    fold, and country -- there is no sponsor-class note, and the label rendered is
+    the plain title-cased token ("Other")."""
     ps = record.get("protocolSection")
     module = ps.get("sponsorCollaboratorsModule") if isinstance(ps, dict) else None
     lead = module.get("leadSponsor") if isinstance(module, dict) else None
@@ -401,8 +434,11 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         key_fn=phase_key_fn,
         fields_projection="NCTId|Phase|BriefTitle",
         # Byte-identical Phase-1 behavior: phase-rank order, no top_n fold. The
-        # X-2 live gate (Σ count_trials == countTotal == 3950) depends on this
-        # exact ordering; the lambda reproduces tools.py's hardcoded sort.
+        # lambda reproduces tools.py's pre-FieldSpec hardcoded sort, so bucket ORDER
+        # (and therefore the emitted bar order) is unchanged. Note the X-2 live gate
+        # itself (Σ count_trials == countTotal == 3950) is a SUM and is
+        # order-independent — what depends on this ordering is byte-identical
+        # output, not the reconciliation.
         sort_key=lambda bucket: phase_sort_key(bucket["value"]),
         top_n=None,
     ),
@@ -422,11 +458,14 @@ FIELD_SPEC: dict[str, FieldSpec] = {
         #   {value: "Other", label: "Other (N countries)",
         #    count_trials: Σ DISTINCT nctIds across the tail (deduped, K3),
         #    count_mentions: Σ tail mentions, derived: True, members: [folded values],
-        #    citations: sampled up to k=20 from the tail records}
+        #    citations: sampled up to config.CITATION_SAMPLE_K from the tail records}
         # The Unknown sentinel bucket is ALWAYS kept (never folded). Because the
         # fold sums DISTINCT-trial counts (a trial listed in two folded countries
         # is ONE trial in Other, not two), the explode reconciliation still holds:
-        #   Σ(top-15 + Other + Unknown) count_trials == distinct_trials == countTotal.
+        #   Σ(top-N + Other + Unknown) count_trials >= distinct_trials == countTotal,
+        # with equality when no trial spans two kept buckets (an explode field sums
+        # to MORE than the distinct total whenever trials are multi-country; the
+        # anchor the Output Reviewer checks is distinct_trials, not Σ bars).
     ),
     "interventionType": FieldSpec(
         alias="interventionType",

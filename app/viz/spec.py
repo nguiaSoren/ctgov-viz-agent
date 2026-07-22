@@ -1,23 +1,33 @@
-"""The viz-spec builder (ARCHITECTURE_SPEC §3.7) -- Phase 0.
+"""The viz-spec builder (ARCHITECTURE_SPEC §3.7).
 
 Assembles a schema-valid ``VisualizeResponse`` envelope from a validated
-``Plan`` plus the (Phase-0-canned / Phase-1-real) bucket results the executor
-produced. This is the file that upholds G-30 for prose fields: ``title`` is
-**code-templated** from the validated ``Plan`` only -- assembled here, never
-authored by the adapter -- so no digit or interpretation the model produced
-can leak into a user-facing string. The scalar ``answer`` for ``too_large``
-is likewise code-templated from the computed total.
+``Plan`` plus the bucket / graph / scalar results the executor produced. This is
+the file that upholds G-30 for prose fields: ``title`` is **code-templated** from
+the validated ``Plan`` only -- assembled here, never authored by the adapter --
+so no digit or interpretation the model produced can leak into a user-facing
+string. The scalar ``answer`` for ``too_large`` and for the ``single_value``
+yes/no path is likewise code-templated from the computed total.
 
-Four envelope shapes, one per ``status``:
+Envelope shapes, keyed by the ``status`` × ``kind`` pair a frontend switches on
+(``status`` alone does NOT determine the shape -- ``ok`` and ``empty`` each carry
+two kinds):
 
-* ``"ok"`` -- a populated ``Visualization`` (+ its Vega-Lite projection) built
-  from the executor's buckets.
-* ``"empty"`` -- the same shape with an empty ``data`` list and a note; still
-  ``kind:"visualization"`` (an empty chart, not an answer).
-* ``"too_large"`` -- ``kind:"answer"``, no visualization/vega_lite, and
-  ``meta.partial`` stays null (refusing to chart is not truncating, G-39).
-* ``"error"`` -- ``kind:"answer"``, no visualization, a populated
-  ``ErrorObj`` (never a half-built viz, API-22).
+* ``ok`` / ``visualization`` -- a populated ``Visualization``: a row chart, a
+  ``network_graph``, or a ``single_value`` stat card. ``vega_lite`` is set for the
+  standard marks only (``None`` for network / single_value / table, see
+  ``.vega``).
+* ``ok`` / ``answer`` -- the ``single_value`` yes/no path (CC-7): no
+  visualization, no vega_lite, a code-templated scalar ``answer``.
+* ``empty`` / ``visualization`` -- the row-chart shape with an empty ``data``
+  list and a "No trials matched this query." note (an empty chart, not an
+  answer).
+* ``empty`` / ``clarification`` -- :func:`build_clarification_envelope` (E-13):
+  a code-owned ``question``, no visualization / answer / vega_lite (nothing was
+  queried).
+* ``too_large`` / ``answer`` -- no visualization/vega_lite, and ``meta.partial``
+  stays null (refusing to chart is not truncating, G-39).
+* ``error`` / ``answer`` -- no visualization, a populated ``ErrorObj`` (never a
+  half-built viz, API-22).
 """
 
 from __future__ import annotations
@@ -247,9 +257,10 @@ def build_single_value_visualization(
     inserted by CODE here (G-30/CC-16) — never authored by the LLM. ``title`` is
     code-templated from the validated Plan; the one ``Datum`` carries the number in
     its code-computed ``count_trials`` field. ``citations`` (a small sample of
-    contributing nctIds, each a ``{nct_id, field_path, value, excerpt}`` dict) prove
-    membership in the counted set. ``vega_lite`` is None for a stat card (no natural
-    mark — the caller sets it).
+    contributing nctIds, each a ``{nct_id, field_path, value, matched_value,
+    excerpt}`` dict — ``matched_value`` is the nctId itself at the identification
+    path, ``excerpt`` the trial's brief title) prove membership in the counted set.
+    ``vega_lite`` is None for a stat card (no natural mark — the caller sets it).
     """
     cites = [c if isinstance(c, Citation) else Citation(**c) for c in (citations or [])]
     datum = Datum(
@@ -322,19 +333,6 @@ def build_clarification_envelope(
 
 
 # --- envelope assembly ------------------------------------------------------
-
-
-def _extract_buckets(tool_results: list[dict]) -> list[dict]:
-    """Pull the most recent bucket list out of ``tool_results``.
-
-    Phase 0's ``execute`` node appends exactly one entry per run; this reads
-    the latest one carrying a ``"buckets"`` key (defensive against a future
-    multi-tool-call ``tool_results`` list, e.g. a ``compare`` plan's two
-    aggregations)."""
-    for result in reversed(tool_results or []):
-        if "buckets" in result:
-            return result["buckets"]
-    return []
 
 
 def _extract_graph(tool_results: list[dict]) -> dict | None:
@@ -518,9 +516,12 @@ def build_envelope(
 ) -> VisualizeResponse:
     """Assemble the response envelope for ``status`` (ARCHITECTURE_SPEC §3.7/§6).
 
-    ``question`` is accepted for a future phrasing hook (Phase 4 recipes may
-    want it for a richer scalar ``answer``); Phase 0's templates don't need it
-    yet, so it is unused here on purpose.
+    ``question`` is the user's raw NL question. Callers pass it (``build_spec``
+    threads ``state["question"]`` through) but this builder **deliberately discards
+    it**: every prose string it emits -- ``title``, the ``too_large`` refusal, the
+    ``single_value`` yes/no -- is templated from the validated ``Plan`` and the
+    computed numbers, so untrusted user text never reaches a user-facing field
+    (G-30). It stays in the signature as the hook a future phrasing pass would use.
     """
     del question
     notes = list(notes or [])

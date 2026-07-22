@@ -4,7 +4,9 @@ Two endpoints (ARCHITECTURE_SPEC §6):
   - POST /visualize         — sync; runs the LangGraph pipeline, returns the response envelope.
   - POST /visualize/stream  — SSE; emits a fixed enum of high-level status events, then the
                               terminal event carries the full envelope (never raw model reasoning).
-Plus GET /healthz for liveness (DB-free — this service holds no persistent state).
+Plus GET /healthz for liveness (DB-free — this service holds no persistent state), and a
+static /demo mount that appears only when the `demo/` directory ships alongside the app — a
+local dev affordance for the bundled citation viewer, not part of the service contract.
 
 The pipeline is fully live: the LLM planner + reviewers run through the provider-agnostic adapter
 (``LLM_PROVIDER``; unset ⇒ the zero-network StubAdapter), ``execute`` dispatches the six live
@@ -51,9 +53,13 @@ app = FastAPI(
 # nothing else, and the service holds no cookies, no auth and no persistent state, so credentials
 # stay off. Gating on the directory's presence means a slim packaged deploy (no `demo/`) gets
 # neither the mount nor the CORS rule: fail-closed in production, convenient locally.
+# File-serving only: `demo/` holds exactly one file (`viewer.html`) and no `index.html`, so
+# StaticFiles' `html=True` directory-index mode would have nothing to serve — `/demo` and
+# `/demo/` 404 either way, and only `/demo/viewer.html` resolves. The flag is left off rather
+# than carried as decoration.
 _DEMO_DIR = Path(__file__).resolve().parent.parent / "demo"
 if _DEMO_DIR.is_dir():
-    app.mount("/demo", StaticFiles(directory=_DEMO_DIR, html=True), name="demo")
+    app.mount("/demo", StaticFiles(directory=_DEMO_DIR), name="demo")
     app.add_middleware(
         CORSMiddleware,
         allow_origin_regex=r"^(https?://(localhost|127\.0\.0\.1)(:\d+)?|null)$",
@@ -64,7 +70,11 @@ if _DEMO_DIR.is_dir():
 
 # The fixed, high-level SSE status enum (ARCHITECTURE_SPEC §3.9) — the 8-member CONTRACT a
 # client may see. Never token-level reasoning / private chain-of-thought. `_NODE_TO_STATUS`
-# is the source of truth for the mapping; this tuple documents the full contract.
+# below is the runtime mapping that actually emits these; this tuple is the published
+# contract, and the two are tied together by an import-time equality check (see under the
+# mapping) so neither can drift silently. `demo/viewer.html` keeps its own JS copy of these
+# labels for display — that third copy is a client, not a source of truth, and is not
+# machine-checked against this one.
 #
 # ORDERING NOTE (surfaced deviation): §3.9's prose lists `plan_approved` before `validating`,
 # but the pipeline order is `check` (validating) → `review_intent` (plan_approved), so we emit
@@ -101,6 +111,18 @@ _NODE_TO_STATUS: dict[str, tuple[str, ...]] = {
     "error": ("done",),
 }
 
+# Contract check, run once at import: the set of statuses the mapping can emit must be exactly
+# the published enum. Catches both drift directions — a node emitting an event no client was
+# told about, and an enum member no node can ever produce. Written as a plain `if`/raise rather
+# than an `assert` so it survives `python -O`; a mismatch is a startup failure, not a warning,
+# because the SSE enum is a client-facing contract.
+_MAPPED_STATUSES = {status for statuses in _NODE_TO_STATUS.values() for status in statuses}
+if _MAPPED_STATUSES != set(SSE_STATUS_ENUM):
+    raise RuntimeError(
+        "SSE status contract drift: _NODE_TO_STATUS emits "
+        f"{sorted(_MAPPED_STATUSES)} but SSE_STATUS_ENUM declares {sorted(SSE_STATUS_ENUM)}"
+    )
+
 
 @app.get("/healthz")
 def healthz() -> dict[str, str]:
@@ -116,7 +138,9 @@ def visualize(request: VisualizeRequest) -> VisualizeResponse:
     the graph models its own failures as an `error` envelope, never a raised exception.
     """
     response = run_sync(request)
-    # Structured event only — the DECIDED shape (status/kind), never the raw query (§A(i)/SEC-47).
+    # Structured event only — the DECIDED shape, never the raw query (§A(i)/SEC-47). Both keys
+    # are closed enums and both are on `log_event`'s allowlist, so the emitted line is exactly
+    # {"event":"visualize_complete","status":...,"kind":...}.
     log_event(logger, "visualize_complete", status=response.status, kind=response.kind)
     return response
 

@@ -1,17 +1,24 @@
-"""Self-verification for the Phase-0 LLM layer (adapter, planner stub, reviewer
-stubs -- ARCHITECTURE_SPEC §3.1/§3.2/§3.4/§3.8).
+"""Self-verification for the stub-backed LLM layer -- the ``get_adapter`` dispatch
+table plus the planner/reviewer seams driven through ``StubAdapter``
+(ARCHITECTURE_SPEC §3.1/§3.2/§3.4/§3.8).
 
 Three guarantees:
 
 1. ``get_adapter`` defaults to a real, $0, no-network ``StubAdapter`` whose
-   ``capabilities()`` is a realistic Claude-like descriptor; the Phase-4
-   provider names are wired to a documented ``NotImplementedError``, not
-   silently swallowed.
+   ``capabilities()`` is a realistic Claude-like descriptor. The named providers
+   ``openai`` / ``openrouter`` / ``anthropic`` return real, LAZILY-constructed
+   adapters (Phase 4 shipped them -- no key and no socket are needed to obtain
+   one); only an UNKNOWN provider name raises the documented
+   ``NotImplementedError``.
 2. ``plan_request`` / ``review_intent`` / ``review_output_llm`` all route
    through the adapter (C-99) and come back as validated Plan / verdict
-   instances, matching the canned Phase-0 content.
+   instances, matching ``StubAdapter``'s canned content.
 3. ``propose`` always hands back a real, schema-validated instance of the
    requested ``response_model`` -- canned or not -- never a raw dict.
+
+The real providers' own behaviour (structured-output normalization, schema
+repair, the Anthropic native->fallback switch) is covered offline in
+``tests/test_adapter_real.py``; nothing here makes a network call.
 """
 
 from __future__ import annotations
@@ -69,6 +76,10 @@ def test_get_adapter_unknown_provider_raises_not_implemented() -> None:
 
 
 def test_capabilities_returns_realistic_descriptor() -> None:
+    # NOTE this test is the ONLY consumer of ``CapabilityDescriptor`` in the repo: no
+    # production code calls ``capabilities()``. The descriptor is a declared-but-unused
+    # interface — in particular the Anthropic native->forced-tool fallback is
+    # EXCEPTION-driven (it catches the provider 400), not capability-driven.
     caps = get_adapter().capabilities()
     assert isinstance(caps, CapabilityDescriptor)
     assert caps.supports_forced_tool_choice is True

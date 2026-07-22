@@ -40,12 +40,13 @@ def _as_count(value: object) -> int:
     return int(value) if _is_number(value) else 0
 
 
-def union_series(
-    series_results: list[dict],
-    *,
-    count_basis: str = "pct_within_series",
-) -> tuple[list[dict], list[str]]:
+def union_series(series_results: list[dict]) -> tuple[list[dict], list[str]]:
     """Union ≥2 per-series aggregations into grouped-bar ``Datum``-dicts.
+
+    The count basis is always within-series percentage (CC-14) — there is no basis
+    parameter. (An unused ``count_basis="pct_within_series"`` keyword used to sit in
+    this signature; nothing ever passed it and the body never read it, so it was
+    removed rather than left as a knob that does nothing.)
 
     Parameters
     ----------
@@ -53,10 +54,6 @@ def union_series(
         ``[{"label": "Pembrolizumab", "N": 903, "buckets": [aggregate_by-bucket]}, ...]``
         — one entry per series (≥2 in practice; fewer never raises). ``buckets``
         are the per-bucket dicts ``aggregate_by`` returns.
-    count_basis:
-        Selects the headline count basis. Only ``"pct_within_series"`` (CC-14, the
-        default) is implemented; it is the frozen public knob and other bases fall
-        back to within-series rather than raising.
 
     Returns
     -------

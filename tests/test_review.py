@@ -1,14 +1,25 @@
 """Unit tests for the Output-Reviewer deterministic pre-check (``app.viz.review``).
 
 Pure + offline: every ``VisualizeResponse`` is constructed directly (no network,
-no graph). Covers the four checks + the exemption gate:
+no graph). Covers all FIVE checks ``deterministic_precheck`` runs, plus the
+exemption gate:
 
-* excerpt-substring (fabricated excerpt → hard fail),
-* reconciliation (exact → ok; within-tolerance drift → ok + disclosure;
-  beyond-tolerance → hard fail; explode uses ``distinct_trials``),
-* partial-iff-truncated (mismatch → hard fail, both directions),
-* cited-or-derived (a legitimate 0-count uncited bucket is NOT a hard fail),
-* status ≠ "ok" / non-list data → exempt (no checks).
+* (1) citation provenance — the verified field is ``matched_value`` (and every
+  ``matched_tokens`` member), NOT the field literally named ``excerpt`` (that one
+  carries the trial's brief title and the reviewer never checks it): a fabricated
+  ``matched_value`` → hard fail ``citation_invalid``,
+* (2) reconciliation (exact → ok; within-tolerance drift → ok + disclosure;
+  beyond-tolerance → hard fail ``reconciliation_failed``; explode anchors on
+  ``distinct_trials``; a missing oracle → ``reconciliation_unavailable``),
+* (2b) combine bar-sum consistency — Σ displayed bars must equal
+  ``distinct_trials`` or it is a hard fail ``bar_sum_mismatch`` (explode is
+  exempt by design: Σ bars = memberships ≥ distinct),
+* (3) partial-iff-truncated (mismatch → hard fail, both directions),
+* (4) cited-or-derived (a legitimate 0-count uncited bucket is NOT a hard fail),
+* the exemption gate: a non-``ok`` status (too_large / error / empty) → exempt,
+  no checks run. A ``network_graph`` spec (non-list ``NetworkData``) is exempt
+  from the ROW checks only — its edge citations are still verified (F2), which
+  is asserted below.
 """
 
 from __future__ import annotations
@@ -18,8 +29,11 @@ from app.api.schemas import (
     Citation,
     CountBasis,
     Datum,
+    Edge,
     EncodingChannel,
     Meta,
+    NetworkData,
+    Node,
     Partial,
     Visualization,
     VisualizeResponse,
@@ -152,6 +166,27 @@ def test_missing_count_total_hard_fails_cannot_certify() -> None:
     assert pc.reason == "reconciliation_unavailable"
 
 
+# --- (2b) combine bar-sum consistency -----------------------------------------
+#
+# The explode side of this check (Σ bars = memberships > distinct_trials is
+# LEGAL, not a mismatch) is proven by ``test_explode_mode_reconciles_on_distinct_trials``
+# above: 70 mentions over 50 distinct trials passes.
+
+
+def test_combine_bar_sum_mismatch_hard_fails() -> None:
+    """A deflated combine bar that leaves the SCALAR anchor intact still hard-fails.
+
+    ``distinct_trials == count_total == 50``, so check (2) reconciles exactly — but the
+    DISPLAYED bars sum to 45, i.e. the chart silently drops 5 trials. Check (2b) is the
+    only thing standing between that and a shipped envelope (LESSON L1: reconcile the
+    displayed bars, not just a scalar anchor).
+    """
+    spec = _ok_spec([_datum("PHASE1", 30), _datum("PHASE2", 15)])
+    pc = _check(spec, count_total=50, mode="combine", distinct=50)
+    assert pc.hard_fail
+    assert pc.reason == "bar_sum_mismatch"
+
+
 # --- (3) partial iff truncated ------------------------------------------------
 
 
@@ -227,6 +262,64 @@ def test_error_spec_is_exempt() -> None:
         spec, count_total=None, mode=None, distinct_trials=None, truncated=False
     )
     assert pc.ok and not pc.hard_fail
+
+
+def _network_spec(matched_value: str) -> VisualizeResponse:
+    """An ok ``network_graph`` envelope: one edge, one endpoint citation carrying
+    ``matched_value`` (the value at ``field_path`` that placed the trial on the edge)."""
+    viz = Visualization(
+        type=ChartType.NETWORK_GRAPH,
+        title="Drugs studied together",
+        encoding={},
+        data=NetworkData(
+            nodes=[
+                Node(id="drug:a", label="A", kind="drug"),
+                Node(id="drug:b", label="B", kind="drug"),
+            ],
+            edges=[
+                Edge(
+                    source="drug:a",
+                    target="drug:b",
+                    weight=1,
+                    source_ids=["NCT00000001"],
+                    citations=[
+                        Citation(
+                            nct_id="NCT00000001",
+                            field_path="protocolSection.armsInterventionsModule.interventions",
+                            value=["A", "B"],
+                            matched_value=matched_value,
+                        )
+                    ],
+                )
+            ],
+        ),
+    )
+    return VisualizeResponse(
+        status="ok",
+        kind="visualization",
+        visualization=viz,
+        meta=Meta(count_basis=CountBasis(trials=1)),
+    )
+
+
+def test_network_spec_is_row_exempt_but_edge_citations_are_still_verified() -> None:
+    """A non-list ``NetworkData`` payload skips the ROW checks (no row array, no single
+    oracle) — but NOT the citation check. The old coarse list-only exemption waived
+    check (1) too, so a fabricated edge excerpt shipped unverified (F2)."""
+    honest = deterministic_precheck(
+        _network_spec("A"), count_total=None, mode=None, distinct_trials=None, truncated=False
+    )
+    assert honest.ok and not honest.hard_fail  # reconciliation genuinely waived
+
+    fabricated = deterministic_precheck(
+        _network_spec("FABRICATED-NOT-AN-ENDPOINT"),
+        count_total=None,
+        mode=None,
+        distinct_trials=None,
+        truncated=False,
+    )
+    assert fabricated.hard_fail
+    assert fabricated.reason == "citation_invalid"
 
 
 def test_empty_spec_is_exempt() -> None:

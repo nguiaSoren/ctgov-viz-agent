@@ -1,4 +1,4 @@
-"""`ct-doctor` — the Phase-0 skeleton self-check (run: `uv run ct-doctor` or `python -m app.doctor`).
+"""`ct-doctor` — the end-to-end self-check (run: `uv run ct-doctor` or `python -m app.doctor`).
 
 Asserts, in order, that:
   1. the app package imports (every module),
@@ -10,8 +10,14 @@ Asserts, in order, that:
   6. the real X-2 request reconciles Σ-buckets to the live API's `countTotal`
      (SKIP-as-pass when the network is unreachable, so the doctor stays green offline).
 
-Exits 0 if every check passes, 1 otherwise. This is the "does the skeleton hold together?"
-gate from BUILD_PLAN Phase 0 — if it fails, later phases are built on sand.
+Checks 1-4 never touch the network. Check 5 runs in-process (TestClient, no server) but its
+POST goes down the real `execute` path, so online it DOES make live API calls — which is why
+check 6 clears the response cache first, or it would replay check 5's envelope instead of
+fetching (see `_c6_live_reconciliation`).
+
+Exits 0 if every check passes, 1 otherwise. It started as the "does the skeleton hold
+together?" gate from BUILD_PLAN Phase 0 and grew a live reconciliation check with the
+Phase-1 API wiring — if it fails, whatever is built on top is built on sand.
 """
 
 from __future__ import annotations
@@ -127,6 +133,12 @@ def _c6_live_reconciliation() -> str:
     """Run the real X-2 request live and assert Σ-buckets reconciles to the API's
     ``countTotal``.
 
+    Check 5 POSTs the SAME request through the app, so on a successful online run it
+    has already populated the response cache for this exact plan — without the
+    ``RESPONSE_CACHE.clear()`` below, this check would replay check 5's envelope and
+    the "live" in its name would be a lie. Clearing forces a real fetch + aggregate,
+    and the ``countTotal`` cross-check at the end is a second, independent live call.
+
     Offline (unreachable) or a transient upstream failure (rate-limit / 5xx) →
     SKIP-as-pass: the pipeline returns a clean redacted ``upstream_error`` envelope,
     which is not a logic failure (the deterministic reconciliation is unit-covered).
@@ -135,6 +147,7 @@ def _c6_live_reconciliation() -> str:
     import httpx
 
     from app.api.schemas import VisualizeRequest
+    from app.cache import RESPONSE_CACHE
     from app.ctgov.tools import count_trials
     from app.graph.build import run_sync
 
@@ -147,6 +160,7 @@ def _c6_live_reconciliation() -> str:
     except httpx.HTTPError:
         return "SKIP (offline) — live ClinicalTrials.gov API unreachable"
 
+    RESPONSE_CACHE.clear()  # evict check 5's entry so this really is a live fetch, not a replay
     resp = run_sync(
         VisualizeRequest(
             query="Phase distribution of interventional pancreatic cancer trials",
@@ -173,7 +187,7 @@ def _c6_live_reconciliation() -> str:
 
 
 def main() -> int:
-    print("ct-doctor — Phase-0 skeleton self-check\n")
+    print("ct-doctor — self-check (1-4 offline, 5 in-process, 6 live)\n")
     checks = [
         ("app package imports", _c1_imports),
         ("graph compiles", _c2_graph_compiles),

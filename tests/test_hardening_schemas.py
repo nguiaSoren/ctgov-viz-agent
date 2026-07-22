@@ -12,6 +12,10 @@ Two guarantees added here that ``tests/test_schemas.py`` didn't cover:
 
 Plus the presence-semantics acceptance criteria (kind/status field presence)
 for ``golden_answer`` / ``golden_error`` / ``golden_too_large``.
+
+The goldens are hand-written SCHEMA fixtures, not engine output — see
+``tests/fixtures/README.md``. Guarantee (1) is about internal referential
+integrity of the envelope, not about the fixture matching a real run.
 """
 
 from __future__ import annotations

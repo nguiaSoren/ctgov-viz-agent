@@ -1,6 +1,11 @@
-"""Phase-2 breadth gate, IN the suite (LESSON A3): all five query classes + the
-too_large refuse, driven end-to-end through the FULL graph with a hardcoded Plan
-(the deterministic engine; the LLM planner is Phase 4).
+"""Phase-2 breadth gate, IN the suite (LESSON A3): all five CHART query classes +
+the too_large refuse, driven end-to-end through the FULL graph with a hardcoded
+Plan (the deterministic engine; the LLM planner is Phase 4).
+
+"Five" is the chart classes — timeseries / compare / geographic / network here,
+and distribution as the ``too_large`` refuse below. ``QueryClass`` has SIX
+members; the sixth, ``single_value`` (the Phase-4 no-viz scalar path), is covered
+offline in ``tests/test_single_value.py``, not here.
 
 Live, $0 (no key). Each class fetches once (module-scoped) and SKIPS — never
 fails — on any transport ``UpstreamError`` (offline / rate-limited under a

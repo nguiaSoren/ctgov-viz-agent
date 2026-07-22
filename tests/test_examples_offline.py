@@ -42,8 +42,10 @@ _PATHS = verify_examples.iter_example_paths()
 
 
 def test_examples_are_present() -> None:
-    """Guard against a silent vacuous-green: the ladder ships 13 rungs + 1 twin."""
-    assert len(_PATHS) >= 13, f"expected the shipped example ladder, found {len(_PATHS)} at {_HARNESS_PATH.parent.parent / 'examples'}"
+    """Guard against a silent vacuous-green: ``examples/`` ships 16 ``run_*.json``
+    files — 15 ladder rungs plus one cross-provider twin of rung 02
+    (``run_02_distribution_phase.anthropic.json``)."""
+    assert len(_PATHS) >= 16, f"expected the shipped example ladder (16 files), found {len(_PATHS)} at {_HARNESS_PATH.parent.parent / 'examples'}"
 
 
 @pytest.mark.parametrize("path", _PATHS, ids=[p.name for p in _PATHS])

@@ -4,23 +4,37 @@ This is the ONLY seam through which any graph node talks to a language model
 (C-99): the planner, the Intent Reviewer, and the Output Reviewer all call
 ``propose``/``verify`` on an ``LLMAdapter`` instance — never a provider SDK
 directly. That is what lets the planner run a strong model and the reviewers a
-cheaper one later, and what lets Phase 4 swap Claude/OpenAI/open models in
-without touching a single graph node.
+cheaper one (``propose`` resolves the planner model, ``verify`` the reviewer
+model), and what lets Claude/OpenAI/OpenRouter swap in without touching a
+single graph node.
 
-Phase 0 ships exactly one concrete adapter, ``StubAdapter``: it never opens a
-network connection and never reads a real provider key. When a caller supplies
-``canned``, it validates that dict straight into the requested
-``response_model``; when it doesn't, the adapter still has to return
-*something*, so it constructs a best-effort default instance and validates
-that instead. Either way the "always validate" discipline holds — every
-successful return is a real, Pydantic-validated ``response_model`` instance,
-never a raw dict; the no-``canned`` path raises ``ValueError``/``ValidationError``
-instead of guessing when the schema cannot be satisfied by defaults (e.g. a
-required, constrained, or recursive field) — see ``_best_effort_instance``.
+Three concrete adapters ship, all in this file:
 
-Real provider adapters (Anthropic/OpenAI) land in Phase 4 behind the same
-``LLMAdapter`` interface; see ``get_adapter`` below for the documented
-``NotImplementedError`` boundary.
+* ``StubAdapter`` — the default (``LLM_PROVIDER`` unset ⇒ ``"stub"``). It never
+  opens a network connection and never reads a real provider key. When a caller
+  supplies ``canned``, it validates that dict straight into the requested
+  ``response_model``; when it doesn't, the adapter still has to return
+  *something*, so it constructs a best-effort default instance and validates
+  that instead. Either way the "always validate" discipline holds — every
+  successful return is a real, Pydantic-validated ``response_model`` instance,
+  never a raw dict; the no-``canned`` path raises ``ValueError``/``ValidationError``
+  instead of guessing when the schema cannot be satisfied by defaults (e.g. a
+  required, constrained, or recursive field) — see ``_best_effort_instance``.
+* ``OpenAIAdapter`` — real OpenAI-compatible calls; also backs the
+  ``openrouter`` provider (same class, different ``base_url``/key env var).
+* ``AnthropicAdapter`` — real Anthropic calls.
+
+Both real adapters are lazy (no client, socket, or key read at import or
+``__init__``), redact provider/network failures into ``AdapterError``, and
+normalize STRUCTURED OUTPUT only — there is no canonical tool-call/result type
+in this module (see ``LLMAdapter.propose`` for what ``tools`` actually does).
+``get_adapter`` resolves ``stub``/``openai``/``openrouter``/``anthropic``; the
+``NotImplementedError`` it can raise is now only for an UNKNOWN provider name.
+
+One disclosed gap: neither real adapter sets a request timeout, so the provider
+SDK's own default applies. The graph's wall-clock deadline is checked before
+``plan`` and inside ``execute`` (``app.graph.guards``), never around a reviewer
+call — a slow provider is bounded by the SDK, not by this system.
 """
 
 from __future__ import annotations
@@ -45,10 +59,17 @@ _UNION_ORIGINS = (typing.Union, types.UnionType)
 
 
 class CapabilityDescriptor(BaseModel):
-    """What a given adapter/model can do (ARCHITECTURE_SPEC §B.1).
+    """What a given adapter/model *declares* it can do (ARCHITECTURE_SPEC §B.1).
 
-    Nodes query this instead of ever branching on a provider name — the whole
-    point of the adapter is that nothing above it assumes a capability; it asks.
+    The design intent was that nodes query this instead of ever branching on a
+    provider name. As shipped that is aspirational, not wired: nothing in
+    ``app/`` reads it (repo-wide, the only caller is ``tests/test_llm.py``), and
+    both real adapters return one hardcoded descriptor regardless of which model
+    they were pointed at — ``max_context=200_000`` in particular is a nominal
+    figure, not a per-model lookup. Read it as the declared shape of the
+    capability seam. The one place a capability really does vary at runtime
+    (Anthropic native structured output vs the forced-tool fallback) is settled
+    by catching the provider's rejection, not by consulting this object.
     """
 
     supports_forced_tool_choice: bool
@@ -65,8 +86,8 @@ class LLMAdapter(ABC):
     Two entry points, matching the two shapes of LLM work in this system
     (ARCHITECTURE_SPEC §3.1/§3.4/§3.8):
 
-    * ``propose`` — the planner's structured-output / tool-calling call: turn a
-      question into a typed object (a ``Plan``).
+    * ``propose`` — the planner's structured-output call: turn a question into a
+      typed object (a ``Plan``).
     * ``verify`` — a bounded structured judgment call used by the two reviewers:
       turn a question + already-computed artifact into a typed verdict.
 
@@ -90,8 +111,15 @@ class LLMAdapter(ABC):
         model: str | None = None,
         canned: dict | None = None,
     ) -> BaseModel:
-        """Structured-output / tool-calling entry point (§3.1). Returns a
-        schema-validated instance of ``response_model``."""
+        """Structured-output entry point (§3.1). Returns a schema-validated
+        instance of ``response_model``.
+
+        ``tools`` is a pass-through, not a normalized surface: the shipped
+        planner always passes ``None`` (``app.llm.planner.plan_request``), and
+        this module defines no canonical tool-call/result type. When tools ARE
+        passed, ``OpenAIAdapter`` forwards them verbatim with
+        ``tool_choice="auto"`` and ``AnthropicAdapter.propose`` drops them.
+        """
         raise NotImplementedError
 
     @abstractmethod
@@ -204,7 +232,7 @@ def _best_effort_instance(
 
 
 class StubAdapter(LLMAdapter):
-    """Phase-0 default adapter: zero network, zero provider key, fully deterministic.
+    """The default adapter: zero network, zero provider key, fully deterministic.
 
     ``propose``/``verify`` never call out anywhere. If the caller passes
     ``canned``, that dict is validated straight into ``response_model``. If not,
@@ -258,7 +286,7 @@ class StubAdapter(LLMAdapter):
 
 
 # --------------------------------------------------------------------------- #
-# Phase 4: real provider adapters (OpenAI / Anthropic)                          #
+# The real provider adapters (OpenAI / OpenRouter / Anthropic)                   #
 # --------------------------------------------------------------------------- #
 
 
@@ -337,10 +365,17 @@ def _strict_schema(response_model: type[BaseModel]) -> dict:
     return schema
 
 
+# JSON-Schema keywords whose value is a `{name: subschema}` MAP rather than a schema node.
+# Their keys are author-chosen names (a model's field names, a `$defs` entry's class name),
+# so the keyword handling in `_strictify` must not be applied to them directly — see the
+# `default`-named-field note in that docstring.
+_SCHEMA_MAP_KEYWORDS = ("properties", "$defs")
+
+
 def _strictify(node: Any) -> None:
     """In-place: on every object node, set ``additionalProperties: false`` and
-    make all declared properties ``required``; strip ``default``; recurse into
-    every child.
+    make all declared properties ``required``; strip the ``default`` keyword;
+    recurse into every child.
 
     ``default`` MUST be removed everywhere: OpenAI strict mode rejects it, and
     Pydantic emits it as a *sibling of ``$ref``* for a nested-model field that has
@@ -349,11 +384,17 @@ def _strictify(node: Any) -> None:
     "optional" mean "required + nullable" uniformly (strict mode's contract), since
     a defaulted field is no longer advertised as skippable. (Caught by a LIVE
     provider call — an offline fake-client test can't exercise the real validator.)
+
+    Recursion descends through ``properties``/``$defs`` a level at a time because those
+    are ``{name: subschema}`` maps, not schema nodes: walking them as nodes deleted a
+    field literally *named* ``default`` from ``properties`` while ``required`` (computed
+    first) still listed it — an invalid schema. No shipped response model has such a
+    field, so this was latent, not live; the split keeps the walk total either way.
     """
     if isinstance(node, dict):
         node.pop("default", None)
         properties = node.get("properties")
-        if isinstance(properties, dict) and (node.get("type") == "object" or "properties" in node):
+        if isinstance(properties, dict):
             node["additionalProperties"] = False
             node["required"] = list(properties.keys())
         elif node.get("type") == "object":
@@ -363,9 +404,13 @@ def _strictify(node: Any) -> None:
             # "next strict-schema bug" class (the `default`-on-`$ref` bug's sibling) — a future
             # open-dict field can't silently break a live strict call.
             node["additionalProperties"] = False
-        # Snapshot values() so the keys we just added don't perturb iteration.
-        for value in list(node.values()):
-            _strictify(value)
+        # Snapshot items() so the keys we just added don't perturb iteration.
+        for key, value in list(node.items()):
+            if key in _SCHEMA_MAP_KEYWORDS and isinstance(value, dict):
+                for subschema in list(value.values()):
+                    _strictify(subschema)
+            else:
+                _strictify(value)
     elif isinstance(node, list):
         for item in node:
             _strictify(item)
@@ -379,9 +424,14 @@ class OpenAIAdapter(LLMAdapter):
     optional ``client`` may be injected (offline unit tests pass a fake with no
     network). Structured output uses native ``response_format`` json_schema with
     ``strict: True``; ``max_completion_tokens`` (gpt-5.x rejects ``max_tokens``);
-    ``temperature`` is never sent; ``reasoning_effort`` is optional and fail-soft
-    (dropped + retried once on a 400). The key is read only inside this adapter
-    and is never logged or echoed (errors are redacted to ``AdapterError``).
+    ``temperature`` is never sent. The key is read only inside this adapter and
+    is never logged or echoed (errors are redacted to ``AdapterError``).
+
+    ``reasoning_effort`` is fail-soft (sent, then dropped and retried once on a
+    400) but is a direct-construction knob ONLY: ``get_adapter`` never passes it
+    and no env var feeds it, so on the wired path it is always ``None``. The
+    model/base-url knobs by contrast ARE env-wired (``LLM_MODEL_PLANNER`` /
+    ``LLM_MODEL_REVIEWER`` / ``LLM_BASE_URL``).
     """
 
     _DEFAULT_PLANNER_MODEL = "gpt-5.4"
@@ -575,10 +625,13 @@ class AnthropicAdapter(LLMAdapter):
     """Real Anthropic adapter.
 
     Lazy client (same discipline as ``OpenAIAdapter``). Structured output prefers
-    native ``output_config`` json_schema; if the SDK/model rejects it
-    (capability-driven — a 400 or a ``TypeError`` on the param) it falls back to
-    a single forced tool whose ``input_schema`` is the response schema, reading
-    ``tool_use.input``. Which path ran is logged. ``max_tokens`` (Anthropic name,
+    native ``output_config`` json_schema; if the SDK/model rejects it, it falls
+    back to a single forced tool whose ``input_schema`` is the response schema,
+    reading ``tool_use.input``. That switch is EXCEPTION-driven, not
+    capability-driven: ``_obtain`` tries native and catches the provider's 400
+    (``BadRequestError``) or the SDK's ``TypeError`` on an unknown param —
+    ``capabilities()`` is never consulted (it reports one hardcoded descriptor;
+    see ``CapabilityDescriptor``). Which path ran is logged. ``max_tokens`` (Anthropic name,
     NOT ``max_completion_tokens``); ``temperature``/``top_p``/``budget_tokens``
     are never sent (they 400 on Opus 4.8 / Haiku 4.5). Same bounded re-ask and
     redaction as OpenAI.

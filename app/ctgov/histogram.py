@@ -6,10 +6,13 @@ duration in months. It is deliberately built on the two dated fields
 field (R-16): duration is a real, checkable magnitude; enrollment is not.
 
 Duration is measured at month precision (``year*12 + month``, day ignored; a
-year-only date such as ``"2020"`` is treated as January). A trial missing either
-date, or one whose completion precedes its start (a negative, impossible
-duration), is routed to an explicit ``Unknown (undated)`` bucket — kept for
-reconciliation and honesty, never silently dropped. The function is **TOTAL**: a
+year-only date such as ``"2020"`` is treated as January). Three cases route to the
+explicit ``Unknown (undated)`` bucket — kept for reconciliation and honesty, never
+silently dropped: a trial missing EITHER date, one whose completion precedes its
+start (a negative, impossible duration), and one whose duration falls outside every
+supplied bin (unreachable with the default bins, since they start at 0 and the last
+is open-ended). Note the bucket's label under-describes it: a member may well have a
+start date and simply lack a completion date. The function is **TOTAL**: a
 malformed record never raises; its date simply fails to resolve and it lands in
 the undated bucket (or, id-less, is not counted at all — a record with no nctId
 has no identity to reconcile against, mirroring the aggregation core).
@@ -17,6 +20,7 @@ has no identity to reconcile against, mirroring the aggregation core).
 
 from __future__ import annotations
 
+from app import config
 from app.ctgov.citations import build_bucket_citations
 from app.ctgov.dates import parse_ct_date
 
@@ -111,10 +115,13 @@ def bin_durations(
 
     Each duration bin datum carries ``bin_start``/``bin_end`` (months), the dual
     counts (equal in combine), and per-bucket citations at the START date field
-    path (the field that anchors the bin membership). Empty bins are kept (0 count,
+    path (the field that anchors the bin membership), sampled up to
+    ``config.CITATION_SAMPLE_K`` records per bucket. Empty bins are kept (0 count,
     no citations) so the histogram shows the full range honestly. A trial missing
-    either date or with a negative duration goes to the ``Unknown (undated)``
-    bucket, appended last only when non-empty.
+    EITHER date, or with a negative duration, or with a duration outside every
+    supplied bin goes to the ``Unknown (undated)`` bucket, appended last only when
+    non-empty — so "undated" is a slight under-description: a member can carry a
+    start date and be there because its COMPLETION date is missing.
 
     ``count_trials`` is a distinct-nctId count (a duplicate page row is deduped per
     bucket, K3); an id-less record is not counted (no identity to reconcile).
@@ -147,7 +154,7 @@ def bin_durations(
     for index, (lo, hi) in enumerate(edges):
         contributing = list(bin_records[index].values())
         citations, contributing_count, truncated = build_bucket_citations(
-            contributing, start_path, k=20
+            contributing, start_path, k=config.CITATION_SAMPLE_K
         )
         datums.append(
             {
@@ -172,7 +179,7 @@ def bin_durations(
     if undated_records:
         undated = list(undated_records.values())
         citations, contributing_count, truncated = build_bucket_citations(
-            undated, start_path, k=20
+            undated, start_path, k=config.CITATION_SAMPLE_K
         )
         datums.append(
             {

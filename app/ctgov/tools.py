@@ -1,19 +1,34 @@
 """The high-level deterministic task tools (ARCHITECTURE_SPEC §3.5).
 
-This is the entire surface the ReAct planner composes. Each tool performs its
-**full deterministic job internally** (paging, counting, dedupe, sort,
-Unknown-bucketing, dual counts, citations) and returns *computed* results — the
-LLM chooses which tool to call with what arguments; it never pages or tallies
-anything itself (ARCHITECTURE_SPEC §1, the governing invariant).
+Each tool performs its **full deterministic job internally** (paging, counting,
+dedupe, sort, Unknown-bucketing, dual counts, citations) and returns *computed*
+results. The LLM never pages or tallies anything itself (ARCHITECTURE_SPEC §1, the
+governing invariant).
 
-Phase 2 status: ``count_trials`` / ``aggregate_by`` / ``timeseries`` / ``compare``
-/ ``build_network`` / ``study_duration_histogram`` are LIVE (all delegate to the
-one ``AggregationCore.page_and_group`` core + the class helpers in
-``app.ctgov.{timeseries,histogram,compare,network}``). ``get_trial`` /
-``resolve_entity`` remain ``NotImplementedError`` stubs (drill-down + display-canon
-are the Phase-2/3 stretch). The surface is deliberately small (read-only, GET-only
-via ``app.ctgov.client.CTGovClient``) — see ARCHITECTURE_SPEC §A(a) for the
-per-tool least-privilege matrix.
+How a tool is actually selected in v1 — state this precisely, it is not the
+tool-calling shape the spec sketches. The planner makes ONE structured-output call
+with ``tools=None`` (``app.llm.planner``); it emits a ``query_class``, not a tool
+name. The recipe registry maps that class to a tool name
+(``app.plan.recipes``), and the execute node dispatches with a hand-written
+if/elif on ``plan.query_class`` (``app.graph.nodes``). So :data:`TOOL_REGISTRY`
+below is the name→callable inventory that recipes and tests are checked against —
+it is NOT the live dispatch table, and nothing in ``app/`` looks a tool up through
+it at runtime.
+
+Inventory (count carefully — three different numbers are defensible):
+
+* 8 entries in :data:`TOOL_REGISTRY`.
+* 6 of them are LIVE: ``count_trials``, ``aggregate_by``, ``timeseries``,
+  ``compare``, ``build_network``, ``study_duration_histogram``.
+* 2 are documented ``NotImplementedError`` stubs: ``get_trial`` (its
+  path-injection guard IS wired and tested) and ``resolve_entity``.
+* Plus one live callable that is deliberately NOT registered:
+  :func:`aggregate_by_counts`, the exact over-budget path the execute node selects
+  itself. It is an implementation of the ``distribution`` class, not a tool the
+  planner could ever name.
+
+The surface is read-only and GET-only via ``app.ctgov.client.CTGovClient`` — see
+ARCHITECTURE_SPEC §A(a) for the per-tool least-privilege matrix.
 """
 
 from __future__ import annotations
@@ -43,8 +58,9 @@ from app.ctgov.timeseries import finalize_timeseries, year_key_fn
 # ``fields=`` projection piece for each of the 5 real date fields (the wire token
 # that projects the corresponding ``...DateStruct`` — verified live: NCTId|StartDate
 # projects protocolSection.statusModule.startDateStruct). PUBLIC so the execute node
-# stamps the SAME wire token into meta.query_provenance that the tool actually fetches
-# (the plan-internal name "startDate" is NOT the wire token "StartDate", H3).
+# stamps the SAME wire token into meta.query_provenance that the tool actually fetches:
+# the plan-internal field name ("startDate") is NOT the wire projection token
+# ("StartDate"), and stamping the former would publish a params echo the API never saw.
 DATE_PROJECTION: dict[str, str] = {
     "startDate": "StartDate",
     "primaryCompletionDate": "PrimaryCompletionDate",
@@ -167,9 +183,17 @@ def _nct_sort_key(record: dict) -> str:
 # re-verify (viz.review.record_grounded_reverify): ``per_list_k`` sampled records per list
 # (for a per-bucket call, the SAME first-K-by-nctId the citation sample uses -> the index
 # covers each bucket's cited records exactly) and a hard ``cap`` on the total, so the index
-# stays small + JSON-serialisable in graph state even for a wide result. The cap (500) exceeds
-# the max cited set of a combine/explode board (K x #buckets), so those paths are FULLY covered;
-# a network's cited nctIds span the whole paged set and may exceed the cap -> best-effort there.
+# stays small + JSON-serialisable in graph state even for a wide result.
+#
+# The cap does NOT cover every path. A ranked bar can cite up to K x #buckets nctIds, and
+# with K=20 and the top-N fold at 50 that is up to 51 x 20 = 1020 > the 500 cap. Measured on
+# the shipped examples/run_06_geographic_ranked_bar.json: 51 buckets, 836 citation objects,
+# 566 unique cited nctIds — i.e. ~66 cited records are genuinely absent from the index. A
+# network's cited nctIds span the whole paged set and can exceed it by more. The re-verify is
+# therefore best-effort on wide boards: viz.review skips a citation whose record is not in
+# the index rather than failing it, so the check never produces a false negative — it just
+# covers fewer citations than a naive reading of "every citation is re-verified" implies.
+# (This comment used to claim full coverage; that was true only while TOP_N_CATEGORIES was 15.)
 _RECORD_INDEX_K = config.CITATION_SAMPLE_K  # ≤K cited nctIds/datum (§B.4/ENG-32), operator-tunable
 _RECORD_INDEX_CAP = config.RECORD_INDEX_CAP  # bounded per-request record index for re-verify
 
@@ -180,7 +204,7 @@ def _bounded_record_index(
     """Build a bounded ``{nct_id: record}`` index from the records a tool paged.
 
     Additive provenance surface (changes NO count / existing key): the Output Reviewer
-    re-verifies each citation excerpt against the ACTUAL fetched record here (an
+    re-verifies each citation's matched_value against the ACTUAL fetched record here (an
     independent ground truth, not the citation's own stored ``value``), giving
     ``is_substring_at`` a runtime caller (LESSON M3) and defending against any future
     non-code path that could author a citation. Deterministic (first-``per_list_k``-by-nctId per
@@ -203,34 +227,62 @@ def _explode_citations(
     records: list[dict], spec: FieldSpec, *, bucket_value: str | None, member_set: set | None = None
 ) -> tuple[list[Citation], int, bool]:
     """Element-targeted per-bucket citations for an EXPLODE field (country /
-    interventionType). The excerpt quotes the BUCKET'S OWN value (the specific
-    country/type), which the record provably carries (the core bucketed it here
-    via ``key_fn``) — so a "France" bar cites "France", never ``locations[0]``
+    interventionType). The ``matched_value`` quotes the BUCKET'S OWN value (the
+    specific country/type), which the record provably carries (the core bucketed it
+    here via ``key_fn``) — so a "France" bar cites "France", never ``locations[0]``
     (the loose "first list value" a plain string-extract would return, which for a
     multi-value field is often a DIFFERENT element). Round-trips via
-    ``is_substring_at`` (excerpt EQUALS one list element) and passes the Output
-    Reviewer's element-precise excerpt check.
+    ``is_substring_at`` (the value EQUALS one list element) and passes the Output
+    Reviewer's element-precise check. ``excerpt`` stays what it is everywhere else:
+    the trial's brief title.
 
-    * ``member_set`` (the "Other" fold): the excerpt is the record's OWN value that
-      falls in the folded set, resolved via ``spec.key_fn`` — precise even though
-      "Other" spans many countries.
+    * ``member_set`` (the "Other" fold): ``matched_value`` is the record's OWN value
+      that falls in the folded set, resolved via ``spec.key_fn`` — precise even
+      though "Other" spans many countries.
     * The ``UNKNOWN`` bucket has no value to quote: an *absence* citation
-      (``excerpt="", value=None``), valid only against a genuinely-absent value.
+      (``matched_value=""``, ``value=[]``), valid only against a genuinely-absent
+      value.
+
+    The sample is capped at ``config.CITATION_SAMPLE_K`` records per bucket (the
+    same cap the combine path uses via ``build_bucket_citations``).
+
+    **Known latent defect — the canonicalizing key_fn breaks verbatim round-trip.**
+    ``country_key_fn`` normalizes spellings (``canonical_country``, E-20), so for the
+    ``country`` field both ``matched_value`` (the bucket value) and ``value`` (from
+    ``spec.key_fn``) are CANONICAL, not what the record literally says. If a record's
+    raw ``locations[].country`` is an alias-table KEY whose canonical form differs —
+    "USA", "UK", "Russian Federation", "Czech Republic", … — then
+    ``is_substring_at(record, field_path, "United States")`` is False against a
+    record that says "USA". ``deterministic_precheck`` still passes (it compares
+    ``matched_value`` to the equally-canonical ``value``), but
+    ``record_grounded_reverify`` compares against the RAW fetched record and would
+    hard-fail the whole chart with ``citation_invalid``. Reproduced offline with a
+    hand-built "USA" record.
+
+    Not reached on live data as measured (2026-07-22, 200 pancreatic-cancer records,
+    31 distinct country strings): CT.gov already emits canonical-ish names, and the
+    only alias hits — "Russia", "Czechia", "South Korea" — are IDENTITY mappings, so
+    ``matched_value`` equals the raw string. It stays latent only as long as that
+    holds. The fix is not local to this function: ``matched_value`` and ``value``
+    must move together (they must stay mutually consistent for
+    ``deterministic_precheck``), so it needs a per-field "raw spelling that folded
+    into this bucket" hook on ``FieldSpec`` rather than a patch here.
     """
     contributing = len(records)
-    sample = sorted(records, key=_nct_sort_key)[:20]
+    k = config.CITATION_SAMPLE_K
+    sample = sorted(records, key=_nct_sort_key)[:k]
     citations: list[Citation] = []
     for record in sample:
         nct = _nct_id(record) or ""
         # ``value`` = the record's REAL distinct values at this field (the list the
         # key_fn extracted from the record), NOT a copy of the excerpt. This is what
-        # gives the Output Reviewer's excerpt check TEETH for explode fields: the
-        # excerpt (the bucket's value) is verified to be a genuine element of the
-        # record's own list, so a FABRICATED bucket value ("Atlantis") fails the
-        # element-precise check instead of passing against a copy of itself (F1).
+        # gives the Output Reviewer's citation check TEETH for explode fields: the
+        # matched_value (the bucket's value) is verified to be a genuine element of
+        # the record's own list, so a FABRICATED bucket value ("Atlantis") fails the
+        # element-precise check instead of passing against a copy of itself.
         record_values = [value for value, _ in spec.key_fn(record) if value != UNKNOWN_VALUE]
         if bucket_value == UNKNOWN_VALUE:
-            # Genuine absence: no value at the path -> empty excerpt against [].
+            # Genuine absence: no value at the path -> empty matched_value against [].
             citations.append(Citation(nct_id=nct, field_path=spec.field_path, value=[], matched_value="", excerpt=brief_title(record) or ""))
             continue
         if member_set is not None:
@@ -247,13 +299,13 @@ def _explode_citations(
                 excerpt=brief_title(record) or (excerpt or ""),
             )
         )
-    return citations, contributing, contributing > 20
+    return citations, contributing, contributing > k
 
 
 def _finalize_bucket(bucket: dict, spec: FieldSpec) -> dict:
-    """Build one bucket's citation surface: string-extracted for combine (excerpt =
-    the field value at ``field_path``), element-targeted for explode (excerpt = the
-    bucket's own value)."""
+    """Build one bucket's citation surface. The ``matched_value`` is string-extracted
+    at ``field_path`` for combine fields and element-targeted to the bucket's own value
+    for explode fields; ``excerpt`` is the trial's brief title on both paths."""
     records = bucket["records"]
     if spec.mode == "combine":
         # A composite combine bucket (e.g. phase "PHASE1|PHASE2", CC-15) must cite
@@ -352,7 +404,12 @@ _COUNT_AGGREGATABLE: dict[str, frozenset[str]] = {
     "sponsorClass": SPONSOR_CLASS_TOKENS,
     "interventionType": INTERVENTION_TYPE_TOKENS,
 }
-_COUNT_SAMPLE_K = 10  # citation-sample records pulled per bucket (in the SAME call as its count)
+# Citation-sample records pulled per bucket, in the SAME call as that bucket's count. It is
+# deliberately NOT ``config.CITATION_SAMPLE_K``: this number is the ``pageSize`` of a
+# countTotal request, so raising it makes ~14 real requests heavier, whereas CITATION_SAMPLE_K
+# is a pure output cap. It is a local literal rather than a config knob — i.e. this one number
+# is NOT operator-tunable, unlike the rest of the safety envelope in ``app.config``.
+_COUNT_SAMPLE_K = 10
 
 
 def is_count_aggregatable(field: str | None) -> bool:
@@ -374,7 +431,26 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
     (combine) field Σ(buckets incl a derived ``Missing`` residual) == total, for the explode
     ``interventionType`` Σbars ≥ distinct (a multi-type trial counts per type). Returns the SAME
     dict shape ``aggregate_by`` does, so the viz-builder + Output Reviewer are unchanged. TOTAL:
-    a malformed page element is skipped, never raises."""
+    a malformed page element is skipped, never raises.
+
+    Three ways this path differs from ``aggregate_by``, all visible in the output — know them
+    before demoing ``examples/run_09_exact_at_scale_status.json``:
+
+    1. **Bucket ORDER is alphabetical, not ranked.** Buckets are appended in ``sorted(tokens)``
+       order and nothing re-sorts them (this function ignores ``spec.sort_key``, and
+       ``app.viz.spec`` never sorts data). So the same question answered below the budget comes
+       back count-desc, and above it comes back A→Z. Ranking here would need a second pass after
+       all counts are known; it is not done today.
+    2. **Labels are plain title-case**, ``token.replace("_"," ").title()`` — so status
+       ``NOT_YET_RECRUITING`` renders "Not Yet Recruiting", where the paged path's curated
+       ``fields._STATUS_LABELS`` renders "Not yet recruiting". Same bucket, different casing,
+       depending on which path served it.
+    3. **Zero-count tokens are dropped**, not shown as empty bars (``if n <= 0: continue``). That
+       is why a 14-token status chart can ship 13 bars: in run_09 ``WITHHELD`` matched 0 trials.
+
+    It also assembles its own transport params (``countTotal``/``pageSize``/``fields``) and calls
+    ``client.get`` directly, rather than going through ``count``/``iter_studies`` — it needs the
+    count and the citation sample from ONE request."""
     spec = FIELD_SPEC[field]
     tokens = _COUNT_AGGREGATABLE[field]
     client = CTGovClient()
@@ -392,7 +468,7 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
         )
         n = int(body.get("totalCount") or 0)
         if n <= 0:
-            continue
+            continue  # a token with no matching trials is dropped, not shown as a 0-height bar
         covered += n
         sample = [rec for rec in (body.get("studies") or []) if isinstance(rec, dict)]
         citations: list[Citation] = []
@@ -401,9 +477,9 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
             if not isinstance(nct, str) or not nct:
                 continue
             record_index[nct] = record
-            # value = the record's REAL field value(s) via key_fn (teeth: excerpt=token must be a
-            # genuine element, since the record matched the field=token filter), never a copy of
-            # excerpt. Keep ALL values — do NOT strip the UNKNOWN sentinel: for overallStatus,
+            # value = the record's REAL field value(s) via key_fn (teeth: matched_value=token
+            # must be a genuine element, since the record matched the field=token filter), never
+            # a copy of matched_value. Keep ALL values — do NOT strip the UNKNOWN sentinel: for overallStatus,
             # "UNKNOWN" is itself a real enum token (it collides with key_fn's missing-sentinel),
             # and a record in the UNKNOWN bucket genuinely carries status "UNKNOWN", so stripping
             # it would empty the value and fail the citation against its own real record.
@@ -413,6 +489,9 @@ def aggregate_by_counts(query: dict, filters: dict, field: str) -> dict:
             )
         buckets.append({
             "value": token,
+            # Plain title-case, NOT fields._STATUS_LABELS — see the divergence note in the
+            # docstring. The curated labels are keyed off a record via ``key_fn``; here we
+            # only have the token, so this path renders it directly.
             "label": token.replace("_", " ").title(),
             "count_trials": n,
             "count_mentions": n,
@@ -469,7 +548,16 @@ def timeseries(query: dict, filters: dict, date_field: str, grain: str = "year")
     with no date (kept for reconciliation: Σ incl. planned incl. missing ==
     distinct == countTotal). Each real year-bucket carries its contributing-nctId
     citations (a time bucket is a first-class citable datum).
+
+    Raises ``ValueError`` on an unrecognized ``date_field`` — the same clean failure
+    ``aggregate_by`` gives for an unknown aggregation field. The Plan Checker
+    validates ``plan.date_field`` upstream, so this is a contract guard for direct
+    callers, not a routine path.
     """
+    if date_field not in DATE_PROJECTION or date_field not in FIELD_ALIASES:
+        raise ValueError(
+            f"unknown date field {date_field!r}; known: {sorted(DATE_PROJECTION)}"
+        )
     date_path = FIELD_ALIASES[date_field]
     projection = f"NCTId|{DATE_PROJECTION[date_field]}|BriefTitle"
     core = AggregationCore(CTGovClient())
@@ -535,7 +623,7 @@ def compare(series: list[dict], field: str) -> dict:
                 record_index[nct] = record
         # % denominator = the arm's exact countTotal (passed in by the executor's
         # per-arm count call), NOT the paged distinct — so the within-series % is
-        # honest even if paging drifted (F3). Falls back to paged distinct if the
+        # honest even if paging drifted mid-walk. Falls back to paged distinct if the
         # executor didn't supply a count (defensive).
         paged = agg["distinct_trials"]
         arm_total = arm.get("count_total", paged)
@@ -638,10 +726,11 @@ def build_network(
 
 
 def get_trial(nct_id: str) -> dict:
-    """Fetch one trial record by NCT id (for citation excerpts / drill-down).
+    """STUB — always raises ``NotImplementedError`` after validating ``nct_id``.
 
-    A single ``GET /studies/{nctId}`` call — the raw record never reaches the
-    LLM directly; only a bounded, string-extracted excerpt does (ARCHITECTURE_SPEC §A(c)).
+    Intended shape (drill-down by NCT id): a single ``GET /studies/{nctId}`` call
+    where the raw record never reaches the LLM directly; only a bounded,
+    string-extracted excerpt would (ARCHITECTURE_SPEC §A(c)). The fetch is not built.
 
     The ``nct_id`` is format-validated (``^NCT\\d{8}$``, ``validate_nct_id``) BEFORE
     it would ever be interpolated into the ``/studies/{nctId}`` path — the one
@@ -659,18 +748,24 @@ def get_trial(nct_id: str) -> dict:
 
 
 def resolve_entity(name: str, kind: str) -> list[str]:
-    """Canonicalize ``name`` (a drug/condition/sponsor/country) to its display label(s).
+    """STUB — always raises ``NotImplementedError``.
 
-    Light alias canonicalization (e.g. ``"USA"`` -> ``"United States"``); the
-    API already resolves search-*recall* synonyms (``Keytruda`` ≡
-    ``pembrolizumab``) so this tool only normalizes *display*, it does not
-    change what a search matches.
+    Intended shape: light alias canonicalization of a drug/condition/sponsor/country
+    to its display label(s) (e.g. ``"USA"`` -> ``"United States"``). The API already
+    resolves search-*recall* synonyms (``Keytruda`` ≡ ``pembrolizumab``), so this
+    tool would only normalize *display* — it would not change what a search matches.
+    The country half of that idea does ship, just not as a tool:
+    ``app.ctgov.countries.canonical_country`` is called inside ``country_key_fn``.
     """
     raise NotImplementedError("resolve_entity is a Phase-2/3 stretch (display canon)")
 
 
-# Recipes reference tools by name (ARCHITECTURE_SPEC §B.6); this is the single
-# name -> callable binding every other layer looks up through.
+# Recipes reference tools by name (ARCHITECTURE_SPEC §B.6). This is the name -> callable
+# inventory those names are checked against — at BUILD time, by tests/test_ctgov_plan.py
+# (every ``Recipe.allowed_tools`` must be a subset of TOOL_NAMES). No runtime code in app/
+# resolves a tool through it: the execute node dispatches with an if/elif on
+# plan.query_class. ``aggregate_by_counts`` is intentionally absent — it is an
+# implementation of the distribution class, not a name a planner could select.
 TOOL_REGISTRY: dict[str, Callable] = {
     "count_trials": count_trials,
     "aggregate_by": aggregate_by,

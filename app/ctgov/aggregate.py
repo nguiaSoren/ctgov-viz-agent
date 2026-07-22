@@ -1,10 +1,16 @@
 """The aggregation core (ARCHITECTURE_SPEC §3.6 / §B.6) -- Wave 2.
 
-The engine every high-level tool (``aggregate_by``, ``timeseries``, ``compare``,
-``build_network``) delegates to. Under the hood they all reduce to one
-``page_and_group`` primitive and differ only in grouping key + counting mode
-(§B.6): ``timeseries``'s key is a date bin, ``build_network``'s key is an entity
-*pair*, ``compare`` runs this twice and unions the categories.
+The paging + bucketing engine behind the bucketed tools. ``aggregate_by`` and
+``timeseries`` call ``page_and_group`` directly; ``compare`` reaches it once per
+arm through ``aggregate_by``. They differ only in grouping key + counting mode
+(§B.6): ``timeseries``'s key is a date bin, ``compare`` runs this per arm and
+unions the categories.
+
+The two record-shaped tools that do NOT use it -- ``build_network`` and
+``study_duration_histogram`` -- page with ``CTGovClient.iter_studies`` and hand the
+raw records to a pure assembler (``app.ctgov.network`` / ``app.ctgov.histogram``),
+because their unit is an entity PAIR and a derived duration rather than a bucket
+key. ``count_trials`` and ``aggregate_by_counts`` never page at all.
 
 This is where correctness lives: paging under a page budget (CC-6), dual counts
 (distinct-trial + trial×value mention, CC-3), explicit Missing/NA buckets via the
@@ -22,11 +28,13 @@ import math
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
+from app import config
 from app.ctgov.client import CTGovClient
 
-# Mirrors ``CTGovClient.iter_studies``'s default page size, used only to report
-# an informational ``pages_read`` (nothing downstream depends on it).
-_PAGE_SIZE = 1000
+# The same page size ``CTGovClient.iter_studies`` defaults to, read from the one
+# config module so the two cannot drift. Used ONLY to derive the informational
+# ``GroupResult.pages_read`` — nothing downstream reads it (see that field).
+_PAGE_SIZE = config.PAGE_SIZE
 
 _NCT_PATH = ("protocolSection", "identificationModule", "nctId")
 
@@ -66,6 +74,14 @@ class GroupResult:
     (the reconciliation anchor for explode; equal to ``Σ count_trials`` for
     combine). ``truncated`` is True iff paging stopped on the budget with more
     pages pending.
+
+    ``pages_read`` is INFORMATIONAL ONLY and currently unread: no module in
+    ``app/``, ``tests/`` or ``scripts/`` consumes it. It is also an ESTIMATE, not a
+    tally — it is derived as ``ceil(len(records) / PAGE_SIZE)`` after the walk, so
+    a short final page (or any page the API returns under-full) makes it undercount
+    the requests actually issued. Kept as a cheap debugging aid; do not build a
+    cost/latency claim on it without switching to a real counter inside
+    :meth:`CTGovClient.iter_studies`.
     """
 
     buckets: list[Bucket]
@@ -77,9 +93,12 @@ class GroupResult:
 class AggregationCore:
     """Pages a ClinicalTrials.gov search under a budget and buckets the results.
 
-    Every high-level tool (§3.5) is a thin wrapper over this one primitive
-    (§B.6) -- the "single general aggregation core covers all 5 query classes"
-    decision (CC-11) that makes breadth cheap.
+    Every PAGED high-level tool (§3.5) is a thin wrapper over this one primitive
+    (§B.6) -- the "one general aggregation core covers every query class" decision
+    (CC-11, written when there were five; ``single_value`` was added later for six)
+    that makes breadth cheap. Two shipped paths deliberately do NOT go through it:
+    ``tools.count_trials`` (one countTotal call, nothing to bucket) and
+    ``tools.aggregate_by_counts`` (exact per-token counts above the paging budget).
     """
 
     def __init__(self, client: CTGovClient) -> None:
@@ -92,7 +111,7 @@ class AggregationCore:
         fields: str,
         key_fn: Callable[[dict], list[tuple[str, str]]],
         mode: str,
-        budget_pages: int = 20,
+        budget_pages: int = config.PAGE_BUDGET_PAGES,
     ) -> GroupResult:
         """Page ``search_params`` under a budget and bucket records by ``key_fn``.
 
@@ -113,9 +132,11 @@ class AggregationCore:
             key/record; the trial counts once per DISTINCT value for
             ``count_trials`` and once per OCCURRENCE for ``count_mentions``.
         budget_pages:
-            Page budget (default 20 = 20,000 trials at pageSize=1000). Above it,
-            paging stops and ``truncated`` is True -- callers refuse the chart
-            rather than ship a biased prefix (§B.7).
+            Page budget, defaulting to ``config.PAGE_BUDGET_PAGES`` (20 pages =
+            20,000 trials at pageSize=1000), so the ``PAGE_BUDGET_PAGES`` env
+            override reaches the paged aggregations too. Above the budget, paging
+            stops and ``truncated`` is True -- callers refuse the chart rather than
+            ship a biased prefix (§B.7).
 
         Returns
         -------

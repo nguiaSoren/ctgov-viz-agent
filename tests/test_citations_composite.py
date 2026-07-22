@@ -5,10 +5,11 @@ dicts carrying only the two paths the builder reads: the nctId (for the
 deterministic sort) and the ``phases`` array being cited.
 
 A composite bucket (e.g. ``PHASE1|PHASE2``, formed from ``["PHASE1","PHASE2"]``)
-must identify EVERY member token: ``excerpt`` stays the first token for display
-back-compat, and ``matched_tokens`` carries every verified member literal (each a
-verbatim element at ``field_path``). A single-value bucket is unchanged:
-``matched_tokens is None``.
+must identify EVERY member token: ``matched_value`` holds the FIRST member token
+(the primary anchor), and ``matched_tokens`` carries every verified member literal
+(each a verbatim element at ``field_path``). A single-value bucket is unchanged:
+``matched_tokens is None``. The field literally named ``excerpt`` is the trial's
+brief title and plays no part in this contract.
 """
 
 from __future__ import annotations
@@ -46,9 +47,9 @@ def test_composite_bucket_carries_every_verified_member_token() -> None:
     for citation, record in zip(citations, records, strict=True):
         assert isinstance(citation, Citation)
         assert citation.field_path == FIELD_PATH
-        assert citation.matched_value == "PHASE1"  # first token, for display
+        assert citation.matched_value == "PHASE1"  # the FIRST member token
         assert citation.matched_tokens == ["PHASE1", "PHASE2"]  # in token order
-        # value stays the record's REAL resolved value, not a copy of the excerpt:
+        # value stays the record's REAL resolved value, not a copy of matched_value:
         assert citation.value == ["PHASE1", "PHASE2"]
         # each member token round-trips element-precisely at field_path:
         for token in citation.matched_tokens:
@@ -94,7 +95,7 @@ def test_composite_honesty_absent_member_token_is_excluded() -> None:
 
     assert contributing_count == 2
     by_nct = {c.nct_id: c for c in citations}
-    # display excerpt is the first token on both, regardless of presence:
+    # matched_value is the first member token on both, regardless of presence:
     assert by_nct["NCT00000001"].matched_value == "PHASE1"
     assert by_nct["NCT00000002"].matched_value == "PHASE1"
     # matched_tokens is honest: only the tokens actually present in each record:

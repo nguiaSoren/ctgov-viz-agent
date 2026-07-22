@@ -23,6 +23,13 @@ def parse_ct_date(s: str | None) -> tuple[int, int | None]:
     ``AttributeError``/unhandled crash — on ``None``, an empty/whitespace
     string, a non-numeric component, or a month outside ``1..12``. A bad date
     on the wire must fail loudly here rather than silently mis-bin downstream.
+
+    The YEAR is not range-checked: ``"0001-05"`` parses to ``(1, 5)`` and a far-future
+    year parses too. Only the month is fenced. That is deliberate — future start
+    dates are legitimate registry data (G-40) — but it means an implausible early
+    year propagates as a real bucket. See ``timeseries.finalize_timeseries`` for the
+    consequence (an uncapped gap-fill range). Filter years supplied by the plan ARE
+    fenced to [1900, 2100], but in ``app.ctgov.params``, not here.
     """
     if s is None or not s.strip():
         raise ValueError(f"parse_ct_date: expected a non-empty date string, got {s!r}")

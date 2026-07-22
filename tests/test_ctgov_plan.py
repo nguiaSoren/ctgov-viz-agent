@@ -1,8 +1,13 @@
-"""Tests for the ctgov tool surface + plan recipes/checker (Phase 0 scaffold).
+"""Tests for the ctgov tool surface + plan recipes/checker.
 
-Recipes and the Plan Checker are REAL in Phase 0; the 7 tool bodies are stubs that
-raise NotImplementedError until Phase 1 wires the live API. The date/citation helpers
-are pure functions and are real now.
+Recipes and the Plan Checker are real and are exercised directly here. ``TOOL_REGISTRY``
+holds EIGHT tools: six have live bodies (``count_trials``, ``aggregate_by``, ``timeseries``,
+``compare``, ``build_network``, ``study_duration_histogram`` -- their network paths are
+exercised by the live gate tests, not here, since dummy args would issue a real request)
+and two are documented stubs that still raise ``NotImplementedError``: ``get_trial`` and
+``resolve_entity``. What this file asserts about the six live tools is therefore only that
+they are no longer the stub, not that they work -- that is the live gates' job. The
+date/citation helpers are pure functions and are tested for real.
 """
 
 import inspect
@@ -41,7 +46,11 @@ def test_every_recipe_chart_type_and_tools_are_legal():
         assert recipe.chart_type in ChartType, name
         for alt in recipe.alternates:
             assert alt in ChartType, (name, alt)
-        # every tool a recipe is allowed to call must be a real registered tool
+        # Every tool a recipe is allowed to call must be a real registered tool.
+        # This assertion is the ONLY enforcement of ``Recipe.allowed_tools`` in the
+        # project: no runtime code reads the field (execute dispatches on
+        # ``plan.query_class`` via a hand-written if/elif), so it is a BUILD-TIME
+        # declaration checked here and nowhere else.
         assert set(recipe.allowed_tools) <= tools.TOOL_NAMES, (name, recipe.allowed_tools)
 
 
@@ -93,7 +102,7 @@ def test_bad_date_field_is_rejected_at_construction():
         )
 
 
-# --- the 7 tools are importable signatures with stub bodies ---
+# --- the 8 registered tools: 6 live bodies, 2 documented stubs ---
 
 def test_all_tools_registered():
     # Phase 2 adds study_duration_histogram (the duration recipe) alongside the

@@ -233,6 +233,9 @@ def test_openai_reask_exhausted_raises_adapter_error() -> None:
 
 
 def test_openai_reasoning_effort_fail_soft_on_400() -> None:
+    # NOTE ``reasoning_effort`` is reachable ONLY by constructing the adapter directly,
+    # as here: ``get_adapter`` never passes it and no env var feeds it, so nothing in the
+    # shipped request path can set it. This test covers the fail-soft, not a live knob.
     client = _FakeOpenAIClient([_decision_json()], raise_on_reasoning=True)
     adapter = OpenAIAdapter(client=client, reasoning_effort="high")
     result = adapter.propose(system="s", messages=[{"role": "user", "content": "q"}], response_model=_Decision)

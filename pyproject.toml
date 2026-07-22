@@ -7,9 +7,10 @@ requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "Soren Obounou Nguia" }]
 
-# Pinned to the versions verified live on PyPI 2026-07-15 (BUILD_PLAN L6/L8: never default
-# a version from memory). Lower bounds keep a reviewer's fresh install working; upper bounds
-# fence off the next major so a surprise breaking release can't silently break the submission.
+# Every lower bound was read off PyPI on 2026-07-15, never recalled from memory — a model's
+# idea of "the current version" is exactly the kind of number this project refuses to trust.
+# Lower bounds keep a reviewer's fresh install working; upper bounds fence off the next major
+# so a surprise breaking release can't silently break the submission.
 dependencies = [
     "fastapi>=0.139,<1",
     "uvicorn[standard]>=0.51,<1",
@@ -18,15 +19,20 @@ dependencies = [
     "langgraph>=1.2,<2",
     "langchain-core>=1.4,<2",
     "sse-starlette>=3.4,<4",
-    # Two provider SDKs behind ONE provider-agnostic adapter (app/llm/adapter.py) — the point of
-    # the capability matrix is proven by normalizing two genuinely different wire shapes, not
-    # claimed. Versions verified live 2026-07-16 (L6/L8): anthropic 0.116 / openai 2.45 latest on
-    # PyPI. `openai` also drives OpenRouter / a local endpoint via a base_url override.
+    # Two provider SDKs behind ONE provider-agnostic adapter (app/llm/adapter.py) — provider
+    # agnosticism is proven by normalizing two genuinely different wire shapes, not claimed.
+    # Latest on PyPI when read on 2026-07-16: anthropic 0.116 / openai 2.45. The `openai` client
+    # also drives OpenRouter or a local endpoint via a base_url override.
     "anthropic>=0.116,<1",
     "openai>=2.4,<3",
 ]
 
 [project.optional-dependencies]
+# Honest inventory: only `pytest` and `ruff` are exercised by the suite. `respx` (HTTP mocking)
+# is unused — the tests inject duck-typed fake clients at the HTTP and LLM seams instead of
+# intercepting transport — and `pytest-asyncio` is inert, because there is no `async def test_`:
+# the async FastAPI app is driven through Starlette's sync TestClient. Both are declared but
+# imported nowhere. Called out here rather than left for a reader to discover.
 dev = [
     "pytest>=9.1,<10",
     "pytest-asyncio>=1.4,<2",
@@ -45,7 +51,6 @@ build-backend = "hatchling.build"
 packages = ["app"]
 
 [tool.pytest.ini_options]
-asyncio_mode = "auto"
 testpaths = ["tests"]
 
 [tool.ruff]

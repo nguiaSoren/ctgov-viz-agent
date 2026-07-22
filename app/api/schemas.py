@@ -1,16 +1,19 @@
 """API I/O contracts — the request model and the full response envelope.
 
-This is the **lowest layer** of the system: it imports stdlib + pydantic only and
-nothing from ``app.*``. Every other module (planner, checker, executor, viz-spec
-builder, the FastAPI transport) imports its wire types from here, so the names in
-this file are a **frozen interface contract** — do not rename them.
+This is the **lowest layer** of the system: at module level it imports stdlib +
+pydantic only, nothing from ``app.*`` (the one ``app`` dependency —
+``app.ctgov.phases.normalize_trial_phase`` — is imported *inside* the
+``trial_phase`` validator, so importing this module never pulls in a higher
+layer). Every other module (planner, checker, executor, viz-spec builder, the
+FastAPI transport) imports its wire types from here, so the names in this file are
+a **frozen interface contract** — do not rename them.
 
 What lives here:
 
 * The status / kind discriminators (``Status``, ``Kind``) and the closed chart
   enum (``ChartType``) — ARCHITECTURE_SPEC §B.3 / CC-10.
-* The shared viz value objects (``CategoryValue``, ``Citation``, ``Datum``,
-  ``Node``, ``Edge``, ``NetworkData``, ``EncodingChannel``, ``Visualization``).
+* The shared viz value objects (``Citation``, ``Datum``, ``Node``, ``Edge``,
+  ``NetworkData``, ``EncodingChannel``, ``Visualization``).
 * The response envelope (``VisualizeResponse``) — ARCHITECTURE_SPEC §6 — plus its
   ``meta`` sub-objects (``CountBasis``, ``Partial``, ``ErrorObj``, ``Meta``).
 * The request model (``VisualizeRequest``) — the documented, per-field-validated
@@ -18,10 +21,15 @@ What lives here:
 
 Design invariant this schema enforces structurally (ARCHITECTURE_SPEC §1, G-30):
 the LLM never emits a number. Numbers reach the user only through ``Datum`` /
-``CountBasis`` fields that the deterministic aggregation core fills, and the
-prose fields (``title``, scalar ``answer``, ``meta.notes``) are code-templated.
-The schema cannot enforce "code-templated" on its own, but it is the single place
-those fields are declared, so the guarantee has one home.
+``CountBasis`` fields that the deterministic aggregation core fills, and the prose
+fields ``title``, the scalar ``answer`` and ``question`` are code-templated.
+``meta.notes`` is the honest exception: an entry there CAN be LLM prose (a planner
+interpretation note, an Output-Reviewer flag reason), so it is *gated* rather than
+templated — every entry runs through the deterministic digit post-check
+``app.viz.review.note_number_safe`` and is dropped for a fixed code-owned caveat if
+it names a number the engine did not compute (``app.graph.nodes.build_spec``).
+The schema cannot enforce any of this on its own, but it is the single place those
+fields are declared, so the guarantee has one home.
 """
 
 from __future__ import annotations
@@ -68,42 +76,59 @@ class ChartType(str, Enum):  # noqa: UP042 — frozen contract mandates (str, En
 # --- Shared value objects -------------------------------------------------
 
 
-class CategoryValue(BaseModel):
-    """A ``{value, label}`` pair (CC-10): identity/sort on the raw ``value``,
-    display on the ``label``. The backend owns the token→label map so the wire
-    value never drifts from what the API returned."""
-
-    value: str  # raw registry token, e.g. "PHASE1"
-    label: str  # human display, e.g. "Phase 1"
-
-
 class Citation(BaseModel):
     """A single per-datum provenance record (CC-9 / A-45/A-46).
 
-    ``excerpt`` is **string-extracted** from the fetched record at ``field_path``,
-    never authored by the LLM — the Output Reviewer asserts it is a real substring
-    of the source at that path. It proves *membership* (this NCT is in this
-    bucket); the count is proven by the cardinality of the contributing set.
+    It carries assignment §5's *two* readings of "an exact text excerpt from the
+    API response (or a specific field/value)" in two separate fields, because the
+    readable one and the checkable one come from different paths:
 
-    Citation invariant: ``excerpt`` is always a verbatim substring of the source
-    record at ``field_path``; when a bucket is formed from MULTIPLE source tokens
-    (a composite bucket, e.g. ``PHASE1|PHASE2``, CC-15), the additional verified
-    literals ride in ``excerpt_tokens`` (each also a verbatim element at
-    ``field_path``); no synthesized excerpt text is ever generated. ``excerpt``
-    stays the FIRST member token for display/back-compat.
+    * ``matched_value`` — the **checkable** anchor: the exact value at
+      ``field_path`` that decided membership (``"PHASE1"``, ``"1997-05"``,
+      ``"France"``), string-extracted from the record.
+    * ``excerpt`` — the **readable** one: the trial's brief title, string-extracted
+      at the fixed path ``protocolSection.identificationModule.briefTitle``
+      (``app.ctgov.citations.brief_title``), which is NOT ``field_path``. When a
+      record didn't project ``BriefTitle`` it falls back to ``matched_value``, so a
+      citation always ships something human-readable.
+
+    Neither is ever authored by the LLM — both are walked out of the fetched record,
+    and no citation text is ever synthesized. Three code paths build them to that one
+    contract: ``app.ctgov.citations.build_citation`` (combine buckets),
+    ``app.ctgov.tools._explode_citations`` (multi-value fields — the anchor is the
+    record's OWN element in this bucket, not the loose first list item), and
+    ``app.ctgov.network._endpoint_citation`` (one per edge endpoint).
+
+    What the Output Reviewer actually verifies (``app.viz.review``): only
+    ``matched_value`` and every ``matched_tokens`` member, twice each — element-
+    precise against this citation's own ``value`` (``_citation_valid``) and
+    round-tripped against the fetched record via ``is_substring_at``
+    (``record_grounded_reverify``). ``excerpt`` is **not** re-verified by the
+    reviewer: it is code-extracted from a fixed path rather than proven, which is the
+    weaker of the two guarantees and is why membership rests on ``matched_value``,
+    not on the title.
+
+    Composite buckets (CC-15): when a bucket is formed from MULTIPLE source tokens
+    (e.g. the ``PHASE1|PHASE2`` bucket built from ``["PHASE1","PHASE2"]``),
+    ``matched_tokens`` carries every member token verified present in THAT record,
+    in token order, and ``matched_value`` is the FIRST member token (display /
+    back-compat). ``matched_tokens`` is ``None`` for a single-value bucket.
+
+    Absence citations: for a genuinely-absent value (the ``UNKNOWN`` bucket),
+    ``matched_value`` is ``""`` and ``value`` is ``None``/``[]``/``""`` — the empty
+    anchor is valid *only* against a genuine absence (``_excerpt_in_value``).
+    ``excerpt`` still carries the brief title when the record has one.
     """
 
     nct_id: str  # e.g. "NCT01234567"
-    # ``excerpt`` is assignment §5's headline: "an exact text excerpt from the API response that
-    # supports the datum" — the trial's **brief title**, string-extracted from the record (never
-    # model-authored). Falls back to ``matched_value`` only when a record carries no briefTitle, so a
-    # citation always ships a human-readable supporting excerpt.
+    # Readable supporting excerpt: the trial's brief title, string-extracted from
+    # identificationModule.briefTitle (NOT from field_path); falls back to
+    # ``matched_value`` when the record carried no briefTitle. Not reviewer-verified.
     excerpt: str = ""
     field_path: str  # the JSON path whose value placed this trial in the datum
     value: Any  # the record's real value(s) at field_path (may be an array, e.g. ["PHASE1"])
-    # ``matched_value`` is §5's "(or a specific field/value)": the exact value at ``field_path`` that
-    # decided membership (e.g. "PHASE1", "2015-01-28", "France") — the rigorous, element-precise proof,
-    # round-trip verified against the record. This is the anti-fabrication anchor the Output Reviewer checks.
+    # The anti-fabrication anchor: the exact value at ``field_path`` that decided
+    # membership — element-precise and round-trip verified by the Output Reviewer.
     matched_value: str = ""
     # For a composite bucket: every verified matched member value (each a verbatim element at
     # field_path), in token order. None for single-value buckets.
@@ -119,15 +144,29 @@ class Datum(BaseModel):
     inline provenance list (G-25/G-34 — the load-bearing citation surface; the
     top-level ``citations{}`` map is only a dedup index).
 
-    ``extra="allow"`` lets a recipe attach class-specific channels (e.g. a
-    ``planned: true`` flag on a future time-series bucket) without a schema change,
-    while the named fields below stay a stable contract.
+    ``extra="allow"`` lets a recipe attach class-specific channels without a schema
+    change, while the named fields below stay a stable contract. It is **load-bearing,
+    not merely convenient**: of the seven channels the spec builder forwards
+    (``app.viz.spec._CHANNEL_KEYS``) three are undeclared here and survive only on
+    ``extra`` — ``percent`` (grouped_bar's y channel, ``app.ctgov.compare``),
+    ``planned`` and ``partial_year`` (time-series flags). Tightening this to
+    ``extra="forbid"`` would break grouped bars. The cost of the looseness is real
+    and unguarded: ``app.viz.vega`` reads channels with ``getattr(datum, field, None)``,
+    so a typo'd or missing ``percent`` emits ``y: null`` silently rather than raising.
+
+    Unlike ``Datum``, ``Node``/``Edge``/``NetworkData`` keep pydantic's default
+    ``extra="ignore"``, so a network payload has no extension channel — an unknown
+    key there is dropped, not carried.
     """
 
     model_config = ConfigDict(extra="allow")
 
-    value: str  # raw bucket token, e.g. "PHASE1" or a composite "PHASE1/2" (CC-15 combine)
-    label: str  # display label, e.g. "Phase 1"
+    # Raw bucket token, e.g. "PHASE1", or a PIPE-joined composite "PHASE1|PHASE2"
+    # (CC-15 combine, app.ctgov.fields.phase_key_fn). The pipe is load-bearing:
+    # app.ctgov.tools splits on it to recover the member tokens each citation
+    # verifies. The SLASH form ("Phase 1/2") is the human ``label``, never the value.
+    value: str
+    label: str  # display label, e.g. "Phase 1" (composite: "Phase 1/2")
 
     # Optional per-class channel fields (null when the class doesn't use them):
     period: str | None = None  # time-series bucket, e.g. "2023"
@@ -145,8 +184,14 @@ class Datum(BaseModel):
     citations: list[Citation] = []  # inline per-datum citation list (G-25/G-34 — authoritative)
     citations_truncated: bool = False  # true when the citation sample was capped at K
     contributing_count: int | None = None  # exact size of the contributing set (may exceed len(citations))
-    derived: bool = False  # a computed value (rate/edge weight) — cites its members, not an excerpt
-    members: list[str] | None = None  # for derived data: the member nctIds the value was derived from
+    # True for a bucket the core COMPUTED rather than read off one field value. Two
+    # producers ship it (``app.ctgov.tools``): the top-N "Other" fold (still fully cited —
+    # each citation quotes that record's OWN folded value) and the exact-count "Missing"
+    # residual (total − Σ covered tokens: a subtraction, so it carries NO citations).
+    derived: bool = False
+    # For the "Other" fold: the folded CATEGORY values it stands for (e.g. country names),
+    # not nctIds — the contributing trials are in ``source_ids``/``citations``.
+    members: list[str] | None = None
 
 
 class Node(BaseModel):
@@ -299,8 +344,15 @@ class VisualizeResponse(BaseModel):
     * ``kind:"clarification"`` → ``question`` populated; ``visualization``/
       ``answer``/``vega_lite`` null; ``status:"empty"`` (well-formed request, an
       unresolvable NL referent, nothing queried — P5-INPUT/E-13).
-    * ``vega_lite`` is a convenience projection for standard charts only; it is
-      null for network / answer / clarification / too_large (G-41d).
+    * ``vega_lite`` is a convenience projection for the standard marks only —
+      ``app.viz.vega._STANDARD_MARKS`` holds bar / grouped_bar / time_series /
+      histogram / scatter (scatter is deferred: no recipe emits it). It is null for
+      the three marks with no natural Vega-Lite equivalent — ``network_graph``
+      (G-41d: a node-link graph must NEVER be expressed as Vega-Lite),
+      ``single_value`` and ``table`` — and for every envelope that carries no
+      visualization at all (answer / clarification / too_large). So a
+      ``single_value`` stat card is a POPULATED ``kind:"visualization"`` with a
+      null ``vega_lite`` (shipped: ``examples/run_12_cc1_field_vs_query_conflict.json``).
 
     These presence rules are conventions the pipeline upholds, not schema
     constraints — the envelope keeps every field optional so a single type serves
@@ -309,8 +361,10 @@ class VisualizeResponse(BaseModel):
 
     status: Status  # ok | empty | too_large | error
     kind: Kind  # visualization | answer | clarification
-    visualization: Visualization | None = None  # the custom canonical spec; null on kind:"answer"
-    vega_lite: dict | None = None  # Vega-Lite projection for standard charts; null for network/answer/too_large
+    visualization: Visualization | None = None  # the custom canonical spec; null on answer/clarification
+    # Vega-Lite projection for the standard marks; null for network_graph/single_value/table
+    # and for any envelope with no visualization (see the class docstring)
+    vega_lite: dict | None = None
     answer: str | None = None  # natural-language answer for kind:"answer" (API-21); code-templated
     question: str | None = None  # the disambiguating question for kind:"clarification" (P5-INPUT/E-13);
     # code-templated (never LLM-authored data); null for every other kind
@@ -336,7 +390,7 @@ class VisualizeRequest(BaseModel):
         (CC-1 precedence — resolved later by the planner). Each is capped at 200
         chars (G-41b): without a cap they are an unbounded DoS / Essie-injection
         surface — only ``query`` was bounded before.
-    trial_phase : str | None (optional)
+    trial_phase : str | None (optional, ≤ 100 chars)
         A human phase string ("Phase 1", "1/2", "phase I", "Early Phase 1", "NA").
         Because ``trial_phase`` is a STRUCTURED field with a CLOSED vocabulary, a
         value that names no real phase is a malformed structured input and is
@@ -348,7 +402,7 @@ class VisualizeRequest(BaseModel):
     start_year, end_year : int | None (optional, 1900..2100)
         Year range. When both are present, ``start_year <= end_year`` is enforced
         (else → 422).
-    study_type : str | None (optional)
+    study_type : str | None (optional, ≤ 100 chars)
         A study-type hint (e.g. "interventional"); tokenized downstream.
     interventional_only : bool (default False)
         The CC-5/E-38 toggle — when true a phase distribution can offer the
@@ -357,6 +411,14 @@ class VisualizeRequest(BaseModel):
     Policy: ``extra="forbid"`` — unknown request fields are rejected (→ 422). This
     is a deliberate choice (fail-closed on a malformed request) over silently
     ignoring typo'd field names.
+
+    Where the caps really live: every length cap here is a ``max_length`` literal on
+    the field below and nothing else enforces it. ``app.config`` declares
+    ``MAX_QUERY_CHARS``/``MAX_STRUCTURED_FIELD_CHARS`` with the same 500/200 numbers
+    (and ``.env.example`` lists them), but no module reads those constants, and the
+    100-char ``trial_phase``/``study_type`` caps have no config twin at all — this
+    file stays stdlib+pydantic-only at import time, so setting those env vars does
+    NOT move these caps. Treat them as documentation of the values, not as knobs.
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -401,7 +463,15 @@ class VisualizeRequest(BaseModel):
 
     @model_validator(mode="after")
     def _year_range_ordered(self) -> VisualizeRequest:
-        """Reject an inverted year range when both bounds are given (→ 422)."""
+        """Reject an inverted year range when both bounds are given (→ 422).
+
+        Scope caveat: this is the ONLY ordering guard in the system, and it only sees
+        the typed request fields. A ``start_year``/``end_year`` pair the planner reads
+        out of the NL instead is not re-checked — ``app.plan.checker`` skips year keys
+        (they have no token set) and ``app.ctgov.params._validate_year`` checks type
+        and the [1900, 2100] range but not ordering — so an inverted planner-emitted
+        pair ships as an inverted ``AREA[StartDate]RANGE[...]`` clause instead of a 422.
+        """
         if (
             self.start_year is not None
             and self.end_year is not None

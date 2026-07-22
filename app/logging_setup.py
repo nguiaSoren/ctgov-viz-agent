@@ -13,8 +13,8 @@ Two independent guards enforce this, so a mistake in one is caught by the other:
 
 1. **A field-name allowlist at the emit site** (:func:`log_event`). A structured
    event can only carry keys from a closed allowlist of *structural* fields
-   (status enum, recipe/query_class, entity TYPE, metric, validated tokens,
-   counts, timings, ``retrieved_at``, cache hit/miss, ``request_id``, …). A raw
+   (the status/kind enums, recipe/query_class, entity TYPE, metric, validated
+   tokens, counts, timings, ``retrieved_at``, cache hit/miss, …). A raw
    ``query="..."`` or ``drug_name="..."`` has **no allowlisted home**, so it is
    dropped before serialization — the raw query is structurally unable to leak,
    not merely scrubbed after the fact.
@@ -115,10 +115,21 @@ class RedactionFilter(logging.Filter):
 # they have no allowlisted home (``query``, ``drug_name``, ``condition``, …, and
 # any model reasoning are all absent by construction). Extend deliberately, and
 # never with a free-text field.
+#
+# The set is deliberately WIDER than today's emit sites — an allowlist is a
+# vocabulary of what may be logged, not a schema of what currently is. Only
+# ``app/main.py`` and ``app/graph/nodes.py`` call ``log_event`` at all, and
+# between them they emit ``status``/``kind``/``query_class``/``cache``/
+# ``count_total``; every other member names a value the pipeline really computes
+# and could log without a new decision. What is NOT here is ``request_id``: v1 is
+# a single-process service with one graph run per request and no correlation ID
+# anywhere in the codebase, so allowlisting one would name a value that does not
+# exist. Add it the day a request ID does.
 _ALLOWED_FIELDS: frozenset[str] = frozenset(
     {
         "event",
         "status",
+        "kind",  # the envelope's visualization|answer|clarification discriminator
         "query_class",
         "recipe",
         "entity_type",
@@ -135,7 +146,6 @@ _ALLOWED_FIELDS: frozenset[str] = frozenset(
         "duration_ms",
         "retrieved_at",
         "cache",
-        "request_id",
         "escalation_count",
         "iter_count",
         "reason_code",

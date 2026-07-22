@@ -1,18 +1,36 @@
-"""Real ClinicalTrials.gov v2 token sets + field-path allowlist (Phase 0).
+"""Real ClinicalTrials.gov v2 token sets + field-path allowlist.
 
 Every value here is grounded in the live-verified API brief
-(``SPEC_INTERROGATION.md`` §C) — nothing is invented. This module is the single
-source of truth the Plan Checker (``app.plan.checker``) validates a planner's
-tokens/fields against, so a hallucinated phase string or an invented JSON path
-can never clear validation.
+(``SPEC_INTERROGATION.md`` §C) — nothing is invented. This module is the token
+vocabulary the Plan Checker (``app.plan.checker``) validates a planner's
+tokens/fields against, so a hallucinated phase string can never clear validation.
+
+Precisely which table does that work:
+
+* The token frozensets (:data:`PHASE_TOKENS`, :data:`OVERALL_STATUS_TOKENS`, …) are
+  checked directly by the checker AND re-checked at the wire boundary in
+  ``app.ctgov.params.build_search_params``.
+* :data:`FIELD_ALIASES` is what the checker validates ``plan.field`` against — an
+  invented alias is rejected there.
+* :data:`FIELD_PATHS` has NO runtime importer. Its only consumer is the
+  self-consistency ``assert`` at the bottom of this module, which pins every
+  alias VALUE to the allowlist. So "an invented JSON path can never reach the
+  wire" holds *indirectly*: paths are never planner-supplied — they are looked up
+  from ``FIELD_ALIASES``, whose values this allowlist constrains at import.
 """
 
 from __future__ import annotations
 
 # --- Base pin (ARCHITECTURE_SPEC §A(a)/(d)) --------------------------------
 
-# The one host this whole system is allowed to call for registry data. The HTTP
-# client (app.ctgov.client.CTGovClient) asserts every base_url starts with this.
+# The one host this whole system is allowed to call for registry data. Compiled in
+# here, never read from the environment (``.env.example``'s CTGOV_BASE_URL is
+# documentation only — no code reads it). The HTTP client
+# (app.ctgov.client.CTGovClient) parses any base_url with ``urlparse`` and requires
+# an EXACT hostname match against "clinicaltrials.gov" — deliberately NOT a
+# ``startswith`` check, which a userinfo trick
+# ("https://clinicaltrials.gov@evil.com/...") or a suffix trick
+# ("https://clinicaltrials.gov.evil.com/...") would both defeat.
 BASE_URL = "https://clinicaltrials.gov/api/v2"
 
 # --- Enum token sets (SPEC_INTERROGATION §C, live-verified 2026-07-15) ----
@@ -76,7 +94,9 @@ DATE_FIELDS = frozenset(
     {"startDate", "primaryCompletionDate", "completionDate", "studyFirstPostDate", "lastUpdatePostDate"}
 )
 
-# --- Field-path allowlist (the JSON paths the checker/citations validate against) ---
+# --- Field-path allowlist (the closed set FIELD_ALIASES' values are pinned to) ---
+# Read by nothing at runtime except the ``assert`` at the bottom of this file; see
+# the module docstring for how it constrains the paths that DO reach the wire.
 
 FIELD_PATHS = frozenset(
     {
@@ -118,4 +138,7 @@ FIELD_ALIASES: dict[str, str] = {
 
 # Self-consistency guard (not a user-input check): every alias must resolve to a
 # path that's actually in the allowlist, so the two tables can never drift apart.
+# It is an ``assert``, so it is a DEVELOPER guard, not a runtime one — ``python -O``
+# strips it. That is acceptable precisely because no user input flows through it:
+# it can only ever fail on a source edit, which the test suite runs unoptimized.
 assert set(FIELD_ALIASES.values()) <= FIELD_PATHS

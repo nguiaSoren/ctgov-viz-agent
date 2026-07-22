@@ -1,12 +1,26 @@
 """Per-class trap coverage (Phase 2, BUILD_PLAN §Phase-2 trap task) — offline.
 
-Each trap the interrogation surfaced either has a mechanical test here or a
-documented handling pinned in a recipe note (asserted here so the prose can't
-silently drift). Traps: combined-phase own bucket (CC-15), intervention/country
-multi-value double-count basis (CC-3), country dedupe + no-choropleth (CC-13),
-sponsor OTHER-dominance, placebo/synonym network hygiene (CC-12), % within series
-(CC-14), planned future dates (G-40), and the generalized-Plan checker holes
-(a compare/network plan must carry its shape + validate every series arm, G-33).
+Two kinds of coverage live here, and only these:
+
+* a MECHANICAL test of the data path — the intervention/country multi-value
+  double-count basis (CC-3), and the generalized-Plan checker holes (a
+  compare/network/geographic plan must carry its class shape, and every compare
+  arm must be recursed into, G-33);
+* a PROSE PIN — traps handled by disclosure rather than by a data path are
+  asserted to still appear in their recipe note, so a doc edit can't silently
+  drop the disclosure: country dedupe + no-choropleth (CC-13), placebo/synonym
+  network hygiene (CC-12), % within series (CC-14), planned future dates (G-40).
+
+Traps covered ELSEWHERE, not in this file: the combined-phase own bucket (CC-15)
+is pinned by ``tests/test_aggregate_live.py`` (live bucket + label) and
+``tests/test_citations_composite.py`` (per-member citation tokens).
+
+Trap NOT covered anywhere: **sponsor OTHER-dominance**. The bucketing itself is
+correct (``sponsorClass`` is a single-valued combine field, so Σ == distinct ==
+countTotal), but the fact that OTHER — academic/hospital sponsors — dominates the
+registry is disclosed by NO runtime note and asserted by no test; the only trace
+of it is a prose remark in ``app/ctgov/fields.py``. Stated here rather than
+implied, so the gap is visible instead of looking covered.
 """
 
 from __future__ import annotations

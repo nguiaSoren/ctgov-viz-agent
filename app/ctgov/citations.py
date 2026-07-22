@@ -1,17 +1,35 @@
 """String-extraction citation primitives (ARCHITECTURE_SPEC §3.6 / §A(c), CC-9).
 
-The core anti-hallucination guarantee for provenance: an excerpt is **never**
-authored by the LLM — it is walked out of the fetched JSON record at a known
-``field_path`` and is round-trip verifiable (the Output Reviewer asserts each
-excerpt is a real substring of the source at that path). ``extract_excerpt``
-and ``is_substring_at`` are the two pure, real primitives that guarantee;
-everything else in the citation pipeline (paging, bucketing) is Phase 1.
+The core anti-hallucination guarantee for provenance: **no citation text is ever
+authored by the LLM** — every field of a ``Citation`` is walked out of a fetched
+JSON record here.
+
+A ``Citation`` carries TWO extracted strings, and they come from different paths
+(this is the shape after the ``excerpt``→``matched_value`` rename; the two names
+are not interchangeable):
+
+* ``matched_value`` — the literal value at the datum's own ``field_path`` (the
+  token that decided bucket membership, e.g. ``"PHASE1"`` / ``"France"`` /
+  ``"2015-01-28"``), produced by :func:`extract_excerpt` or by the element-targeted
+  builders in ``app.ctgov.tools`` / ``app.ctgov.network``. This is the anchor the
+  Output Reviewer round-trip verifies with :func:`is_substring_at`
+  (``app.viz.review``), together with ``matched_tokens`` for a composite bucket.
+* ``excerpt`` — the trial's human-readable **brief title**, walked out of the FIXED
+  identification path :data:`_BRIEF_TITLE_PATH` (see :func:`brief_title`), NOT out
+  of ``field_path``. It is assignment §5's readable supporting excerpt. It is
+  code-extracted and never authored, but it is **not** re-verified by the Output
+  Reviewer — the reviewer checks ``matched_value``/``matched_tokens`` only, since
+  the brief title provably does not live at ``field_path``.
+
+``extract_excerpt`` and ``is_substring_at`` are the two pure primitives that carry
+the guarantee; everything else here (sampling, bucketing) is bookkeeping.
 """
 
 from __future__ import annotations
 
 from typing import Any
 
+from app import config
 from app.api.schemas import Citation
 
 
@@ -42,8 +60,10 @@ def _resolve_path(record: dict, field_path: str) -> Any:
 def extract_excerpt(record: dict, field_path: str) -> str:
     """Walk ``field_path`` in ``record`` and return the literal value as a string.
 
-    This is the string-extraction primitive (CC-9): excerpts are never
-    LLM-authored, only ever pulled out of the fetched record. When the
+    This is the string-extraction primitive (CC-9) behind ``Citation.matched_value``
+    (NOT behind ``Citation.excerpt``, which is the brief title — see the module
+    docstring): the value is never LLM-authored, only ever pulled out of the
+    fetched record. When the
     resolved value is a list (e.g. ``phases: ["PHASE1","PHASE2"]``), the
     excerpt is its first element (or ``""`` for an empty/absent list) — the
     literal token that decided membership in that bucket. This is the
@@ -98,6 +118,11 @@ def _resolve_all(record: Any, field_path: str) -> list[Any]:
 def is_substring_at(record: dict, field_path: str, excerpt: str) -> bool:
     """Round-trip verify: is ``excerpt`` really present at ``field_path`` in ``record``?
 
+    The ``excerpt`` parameter keeps its pre-rename name, but every caller passes a
+    **``Citation.matched_value`` / ``matched_tokens`` member** — the value extracted
+    AT ``field_path``. ``Citation.excerpt`` (the brief title) is deliberately never
+    passed here: it comes from a different path and would always verify False.
+
     The record-grounded provenance primitive (§3.8). Scans **every** value
     reachable at ``field_path`` (every element of a ``name[]`` list, not just the
     first — CC-3/CC-13). Matching is **element-precise, not loose substring**
@@ -108,8 +133,15 @@ def is_substring_at(record: dict, field_path: str, excerpt: str) -> bool:
       ``["PHASE10"]`` trial, and the stringified-list repr punctuation (``"', '"``,
       ``"["``) is not data (both were false positives under the old
       ``excerpt in str(list)`` fallback).
-    * A **scalar** value round-trips on substring (a genuine free-text excerpt of a
-      longer string; Phase-2 token scalars should tighten this to equality).
+    * A **scalar** value round-trips on plain **substring** — the one deliberately
+      loose spot in the provenance chain, worth naming rather than glossing. It is
+      loose in exactly one direction: a claimed value SHORTER than the record's real
+      one passes (``"COMPLET"`` verifies against ``"COMPLETED"``). No shipped path
+      can produce such a value — every scalar ``matched_value`` is either the whole
+      resolved value from :func:`extract_excerpt` or a validated enum token, never a
+      trimmed one — so this is a latent looseness, not a live hole. Tightening
+      scalars to equality would break the genuinely free-text scalars (sponsor name,
+      dates), where quoting part of a longer string is legitimate. Known watch-item.
     * An **empty** excerpt is a legitimate *absence* citation (e.g. the MISSING
       phase bucket: no field value to quote) ONLY when the path resolves to no
       value; an empty excerpt against a PRESENT value proves nothing → False.
@@ -146,11 +178,18 @@ def brief_title(record: dict) -> str | None:
 def build_citation(record: dict, field_path: str) -> Citation:
     """Build a ``Citation`` for ``record`` at ``field_path`` (CC-9).
 
-    ``nct_id`` is read from the fixed identification path (real on every
-    fetched record); ``value`` is the literal resolved value at ``field_path``
-    (may be an array); ``excerpt`` is string-extracted via
-    :func:`extract_excerpt`, never authored; ``title`` is the record's brief
-    title (a readable supporting excerpt, §5), present when ``BriefTitle`` was projected.
+    Field by field (all four are extracted from ``record``, none authored):
+
+    * ``nct_id`` — the fixed identification path (real on every fetched record).
+    * ``value`` — the literal resolved value at ``field_path`` (may be an array).
+    * ``matched_value`` — the string-extracted value at ``field_path``
+      (:func:`extract_excerpt`); the anchor the Output Reviewer verifies.
+    * ``excerpt`` — the record's brief title (:func:`brief_title`), the readable
+      supporting excerpt of assignment §5. It falls back to ``matched_value`` when
+      the record carries no ``BriefTitle`` (an un-projected fetch), so a citation
+      always ships some human-readable text.
+
+    There is no ``title`` field on ``Citation`` — the brief title IS ``excerpt``.
     """
     nct_id = _resolve_path(record, "protocolSection.identificationModule.nctId")
     value = _resolve_path(record, field_path)
@@ -165,7 +204,7 @@ def build_bucket_citations(
     records: list[dict],
     field_path: str,
     *,
-    k: int = 20,
+    k: int = config.CITATION_SAMPLE_K,
     member_tokens: list[str] | None = None,
 ) -> tuple[list[Citation], int, bool]:
     """Build the per-bucket citation sample for ONE bucket's contributing records.
@@ -178,28 +217,31 @@ def build_bucket_citations(
       count reconciles against, never the length of the (possibly-capped) sample.
     * The sample is deterministic: records are sorted by their nctId
       (``protocolSection.identificationModule.nctId``) and the first ``k`` are
-      taken. A record missing that path sorts as ``""`` (kept deterministic; it
-      never raises). ``build_citation`` (the existing primitive) turns each
-      sampled record into a ``Citation`` whose excerpt is string-extracted from
-      the record, never authored.
+      taken (``k`` defaults to ``config.CITATION_SAMPLE_K``, operator-tunable). A
+      record missing that path sorts as ``""`` (kept deterministic; it never
+      raises). ``build_citation`` (the existing primitive) turns each sampled
+      record into a ``Citation`` whose strings are extracted from the record,
+      never authored.
     * ``truncated`` is ``True`` iff ``contributing_count > k`` — i.e. the sample
       dropped at least one contributing record.
 
     ``member_tokens`` — the composite-bucket contract (CC-15). When a bucket is a
     combined multi-value bucket (e.g. a ``PHASE1|PHASE2`` phase bucket formed from
-    ``["PHASE1","PHASE2"]``), a single excerpt (the first token) UNDER-identifies
-    the composite in a drill-down. Pass the member tokens to identify EVERY member:
+    ``["PHASE1","PHASE2"]``), a single ``matched_value`` (the first token)
+    UNDER-identifies the composite in a drill-down. Pass the member tokens to
+    identify EVERY member:
 
     * ``None`` or length ≤ 1 (single-value bucket): behavior UNCHANGED — each
-      citation's ``excerpt`` is string-extracted via ``build_citation`` and
-      ``excerpt_tokens`` stays ``None``.
+      citation's ``matched_value`` is string-extracted via ``build_citation`` and
+      ``matched_tokens`` stays ``None``.
     * length ≥ 2 (composite bucket): each citation keeps ``value`` = the record's
-      real resolved value and sets ``excerpt`` = the first member token (display),
-      and ``excerpt_tokens`` = the subset of ``member_tokens`` actually present in
-      THAT record at ``field_path``, each verified verbatim via
+      real resolved value, sets ``matched_value`` = the first member token
+      (display), and sets ``matched_tokens`` = the subset of ``member_tokens``
+      actually present in THAT record at ``field_path``, each verified verbatim via
       :func:`is_substring_at`, in token order. Only verified tokens are included,
-      so ``excerpt_tokens`` stays honest even on a malformed record. No excerpt
-      text is ever synthesized (Citation invariant).
+      so ``matched_tokens`` stays honest even on a malformed record. ``excerpt``
+      (the brief title) is untouched by the composite branch. No citation text is
+      ever synthesized (Citation invariant).
 
     Pure: no I/O, and the input ``records`` list and its dicts are never mutated
     (``sorted`` returns a new list; the walk is read-only). TOTAL: never raises on

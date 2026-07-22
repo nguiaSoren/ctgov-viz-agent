@@ -1,16 +1,46 @@
-"""The recipe / skill registry (ARCHITECTURE_SPEC §B.6) — a real, data-only registry.
+"""The recipe / skill registry (ARCHITECTURE_SPEC §B.6) — a data-only registry.
 
-Rather than let the LLM improvise *how* to handle each of the 5 query classes,
+Rather than let the LLM improvise *how* to handle each of the 6 query classes,
 each class gets a predefined **recipe**: a fixed, deterministic procedure
 (allowed tools, default + alternate chart types, whether a date field must be
 disclosed, the counting convention, a degeneracy fallback). The registry is
-**data (a config table), not code branches** — adding a query class means
-adding a row here, which is the literal reading of "single coherent approach,
-no one-off hacks" (CC-11).
+**data (a config table), not code branches** — the per-class *policy* is a row
+here rather than a branch scattered through the codebase, which is the literal
+reading of "single coherent approach, no one-off hacks" (CC-11). A new class is
+not a pure config change, though: it also needs a shape branch in the checker's
+``_check_class_shape`` and a dispatch branch in the executor.
 
 The planner's job shrinks to two moves: classify the question -> ``query_class``,
 then fill that recipe's slots. The Plan Checker (``app.plan.checker``) then
 confirms the filled Plan satisfies the chosen recipe's constraints.
+
+How much of a row is actually *executed* (be precise about this — the table reads
+more load-bearing than it is):
+
+* ``chart_type`` / ``alternates`` / ``degeneracy_fallback`` — read at runtime by
+  ``check_plan``, which builds the allowed-chart set from exactly those three.
+  This is the only runtime consumer of a Recipe.
+* ``allowed_tools`` — no runtime reader. It is enforced at BUILD time by
+  ``tests/test_ctgov_plan.py`` (every name must be in ``tools.TOOL_NAMES``), and
+  the executor's real dispatch is a hand-written ``if/elif`` on ``query_class``.
+* ``date_field_disclosed`` / ``count_basis_rule`` — no reader at all, runtime or
+  test. Disclosure is driven straight off ``query_class`` in the spec builder and
+  the count basis is computed from the buckets. They document the convention; they
+  do not enforce it.
+* ``notes`` — read by ``tests/test_phase2_traps.py``, which pins the prose
+  disclosures (dedupe/no-choropleth, placebo/synonym, %-within-series, planned
+  dates) so a doc edit can't silently drop one.
+
+Not every tool a class can reach is listed in its ``allowed_tools``: every class
+first calls ``count_trials`` as the exact-count oracle, a ``study_duration``
+distribution runs ``study_duration_histogram``, and an over-budget categorical
+distribution runs ``aggregate_by_counts``. Treat the field as "the recipe's
+primary tool", not as a complete capability grant.
+
+The registry is also narrower than the chart enum by one mark: no recipe emits
+``ChartType.SCATTER``. It is a deferred member kept for completeness (G-20 — trials
+have no generic pair of continuous axes to plot), so a plan can never legally
+select it.
 """
 
 from __future__ import annotations
@@ -27,17 +57,24 @@ class Recipe(BaseModel):
     ``chart_type`` is the default mark; ``alternates`` are other apt marks the
     frontend may offer (CC-8). ``degeneracy_fallback``, when set, is the mark
     a recipe degrades to when its data is too sparse for the default (e.g. a
-    1-node network falling back to a bar, CC-12).
+    1-node network falling back to a bar, CC-12). Those three are the fields the
+    Plan Checker actually reads; the rest are declarative (see the module
+    docstring for exactly who reads what).
     """
 
     query_class: QueryClass
+    # The recipe's primary tool(s), by TOOL_REGISTRY name. Checked at build time by
+    # tests (⊆ TOOL_NAMES); no runtime reader — dispatch is an if/elif on query_class.
     allowed_tools: list[str]
     chart_type: ChartType
     alternates: list[ChartType] = Field(default_factory=list)
+    # Documentation of the convention, not its enforcement: the spec builder decides
+    # date-field disclosure from query_class == "timeseries", and derives the count
+    # basis from the buckets. Neither field has a reader.
     date_field_disclosed: bool = False
     count_basis_rule: str
     degeneracy_fallback: ChartType | None = None
-    notes: str = ""
+    notes: str = ""  # prose disclosures; pinned by tests/test_phase2_traps.py
 
 
 RECIPES: dict[str, Recipe] = {
@@ -119,8 +156,15 @@ RECIPES: dict[str, Recipe] = {
         notes=(
             "Bipartite sponsor<->drug or drug<->drug co-occurrence graph; an edge "
             "weight is the count of trials pairing its two endpoints (CC-3's counting "
-            "convention extended to graphs). Drug names are synonym-merged "
-            "(name + otherNames), placebo/standard-of-care nodes are excluded (avoids "
+            "convention extended to graphs). Drug-name synonyms are merged "
+            "CONSERVATIVELY (P3-MERGE), not by unioning shared otherName tokens: an "
+            "otherName merges two interventions only when it is itself some other "
+            "drug's primary name (the brand->generic case), a combination/regimen "
+            "intervention never merges its own components, and a pair must be attested "
+            "by >=2 distinct trials before it merges — the earlier union-any-shared-"
+            "token rule over-merged distinct drugs through a shared protocol code. "
+            "Under-merging is the safe direction and is disclosed in meta.notes. "
+            "placebo/standard-of-care nodes are excluded (avoids "
             "a false mega-hub), nodes are capped top-N by degree with a minimum edge "
             "weight (CC-12). A degenerate result (≤1 node OR no co-occurring edges, "
             "G-41e) falls back to a cited bar of individual drug frequencies with a "

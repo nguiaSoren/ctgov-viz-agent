@@ -1,9 +1,14 @@
-"""The least-privilege HTTP client (ARCHITECTURE_SPEC §A(a)/(d)) — Phase 0 stub.
+"""The least-privilege HTTP client (ARCHITECTURE_SPEC §A(a)/(d)) — the sole egress point.
 
-Structurally encodes the security posture even before any real HTTP call exists:
-base-URL-pinned to the registry host, HTTPS-forced, and GET-only by construction
-(no other HTTP verb method is defined anywhere on this class — the read/write
-boundary is absolute, not enforced by convention or prompt).
+Structurally encodes the security posture: base-URL-pinned to the registry host
+(exact-hostname match, no userinfo, no odd port), HTTPS-forced, and GET-only by
+construction (no other HTTP verb method is defined anywhere on this class — the
+read/write boundary is absolute, not enforced by convention or prompt).
+
+Complete, not a stub: it issues real requests with a min-interval throttle,
+retry classification (429/5xx/transient transport only), full-jitter exponential
+backoff honoring ``Retry-After``, cursor paging under a page budget, response-body
+validation, and redacted upstream errors.
 """
 
 from __future__ import annotations
@@ -32,7 +37,12 @@ _PINNED_HOST = "clinicaltrials.gov"
 _MAX_RETRIES = config.MAX_RETRIES  # up to N+1 attempts total; GETs are idempotent so this is safe.
 _BACKOFF_BASE_S = 0.5
 _BACKOFF_CAP_S = 8.0
-_MAX_PAGE_SIZE = config.PAGE_SIZE  # the API's hard cap ≤1000 (SPEC_INTERROGATION §C).
+# The pageSize ceiling ``iter_studies`` clamps to. It is ``config.PAGE_SIZE``, whose
+# DEFAULT (1000) is the API's documented hard cap (SPEC_INTERROGATION §C) — but
+# ``PAGE_SIZE`` is env-overridable with no upper bound, so this is an operator-set
+# ceiling, not a guarantee that we never exceed the registry's cap. Raising
+# PAGE_SIZE above 1000 sends an oversized pageSize the API is free to reject.
+_MAX_PAGE_SIZE = config.PAGE_SIZE
 
 # Every transient network class worth a retry (LESSON L4/K4). ``httpx.TransportError``
 # is the base of the whole transient family — timeouts (Connect/Read/Write/Pool),
@@ -68,15 +78,17 @@ class CTGovClient:
     """
 
     # Monotonic timestamp of the last issued request, powering the ~``self.rps``
-    # min-interval throttle. Class-level default so ``__init__`` stays verbatim;
-    # the first ``_throttle`` call shadows it with a per-instance value.
+    # min-interval throttle. Declared at class level only as a default value: the
+    # first ``_throttle`` call ASSIGNS it, which creates a per-INSTANCE attribute
+    # that shadows this one. The gate is therefore per-client, not process-global
+    # (see ``_throttle`` for what that does and does not bound).
     _last_request_at: float = 0.0
 
     def __init__(
         self,
         base_url: str = BASE_URL,
         timeout: float = config.PER_CALL_TIMEOUT_SECONDS,  # per-call DoS bound (SEC-29)
-        rps: float = config.RATE_LIMIT_RPS,  # shared politeness limiter (SEC-30)
+        rps: float = config.RATE_LIMIT_RPS,  # per-client politeness limiter (SEC-30)
     ) -> None:
         """Base-pin + https-force the client at construction time.
 
@@ -87,8 +99,9 @@ class CTGovClient:
         raw ``str.startswith``/``endswith``, which a userinfo trick
         (``https://clinicaltrials.gov@evil.com/...``) or a suffix trick
         (``https://clinicaltrials.gov.evil.com/...``) both defeat.
-        ``timeout`` bounds a single call; ``rps`` is the shared politeness rate
-        limit (~3 req/s, ``[UNVERIFIED]`` per the API brief but the safe default).
+        ``timeout`` bounds a single call; ``rps`` is the politeness rate limit
+        (~3 req/s, ``[UNVERIFIED]`` per the API brief but the safe default),
+        enforced per client instance — see :meth:`_throttle`.
         """
         parsed = urlparse(base_url)
 
@@ -126,9 +139,11 @@ class CTGovClient:
         - **No redirects.** ``follow_redirects=False``: a 3xx from the pinned
           host is REFUSED as an error, never followed — strictly stronger than
           "same-host redirects only" (SEC redirect rule).
-        - **Throttled** to ~``self.rps`` and bound by ``self.timeout``.
-        - **Retries** (max 3, exponential backoff + full jitter, honoring
-          ``Retry-After`` on 429) on 429 / 5xx and on transient transport
+        - **Throttled** to ~``self.rps`` *within this client instance*
+          (:meth:`_throttle`) and bound by ``self.timeout``.
+        - **Retries** up to ``config.MAX_RETRIES`` times (default 3, env-overridable
+          → up to N+1 attempts), exponential backoff + full jitter, honoring
+          ``Retry-After`` on 429; on 429 / 5xx and on transient transport
           errors; NEVER on a non-429 4xx. GETs are idempotent.
         - **Redacted errors** (LESSON B4): on exhaustion / an unexpected status
           it raises :class:`UpstreamError` (generic message + machine ``code``);
@@ -224,7 +239,9 @@ class CTGovClient:
     ) -> tuple[list[dict], bool]:
         """Cursor-page ``/studies`` under a page budget.
 
-        ``page_size`` is clamped to the API's hard cap (``<=1000``). Follows
+        ``page_size`` is clamped to ``[1, config.PAGE_SIZE]`` — whose default 1000
+        is the API's documented hard cap, but which an operator can raise (see
+        ``_MAX_PAGE_SIZE``). Follows
         ``nextPageToken`` until it is absent (complete) or ``max_pages`` is
         reached (truncated). The SAME ``search_params`` must be used here and in
         :meth:`count` or reconciliation breaks (one population, G-23).
@@ -259,7 +276,25 @@ class CTGovClient:
     # --- internals ----------------------------------------------------------
 
     def _throttle(self) -> None:
-        """Sleep just enough to hold issue-rate at ~``self.rps`` (min-interval gate)."""
+        """Sleep just enough to hold issue-rate at ~``self.rps`` (min-interval gate).
+
+        **Scope: this client instance, not the process.** ``_last_request_at`` is
+        read from the class default the first time and then assigned as an INSTANCE
+        attribute, so two ``CTGovClient()`` objects never see each other's clock.
+
+        What that does and does not bound, given the tools layer constructs one
+        client per call (``app.ctgov.tools``):
+
+        * Bounded — every burst that lives inside ONE tool call: the paging loops in
+          :meth:`iter_studies` (up to ``PAGE_BUDGET_PAGES`` requests) and
+          ``aggregate_by_counts``' per-token count fan-out (~14 requests), which
+          share a single client and are where essentially all the volume is.
+        * NOT bounded — the seams BETWEEN tool calls: a fresh client starts with a
+          zero timestamp, so the first request of each tool issues immediately. A
+          request making a handful of tool calls can therefore momentarily exceed
+          ``rps`` at those boundaries. Making the gate process-global would mean
+          promoting this to class-level state (``CTGovClient._last_request_at = …``).
+        """
         if self.rps <= 0:
             return
         min_interval = 1.0 / self.rps

@@ -13,7 +13,9 @@ Complementary to ``tests/test_graph.py`` / ``tests/test_hardening_graph.py``
 "never a half-viz" error shape, the exact-total ``too_large`` refuse, the empty
 shape + note, canned citations, and the ``build_envelope`` shaping for arbitrary
 totals — plus the UNKNOWN-status labeled bucket, the country top-N / "Other"
-fold, and ``citations_truncated`` at the pure-function / tool layer.
+fold, ``citations_truncated`` at the pure-function / tool layer, and the
+``meta.query_provenance`` stamp's coherence with the request it claims to
+describe (projection + pageSize).
 
 Note: the empty-envelope shape is pinned via ``build_envelope`` directly (the
 stable pure surface) rather than the full-graph ``_force_empty`` sentinel — that
@@ -318,3 +320,57 @@ def test_bucket_citations_truncated_over_k(monkeypatch) -> None:
     assert bucket["contributing_count"] == 25
     assert bucket["citations_truncated"] is True
     assert len(bucket["citations"]) == 20  # capped at K
+
+
+# --- provenance stamp coherence (CC-18) --------------------------------------
+#
+# Regression cover for a real defect: the provenance stamp used to maintain its OWN
+# hand-written projection switch, separate from the one the tool actually pages with.
+# It hardcoded "NCTId|Phase" for every non-timeseries/geographic/duration distribution
+# and dropped |BriefTitle, so meta.query_provenance.params.fields could disagree with
+# the field the chart was actually built from (visible in the shipped
+# examples/run_09_exact_at_scale_status.json). The stamp now reads the SAME authority
+# the request does; these tests pin that it cannot drift apart again.
+
+
+def test_provenance_projection_is_the_tools_real_projection() -> None:
+    """``_projection`` returns ``FIELD_SPEC[field].fields_projection`` verbatim for every
+    aggregation field — the exact string ``aggregate_by`` / ``aggregate_by_counts`` page
+    with, ``|BriefTitle`` included (the citation excerpt is read from that projection)."""
+    from app.ctgov.fields import FIELD_SPEC
+    from app.graph.nodes import _projection
+
+    for field, spec in FIELD_SPEC.items():
+        query_class = "geographic" if field == "country" else "distribution"
+        plan = Plan(
+            query_class=query_class,
+            entities={"condition": "pancreatic cancer"},
+            field=field,
+            chart_type=ChartType.BAR,
+        )
+        assert _projection(plan) == spec.fields_projection, field
+        assert "BriefTitle" in _projection(plan), field
+
+
+def test_provenance_projection_tracks_the_charted_field_not_a_hardcoded_phase() -> None:
+    """The specific regression: a distribution charted on ``overallStatus`` must NOT stamp
+    the phase projection."""
+    from app.graph.nodes import _projection
+
+    plan = Plan(
+        query_class="distribution",
+        entities={"condition": "cancer"},
+        field="overallStatus",
+        chart_type=ChartType.BAR,
+    )
+    assert _projection(plan) == "NCTId|OverallStatus|BriefTitle"
+
+
+def test_provenance_page_size_reads_config_not_a_literal(monkeypatch) -> None:
+    """``pageSize`` in the stamp is ``config.PAGE_SIZE`` (the client's own default), not a
+    hardcoded 1000 that would silently misreport a re-tuned deployment."""
+    from app.graph.nodes import _provenance
+
+    assert _provenance({}, "NCTId")["params"]["pageSize"] == config.PAGE_SIZE
+    monkeypatch.setattr(config, "PAGE_SIZE", 250)
+    assert _provenance({}, "NCTId")["params"]["pageSize"] == 250

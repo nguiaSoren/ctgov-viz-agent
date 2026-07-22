@@ -5,6 +5,10 @@ Two guarantees:
 1. Every hand-written golden fixture is a valid ``VisualizeResponse`` — one per
    envelope shape (distribution / timeseries / network / answer / error /
    too_large) — and each stamps ``meta.source == "clinicaltrials.gov"`` (A-33/G-2).
+   The goldens are SCHEMA fixtures only, never behaviour oracles: they were
+   hand-written before the engine existed and differ from real output in several
+   visible ways. See ``tests/fixtures/README.md``; for "what the engine actually
+   returns", use ``examples/run_*.json``.
 2. ``VisualizeRequest`` enforces its documented validation rules (A-22, API-4..7,
    E-17/E-25, G-41b): non-empty query, length caps, ordered year range,
    ``interventional_only`` accepted, and ``extra="forbid"`` on unknown fields.

@@ -133,8 +133,20 @@ def finalize_timeseries(
         years + planned future years, sorted ascending by year, with the ``MISSING``
         datum (``period=None``) appended last. ``notes`` — the gap-fill, planned,
         and missing-bucket disclosures (each only when it applies). ``degrade`` —
-        ``True`` iff ≤1 non-zero real-year bucket (the caller degrades the time
-        series to a bar, since a single point is not a trend).
+        ``True`` iff at most ONE bucket with a plottable year has a non-zero count
+        (the caller degrades the time series to a bar, since a single point is not
+        a trend). "Plottable year" means the bucket value parsed as an integer year,
+        which INCLUDES future/planned years and gap-filled ones; only the
+        ``MISSING`` (period=None) bucket is excluded. So a series consisting of one
+        real year plus one planned year does NOT degrade.
+
+    Range caveat: the gap-fill spans ``min(non-future year) .. max(non-future
+    year)`` with no width cap, and ``parse_ct_date`` applies no calendar fence, so a
+    single record carrying an implausible early year (``"0001-05"`` parses to year
+    1) would emit ~2000 zero-count buckets. Filter years are fenced to [1900, 2100]
+    in ``app.ctgov.params``; nothing equivalent guards the PARSE side, and no
+    row-count cap exists downstream. Not observed on live data — stated as a known
+    edge, not a defended one.
     """
     # Partition input: numeric-year buckets vs everything without a plottable year
     # (the MISSING bucket, and any unexpected non-year value — both kept, period=None).
@@ -188,7 +200,9 @@ def finalize_timeseries(
         datum["period"] = None
         datums.append(datum)
 
-    # Degrade when there is ≤1 non-zero real (year) bucket — one point is not a trend.
+    # Degrade when at most one YEAR-valued bucket is non-zero — one point is not a
+    # trend. "Year-valued" spans every plottable year including planned/future ones;
+    # only the period=None MISSING bucket is out of scope here.
     non_zero_real = sum(1 for year, b in year_buckets.items() if b.get("count_trials", 0) > 0)
     degrade = non_zero_real <= 1
 

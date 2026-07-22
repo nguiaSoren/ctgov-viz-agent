@@ -6,6 +6,13 @@ key — so it exercises the real reviewer wiring (system prompt + message shape 
 the ``verify`` seam + the canned-approve path) deterministically. The invariant
 under test: the reviewers are GATES that emit ``approve``/``revise``/``flag``
 verdicts only, and the skip gate is conservative.
+
+That is a claim about the verdict SHAPE, and only that. Neither verdict model has
+a numeric field, but ``reason`` is free prose and can perfectly well contain
+digits — so the shape alone does not enforce "the LLM never authors a number".
+The actual guard is ``note_number_safe`` (``app/viz/review.py``), applied in
+``app/graph/nodes.py`` before any LLM-authored note is kept, and tested in
+``tests/test_phase4_hardening.py``.
 """
 
 from __future__ import annotations

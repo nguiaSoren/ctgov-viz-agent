@@ -1,9 +1,19 @@
 """The two LLM reviewers — gates, not generators (ARCHITECTURE_SPEC §3.4, §3.8).
 
 Both reviewers emit a bounded verdict and are called *through* the adapter
-(C-99), never a provider SDK directly. Neither can emit a number: their verdict
-models carry a ``decision`` + prose only, so the governing invariant ("the model
-never emits a number") holds structurally at the reviewer seam too.
+(C-99), never a provider SDK directly. Their verdict models carry a ``decision``
+plus an optional free-text ``reason``: there is no numeric FIELD for a count to
+land in, but ``reason`` is prose and prose can carry digits, so the schema alone
+does NOT enforce the governing invariant ("the model never emits a number") —
+that enforcement is deterministic and lives one module away, on the single path
+where reviewer prose reaches the wire. An Output-Reviewer ``flag`` reason is
+appended to ``meta.notes`` only if it passes ``note_number_safe``
+(``app.viz.review``, applied in ``app.graph.nodes.review_output``): every
+digit-run in the note must already appear in the computed envelope, or the whole
+reason is dropped for a fixed code-owned caveat. The Intent Reviewer's ``reason``
+never reaches the wire at all — it is threaded into the bounded re-plan prompt
+and otherwise stays in graph state. (That digit post-check was a found defect,
+not the original design: the verdict models were schema-safe but not digit-safe.)
 
 * ``review_intent`` — the Intent Reviewer (§3.4): judges whether a mechanically
   valid ``Plan`` actually captures the user's intent. The Plan Checker already
@@ -16,9 +26,9 @@ never emits a number") holds structurally at the reviewer seam too.
   (and cheaper) to skip it. Conservative by construction — see its docstring.
 * ``review_output_llm`` — the Output Reviewer's LLM half (§3.8): a secondary,
   non-generative check over already-computed output — does the spec faithfully
-  answer the question, is the encoding apt? It inspects computed output only, so
-  it cannot introduce a number; a ``flag`` verdict annotates ``meta.notes`` and
-  is never used to rebuild the spec.
+  answer the question, is the encoding apt? It never re-aggregates and is never
+  used to rebuild the spec; a ``flag`` verdict only annotates ``meta.notes``, and
+  only through the ``note_number_safe`` digit gate above.
 
 Each real call passes ``canned`` so the offline ``StubAdapter`` path stays
 deterministic; the real OpenAI/Anthropic adapters ignore ``canned`` and make a
@@ -121,7 +131,11 @@ def review_intent(adapter: LLMAdapter, question: str, plan: Plan) -> IntentVerdi
     (metric matches the ask · entity → right dimension · date_field matches the
     date-intent · chart apt, not merely legal · filters faithful, none invented)
     via one bounded ``verify`` call and returns ``approve`` or ``revise`` with the
-    offending ``field`` + a precise ``reason``. It NEVER states a number.
+    offending ``field`` + a precise ``reason``. That ``reason`` is free prose but
+    never reaches the response: it is threaded into the re-plan prompt
+    (``plan_feedback``) and, if the re-plan budget is exhausted, the caller ships a
+    fixed code-owned caveat instead of the reviewer's words
+    (``app.graph.nodes.review_output``).
 
     ``canned={"decision": "approve"}`` is the offline StubAdapter's deterministic
     answer; real adapters ignore it and make the real call.
@@ -165,11 +179,16 @@ def should_skip_intent_review(merged_inputs: dict, plan: Plan) -> bool:
     NO entities still ran the NL parse to pick the class/field/date, so it is not
     skipped; and any entity dimension without a typed-field source (e.g. a
     free-text ``term``, or a dimension the query inferred while the typed field was
-    absent) forces a review. This heuristic intentionally does NOT re-guard
-    metric/date/chart intent carried by a non-empty query when all *entities* are
-    typed — those slots are already constrained to the recipe menu by the planner
-    and re-checked mechanically by the Plan Checker — trading a small residual risk
-    for the skip. Keep it conservative: only skip when clearly safe.
+    absent) forces a review.
+
+    What the skip gives up (be precise about this): entities are the ONLY checklist
+    item this gate proves. Skipping drops the intent review whole, so items 1-5 of
+    ``INTENT_REVIEWER_SYSTEM_PROMPT`` — metric, date sense, chart aptness and
+    FILTERS — go unreviewed on that request. The Plan Checker still re-checks those
+    slots mechanically, but mechanically only: it proves a filter token is *legal*,
+    never that the user asked for it, so an invented-but-legal filter (checklist
+    item 5) is exactly what a skip can let through. That is the residual risk the
+    saved call buys. Keep it conservative: only skip when clearly safe.
     """
     query = merged_inputs.get("query") or ""
     if not query.strip():
@@ -205,8 +224,10 @@ def review_output_llm(
     counts/citations already passed deterministic checks) and asks only whether
     the spec faithfully answers the question and whether the encoding is apt. A
     ``flag`` verdict annotates ``meta.notes`` and the spec ships as-is; this
-    reviewer never re-runs aggregation, never rebuilds the spec, and — because it
-    reads computed output only — never introduces a number.
+    reviewer never re-runs aggregation and never rebuilds the spec. Its ``reason``
+    is free prose and CAN contain digits — what keeps a fabricated number off the
+    wire is the caller's deterministic ``note_number_safe`` check
+    (``app.graph.nodes.review_output``), not this model or this schema.
 
     ``canned={"decision": "approve"}`` is the offline StubAdapter's deterministic
     answer; real adapters ignore it and make the real call.

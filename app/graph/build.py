@@ -6,8 +6,7 @@ Wires the 9 nodes into the spine the spec describes:
 review_output -> respond``, plus one bounded escalation back-edge into
 ``plan`` (shared, <=1, across the check/review_intent/execute re-plan
 triggers) and an ``error -> respond`` edge so every path terminates at the
-same single node. The ReAct self-loop is internal to ``plan`` -- it is not a
-graph edge (§3.2/§3.12). Compiled with **no checkpointer** (ENG-47): stateless
+same single node. Compiled with **no checkpointer** (ENG-47): stateless
 per request, horizontally scalable; conversational memory (a stretch) is
 exactly "flip a checkpointer on" later, not a redesign.
 
@@ -20,19 +19,28 @@ loop) -- structurally cyclic, runtime-bounded. That combination is exactly why
 LangGraph is used here instead of a plain DAG runner: the "Adaptive"
 control x autonomy classification (ARCHITECTURE_SPEC §2) rests on runtime
 tool-choice + retry + early-stop over a *cyclic* graph, which a pure DAG cannot
-express. (The ReAct self-loop inside ``plan`` is a second cycle, but a
-node-internal one -- not a graph edge.)
+express.
+
+**There is exactly ONE cycle -- this back-edge.** Earlier drafts of this
+docstring described a second, node-internal "ReAct self-loop" inside ``plan``.
+That does not exist: ``plan`` makes a single ``plan_request`` call, which makes a
+single ``adapter.propose`` call with ``tools=None``
+(``app.llm.planner.plan_request``). The reason -> act -> observe cycle IS the
+back-edge drawn here, and nothing else. (The adapter can re-ask once when the model
+returns unparseable structured output, but that is a parse repair inside one call,
+not a reasoning loop.)
 
 Deviations from the literal §B.5 routing table, flagged (not silently
-diverged, per the build brief):
+diverged, per the build brief). The list is exhaustive as of Phase 5 -- items 3-5
+are the branches Phase 4/5 added that §B.5 never had:
 
 1. §B.5's table sends ``merge_inputs``'s invalid case straight to
    ``respond``(error 422); this build routes it through the dedicated
    ``error`` node instead (which itself edges to ``respond``), so every
    error path builds a real error envelope via the same ``build_envelope``
-   call. Functionally equivalent, structurally more uniform. In practice
-   unreachable in Phase 0: ``VisualizeRequest`` already guarantees a
-   non-empty query before the graph runs.
+   call. Functionally equivalent, structurally more uniform. Unreachable in this
+   build (in every phase, not just Phase 0): ``VisualizeRequest`` already guarantees
+   a non-empty query before the graph runs.
 2. **RESOLVED in Phase 4 (P4-ROUTING).** §B.5's table has ``review_intent``'s
    ``revise ∧ esc>=1`` case fall through to ``execute`` (best-effort, not a hard
    stop). The Phase-0 skeleton deviated to a hard stop → ``error``; now that the
@@ -42,6 +50,22 @@ diverged, per the build brief):
    with a disclosed ``meta.notes`` caveat added in ``review_output``. The
    ``check`` ``reject ∧ esc>=1`` case still routes to ``error`` — a mechanically
    *illegal* plan cannot ship. Code and spec now agree; no §B.5 amendment needed.
+   Consequence worth stating: ``route_after_intent`` can now return only ``execute``
+   or ``plan``, so ``review_intent`` no longer has an edge to ``error`` at all.
+3. **``plan -> error`` (Phase 5).** §B.5 has no guard layer. The runtime-harness
+   guards (deadline / iteration cap / node-visit backstop / stall) are checked at the
+   top of ``plan``, and a trip short-circuits to the ``error`` node with a REDACTED
+   code. §B.5's sketch for the iteration cap was "best-effort finalize with
+   ``partial``"; this build aborts instead. Deliberate: a plan-node trip means no
+   validated plan exists yet, so there is no partial result to finalize — shipping a
+   chart with no proven plan behind it would be worse than refusing.
+4. **``plan -> build_spec`` (Phase 5, E-13).** A dangling demonstrative reference
+   ("this drug") produces a code-templated clarification question and short-circuits
+   straight to ``build_spec``, skipping ``check`` and ``execute`` — there is nothing
+   to validate or compute yet. §B.5 predates the ``kind:"clarification"`` envelope.
+5. **``execute -> respond`` (Phase 5, C-74).** A response-cache hit already holds the
+   final envelope, so it skips ``build_spec`` AND ``review_output``. §B.5 assumed
+   every ``execute`` fed the builder.
 """
 
 from __future__ import annotations
@@ -111,7 +135,10 @@ def build_graph() -> CompiledStateGraph:
     graph.add_conditional_edges(
         "review_intent",
         route_after_intent,
-        {"execute": "execute", "plan": "plan", "error": "error"},
+        # No "error" target: since P4-ROUTING (deviation 2 above) ``route_after_intent``
+        # returns only "execute" or "plan" — an advisory reviewer can no longer hard-stop
+        # a plan the Checker already proved legal.
+        {"execute": "execute", "plan": "plan"},
     )
     graph.add_conditional_edges(
         "execute",
@@ -137,11 +164,16 @@ def initial_state(
 ) -> GraphState:
     """Build the initial ``GraphState`` from a validated ``VisualizeRequest``.
 
-    ``overrides`` seeds ``merged_inputs`` up front so tests can inject the
-    Phase-0 sentinels (``_force_error`` / ``_force_empty`` /
-    ``_force_too_large``) without adding non-contract fields to
-    ``VisualizeRequest`` itself -- ``merge_inputs`` updates, never replaces,
-    the incoming ``merged_inputs``, so these survive into ``execute``.
+    Every ``GraphState`` key is seeded explicitly. ``GraphState`` is ``total=False`` and
+    every reader uses ``.get`` with a default, so this is belt-and-braces rather than a
+    requirement -- but an exhaustive block is auditable at a glance, which a partial one
+    is not.
+
+    ``overrides`` seeds ``merged_inputs`` up front so tests can inject the offline
+    sentinels (``_force_error`` / ``_force_empty`` / ``_force_too_large`` /
+    ``_force_canned`` / ``_force_plan`` / ``_force_reject`` / ``_force_revise``) without
+    adding non-contract fields to ``VisualizeRequest`` itself -- ``merge_inputs`` updates,
+    never replaces, the incoming ``merged_inputs``, so these survive into ``execute``.
 
     ``deadline_seconds`` (Phase 5, SEC-36) seeds the ABSOLUTE wall-clock
     ``deadline_at`` (``time.monotonic() + deadline_seconds``); the entry points
@@ -174,6 +206,7 @@ def initial_state(
         tool_call_count=0,
         seen_signatures=[],
         clarification=None,
+        cache_hit=False,
         events=[],
     )
 

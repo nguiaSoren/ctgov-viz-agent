@@ -1,11 +1,16 @@
-"""The Vega-Lite projection (ARCHITECTURE_SPEC §3.7) -- Phase 0.
+"""The Vega-Lite projection (ARCHITECTURE_SPEC §3.7).
 
 The custom canonical ``Visualization`` (``app.api.schemas``) is the source of
-truth; this module derives a **convenience** Vega-Lite v5 spec for the
-standard chart types a frontend can render directly. It is intentionally
-small: Phase 0 has exactly one real producer (the distribution recipe's bar
-chart), so this only needs to be *correct* for the standard marks, not
-exhaustive.
+truth; this module derives a **convenience** Vega-Lite v5 spec for the standard
+chart types a frontend can render directly. It is intentionally small: it reads
+the x/y/color field names off ``viz.encoding`` instead of knowing anything about
+recipes, so one projector covers every producer.
+
+Four chart types reach it live -- ``bar`` (distribution / geographic /
+network-degeneracy fallback), ``grouped_bar`` (compare), ``time_series`` and
+``histogram``; all four ship a populated ``vega_lite`` block in ``examples/``.
+``scatter`` is in the mark table for completeness but no recipe emits it (the
+chart type is deferred, G-20 -- trials have no generic two-continuous axes).
 
 ``network_graph`` is never projected (C-60/G-41d) -- a node-link graph has no
 Vega-Lite mark, and the custom schema is the only shape that can carry it.
@@ -17,9 +22,10 @@ from __future__ import annotations
 
 from app.api.schemas import ChartType, Visualization
 
-# The chart types this Phase-0 projector knows how to render as Vega-Lite v5,
-# and the mark each one maps to. Anything not in this table (network_graph /
-# single_value / table) returns None from `to_vega_lite`.
+# The chart types this projector knows how to render as Vega-Lite v5, and the
+# mark each one maps to. Anything not in this table (network_graph /
+# single_value / table) returns None from `to_vega_lite`. SCATTER is listed for
+# enum completeness only -- no recipe produces it (deferred, G-20).
 _STANDARD_MARKS: dict[ChartType, str] = {
     ChartType.BAR: "bar",
     ChartType.GROUPED_BAR: "bar",
@@ -38,6 +44,12 @@ def to_vega_lite(viz: Visualization) -> dict | None:
     per ``Datum`` and reads the x/y channel field names off
     ``viz.encoding`` -- so the projection stays in sync with whatever fields
     the viz-builder actually populated, rather than hardcoding a shape.
+
+    A named channel is not necessarily a declared ``Datum`` field: ``grouped_bar``
+    encodes y on ``percent``, which rides on ``Datum``'s ``extra="allow"``. Rows are
+    therefore read with ``getattr(datum, field, None)``, which is fail-soft rather
+    than fail-loud -- a missing channel projects ``null`` for that cell instead of
+    raising.
     """
     mark = _STANDARD_MARKS.get(viz.type)
     if mark is None:

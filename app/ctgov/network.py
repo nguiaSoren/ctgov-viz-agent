@@ -11,9 +11,16 @@ Design invariants honored here (Interface Contract v2 §W1b):
   ``protocolSection: null``, a non-list ``interventions``, a non-dict
   intervention, ``otherNames: null``, a missing ``name`` — every descent is
   ``isinstance``-guarded and a bad record is silently skipped, never fatal.
-* **Excerpts are string-extracted, never authored (CC-9)** — each edge carries
-  two citations whose ``excerpt`` is walked out of a contributing record via the
-  ``app.ctgov.citations`` primitives, round-trip verifiable by ``is_substring_at``.
+* **Citations are string-extracted, never authored (CC-9)** — each edge carries
+  two citations, one per endpoint ``field_path``, built from ONE deterministically
+  chosen contributing record (the min-nctId trial linking the pair). Both are
+  walked out of that record via the ``app.ctgov.citations`` primitives. Read the
+  two fields correctly: each citation's ``matched_value`` is its OWN endpoint's
+  literal name (the sponsor name / the drug name) and is round-trip verifiable by
+  ``is_substring_at``, while ``excerpt`` is that record's brief title — so the two
+  citations of one edge legitimately carry the SAME ``excerpt`` and differ in
+  ``matched_value`` (e.g. edge 0 of examples/run_07: both cite NCT00001832 with the
+  same title, matched_value "Cyclophosphamide" vs "Fludarabine").
 * **Alias-only drug synonym merge (CC-12, P3-MERGE)** — drug nodes are merged by
   the **Alias invariant**: *an alias (``otherName``) belongs only to its own
   canonical drug and never bridges two distinct primary names; only an
@@ -407,7 +414,7 @@ def _drug_name_in_record(record: dict, canon: str, uf: _UnionFind) -> str | None
 def _drug_names_in_record(record: dict) -> list[str]:
     """The REAL list of DRUG intervention names in ``record`` — the citation ``value``
     for a drug endpoint. Storing the real list (not a scalar copy of the excerpt) is
-    what gives the Output-Reviewer excerpt check TEETH (L2-F1, mirroring the explode
+    what gives the Output-Reviewer citation check TEETH (mirroring the explode
     path's F1 fix): ``_excerpt_in_value`` then requires the excerpt to EQUAL a genuine
     element, so a FABRICATED drug excerpt fails ``citation_invalid`` instead of passing
     against a copy of itself. Matches ``is_substring_at``'s element scan at ``.name``."""
@@ -591,7 +598,7 @@ def _prune_and_shape(
 # fallback bar (which forms the SAME drug nodes but shows no edges) — so the fallback
 # carries only the disclosures that apply to it (drug-node formation), never the
 # edge-derivation / node-cap / edge-weight-prune notes that describe a graph it does
-# not render (L3-1).
+# not render.
 _ALIAS_MERGE_NOTE = (
     "Drug nodes are keyed by active ingredient: names are normalized (case, punctuation, "
     "dose/strength, salt, and dose-form/route stripped — 'Sunitinib Malate'≡'Sunitinib', "
@@ -610,7 +617,12 @@ _PLACEBO_NOTE = (
 
 
 def _build_fallback(
-    records: list[dict], uf: _UnionFind, labels: dict[str, str], *, top_n: int = 25, k: int = 20
+    records: list[dict],
+    uf: _UnionFind,
+    labels: dict[str, str],
+    *,
+    top_n: int = 25,
+    k: int = config.CITATION_SAMPLE_K,
 ) -> dict:
     """The degenerate-network fallback payload: a cited BAR of drug frequencies.
 
@@ -654,7 +666,7 @@ def _build_fallback(
             name = _drug_name_in_record(trials[nct], canon, uf) or ""
             citations.append(
                 # value = the record's REAL drug-name list (not a copy of the excerpt),
-                # so the excerpt check has TEETH — a fabricated drug name fails (L2-F1).
+                # so the matched_value check has TEETH — a fabricated drug name fails.
                 Citation(
                     nct_id=nct,
                     field_path=_DRUG_PATH,
@@ -680,7 +692,7 @@ def _build_fallback(
     total_drugs = len(canon_trials)
     buckets_truncated = total_drugs > top_n
     # Only the disclosures that apply to a drug-frequency BAR (node formation), NOT the
-    # graph's edge/cap/prune notes (L3-1). The count-basis-gap note (some matched trials
+    # graph's edge/cap/prune notes. The count-basis-gap note (some matched trials
     # have no drug) needs the executor's countTotal, so the caller adds it.
     notes = [_ALIAS_MERGE_NOTE, _PLACEBO_NOTE]
     if buckets_truncated:
@@ -740,7 +752,17 @@ def _build_notes(
             f"(weight ≥ 1) is shown — no edge-weight threshold applied in this view."
         )
     # Density disclosure: a weight-1-heavy graph LOOKS rich but most edges are a single
-    # shared trial — say so rather than let the reader over-read the structure (H5).
+    # shared trial — say so rather than let the reader over-read the structure.
+    #
+    # Reachability caveat: ``n_weight1`` is counted by ``build_graph`` over the
+    # POST-prune edge list, so this note can only fire when weight-1 edges survive —
+    # i.e. when ``min_edge_weight == 1``. For the default ``drug_drug`` view
+    # (min weight 2) it is unreachable BY CONSTRUCTION, even though that view's
+    # ~84%-weight-1 hairball is exactly what motivated the note (confirmed on
+    # examples/run_07: 0 weight-1 edges of 194). In practice it fires for
+    # ``sponsor_drug`` (min weight 1) and for any caller that explicitly lowers the
+    # threshold. Making it describe the pre-prune graph would mean counting before
+    # ``_prune_and_shape``.
     if n_edges and n_weight1:
         pct = round(100 * n_weight1 / n_edges)
         notes.append(

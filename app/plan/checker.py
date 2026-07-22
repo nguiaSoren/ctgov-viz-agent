@@ -5,8 +5,10 @@ Code, not a prompt. Runs before any LLM review and before any API call — the
 real anti-hallucination gate: the planner cannot invent a capability the tool
 set doesn't expose, and cannot pass an invalid token/field/chart-type through.
 Rejects on the first violation with a precise machine ``reason`` the planner
-can escalate on (one bounded re-plan); returns ``ok=True`` with the plan
-echoed back as ``normalized_plan`` when every check passes.
+can escalate on (one bounded re-plan); when every check passes it returns
+``ok=True`` with the plan echoed back UNCHANGED as ``normalized_plan`` — this
+module validates, it never rewrites (the field name is a leftover; see
+``CheckResult``).
 """
 
 from __future__ import annotations
@@ -47,15 +49,28 @@ _FILTER_TOKEN_SETS: dict[str, frozenset[str]] = {
 # The complete filter-key vocabulary this codebase actually uses. The checker is
 # the anti-hallucination gate (module docstring above): a typo'd/invented filter
 # key (e.g. "phaze") must fail mechanical validation rather than pass silently.
-# Covers both the token-set-checked keys above (phase/overallStatus/studyType/
-# sponsorClass/interventionType) and the keys that carry a value with no fixed
-# token vocabulary yet — free-text/range/boolean filters sourced from
-# VisualizeRequest (app/api/schemas.py): "status" (human status hint),
-# "country" (free-text dimension, also a filter), "start_year"/"end_year"
-# (inclusive year-range bounds), and "interventional_only" (CC-5/E-38 toggle).
-# Extend as Phase 1 freezes the filter vocabulary — add a row here (and to
-# _FILTER_TOKEN_SETS if the new key has a fixed token set) whenever a new
-# filter key is wired up; never let the checker silently accept an unlisted key.
+# Covers the token-set-checked keys above (phase/overallStatus/studyType/
+# sponsorClass/interventionType) plus the keys whose value has no fixed token
+# vocabulary:
+#   * "start_year"/"end_year" (inclusive year-range bounds) and
+#     "interventional_only" (the CC-5/E-38 toggle) — really emitted by the planner
+#     (``PlannerFilters``) and really consumed by ``build_search_params``.
+#   * "country" — the planner CAN emit ``filters.country`` (``PlannerFilters.country``)
+#     and it is accepted here, but NOTHING consumes it: ``build_search_params``
+#     reads no country key, and a country only reaches the wire as an ENTITY mapped
+#     to ``query.locn`` in ``app.graph.nodes``. A ``filters.country`` is therefore
+#     accepted and then silently ignored.
+#   * "status" — a human status hint (e.g. "recruiting"), NOT a wire token, and NOT
+#     a field of ``VisualizeRequest`` (which has study_type/trial_phase/country/
+#     start_year/end_year/interventional_only, no status). No producer emits it:
+#     ``PlannerFilters`` has no status field either. It is vestigial and slightly
+#     sharp — ``build_search_params`` does read ``filters["status"]`` as a fallback
+#     for "overallStatus" and RAISES on a non-token, so if a producer ever appeared,
+#     a human hint would clear this checker and then fail at the param boundary as a
+#     redacted upstream error instead of a clean re-plan.
+# Extend as the filter vocabulary grows — add a row here (and to _FILTER_TOKEN_SETS
+# if the new key has a fixed token set) whenever a new filter key is wired up;
+# never let the checker silently accept an unlisted key.
 KNOWN_FILTER_KEYS: frozenset[str] = frozenset(
     {
         "phase",
@@ -72,7 +87,9 @@ KNOWN_FILTER_KEYS: frozenset[str] = frozenset(
 )
 
 # Self-consistency guard: every token-set-checked key must also be a known
-# filter key, so the two tables can never drift apart.
+# filter key, so the two tables can never drift apart. This is an import-time
+# consistency check on our own tables, never a user-input check — and like every
+# `assert`, it is stripped under `python -O`.
 assert set(_FILTER_TOKEN_SETS) <= KNOWN_FILTER_KEYS
 
 # Internal entity-dimension name -> the real ClinicalTrials.gov query area it
@@ -88,16 +105,21 @@ _ENTITY_DIMENSION_AREAS: dict[str, str] = {
     "country": "locn",
 }
 
-# Self-consistency guard (not a user-input check): every mapped area must
-# actually be a whitelisted query area, so the two tables can't drift apart.
+# Self-consistency guard (not a user-input check; also stripped under `python -O`):
+# every mapped area must actually be a whitelisted query area, so the two tables
+# can't drift apart.
 assert set(_ENTITY_DIMENSION_AREAS.values()) <= QUERY_AREAS
 
 
 def _is_malformed_token_shape(value: object) -> bool:
-    """Is ``value`` a shape a real filter token/value can never legally be
-    (a dict, or a list containing a dict/list)? These are unhashable against
-    the frozenset token sets below and must be rejected *before* any
-    membership test — a checker must never raise (FIX 2)."""
+    """Is ``value`` a shape a real filter token can never legally be (a dict, or a
+    list containing a dict/list)?
+
+    Two defenses guard the same hole (FIX 2 — a checker must never raise): the
+    membership test below coerces with ``str(token)``, so an unhashable value can
+    never blow up a frozenset lookup, and this predicate runs first so such a value
+    is reported as a precise ``malformed_filter_value`` rather than stringified into
+    a misleading ``invalid_filter_token`` reason."""
     if isinstance(value, dict):
         return True
     if isinstance(value, list):
@@ -106,20 +128,31 @@ def _is_malformed_token_shape(value: object) -> bool:
 
 
 def _check_filter_tokens(filters: dict) -> str | None:
-    """Return a machine reason if any filter key is unknown, any filter value
-    is a malformed shape (dict/nested-list — unhashable against a token set),
-    or any known filter key carries an invented token. Never raises: this is
-    the checker's whole contract (``check_plan`` must always return a
-    ``CheckResult``, never propagate a ``TypeError``/``KeyError``)."""
+    """Return a machine reason if any filter key is unknown, or if a key that HAS
+    a fixed token set carries a malformed shape (dict/nested-list — unhashable
+    against that frozenset) or an invented token.
+
+    Note the ordering below: a known key with NO token set (start_year/end_year/
+    interventional_only/status/country) ``continue``s *before* the shape check, so
+    a malformed value under one of those keys is accepted here —
+    ``{"country": {"a": 1}}`` passes. Nothing downstream reads ``filters["country"]``
+    at all; a malformed ``start_year`` is caught by ``_validate_year`` at the
+    param boundary instead. Tightening this means moving the shape check above the
+    ``continue``.
+
+    Never raises for a Pydantic-constructed Plan: that is the checker's whole
+    contract (``check_plan`` must always return a ``CheckResult``, never propagate
+    a ``TypeError``/``KeyError``)."""
     for key, raw in filters.items():
         if key not in KNOWN_FILTER_KEYS:
             return f"unknown_filter_key:{key!r}"
 
         token_set = _FILTER_TOKEN_SETS.get(key)
         if token_set is None:
-            # A known key with no fixed token vocabulary yet (e.g. start_year/
-            # end_year/interventional_only/status/country) — nothing further
-            # to validate here until Phase 1 adds its own token set.
+            # A known key with no fixed token vocabulary (start_year/end_year/
+            # interventional_only/status/country) — nothing to check against here.
+            # NOTE this `continue` also skips the shape check below, so a dict under
+            # one of these keys passes the checker (see the docstring).
             continue
 
         if _is_malformed_token_shape(raw):
@@ -144,23 +177,64 @@ def _check_entity_dimensions(entities: dict) -> str | None:
 def check_plan(plan: Plan) -> CheckResult:
     """Mechanically validate ``plan`` (ARCHITECTURE_SPEC §3.3 / §B.3).
 
-    Checks, in order (first violation wins):
+    Eight checks, in order (first violation wins):
 
-    1. ``chart_type`` is a real ``ChartType`` member (defensive).
-    2. ``date_field``, when present, is one of the 5 real date fields (defensive).
-    3. ``field``, when present, resolves via the known field-alias allowlist
-       (rejects an invented aggregation field).
+    1. ``chart_type`` is a real ``ChartType`` member. Defensive: Pydantic already
+       guarantees it for any Plan it constructed, so this can only fire on a Plan
+       whose attribute was mutated after construction.
+    2. ``date_field``, when present, is one of the 5 real date fields — defensive
+       for the same reason (it is a ``Literal`` on the model).
+    3. ``field``, when present, resolves via the known field-alias allowlist or is
+       one of ``DERIVED_FIELDS`` (rejects an invented aggregation field).
     4. Every entity-dimension key (own + each ``compare`` arm) maps to a
        whitelisted query area.
     5. Every filter key (own + each ``compare`` arm) is a known key
-       (``KNOWN_FILTER_KEYS``); every filter value is a legal token/scalar
-       shape (never a dict/nested-list); every key with a fixed token
-       vocabulary carries only real token(s) from that set.
+       (``KNOWN_FILTER_KEYS``); every key with a fixed token vocabulary carries
+       only real token(s) from that set, in a legal shape (never a dict/
+       nested-list). See ``_check_filter_tokens`` for what is *not* shape-checked.
     6. The plan's ``query_class`` has a registered recipe, and ``chart_type``
        is one the recipe allows (its default, an alternate, or its degeneracy
-       fallback).
+       fallback). The ``KeyError`` branch is likewise mutation-only: every
+       ``QueryClass`` member has a row in ``RECIPES``.
     7. Data-shape <-> chart sanity: ``network_graph`` only for
        ``query_class == "network"``; ``time_series`` requires a ``date_field``.
+       The ``network_graph`` half is unreachable defense-in-depth as the recipe
+       table stands — ``NETWORK_GRAPH`` is allowed by the network recipe only, so
+       check 6 already rejects it for every other class.
+    8. ``_check_class_shape`` — the G-33 per-class structural check (a compare plan
+       really carries ≥2 ``series``, a network plan really carries a ``network``
+       block, a timeseries really carries a ``grain``, …). This is the check that
+       stops a shape-less plan from reaching ``execute``.
+
+    On pass, returns ``ok=True`` with the *same* plan object as
+    ``normalized_plan`` — nothing is rewritten here (see ``CheckResult``).
+
+    What this checker deliberately does NOT do, despite §B.3's wording:
+
+    * It does not normalize anything, and it never mutates the plan. §B.3/CC-8 as
+      written have the checker *override* an unsupportable ``chart_type``; the
+      shipped checker REJECTS instead (check 6) and lets the planner re-choose in
+      the one bounded re-plan. Token/field normalization likewise runs upstream in
+      the planner (``_normalize_field``, ``normalize_trial_phase``), not here.
+    * It does not check the year range or ordering: ``{"start_year": 2020,
+      "end_year": 2010}`` passes. A request-supplied range is ordered by a
+      ``VisualizeRequest`` validator, and ``_validate_year`` in ``app.ctgov.params``
+      fences each year to [1900, 2100] and RAISES otherwise (surfacing as a redacted
+      upstream error, not a clean re-plan) — but nothing rejects an *inverted* pair
+      the planner invented: it reaches the wire as a reversed
+      ``AREA[StartDate]RANGE[...]`` clause, unchallenged by any layer.
+    * It does not validate tools or tool args — there is no tool call to validate
+      in a single-shot planner; the executor dispatches on ``query_class`` and
+      ``Recipe.allowed_tools`` is a build-time-tested declaration (see
+      ``app.plan.recipes``).
+    * It does not validate ``plan.alternates``; only ``plan.chart_type`` is checked
+      against the recipe.
+
+    Never raises for a Plan that Pydantic constructed — the contract the graph
+    depends on. ``Plan`` sets no ``validate_assignment``, so mutating an attribute
+    after construction (``plan.chart_type = "network_graph"``) bypasses the
+    Literal/Enum guards and CAN raise here; that path is unreachable from the LLM,
+    which only ever produces a freshly-validated Plan.
     """
     if plan.chart_type not in ChartType:
         return CheckResult(ok=False, reason=f"invalid_chart_type:{plan.chart_type!r}")
@@ -188,6 +262,8 @@ def check_plan(plan: Plan) -> CheckResult:
             return CheckResult(ok=False, reason=reason)
 
     try:
+        # Mutation-only branch: every ``QueryClass`` Literal member has a RECIPES row,
+        # so a Pydantic-constructed Plan can never miss (defense-in-depth, check 6).
         recipe = get_recipe(plan.query_class)
     except KeyError:
         return CheckResult(ok=False, reason=f"unknown_query_class:{plan.query_class!r}")
@@ -203,6 +279,9 @@ def check_plan(plan: Plan) -> CheckResult:
             ),
         )
 
+    # Unreachable as the recipe table stands (only the network recipe allows
+    # NETWORK_GRAPH, so check 6 rejects it first for every other class) — kept as
+    # defense-in-depth against a future row that widens an allowed set.
     if plan.chart_type is ChartType.NETWORK_GRAPH and plan.query_class != "network":
         return CheckResult(ok=False, reason="network_graph_requires_network_query_class")
 
@@ -228,7 +307,10 @@ def _check_class_shape(plan: Plan) -> str | None:
     so an invented status token in ``series[1]`` is caught upstream, not here.
 
     * distribution / geographic → an aggregation ``field`` is required (geographic
-      is specifically ``country``).
+      is specifically ``country``). That equality is load-bearing coupling, not
+      belt-and-braces: the geographic executor aggregates on the literal
+      ``"country"`` and never reads ``plan.field``, so relaxing this check would
+      silently make the executor aggregate the wrong dimension.
     * timeseries → a ``date_field`` (already enforced when chart is time_series) and
       a ``grain``.
     * compare → ``series`` with ≥2 arms AND an aggregation ``field`` (the dimension

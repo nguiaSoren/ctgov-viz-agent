@@ -2,7 +2,10 @@
 
 Pure functions — no network. Records are synthetic ClinicalTrials.gov-shaped
 dicts carrying only the two paths the builder reads: the nctId (for the
-deterministic sort) and the field being cited (for the excerpt).
+deterministic sort) and the field being cited (whose value becomes
+``matched_value``). They carry no ``briefTitle``, so ``Citation.excerpt`` falls
+back to ``matched_value`` here — this file says nothing about the brief-title
+excerpt path.
 """
 
 from __future__ import annotations
@@ -51,7 +54,8 @@ def test_under_k_is_not_truncated() -> None:
 
 
 def test_every_excerpt_is_a_real_substring_at_field_path() -> None:
-    """Each returned excerpt round-trips via the existing ``is_substring_at``."""
+    """Each returned citation's ``matched_value`` — the anti-fabrication anchor the
+    Output Reviewer verifies — round-trips via the existing ``is_substring_at``."""
     records = [_record(f"NCT{i:08d}", phases=["PHASE1", "PHASE2"]) for i in range(5)]
 
     citations, _, _ = build_bucket_citations(records, FIELD_PATH, k=20)

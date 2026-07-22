@@ -2,8 +2,14 @@
 
 The single boundary where a validated plan becomes ClinicalTrials.gov *search-
 selecting* wire params (``query.*`` + ``filter.*``). The transport params
-(``pageSize``/``countTotal``/``fields``/``pageToken``) are added later by
-``app.ctgov.client.CTGovClient`` — never here.
+(``pageSize``/``countTotal``/``fields``/``pageToken``) are never added here; they
+are attached downstream — normally by ``app.ctgov.client.CTGovClient``
+(``count``/``iter_studies``), and in one place by the caller itself:
+``app.ctgov.tools.aggregate_by_counts`` builds its own
+``countTotal``/``pageSize``/``fields`` and calls ``client.get`` directly, because
+it needs a count AND a citation sample from the SAME request. The invariant that
+matters is unchanged either way: whatever adds them, no user text reaches a
+transport param — they are all code-generated constants or config ints.
 
 SSRF/Essie invariant (the reason this module exists):
     User free-text may appear ONLY as a ``query.<area>`` VALUE. Every param
@@ -62,6 +68,14 @@ def _validate_year(value: object, *, label: str) -> int:
 # The Essie metacharacters that let a ``query.<area>`` value break out of a plain
 # phrase into grouping / a cross-field ``AREA[...]`` selector / a ``RANGE`` / a
 # quoted sub-literal. Any of these means the value MUST be quoted as a StringLiteral.
+#
+# Known gap: backslash is NOT in this set, so a clean value containing one passes
+# through unescaped (``neutralize_query_value("a\\b")`` is unchanged). That is only
+# safe if a bare backslash carries no meaning to Essie OUTSIDE a string literal --
+# which we never verified live. Inside the quoting branch backslash IS escaped, so
+# the gap is limited to otherwise-clean values. Adding "\\" here would be the
+# conservative fix; it was left out to avoid quoting values on a character that has
+# no demonstrated effect.
 _ESSIE_METACHARACTERS = frozenset('[]()"')
 
 # Essie operator / function KEYWORDS. Essie is CASE-SENSITIVE: only the UPPERCASE
@@ -123,16 +137,37 @@ def build_search_params(query: dict[str, str], filters: dict) -> dict[str, str]:
         ``enums.QUERY_AREAS`` (``term``/``cond``/``intr``/``spons``/``locn``).
         The value is the ONLY place user free-text is allowed.
     filters:
-        Validated filter dict. This builder consumes: ``overallStatus``/``status``
-        (enum token → ``filter.overallStatus``), ``interventional_only`` (bool),
-        ``studyType`` (enum token), ``start_year``/``end_year`` (int),
-        ``phase`` (a token or list of tokens → an OR group), ``sponsorClass``
-        (enum token), and ``interventionType`` (enum token) — the last three
-        composed into the ``filter.advanced`` Essie expression. Every token is
-        re-validated here (the SSRF/Essie boundary), so an unvalidated token can
-        never reach the wire. Count and paging both route through this same
-        builder, so a filter is applied to BOTH populations or neither — the two
-        can never desync (the reconciliation invariant depends on this).
+        Validated filter dict. This builder consumes exactly these keys:
+        ``overallStatus``/``status`` (enum token → ``filter.overallStatus``),
+        ``interventional_only`` (bool), ``studyType`` (enum token),
+        ``start_year``/``end_year`` (int), ``phase`` (a token or list of tokens →
+        an OR group), ``sponsorClass`` (enum token), and ``interventionType``
+        (enum token). ``overallStatus``/``status`` becomes its own
+        ``filter.overallStatus`` param; every OTHER consumed key is AND-composed
+        into the single ``filter.advanced`` Essie expression.
+        Every token is re-validated here (the SSRF/Essie boundary), so
+        an unvalidated token can never reach the wire. Count and paging both route
+        through this same builder, so a filter is applied to BOTH populations or
+        neither — the two can never desync (the reconciliation invariant depends
+        on this).
+
+        Two asymmetries worth stating plainly, because they are easy to misread:
+
+        * **Unknown KEYS are silently ignored; unknown VALUES raise.**
+          ``build_search_params({"cond": "x"}, {"country": "France", "bogus": 1})``
+          returns just ``{"query.cond": "x"}``. This is fail-closed (an unrecognized
+          filter can never widen or narrow the wire query) but it is silent — a
+          key the planner emits and this builder does not know about simply has no
+          effect. ``filters["country"]`` is exactly that case today: the planner can
+          emit it and the Plan Checker whitelists it, but nothing consumes it here;
+          a country restriction reaches the wire as an ENTITY mapped to
+          ``query.locn`` by the graph layer, not as a filter.
+        * **``status`` is a vestigial alias.** No producer emits it (``PlannerFilters``
+          and ``VisualizeRequest`` both lack the field), and it must already be a
+          real ``OVERALL_STATUS_TOKENS`` token: a human hint like ``"recruiting"``
+          passes the Plan Checker and then raises ``ValueError`` here, which the
+          execute node converts into a redacted ``upstream_error`` rather than a
+          clean re-plan. Kept only as a defensive alias for ``overallStatus``.
 
     Returns
     -------
@@ -158,6 +193,7 @@ def build_search_params(query: dict[str, str], filters: dict) -> dict[str, str]:
         params[f"query.{area}"] = neutralize_query_value(value)
 
     # --- filter.overallStatus : a single validated enum token ---------------
+    # ``status`` is a vestigial alias with no producer today; see the docstring.
     status = filters.get("overallStatus", filters.get("status"))
     if status is not None:
         if status not in OVERALL_STATUS_TOKENS:

@@ -1,4 +1,4 @@
-"""The planner — the ReAct agent whose classify->fill loop lives here (ARCHITECTURE_SPEC §3.2).
+"""The planner — classify-and-fill in ONE structured-output call (ARCHITECTURE_SPEC §3.2).
 
 Two moves, no more: **classify** the question into exactly one of six query classes,
 then **fill** that recipe's slots (entities / filters / field / date_field / chart). The
@@ -6,6 +6,14 @@ model emits a single typed :class:`PlannerOutput` (a CLOSED structured object �
 ``dict[str, Any]``, so a made-up filter key literally cannot be represented); code maps that
 to the internal :class:`~app.plan.models.Plan` and the deterministic tools compute every
 number. **The LLM never counts, pages, or aggregates** — it only decides *what* to compute.
+
+Honest scope of the "ReAct" framing (§3.2 describes a reason→act→observe agent): the shipped
+planner is NOT a tool-calling agent. ``plan_request`` makes exactly one ``adapter.propose``
+call with ``tools=None``, so the model never sees an action space and never receives a tool
+result; the tool is chosen deterministically downstream (the recipe registry + the executor's
+dispatch on ``query_class``). The only iteration is at the GRAPH level: a rejected plan
+(Plan Checker or Intent Reviewer) comes back as the ``feedback`` string below for one bounded
+re-plan. Reason→act→observe therefore describes the graph, not this module.
 
 Why a closed :class:`PlannerOutput` rather than emitting a ``Plan`` directly: the LLM-facing
 schema is the anti-hallucination boundary. Its filter vocabulary is a fixed set of typed keys
@@ -240,8 +248,11 @@ computes every number afterward. Your job is only to choose the class, the entit
 the aggregation field, the date field, and the chart. If you emit a number, you are wrong.
 
 THE SIX QUERY CLASSES (each maps to one recipe = one tool + a default chart):
-- distribution  — categorical counts over one field (phase, study type, intervention type, \
-sponsor class). Tool: aggregate_by. Chart: bar (alt: histogram, table). Requires `field`.
+- distribution  — counts over one field. `field` must be one of the four categorical fields \
+`phase`, `overallStatus`, `interventionType`, `sponsorClass` (tool: aggregate_by; chart: bar, \
+alt: histogram, table) OR the one derived field `study_duration` = completion date − start date, \
+binned — pick it only when the question is about how LONG trials run, and pair it with \
+chart_type "histogram" (tool: study_duration_histogram). Requires `field`.
 - timeseries    — a count binned over time. Tool: timeseries. Chart: time_series (alt: bar). \
 Requires `date_field` AND `grain` ("year" or "month").
 - compare       — two or more independently-scoped arms bucketed on the same field. \
@@ -430,13 +441,16 @@ def plan_request(
 
     Builds the system prompt (six classes + recipe menu + real token vocab + CC-1) and one user
     message (NL query + present structured fields + an optional ``feedback`` re-plan line), then
-    asks the adapter to ``propose`` a :class:`PlannerOutput`. Offline the StubAdapter returns the
-    deterministic ``canned`` distribution plan; live, a real adapter ignores ``canned`` and calls
-    the model. CC-1 field precedence is re-asserted in code before lowering to a ``Plan``.
+    asks the adapter to ``propose`` a :class:`PlannerOutput`. Exactly ONE model call per
+    invocation, with ``tools=None`` — no tool loop lives here (see the module docstring).
+    Offline the StubAdapter returns the deterministic ``canned`` distribution plan; live, a real
+    adapter ignores ``canned`` and calls the model. CC-1 field precedence is re-asserted in code
+    before lowering to a ``Plan``.
 
-    ``feedback`` (when set) threads the prior rejection reason into the prompt — the reason→act→
-    observe re-plan. The function stays importable and network-free; the graph passes a
-    StubAdapter offline and a real adapter live.
+    ``feedback`` (when set) threads the prior rejection reason — the checker's machine reason or
+    the Intent Reviewer's ``revise`` note — into the prompt; the graph calls this a second time
+    at most (the one bounded re-plan). The function stays importable and network-free; the graph
+    passes a StubAdapter offline and a real adapter live.
     """
     user_message = _build_user_message(merged_inputs, feedback)
     proposed = adapter.propose(
