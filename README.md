@@ -57,9 +57,10 @@ a *bounded* escalation back-edge to `plan` (a checker-reject / intent-revise / z
 at most once), which is exactly why it uses LangGraph rather than a plain DAG runner.
 
 ```
-Planner(LLM, ReAct) → Plan Checker(CODE) → Intent Reviewer(LLM) → Execute(CODE runner)
-   → Viz-spec builder(CODE) → Output Reviewer(CODE substring/reconcile + LLM faithful?) → Response
-   ── SSE status enum throughout · LangGraph graph · provider-agnostic adapter · stateless + cache ──
+merge_inputs(CODE, field precedence) → Planner(LLM, ReAct) → Plan Checker(CODE)
+   → Intent Reviewer(LLM) → Execute(CODE runner) → Viz-spec builder(CODE)
+   → Output Reviewer(CODE substring/reconcile + LLM faithful?) → Response
+   ── SSE status enum from `plan` onward · LangGraph graph · provider-agnostic adapter · stateless + cache ──
 ```
 
 <p align="center"><img src="docs/pipeline.png" alt="Pipeline: the LLM (blue) plans; deterministic code (green) computes; dashed edges are the bounded escalation re-plan" width="900"></p>
