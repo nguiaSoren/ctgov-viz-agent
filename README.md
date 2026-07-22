@@ -21,7 +21,8 @@ it is same-origin, so no CORS is involved; see [Quickstart](#quickstart).
 - **The model structurally cannot emit a wrong number.** The LLM only *plans*; deterministic code
   computes every value and reconciles it against the API's own `countTotal`. That is what makes the
   numbers trustworthy and the deep citations claimable — and it is enforced at the schema layer, not by
-  hope (the planner's typed output has no numeric field a count could live in).
+  hope: the planner's typed output has no count field at all (its only numbers are the two year bounds
+  of a filter, which *select* a population and are never rendered as a value).
 - **15 example runs, simple → highly complex, off one core** — every renderable chart type, a real
   drug↔drug network, two *"knows when not to chart"* refuses, a clarification, and three composed "boss"
   queries (four stacked filters → 3950 collapses to 229; a live-neutralized injection; a
@@ -40,8 +41,10 @@ Every value a user sees — a bar height, a time-bucket count, an edge weight �
 that pages the real API and reconciles its result against the API's own `countTotal`. The language
 model chooses the *plan* (which query class, which field, which filters, which chart); it never
 counts, pages, or aggregates. That single constraint is what makes the numbers trustworthy and the
-citations claimable, and it is enforced structurally: the planner's typed output has no numeric
-field in which a count could even be represented.
+citations claimable, and it is enforced structurally: `PlannerOutput` (`app/llm/planner.py`) declares
+no count, total, or value field, so a fabricated number has nowhere to live. Its only numeric fields
+are `filters.start_year` / `filters.end_year` — bounds that select a population, never data that is
+displayed.
 
 **Headline:** a deterministic visualization engine orchestrated by a ReAct planner routing to
 validated recipes. The planner interprets the request and selects a query recipe; deterministic
@@ -61,7 +64,7 @@ Planner(LLM, ReAct) → Plan Checker(CODE) → Intent Reviewer(LLM) → Execute(
 
 <p align="center"><img src="docs/pipeline.png" alt="Pipeline: the LLM (blue) plans; deterministic code (green) computes; dashed edges are the bounded escalation re-plan" width="900"></p>
 
-*Blue = LLM (decides **what** to compute) · green = deterministic **code** (computes it) · yellow = both. The dashed **escalation** edge is the bounded ≤1 re-plan — gate-triggered by a checker-reject, an intent-revise, or zero results, never planner-initiated; it is the one back-edge that makes this a **cyclic graph, not a DAG**, and the reason it uses LangGraph. (One rare path is omitted for clarity: an unresolvable NL referent short-circuits `plan → clarification`.) The image renders in any Markdown viewer; the Mermaid source that regenerates it (live on GitHub) is below.*
+*Blue = LLM (decides **what** to compute) · green = deterministic **code** (computes it) · yellow = both. The dashed **escalation** edge is the bounded ≤1 re-plan — gate-triggered by a checker-reject, an intent-revise, or zero results, never planner-initiated; it is the one back-edge that makes this a **cyclic graph, not a DAG**, and the reason it uses LangGraph. (One rare path is omitted for clarity: an unresolvable NL referent short-circuits `plan → clarification`.) One label is shorthand: `review_output`'s "excerpt ⊆ source" is the citation check, whose verified anchor in the shipped schema is the `matched_value` field — the field named `excerpt` carries the readable brief title and is not the thing checked (see [Deep citations](#deep-citations-how-they-scale)). The image renders in any Markdown viewer; the Mermaid source that regenerates it (live on GitHub) is below.*
 
 <details>
 <summary>Pipeline diagram — Mermaid source</summary>
@@ -87,8 +90,19 @@ flowchart LR
 
 </details>
 
-There is exactly **one Checker (code) and two Reviewers (LLM)**; the ReAct loop lives only in `plan`;
-`execute` is deterministic. The two gate families never blur: a **Checker** is deterministic code
+There is exactly **one Checker (code) and two Reviewers (LLM)**; `execute` is deterministic.
+
+**What "ReAct" means here, precisely** (worth stating, because the code is narrower than the label):
+the *reason → act → observe* cycle is the **graph's**, not the model's. `plan` makes **one**
+structured-output call with `tools=None` (`app/llm/planner.py`) — it classifies the question into a
+query class and fills that recipe's slots; the recipe, not the model, decides which tool runs
+(`app/graph/nodes.py` dispatches on `plan.query_class`). *Observe* is the Checker / Intent Reviewer /
+`execute` returning a verdict, and the bounded back-edge threads the rejection reason into the next
+prompt as `feedback`, so the single re-plan is a real correction rather than a blind retry. The
+collapse is deliberate: a planner that never sees an action space cannot invent one, and its output
+stays closed and typed.
+
+The two gate families never blur: a **Checker** is deterministic code
 (mechanical legality — is every token, field, and range real?); a **Reviewer** applies LLM judgment
 (semantic — did the planner understand the question? does the output faithfully answer it?). Neither
 reviewer can introduce a number: both are gates that emit `approve`/`revise`/`flag` on already-typed
@@ -125,7 +139,7 @@ open http://localhost:8000/demo/viewer.html
 
 > **Reviewer shortcut:** step 3 needs no network and no API key — it re-proves that every number in
 > the shipped `examples/*.json` reconciles and every citation is a real source substring, in one
-> command. `uv run pytest` runs the same gate plus the full suite (582 tests).
+> command. `uv run pytest` runs the same gate plus the full suite (587 tests).
 
 **Runs with no API key.** With no LLM provider configured the service still runs end-to-end on a
 deterministic offline `StubAdapter` (a fixed plan, zero network), so it never hard-crashes and the
@@ -138,12 +152,23 @@ export LLM_MODEL_PLANNER=gpt-5.4 LLM_MODEL_REVIEWER=gpt-5.4-mini
 
 # Anthropic (the second concrete adapter — proves the adapter is provider-agnostic)
 export LLM_PROVIDER=anthropic ANTHROPIC_API_KEY=sk-ant-...
-export LLM_MODEL_PLANNER=claude-sonnet-5 LLM_MODEL_REVIEWER=claude-haiku-4-5
+export LLM_MODEL_PLANNER=claude-opus-4-8 LLM_MODEL_REVIEWER=claude-haiku-4-5
 ```
+
+Both `LLM_MODEL_*` lines are optional: each adapter compiles in its own defaults — `gpt-5.4` /
+`gpt-5.4-mini` for OpenAI and `claude-opus-4-8` / `claude-haiku-4-5` for Anthropic
+(`app/llm/adapter.py`, matching `.env.example`) — so setting only `LLM_PROVIDER` + the key is enough.
 
 The ClinicalTrials.gov API needs no key (it is a public registry). The **only** secret in the whole
 system is the LLM provider key, read solely by `app/llm/adapter.py`, never passed to a tool, never
-logged. Every guard, cap, and timeout is env-overridable — see `.env.example` and `app/config.py`.
+logged. The guards, caps, and timeouts live in one file, `app/config.py`, and are env-overridable —
+with the exceptions marked in that file rather than glossed: `MAX_QUERY_CHARS` /
+`MAX_STRUCTURED_FIELD_CHARS` are declared there but the limits that actually bind are Pydantic
+`max_length=500` / `max_length=200` literals on `VisualizeRequest` (`app/api/schemas.py`), so those
+two env vars are inert; `CITATION_SAMPLE_K` reaches the main aggregation paths but a few builders keep
+their own literal `20`, and the exact-count path's per-bucket sample of 10 was never lifted into
+config; and the request timeout covers the registry client only — the LLM adapters set none. See
+`.env.example` and `app/config.py`.
 
 Two endpoints: `POST /visualize` (sync, returns the full envelope) and `POST /visualize/stream` (SSE,
 emits a fixed enum of status events `planning → … → done` and a terminal event carrying the full
@@ -185,12 +210,12 @@ keyed off two discriminators:
 | Field | Meaning |
 |---|---|
 | `visualization` | The custom canonical spec `{type, title, encoding, data}`. `type` ∈ {`bar`, `grouped_bar`, `time_series`, `histogram`, `network_graph`, `single_value`, `table`}. `data` is a **row list** for standard charts and `{nodes, edges}` for a network (a validator enforces the type↔shape invariant). Null on `kind:"answer"`. |
-| `vega_lite` | A ready-to-render Vega-Lite projection for standard charts (a convenience for a frontend). Null for network / answer / clarification / too_large. |
+| `vega_lite` | A ready-to-render Vega-Lite projection for the four standard marks (`bar`, `grouped_bar`, `time_series`, `histogram`) — a convenience for a frontend. Null for `network_graph`, `single_value` and `table` (no natural Vega-Lite mark — `single_value` is still a populated `kind:"visualization"`), and for answer / clarification / too_large (no `visualization` at all). `app/viz/vega.py`. |
 | `answer` | The natural-language answer for `kind:"answer"` (a scalar count, a yes/no, or the `too_large` refuse). Code-templated, never model-authored. |
 | `question` | The disambiguating question for `kind:"clarification"`. Code-templated. |
 | `error` | A top-level `{code, message}` for `status:"error"` — never a half-populated viz. |
 | `citations` | A top-level `{nct_id: Citation}` dedup index (the load-bearing citations live inline on each datum). |
-| `meta` | Provenance + interpretation: `count_basis` (the dual counts + the reconciliation total), `date_field_used`, `time_granularity`, `filters` (the effective filters applied), `query_provenance` (endpoint + wire params, for reproducibility), `retrieved_at`, `source`, `partial` (a genuine truncation; null for `too_large`), and `notes` (interpretation + honest data-quality disclosures). |
+| `meta` | Provenance + interpretation: `count_basis` (the dual counts + the reconciliation total), `date_field_used`, `time_granularity`, `filters` (the effective filters applied), `query_provenance` (the endpoint plus the wire params that *select* the population — built by the same builder the request used, so the query is reproducible; the transport components it echoes alongside them, `pageSize`/`fields`, are stamped by the graph and are not a byte-exact record of every call a multi-call path made), `retrieved_at`, `source`, `partial` (a genuine truncation; null for `too_large`), and `notes` (interpretation + honest data-quality disclosures). |
 
 Each chart `Datum` carries `value`/`label`, its class channel (`period` for time series, `series` for
 compare, `bin_start`/`bin_end` for histograms), the **dual counts** `count_trials` (distinct nctId —
@@ -198,23 +223,31 @@ the number that reconciles) and `count_mentions` (the honest per-membership tall
 `citations[]`. A network `Edge` carries a `weight` and **two** citations (one per endpoint).
 
 ```jsonc
-// POST /visualize  →  (rung 02, abridged)
+// POST /visualize  →  (rung 02, abridged — keys elided, none renamed; full JSON in examples/)
 { "status": "ok", "kind": "visualization",
   "visualization": { "type": "bar", "title": "Phase distribution of interventional pancreatic cancer trials",
-    "encoding": { "x": {"field":"label"}, "y": {"field":"count_trials","unit":"trials"} },
-    "data": [
-      { "value": "PHASE1", "label": "Phase 1", "count_trials": 895,
-        "contributing_count": 895, "citations_truncated": true,
+    "encoding": { "x": {"field":"value","label":"Phase"},          // the wire token is the x key…
+                  "y": {"field":"count_trials","label":"Trials","unit":"trials"} },
+    "data": [                                                       // …and `label` is its display string
+      { "value": "NA", "label": "NA (not applicable)", "count_trials": 937, "…": "…" },
+      { "value": "PHASE1", "label": "Phase 1", "count_trials": 895, "count_mentions": 895,
+        "contributing_count": 895, "citations_truncated": true, "derived": false,
         "citations": [ { "nct_id": "NCT00001431",
                          "excerpt": "A Phase I Trial of Gemcitabine and Radiation in …",  // §5: readable brief title
                          "field_path": "protocolSection.designModule.phases",
-                         "value": ["PHASE1"], "matched_value": "PHASE1" }  /* …up to 20 */ ] },
+                         "value": ["PHASE1"], "matched_value": "PHASE1",
+                         "matched_tokens": null }  /* …up to 20 */ ] },
       { "value": "PHASE1|PHASE2", "label": "Phase 1/2", "count_trials": 505, "…": "…" },
       { "value": "PHASE2", "label": "Phase 2", "count_trials": 1143, "…": "…" }
-      /* Early Phase 1: 109 · Phase 1: 895 · Phase 2/3: 58 · Phase 3: 232 · Phase 4: 71 */
+      /* + Early Phase 1: 109 · Phase 2/3: 58 · Phase 3: 232 · Phase 4: 71 — 8 buckets, Σ = 3950 */
     ] },
   "meta": { "count_basis": { "trials": 3950, "mentions": 3950 }, "source": "clinicaltrials.gov", "…": "…" } }
 ```
+
+Note the composite bucket: the emitted `value` is pipe-joined (`"PHASE1|PHASE2"` — the `|` is the
+engine's own discriminator, never a wire token, and `app/ctgov/tools.py` splits it back to re-verify
+each member; the citation then carries `matched_tokens: ["PHASE1","PHASE2"]`). The slash form
+(`"Phase 1/2"`) is only the display `label`.
 
 ---
 
@@ -226,20 +259,30 @@ real end-to-end output — an NL query in, JSON out — generated by `scripts/ru
 query through the **real LLM planner** (no query class is ever passed in; the model classifies). Full
 untruncated JSON is regenerated by the script, never hand-edited.
 
+> **These are a recording of a run on 2026-07-16, and one metadata field in them is known-wrong.** A
+> later audit found that `meta.query_provenance.params.fields` was stamped from a duplicate,
+> hand-written projection switch and so reported `NCTId|Phase` for aggregations that actually paged a
+> different projection. **No computed value is affected** — every count, citation and reconciliation
+> still verifies (`16/16`). The code is fixed (`_projection()` in `app/graph/nodes.py` now reads the
+> single authority; `tests/test_provenance_projection.py` pins it), but the recorded runs were
+> deliberately **not** regenerated: editing a recorded run so it looks right in hindsight is the
+> failure mode this system exists to prevent. Full detail in
+> [`EXAMPLE_RUNS.md`](EXAMPLE_RUNS.md#example-runs--the-15-rung-ladder).
+
 The first cluster (02–07) covers **one of each renderable mark**; the middle (08–12) is the *judgment*
 cases (knowing when *not* to answer); the boss tier (13–15) is composed / adversarial queries.
 
 | # | Query (natural language) | → Chart | What it demonstrates |
 |---|---|---|---|
 | 01 | *Is there any recruiting trial for glioblastoma?* | *(prose answer)* | **No chart** — identifies that a viz isn't needed. `Yes — 325`. |
-| 02 | *How are interventional pancreatic cancer trials distributed across phases?* | **bar** | The killer gate: **Σ distinct-nctId == countTotal == 3950**; explicit 63%-class `NA`; composite `Phase 1/2`. |
+| 02 | *How are interventional pancreatic cancer trials distributed across phases?* | **bar** | The killer gate: **Σ distinct-nctId == countTotal == 3950**; an explicit `NA (not applicable)` bucket (937 trials, ~24%) rather than a silent drop; composite `Phase 1/2`. |
 | 03 | *How has the number of melanoma trials changed per year since 2015?* | **time_series** | Fill-0 gap years; a future `startDate` flagged **`planned`** (not clamped); partial-current-year disclosure. |
 | 04 | *Show the distribution of study durations for interventional pancreatic cancer trials* | **histogram** | A continuous magnitude (`completionDate − startDate`) binned into ranges — not a categorical bar. Σ == 3950. |
 | 05 | *Compare the overall status of pembrolizumab vs nivolumab trials* | **grouped_bar** | Two independently-scoped arms; synonym recall (`Keytruda ≡ pembrolizumab`); category union + within-series %. |
 | 06 | *Which countries have the most recruiting diabetes trials?* | **bar** (ranked) | Per-trial country **dedup** (the multi-location trap); top-50 + a derived "Other"; free-text country. |
 | 07 | *Show a network of drugs studied together in melanoma trials* | **network_graph** | The richest viz: **59 nodes / 194 edges**, every edge weight traces to 2 cited nctIds; placebo-free; synonym-merged. |
 | 08 | *How are cancer trials distributed across phases overall?* | *(refuse)* | **Knows when not to chart**: 121,770 by phase exceeds the paging budget → refuse + exact total, no biased prefix. |
-| 09 | *How are cancer trials distributed across overall status?* | **bar** | The counterpoint to 08: the **same 121,770 charts exactly** via one count query per status token — no paging, no bias. |
+| 09 | *How are cancer trials distributed across overall status?* | **bar** | The counterpoint to 08: the **same 121,770 charts exactly** via one count query per status token — no paging, no bias. 14 tokens queried, 13 bars rendered (`WITHHELD` has zero trials and zero-count buckets are dropped); Σ bars = 121,770. |
 | 10 | *Show a network of drugs studied together in progeria trials* | **bar** (fallback) | **Knows when not to graph**: no repeated co-occurrence → refuse the hairball, fall back to a cited bar. |
 | 11 | *How many trials are there for this drug?* | *(clarify)* | **Asks rather than guesses**: a dangling "this drug" → `kind:"clarification"`, nothing fabricated. |
 | 12 | *How many trials are there for Keytruda?* `+ drug_name=nivolumab` | **single_value** | **Input precedence (CC-1)**: the field wins over the query, and the override is echoed in `meta.notes`. |
@@ -254,7 +297,10 @@ two-continuous-axis pair; the study-duration histogram ships in its place).
 
 Reproduce: `uv run python scripts/run_ladder.py` (serial + polite; a rate-limited rung is skipped, not
 overwritten). The **cross-provider proof** — rung 02 re-run on Anthropic — is
-`examples/run_02_distribution_phase.anthropic.json`: identical bars, identical `Σ == 3950`. The number
+`examples/run_02_distribution_phase.anthropic.json`: the `visualization` block (all 8 buckets, every
+count, every citation) and the `vega_lite` projection are *identical*, `Σ == 3950` both times. Being
+exact about what did differ: `meta.retrieved_at`, and two planner-metadata fields (`meta.filters`
+echoed one extra key, `meta.notes` carried one reviewer flag on one side) — never a number. The number
 is the tool's, not the model's.
 
 **See it rendered:** open `demo/viewer.html` in a browser (a single self-contained file, no server) —
@@ -270,6 +316,8 @@ Every chart datum carries its own provenance, but a "Recruiting: 120,000" bucket
 citation objects. So each datum carries the exact `contributing_count` (always the true bucket size)
 plus a **bounded, deterministic sample of up to `K = 20` citations** (the first 20 contributing
 nctIds, sorted — stable across runs) and a `citations_truncated` flag when the true set exceeds `K`.
+(`K = CITATION_SAMPLE_K` on the paging path; the count-at-any-scale path — rung 09 — samples 10 per
+bucket, pulled in the *same* call as that bucket's count, so no extra request buys provenance.)
 Each citation is **two-part**, so it is deep in both senses §5 names — and it reads exactly like §5's
 illustrative example:
 
@@ -286,9 +334,15 @@ So a reviewer clicking any bar, time bucket, or edge sees a readable sentence **
 that put a trial there. `K` is a deploy-time constant, not agent-tunable.
 
 For a network, each edge's `weight` is a *derived* count, so it cites its **members** (the contributing
-trials) via two citations, one per endpoint field path. A trial in the `NA` phase bucket has no phase
-value to quote, so it carries an honest *absence* citation (`excerpt: ""` against an empty `value`) —
-valid only when the value is genuinely absent.
+trials) via two citations, one per endpoint field path.
+
+When a trial lands in a bucket precisely *because* the field is missing, there is no value to quote,
+so it carries an honest **absence citation**: `matched_value: ""` against a `value` of `null` — valid
+only when the field is genuinely absent at `field_path`. (`excerpt` still carries the brief title, so
+the citation stays readable.) The `NA` phase bucket is *not* this case — `NA` is a real registry token
+(`matched_value: "NA"`). The one absence citation in the shipped examples is in the study-duration
+histogram's `UNDATED` bucket: `NCT00003514` has no `startDateStruct.date`
+(`examples/run_04_histogram_duration.json`).
 
 ---
 
@@ -298,24 +352,36 @@ The registry has no canonical "right answer" to an aggregate query, so correctne
 **internal consistency against the one server number you can check** — the API's own `countTotal`.
 
 - **The oracle.** For each query the executor issues one `countTotal=true` call → the exact matching
-  total `T`. It then pages + aggregates client-side and the Output Reviewer asserts the displayed bars
-  reconcile: for a single-value (combine) field, `Σ bars == T`; for a multi-value (explode) field
-  (country, intervention type), `distinct-nctId == T` (bars sum to ≥ `T` by design, disclosed). The
-  count call and every page route through the *same* param builder, so a filter is applied to both
-  populations or neither — the two can never desync.
-- **Provenance teeth.** The Output Reviewer verifies every excerpt is a real element/substring at its
-  `field_path`; a fabricated excerpt fails at build time. This is deterministic code, not LLM
-  vigilance — an instruction injected into a trial's free-text summary cannot make a fabricated
-  citation pass a substring check.
+  total `T`. It then pages + aggregates client-side and the Output Reviewer asserts reconciliation
+  against `T`. The anchor is **`distinct-nctId == T` for *both* counting modes** — that is the claim
+  the citations back, and it is the only anchor that survives a multi-value field (a trial spanning
+  three countries) whose bars sum to ≥ `T` by design (disclosed in `meta.notes`). For a single-value
+  (combine) field the reviewer then adds a **second, stricter** assertion the spec never asked for:
+  `Σ displayed bars == distinct-nctId`, so a deflated or double-counted bar can no longer ship behind
+  a correct scalar. A drift of ≤ 0.5% *and* ≤ 20 trials is treated as live registry drift and
+  *disclosed* in `meta.notes`; anything larger is a hard fail. The count call and every page route
+  through the *same* param builder, so a filter is applied to both populations or neither — the two
+  can never desync.
+- **Provenance teeth.** The Output Reviewer checks **every** citation's `matched_value` — the field
+  value at `field_path` that decided membership — as an element-precise quote of that citation's own
+  `value` (plus every `matched_tokens` member on a composite bucket). A second, independent pass
+  re-checks the same literal against the **actual fetched record**, which defeats even a citation
+  whose stored `value` was fabricated to match itself; that pass is bounded to a 500-record index, so
+  on a wide board (rung 06 cites 566 distinct trials) it is a strong spot-check rather than a total
+  gate — citations outside the sample are skipped, not failed, and stay covered by the build-time
+  check. This is deterministic code, not LLM vigilance: an instruction injected into a trial's
+  free-text summary cannot make a fabricated citation pass it. Honest boundary: the readable
+  `excerpt` (the brief title) comes from a fixed identification path, so it is **not** a quote of
+  `value` and is not re-verified — the anti-fabrication anchor is `matched_value`.
 - **Offline correctness harness (`$0`, no network).** `scripts/verify_examples.py` re-checks every
   shipped example against these invariants — schema validity, the element-precise citation check, count
   coherence, `Σ`/`distinct` reconciliation, and a "no digit in a note that isn't a computed number"
   check — **reusing the same functions the runtime uses**, so the shipped bytes are held to the same
   bar as a live request. It is wired into the suite (`tests/test_examples_offline.py`).
-- **The suite.** `uv run pytest` — 582 tests: count invariants, the citation-substring check, the
-  Plan Checker's anti-hallucination rejections, the graph routing, the security tests, and live
-  reconciliation gates (which skip cleanly when the network is down or rate-limited). `uv run ruff
-  check src app` is clean. `uv run ct-doctor` runs a live X-2 reconciliation as its final check.
+- **The suite.** `uv run pytest` — 587 tests collected: count invariants, the citation-substring
+  check, the Plan Checker's anti-hallucination rejections, the graph routing, the security tests, and
+  live reconciliation gates (which skip cleanly when the network is down or rate-limited). `uv run
+  ruff check app tests` is clean. `uv run ct-doctor` runs a live X-2 reconciliation as its final check.
 
 Tools used and how correctness was validated are disclosed under **AI-use** below.
 
@@ -377,20 +443,20 @@ unbounded payload. Verified by `tests/test_essie_injection.py` and the hardening
 - **Refuse rather than mislead (`too_large`).** A query whose match set exceeds the paging budget is
   *refused* with its exact total, not truncated to a biased sorted prefix — except when the field has a
   bounded token set (status / sponsor class / intervention type), where one exact count per token
-  charts the distribution at *any* scale (rungs 07 vs 08). The system knows which distributions it can
-  compute faithfully.
+  charts the distribution at *any* scale (rungs 08 vs 09 — the same 121,770 trials refused by phase,
+  charted exactly by status). The system knows which distributions it can compute faithfully.
 - **Show both counts (CC-3).** Multi-value fields double-count by nature (a trial in three countries).
   Every bucket emits the distinct-trial count *and* the mention count; the headline and the
   reconciliation anchor on distinct trials, and the convention is disclosed in `meta.notes`.
 - **Field precedence with an echo (CC-1).** A structured field is authoritative for its dimension; the
   query supplies intent and gap-fills. On conflict the field wins **and** the override is echoed in
-  `meta.notes` — never a silent pick (rung 11).
+  `meta.notes` — never a silent pick (rung 12).
 - **Expose the date field (CC-4).** "Over time" is ambiguous (started vs registered vs completed). The
   planner picks per intent and always discloses which of the five date fields it used; genuine future
   dates go into a flagged `planned` bucket, not clamped (rung 03).
 - **Ask when the intent is incomplete.** A syntactically valid request whose NL names an unresolvable
   referent ("this drug", no `drug_name`) is neither a 422 (the HTTP request is fine) nor a guess
-  (dishonest) — it is a first-class `clarification` (rung 10).
+  (dishonest) — it is a first-class `clarification` (rung 11).
 - **Cyclic graph, bounded.** LangGraph over a plain DAG runner specifically because the control model
   is *adaptive* — runtime tool-choice + retry + a single bounded escalation re-plan — which a pure DAG
   cannot express. The escalation budget is ≤ 1 and gate-triggered, so every trace is finite.
@@ -433,9 +499,13 @@ path; they skip under a network blip rather than failing).
 
 Built with AI coding assistants under a design I own. Being precise, as §8 asks:
 
-**Tools.** Claude and GPT as coding assistants during the build; the runtime uses OpenAI (`gpt-5.4` /
-`gpt-5.4-mini`) and Anthropic (`claude-sonnet-5` / `claude-haiku-4-5`) as the planner/reviewer models
-behind the provider-agnostic adapter; the live ClinicalTrials.gov API for every number and every probe.
+**Tools.** Claude and GPT as coding assistants during the build; at runtime the planner/reviewer models
+sit behind the provider-agnostic adapter, which defaults to OpenAI `gpt-5.4` / `gpt-5.4-mini` and
+Anthropic `claude-opus-4-8` / `claude-haiku-4-5` (either pair overridable per-run via
+`LLM_MODEL_PLANNER` / `LLM_MODEL_REVIEWER`); the live ClinicalTrials.gov API for every number and
+every probe. The cross-provider twin was planned through the Anthropic adapter — the envelope records
+the *provider-independent* result, not a model id, which is the point: the number is the tool's, not
+the model's.
 
 **Designed deliberately (mine).** The architecture and every load-bearing decision: the governing
 invariant (LLM plans, code computes); making `countTotal` the correctness oracle and reconciliation the
@@ -462,7 +532,7 @@ produces the identical result — because the number was never the model's to ge
 |---|---|---|
 | **35%** | System Design | The one-general-core engine + cyclic-but-bounded LangGraph topology; deterministic-engine-first sequencing; real-world data handling shown *in the output* (NA/planned/dedup/refuse), not just prose; `app/config.py` as one legible safety envelope. This README's design section + `EXAMPLE_RUNS.md`. |
 | **20%** | AI / Agent Design | The "LLM never emits a number" invariant enforced *structurally*; a closed typed planner output (hallucinated filters unrepresentable); Plan Checker (code) + two Reviewers (LLM) as gates, not generators; a bounded escalation re-plan; a provider-agnostic adapter **proven by a cross-provider twin** (rung 02 planned by GPT *and* by Claude → identical numbers, `examples/run_02_*.anthropic.json`). `app/llm/*`, `app/plan/checker.py`, `app/graph/*`. |
-| **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 582 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
+| **20%** | Code Quality | Typed throughout, layered (wire schema imports nothing from `app`), 587 tests, ruff-clean, every module docstring'd; total functions that never crash on malformed live data. |
 | **15%** | Query & Viz Coverage | 6 query classes + 7 chart types (bar/grouped/time-series/histogram/network/single-value/table) + a meaningful network graph, all off one core; 15 example rungs simple→complex incl. the two refuses + a clarification. `EXAMPLE_RUNS.md`. |
 | **10%** | Input/Output Design | Documented, per-field-validated request schema; a `status`/`kind`-discriminated envelope with a `vega_lite` projection so a frontend renders without guessing. `app/api/schemas.py`. |
 | **bonus** | Deep citations | Per-datum `nct_id` + a **two-part** reference (a readable `excerpt` = the trial's brief title, §5's descriptive excerpt, *and* the exact `matched_value` that proves membership), both string-extracted and re-verified; a bounded `K=20` sample + `contributing_count`; two citations per network edge. `app/ctgov/citations.py`, the Output Reviewer. |
@@ -500,11 +570,13 @@ app/
   main.py            FastAPI: POST /visualize (sync) + /visualize/stream (SSE)
   api/schemas.py     the request model + response envelope (the wire contract)
   graph/             LangGraph state, build, nodes, guards, clarify
-  llm/               provider-agnostic adapter · ReAct planner · the two reviewers
+  llm/               provider-agnostic adapter · the classify→fill planner · the two reviewers
   plan/              deterministic Plan Checker · query-class recipes
-  ctgov/             least-privilege HTTP client · aggregation core · the 7 tools · citations · params (Essie neutralization)
+  ctgov/             least-privilege HTTP client · aggregation core · the tool layer (8 registered,
+                     6 live — get_trial/resolve_entity are documented stubs) · citations · params
+                     (Essie neutralization)
   viz/               canonical spec builder · Vega-Lite projection · Output Reviewer
-tests/               582 tests (unit, invariants, security, live reconciliation gates, offline example re-check)
+tests/               587 tests (unit, invariants, security, live reconciliation gates, offline example re-check)
 scripts/             run_ladder.py (the 15 example runs) · verify_examples.py (offline $0 harness) · run_gate.py (live X-2 gate)
 examples/            the 15 example runs (+ the cross-provider twin) — actual JSON
 demo/viewer.html     a self-contained citation viewer — saved runs render offline; the ask bar
