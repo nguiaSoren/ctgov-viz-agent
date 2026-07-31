@@ -5,7 +5,7 @@ emitting a number. NL -> LLM planner -> Plan Checker -> Intent Reviewer (LLM) ->
 ClinicalTrials.gov) -> viz-spec builder -> Output Reviewer (code + LLM) -> cited envelope.
 
 Run (from ctgov-viz-agent/):
-    set -a; source ../../../.env; set +a          # to get CTGOV_OPENAI_API_KEY
+    set -a; source "$HOME/Desktop/ROGUE/.env"; set +a          # to get CTGOV_OPENAI_API_KEY
     export OPENAI_API_KEY="$CTGOV_OPENAI_API_KEY" LLM_PROVIDER=openai \
            LLM_MODEL_PLANNER=gpt-5.4 LLM_MODEL_REVIEWER=gpt-5.4-mini
     ./.venv/bin/python scripts/run_phase4_gate.py

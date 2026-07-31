@@ -6,7 +6,7 @@ reconciliation, re-plans, meta.notes) so the reader judges — no self-grading. 
 states the interesting behavior to watch for.
 
 Run (from ctgov-viz-agent/):
-    set -a; source ../../../.env; set +a
+    set -a; source "$HOME/Desktop/ROGUE/.env"; set +a
     export OPENAI_API_KEY="$CTGOV_OPENAI_API_KEY" LLM_PROVIDER=openai \
            LLM_MODEL_PLANNER=gpt-5.4 LLM_MODEL_REVIEWER=gpt-5.4-mini
     ./.venv/bin/python scripts/run_phase4_hard_battery.py

@@ -18,7 +18,7 @@ Every chart datum carries deep citations, and each citation is **two-part**: the
 
 ```bash
 # from ctgov-viz-agent/, with a provider key in the environment
-set -a; source ../../../.env; set +a
+set -a; source "$HOME/Desktop/ROGUE/.env"; set +a
 export OPENAI_API_KEY="$CTGOV_OPENAI_API_KEY" LLM_PROVIDER=openai \
        LLM_MODEL_PLANNER=gpt-5.4 LLM_MODEL_REVIEWER=gpt-5.4-mini
 ./.venv/bin/python scripts/run_ladder.py            # all 15 rungs

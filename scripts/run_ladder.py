@@ -14,7 +14,7 @@ shares the same quota and trips 429 harder. A transiently rate-limited rung is
 SKIPPED (its JSON left untouched), never overwritten with an error.
 
 Run (from ctgov-viz-agent/):
-    set -a; source ../../../.env; set +a          # to get CTGOV_OPENAI_API_KEY
+    set -a; source "$HOME/Desktop/ROGUE/.env"; set +a          # to get CTGOV_OPENAI_API_KEY
     export OPENAI_API_KEY="$CTGOV_OPENAI_API_KEY" LLM_PROVIDER=openai \
            LLM_MODEL_PLANNER=gpt-5.4 LLM_MODEL_REVIEWER=gpt-5.4-mini
     ./.venv/bin/python scripts/run_ladder.py               # all 15 rungs
