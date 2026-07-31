@@ -14,7 +14,6 @@ build/
 
 # Local working docs — design notes, the brief they were built from, scratch runs.
 # Never publish: these are working material, not part of the service.
-ARCHITECTURE_SPEC.md
 ASSIGNMENT.md
 assignment.pdf
 BUILD_PLAN.md

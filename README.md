@@ -426,7 +426,9 @@ unbounded payload. Verified by `tests/test_essie_injection.py` and the hardening
 ## Key design decisions & tradeoffs
 
 > The full design rationale — components, the control×autonomy landing, the failure-mode table, and
-> the security model — is in **[`ARCHITECTURE.md`](ARCHITECTURE.md)**. The essentials:
+> the security model — is in **[`ARCHITECTURE.md`](ARCHITECTURE.md)**, and the long-form
+> implementation spec the code's `§N` comments cite is
+> **[`ARCHITECTURE_SPEC.md`](ARCHITECTURE_SPEC.md)**. The essentials:
 
 - **The LLM plans; code computes (the invariant).** The single most important decision. The planner
   emits a *closed* typed object — its filter vocabulary is a fixed set of real tokens, so a
@@ -584,4 +586,6 @@ demo/viewer.html     a self-contained citation viewer — saved runs render offl
                      drives a running service over POST /visualize/stream (mounted at /demo)
 EXAMPLE_RUNS.md      the annotated simple→complex walkthrough
 ARCHITECTURE.md      the design rationale (components · control×autonomy · failure modes · security)
+ARCHITECTURE_SPEC.md the long-form implementation spec — the §N the code comments cite,
+                     incl. the SUPERSEDED-BY-CODE notes where the build diverged
 ```
