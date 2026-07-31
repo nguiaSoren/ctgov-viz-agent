@@ -10,7 +10,7 @@ authors = [{ name = "Soren Obounou Nguia" }]
 # Every lower bound was read off PyPI on 2026-07-15, never recalled from memory — a model's
 # idea of "the current version" is exactly the kind of number this project refuses to trust.
 # Lower bounds keep a reviewer's fresh install working; upper bounds fence off the next major
-# so a surprise breaking release can't silently break the submission.
+# so a surprise breaking release can't silently break a fresh install.
 dependencies = [
     "fastapi>=0.139,<1",
     "uvicorn[standard]>=0.51,<1",

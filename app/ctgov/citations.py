@@ -16,7 +16,7 @@ are not interchangeable):
   (``app.viz.review``), together with ``matched_tokens`` for a composite bucket.
 * ``excerpt`` — the trial's human-readable **brief title**, walked out of the FIXED
   identification path :data:`_BRIEF_TITLE_PATH` (see :func:`brief_title`), NOT out
-  of ``field_path``. It is assignment §5's readable supporting excerpt. It is
+  of ``field_path``. It is the citation contract's readable supporting excerpt. It is
   code-extracted and never authored, but it is **not** re-verified by the Output
   Reviewer — the reviewer checks ``matched_value``/``matched_tokens`` only, since
   the brief title provably does not live at ``field_path``.
@@ -167,7 +167,7 @@ _BRIEF_TITLE_PATH = "protocolSection.identificationModule.briefTitle"
 
 def brief_title(record: dict) -> str | None:
     """The trial's human-readable **brief title** — the descriptive text excerpt that
-    supports the datum (assignment §5), string-extracted from the record at the fixed
+    supports the datum, string-extracted from the record at the fixed
     identification path (never LLM-authored). Returns ``None`` when the record did not
     project ``BriefTitle`` (a fetch that didn't request it), so an un-enriched citation
     stays honest rather than inventing context. TOTAL: never raises."""
@@ -185,7 +185,7 @@ def build_citation(record: dict, field_path: str) -> Citation:
     * ``matched_value`` — the string-extracted value at ``field_path``
       (:func:`extract_excerpt`); the anchor the Output Reviewer verifies.
     * ``excerpt`` — the record's brief title (:func:`brief_title`), the readable
-      supporting excerpt of assignment §5. It falls back to ``matched_value`` when
+      supporting excerpt half of the citation contract. It falls back to ``matched_value`` when
       the record carries no ``BriefTitle`` (an un-projected fetch), so a citation
       always ships some human-readable text.
 

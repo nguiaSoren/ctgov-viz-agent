@@ -853,7 +853,7 @@ function renderMeta(resp){
     : "";
 
   // Raw REQUEST JSON — reconstructed from the embedded example's _query + _fields
-  // (assignment §3.1: the input request schema should be visible next to the response).
+  // (the input request schema should be visible next to the response).
   // Omitted entirely (graceful hide) when there is no _query (e.g. picker-loaded files).
   const reqBlock = resp._query
     ? `<details class="raw-toggle"><summary>View raw request JSON</summary><pre class="raw">${esc(JSON.stringify(Object.assign({ query: resp._query }, resp._fields || {}), null, 2))}</pre></details>`

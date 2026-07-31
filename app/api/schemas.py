@@ -79,7 +79,7 @@ class ChartType(str, Enum):  # noqa: UP042 — frozen contract mandates (str, En
 class Citation(BaseModel):
     """A single per-datum provenance record (CC-9 / A-45/A-46).
 
-    It carries assignment §5's *two* readings of "an exact text excerpt from the
+    It carries both readings of "an exact text excerpt from the
     API response (or a specific field/value)" in two separate fields, because the
     readable one and the checkable one come from different paths:
 
@@ -333,10 +333,16 @@ class Meta(BaseModel):
 class VisualizeResponse(BaseModel):
     """THE response envelope (ARCHITECTURE_SPEC §6) — every endpoint returns this.
 
-    Field presence is keyed off ``status`` / ``kind``:
+    Field presence is keyed off ``status`` / ``kind``, which answer two different
+    questions: ``status`` is *did it work?* (``ok`` · ``empty`` · ``too_large`` ·
+    ``error``), ``kind`` is *what shape is the answer?* (``visualization`` ·
+    ``answer`` · ``clarification``). They are independent — a ``too_large`` refusal
+    is still a well-formed ``answer``.
 
-    * ``kind:"visualization"`` → ``visualization`` populated; ``answer`` null.
-    * ``kind:"answer"`` → ``visualization`` null; ``answer`` populated.
+    * ``kind:"visualization"`` → ``visualization`` populated; ``answer`` null —
+      a chart (rung 02 is ``ok``/``visualization``).
+    * ``kind:"answer"`` → ``visualization`` null; ``answer`` populated — a
+      sentence rather than a chart (rung 01: "Yes — 325 trials match this query").
     * ``status:"error"`` → ``error`` populated; ``visualization`` null (never a
       half-viz).
     * ``status:"too_large"`` → ``kind:"answer"``, ``answer`` populated,

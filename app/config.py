@@ -160,6 +160,16 @@ MAX_STRUCTURED_FIELD_CHARS = _env_int("MAX_STRUCTURED_FIELD_CHARS", 200)  # drug
 MAX_COMPARE_ENTITIES = _env_int("MAX_COMPARE_ENTITIES", 5)  # cap on compare arms / network / multi-drug
 # entities (E-21) → first-N + a dropped_entities note, never silent truncation
 
+# --- Pipeline trace (dev/observability affordance — OFF by default) ----------
+# When on, ``run_sync`` prints each graph node's salient result to stdout as the
+# request runs, so a live ``POST /visualize`` shows the whole pipeline in the
+# server console (planning → validating → plan_approved → fetching → aggregating →
+# building_spec → verifying → done). A DEBUG affordance, not the structured audit
+# log (``logging_setup.log_event``): it deliberately shows the query because the
+# operator opted in, but the provider key is still scrubbed. Off by default so the
+# offline test suite and production stay quiet; enable with ``PIPELINE_TRACE=1``.
+PIPELINE_TRACE = _env_bool("PIPELINE_TRACE", False)
+
 # --- Response cache (§3.10 · SEC-15/SEC-48 · C-73/C-74 · P5-CACHE) -----------
 CACHE_ENABLED = _env_bool("CACHE_ENABLED", True)  # a bypass switch (tests + operators)
 CACHE_TTL_SECONDS = _env_int("CACHE_TTL_SECONDS", 300, minimum=0)  # short-TTL; non-authoritative (§3.10)

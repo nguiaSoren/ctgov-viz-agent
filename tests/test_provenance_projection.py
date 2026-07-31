@@ -17,7 +17,7 @@ provenance, reconciliation and count coherence, but never ``meta.query_provenanc
 The fix routed provenance through :func:`app.graph.nodes._projection`, which reads the authority
 per path instead of re-deriving it. These tests pin that: they compare ``_projection`` against the
 authorities themselves, so a re-introduced duplicate switch fails here even though the frozen
-``examples/*.json`` (a recorded pre-fix run, deliberately left byte-for-byte as submitted — see
+``examples/*.json`` (a recorded pre-fix run, deliberately left byte-for-byte as recorded — see
 EXAMPLE_RUNS.md) still carry the old values.
 """
 

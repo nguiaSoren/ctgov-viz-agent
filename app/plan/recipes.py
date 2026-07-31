@@ -180,8 +180,8 @@ RECIPES: dict[str, Recipe] = {
         count_basis_rule="distinct",  # one exact countTotal, no bucketing
         degeneracy_fallback=None,
         notes=(
-            "The no-viz / scalar path (assignment step-3 'identify IF a visualization "
-            "is needed', CC-7). A scalar count question (\"how many X trials?\") or a "
+            "The no-viz / scalar path — the 'identify IF a visualization "
+            "is needed' decision (CC-7). A scalar count question (\"how many X trials?\") or a "
             "yes/no (\"are there any X trials?\"). The single count_trials tool returns "
             "the exact countTotal over the plan's entities/filters — no aggregation "
             "field, no bucketing, no series/network. A scalar count renders as a stat "

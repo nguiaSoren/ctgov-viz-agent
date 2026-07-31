@@ -42,7 +42,7 @@ _OUT = _ROOT / "examples"
 LADDER: list[tuple[str, str, str, dict]] = [
     # --- the simple end + the chart-type coverage (one of each renderable mark) ---
     ("01", "single_value_yesno",
-     "trivial scalar — 'is a chart even needed?' (assignment step 3 / CC-7): answers in prose, no viz",
+     "trivial scalar — 'is a chart even needed?' (CC-7): answers in prose, no viz",
      {"query": "Is there any recruiting trial for glioblastoma?", "condition": "glioblastoma"}),
     ("02", "distribution_phase",
      "BAR + the killer gate (X-2): phase distribution, Σ distinct-nctId == countTotal, explicit 63%-class NA bucket",

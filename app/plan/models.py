@@ -31,8 +31,8 @@ from app.api.schemas import ChartType
 
 # The query classes the recipe registry is keyed on (ARCHITECTURE_SPEC §B.6). Six as of
 # Phase 4: the five chart classes + ``single_value`` (the no-viz / scalar path, CC-7 — a
-# scalar count as a stat card, or a yes/no as ``kind:"answer"``; assignment step-3 "identify
-# IF a visualization is needed"). Adding a class is mostly a config row (a RECIPES entry
+# scalar count as a stat card, or a yes/no as ``kind:"answer"``; the "identify
+# IF a visualization is needed" decision). Adding a class is mostly a config row (a RECIPES entry
 # fixes its marks, fallback and conventions), but not only that: it also needs a shape
 # branch in ``_check_class_shape`` and a dispatch branch in the executor — the data table
 # holds the policy, the if/elif holds the wiring.

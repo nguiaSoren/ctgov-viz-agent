@@ -77,6 +77,7 @@ from langgraph.graph.state import CompiledStateGraph
 
 from app import config
 from app.api.schemas import VisualizeRequest, VisualizeResponse
+from app.graph import trace
 from app.graph.nodes import (
     build_spec,
     check,
@@ -216,8 +217,32 @@ def run_sync(request: VisualizeRequest, *, overrides: dict | None = None) -> Vis
     final ``VisualizeResponse``. The sync ``POST /visualize`` transport is a thin
     wrapper over this. Seeds the 60s sync wall-clock deadline (§B.4) — unless a
     test passes ``overrides`` (the offline sentinel paths), which leaves the
-    deadline unset so structural tests stay clock-independent."""
+    deadline unset so structural tests stay clock-independent.
+
+    When ``config.PIPELINE_TRACE`` is on (env ``PIPELINE_TRACE=1``), the run is
+    driven through ``graph.stream`` so each node's result can be printed to the
+    server console as it happens (``app.graph.trace``); the streamed run executes
+    the SAME graph and returns the SAME final envelope as ``graph.invoke`` — the
+    trace only observes. Off (the default), it stays a single ``invoke``."""
     graph = build_graph()
     deadline = None if overrides else config.WALL_CLOCK_SYNC_SECONDS
-    final_state = graph.invoke(initial_state(request, overrides, deadline_seconds=deadline))
-    return final_state["spec"]
+    state = initial_state(request, overrides, deadline_seconds=deadline)
+
+    if not trace.enabled():
+        return graph.invoke(state)["spec"]
+
+    # Traced path: one execution, streamed. "updates" chunks drive the per-stage
+    # prints; the last "values" chunk's ``spec`` is the terminal envelope (same
+    # single-run discipline the SSE endpoint uses, so trace and result can't diverge).
+    trace.banner(request.query)
+    final_spec: VisualizeResponse | None = None
+    step = 0
+    for mode, chunk in graph.stream(state, stream_mode=["updates", "values"]):
+        if mode == "updates":
+            for node_name, update in chunk.items():
+                step += 1
+                trace.stage(step, node_name, update)
+        elif chunk.get("spec") is not None:
+            final_spec = chunk["spec"]
+    trace.footer(final_spec)
+    return final_spec

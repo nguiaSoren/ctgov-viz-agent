@@ -496,9 +496,9 @@ path; they skip under a network blip rather than failing).
 
 ---
 
-## AI use (per §8)
+## AI use
 
-Built with AI coding assistants under a design I own. Being precise, as §8 asks:
+Built with AI coding assistants under a design I own. Being precise about what that means:
 
 **Tools.** Claude and GPT as coding assistants during the build; at runtime the planner/reviewer models
 sit behind the provider-agnostic adapter, which defaults to OpenAI `gpt-5.4` / `gpt-5.4-mini` and
@@ -540,9 +540,9 @@ produces the identical result — because the number was never the model's to ge
 
 ---
 
-## Beyond the brief
+## Beyond the core requirements
 
-Things the assignment did not ask for, built because they make the difference between "works on the
+Things no minimal version of this would need, built because they make the difference between "works on the
 happy path" and "trustworthy on real registry data":
 
 - **A live-found, live-fixed security vulnerability** (Essie query injection) with the fix chosen by
