@@ -7,10 +7,10 @@ one, and §5 turns a conflict-and-ambiguity lens back on the architecture's own 
 **Notation.** `CC-N`, `G-N`, `E-N`, `A-N`, `SEC-N` and `API-N` are stable decision IDs
 from the project's working design record — respectively: behavioural rulings, runtime
 guards, edge cases, requirements, security controls and API-contract items. Those
-working documents are not part of the published repository, so an ID here identifies a
-decision without linking to it. The decision itself is always stated inline where it
-matters, and the code is authoritative in every case; blocks marked **SUPERSEDED BY
-CODE** record where the shipped implementation diverged from this document's original
+guards, edge cases, requirements, security controls and API-contract items. **Every ID
+cited anywhere in this document is defined in [§C](#c--decision-id-index)**, so the spec
+stands on its own. The code is authoritative in every case; blocks marked **SUPERSEDED
+BY CODE** record where the shipped implementation diverged from this document's original
 intent, kept rather than silently edited so the drift stays visible.
 
 ---
@@ -463,3 +463,81 @@ An **offline** fixture suite `(NL query [+fields]) → golden {tool sequence, to
 
 > **NOT BUILT (2026-07-22):** the function-call-accuracy eval is **the largest unbuilt piece of this spec**, and the one that would have measured the planner. There is no golden `(NL → tool/args)` fixture suite and no VCR-style recorded fixtures anywhere (`respx` is declared in `pyproject.toml:33` and imported by nothing; `asyncio_mode="auto"` at `pyproject.toml:48` is likewise inert — the suite has zero `async def test_`). What DID ship measures a different guarantee: `scripts/verify_examples.py` + `tests/test_examples_offline.py` verify **output** invariants (reconciliation, citation validity, no LLM-authored number) on the shipped examples; `tests/test_planner.py` only round-trips the stub. Say plainly: *"the planner's accuracy is evidenced by a 15-rung live ladder that all reconciles, not by a measured tool-selection score — the FCA harness is designed and unbuilt."*
 > Original intent kept above for the record.
+
+---
+
+## §C — Decision ID index
+
+Every ID cited anywhere in this document, defined here. The rulings originate in the
+project's working design record; this index restates each one so the spec stands on its
+own. Where the shipped code diverged from a ruling, the divergence is recorded in the
+**SUPERSEDED BY CODE** block at the relevant section — the code is authoritative.
+
+### CC — behavioural rulings (the ambiguities, and how each was resolved)
+
+| ID | Ruling |
+|---|---|
+| CC-1 | **Input precedence.** When the free-text query and the structured fields disagree, the structured field wins — it *completes* a dangling reference ("this drug") rather than competing with it. |
+| CC-2 | **LLM/deterministic boundary.** The model does natural language → validated plan, and nothing else. Every number is computed by code. |
+| CC-3 | **Counting semantics.** Multi-valued fields (a trial with several conditions or interventions) would double-count, so each bucket carries both the bucket count and the distinct-trial count. |
+| CC-4 | **Time axis.** Of the four candidate date fields, `startDate` carries phantom future/estimated years and `YYYY-MM` precision; the choice of field and the precision normalisation are fixed by recipe, not by the model. |
+| CC-5 | **Missing / NA buckets.** Phase is missing or `NA` on roughly 63% of trials. An explicit "Unknown / Not reported" bucket is always shown rather than silently dropped — omitting it misreports the field. |
+| CC-6 | **Aggregation cost cap.** There is no server-side scoped aggregation, so broad queries would page hundreds of times. `countTotal` is fetched first (cheap), then paging runs under a fixed budget. |
+| CC-7 | **No-viz / scalar answers.** A yes/no or a single count is not a chart. Those return `kind:"answer"` with prose, which is why "identify *if* a visualization is needed" is a first-class path. |
+| CC-8 | **Chart-type authority.** Hybrid: the planner proposes a `chart_type` plus alternates from a closed enum; code validates the proposal against the shape of the computed data. |
+| CC-9 | **Citation shape.** Each datum carries an exact `contributing_count` plus a deterministic, capped sample of citations — not an unbounded dump, and not an estimate. |
+| CC-10 | **Output schema.** `data` is a discriminated union on `type` — `rows[]` for charts, `{nodes[], edges[]}` for networks. Every categorical value is a `{value, label}` pair. |
+| CC-11 | **Ambition vs breadth.** Build one genuinely hard visualization (the network) *and* broad coverage of the ordinary classes, with no one-off hacks in either. |
+| CC-12 | **Network rendering.** Guard against hairballs, synonym-split nodes and the placebo mega-hub: top-N nodes by degree, a minimum edge weight, and drug-synonym merging. |
+| CC-13 | **Geographic.** Country is free text (226 distinct values, including variants like "Turkey (Türkiye)") and often missing, so it renders as a ranked bar with a top-N plus "Other". |
+| CC-14 | **Comparisons.** Two drugs have different totals, so raw side-by-side bars conflate "more of X" with "more studied overall". Default to percentage share within each series. |
+| CC-15 | **Combined phases.** The wire value is an array (`["PHASE1","PHASE2"]`). Combined phases get their own bucket ("Phase 1/2") rather than being split across both, which would double-count and break the sum. |
+| CC-16 | **Correctness oracle.** The registry has no canonical answer, so correctness is defined as internal consistency against the API's own `countTotal` — a check anyone can re-run. |
+| CC-18 | **Live vs snapshot.** The registry mutates between runs. Queries go live, and every response is stamped with its retrieval timestamp and the filters actually applied. |
+
+### G — runtime guards (invariant leaks and hand-off contracts)
+
+| ID | Guard |
+|---|---|
+| G-20 | Scatter needs an enrollment field that was never verified, so scatter is deferred — it remains in the `ChartType` enum but no recipe emits it. |
+| G-25 | Citations are a **per-datum list** (`Datum.citations`), superseding the earlier top-level map. |
+| G-26 | `page_and_group` takes `key_fn(record) → list[str]`; each recipe declares a per-field **combine or explode** bucketing mode, and reconciliation follows that mode. |
+| G-28 | Histogram binds to study duration (scatter deferred per G-20). |
+| G-30 | **Invariant leak.** LLM-authored text fields (`title`, the scalar `answer`, `meta.notes`) must carry no unchecked digit — they are code-templated or run through a deterministic post-check. |
+| G-32 | Reconciliation is **gated**: only when `status=="ok"` and `data.type=="rows"`. Network, answer, `too_large` and empty are exempt. |
+| G-33 | The Plan Checker recurses into the generalised plan, dispatching on `query_class` and validating each `series[]` entry. |
+| G-34 | The per-datum citation list is load-bearing; any `source_ids` map is a derived index only. The substring check walks the list. |
+| G-35 | A legitimately empty `count==0` datum (a fill-0 bucket or gap year) is exempt from "every datum cited-or-derived". |
+| G-39 | `too_large` returns `meta.partial: null` with the exact total in `meta.notes` — a refusal is not a partial result. |
+| G-40 | A genuine future `startDate` goes into a flagged "planned" bucket rather than being dropped or silently charted as past. |
+
+### E — edge cases
+
+| ID | Case |
+|---|---|
+| E-13 | `"…this drug…"` with no `drug_name` — a dangling reference. Ask for clarification; never guess. |
+| E-31 | Mixed date precision and future dates in a time series — normalise, expose `meta.time_granularity`, flag or filter future values. |
+| E-34 | A question that should not be charted — return `kind:"answer"` with text and citations, no `visualization`. |
+| E-35 | Upstream error or timeout — `status:"error"` with `error:{code,message}`, never a half-rendered visualization. |
+
+### A — requirements
+
+| ID | Requirement |
+|---|---|
+| A-33 | The response carries a `meta` object (effective filters, `source: "clinicaltrials.gov"`). |
+| A-47 | Citations attach **per datum** — a `citations` array on each point, not one list for the whole response. |
+
+### SEC — security controls
+
+| ID | Control |
+|---|---|
+| SEC-30 | Denial-of-service: a shared rate limiter (~3 req/s, tunable). |
+| SEC-38 | Per-agent visibility — the planner sees only the registered tool surface. |
+| SEC-41 | Tight catalog: a successful injection can still only request one of the read-only operations. |
+
+### API — response-contract items
+
+| ID | Item |
+|---|---|
+| API-10 | `kind` enum. *Superseded:* it has a third member, `clarification`. |
+| API-13 | Citations keyed by `nctId` → `{field_path, value, excerpt}`. *Superseded by G-25:* citations are a per-datum list. |
